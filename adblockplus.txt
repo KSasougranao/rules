@@ -1,3 +1,10 @@
+[Adblock Plus 2.0]
+! Version:
+! Title:
+! Last modified:
+! Expires:
+! Homepage:
+!
 live.bilibili.com##a[href*="11588230"]
 live.bilibili.com##a[href*="12235923"]
 live.bilibili.com##a[href*="13576775"]
