@@ -4,7 +4,9 @@
 ! Last modified:
 ! Expires:
 ! Homepage:
-!
+
+! vup
+live.bilibili.com#?#li:-abp-has(a.room-card-ctnr > div.card-info-ctnr > div.text-info-ctnr > div.card-text > span[title*=/百鬼|白上/])
 live.bilibili.com##a[href*="11588230"]
 live.bilibili.com##a[href*="12235923"]
 live.bilibili.com##a[href*="13576775"]
@@ -19,12 +21,20 @@ live.bilibili.com##a[href*="21545232"]
 live.bilibili.com##a[href*="21560536"]
 live.bilibili.com##a[href*="21669084"]
 live.bilibili.com##a[href*="2603963"]
-live.bilibili.com##.banner-ctn
+
+! bilibili
 t.bilibili.com##.notice-panel
 t.bilibili.com##.right-panel
 t.bilibili.com##.section-block
 t.bilibili.com##.tag-panel
-t.bilibili.com##.user-wrapper
+
+! zhihu
 zhihu.com##.CreatorEntrance
 zhihu.com##.GlobalSideBar-categoryList
+
+! track
+api.growingio.com
+addthis.com
+
+! other
 ||hycdes.com/img/ro-orchestra.png
