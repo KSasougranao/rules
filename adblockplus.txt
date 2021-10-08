@@ -6,7 +6,6 @@
 ! Homepage:
 
 ! vup
-live.bilibili.com#?#li:-abp-has(a.room-card-ctnr > div.card-info-ctnr > div.text-info-ctnr > div.card-text > span[title*=/百鬼|白上/])
 live.bilibili.com##a[href*="11588230"]
 live.bilibili.com##a[href*="12235923"]
 live.bilibili.com##a[href*="13576775"]
@@ -21,6 +20,19 @@ live.bilibili.com##a[href*="21545232"]
 live.bilibili.com##a[href*="21560536"]
 live.bilibili.com##a[href*="21669084"]
 live.bilibili.com##a[href*="2603963"]
+! live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*="live.bilibili.com/10545?"]
+live.bilibili.com##a[href*="live.bilibili.com/14893?"]
+live.bilibili.com##a[href*="live.bilibili.com/15536?"]
+live.bilibili.com##a[href*="live.bilibili.com/21402309?"]
+live.bilibili.com##a[href*="live.bilibili.com/22333522?"]
+live.bilibili.com##a[href*="live.bilibili.com/22347054?"]
+live.bilibili.com##a[href*="live.bilibili.com/22262300?"]
+live.bilibili.com##a[href*="live.bilibili.com/22816111?"]
+live.bilibili.com##a[href*="live.bilibili.com/22824550?"]
+live.bilibili.com##a[href*="live.bilibili.com/23199319?"]
+live.bilibili.com##a[href*="live.bilibili.com/3415150?"]
+live.bilibili.com##a[href*="live.bilibili.com/4316215?"]
 
 ! bilibili
 t.bilibili.com##.notice-panel
