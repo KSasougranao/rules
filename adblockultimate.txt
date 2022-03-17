@@ -1,0 +1,84 @@
+[Adblock Ultimate]
+! Version:
+! Title:
+! Last modified:
+! Expires:
+! Homepage:
+
+! vup
+live.bilibili.com##a[href*="11588230"]
+live.bilibili.com##a[href*="12235923"]
+live.bilibili.com##a[href*="13576775"]
+live.bilibili.com##a[href*="17961"]
+live.bilibili.com##a[href*="21129632"]
+live.bilibili.com##a[href*="21302477"]
+live.bilibili.com##a[href*="21412734"]
+live.bilibili.com##a[href*="21420932"]
+live.bilibili.com##a[href*="21421141"]
+live.bilibili.com##a[href*="21463219"]
+live.bilibili.com##a[href*="21545232"]
+live.bilibili.com##a[href*="21560536"]
+live.bilibili.com##a[href*="21669084"]
+live.bilibili.com##a[href*="2603963"]
+! live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*=""]
+live.bilibili.com##a[href*="live.bilibili.com/10545?"]
+live.bilibili.com##a[href*="live.bilibili.com/14893?"]
+live.bilibili.com##a[href*="live.bilibili.com/15536?"]
+live.bilibili.com##a[href*="live.bilibili.com/21386893?"]
+live.bilibili.com##a[href*="live.bilibili.com/21402309?"]
+live.bilibili.com##a[href*="live.bilibili.com/21452505?"]
+live.bilibili.com##a[href*="live.bilibili.com/21672023?"]
+live.bilibili.com##a[href*="live.bilibili.com/21696950?"]
+live.bilibili.com##a[href*="live.bilibili.com/21756924?"]
+live.bilibili.com##a[href*="live.bilibili.com/21879412?"]
+live.bilibili.com##a[href*="live.bilibili.com/21919321?"]
+live.bilibili.com##a[href*="live.bilibili.com/22262300?"]
+live.bilibili.com##a[href*="live.bilibili.com/22288644?"]
+live.bilibili.com##a[href*="live.bilibili.com/22333522?"]
+live.bilibili.com##a[href*="live.bilibili.com/22347054?"]
+live.bilibili.com##a[href*="live.bilibili.com/22389319?"]
+live.bilibili.com##a[href*="live.bilibili.com/22603245?"]
+live.bilibili.com##a[href*="live.bilibili.com/22622535?"]
+live.bilibili.com##a[href*="live.bilibili.com/22816111?"]
+live.bilibili.com##a[href*="live.bilibili.com/22824550?"]
+live.bilibili.com##a[href*="live.bilibili.com/22976643?"]
+live.bilibili.com##a[href*="live.bilibili.com/23199319?"]
+live.bilibili.com##a[href*="live.bilibili.com/23652569?"]
+live.bilibili.com##a[href*="live.bilibili.com/23969425?"]
+live.bilibili.com##a[href*="live.bilibili.com/24393?"]
+live.bilibili.com##a[href*="live.bilibili.com/3415150?"]
+live.bilibili.com##a[href*="live.bilibili.com/4316215?"]
+live.bilibili.com##a[href*="live.bilibili.com/5275?"]
+live.bilibili.com##a[href*="live.bilibili.com/56237?"]
+live.bilibili.com##a[href*="live.bilibili.com/6374209?"]
+live.bilibili.com##a[href*="live.bilibili.com/7038458?"]
+live.bilibili.com##a[href*="live.bilibili.com/725364?"]
+live.bilibili.com##a[href*="live.bilibili.com/7688602?"]
+live.bilibili.com##a[href*="live.bilibili.com/80397?"]
+live.bilibili.com##a[href*="live.bilibili.com/870004?"]
+live.bilibili.com##a[href*="live.bilibili.com/876396?"]
+live.bilibili.com##a[href*="live.bilibili.com/938957?"]
+
+! bilibili
+t.bilibili.com##.notice-panel
+t.bilibili.com##.right-panel
+t.bilibili.com##.section-block
+t.bilibili.com##.tag-panel
+
+! zhihu
+zhihu.com##.CreatorEntrance
+zhihu.com##.GlobalSideBar-categoryList
+
+! track
+api.growingio.com
+addthis.com
+
+! other
+||hycdes.com/img/ro-orchestra.png
