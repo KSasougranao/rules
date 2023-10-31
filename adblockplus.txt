@@ -127,7 +127,7 @@ live.bilibili.com##a[href*="live.bilibili.com/21013446?"]
 !! uid: 3461582034045213
 live.bilibili.com##a[href*="live.bilibili.com/26276187?"]
 !! uid: 1795147802
-live.bilibili.com##a[href*="live.bilibili.com/86724?"]
+live.bilibili.com##a[href*="live.bilibili.com/25512501?"]
 !! uid: 1501380958
 live.bilibili.com##a[href*="live.bilibili.com/22746343?"]
 
