@@ -120,6 +120,16 @@ live.bilibili.com##a[href*="live.bilibili.com/23969425?"]
 live.bilibili.com##a[href*="live.bilibili.com/23652569?"]
 !! uid: 2093872604
 live.bilibili.com##a[href*="live.bilibili.com/22976643?"]
+!! uid: 10850238
+live.bilibili.com##a[href*="live.bilibili.com/594461?"]
+!! uid: 387636363
+live.bilibili.com##a[href*="live.bilibili.com/21013446?"]
+!! uid: 3461582034045213
+live.bilibili.com##a[href*="live.bilibili.com/26276187?"]
+!! uid: 1795147802
+live.bilibili.com##a[href*="live.bilibili.com/86724?"]
+!! uid: 1501380958
+live.bilibili.com##a[href*="live.bilibili.com/22746343?"]
 
 ! bilibili
 t.bilibili.com##.notice-panel
@@ -130,10 +140,15 @@ bilibili.com##aside.right
 bilibili.com##div.bili-dyn-publishing
 !! 视频下直播推荐
 bilibili.com###live_recommand_report
+!! 视频右下广告
+bilibili.com###right-bottom-banner
 !! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
 !! 动态下方的广告
 space.bilibili.com##.notice-item
+!! 动态下方的广告
+bilibili.com##.reply-notice
+live.bilibili.com###my-dear-haruna-vm
 
 ! zhihu
 !! 创作者中心
