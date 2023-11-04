@@ -149,15 +149,22 @@ space.bilibili.com##.notice-item
 !! 动态下方的广告
 bilibili.com##.reply-notice
 live.bilibili.com###my-dear-haruna-vm
+!! 视频推荐底部直播推荐
+bilibili.com##.pop-live-small-mode
 
 ! zhihu
 !! 创作者中心
 zhihu.com##.CreatorEntrance
 zhihu.com##.GlobalSideBar-categoryList
 
+! tieba
+tieba.baidu.com##.app_download_box
+tieba.baidu.com##div.topic_list_box
+tieba.baidu.com###celebrity
+
 ! track
-api.growingio.com
-addthis.com
+||api.growingio.com
+||addthis.com
 
 ! other
 ||hycdes.com/img/ro-orchestra.png
