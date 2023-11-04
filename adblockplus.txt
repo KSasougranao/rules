@@ -163,8 +163,8 @@ tieba.baidu.com##div.topic_list_box
 tieba.baidu.com###celebrity
 
 ! track
-||api.growingio.com
-||addthis.com
+api.growingio.com
+addthis.com
 
 ! other
 ||hycdes.com/img/ro-orchestra.png
