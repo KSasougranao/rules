@@ -151,6 +151,8 @@ bilibili.com##.reply-notice
 live.bilibili.com###my-dear-haruna-vm
 !! 视频推荐底部直播推荐
 bilibili.com##.pop-live-small-mode
+!! 直播下方活动推荐
+live.bilibili.com##.flip-view
 
 ! zhihu
 !! 创作者中心
