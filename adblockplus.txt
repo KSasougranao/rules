@@ -167,15 +167,15 @@ api.bilibili.com/*/search/default
 
 ! zhihu
 !! 创作者中心
-zhihu.com##.CreatorEntrance
-zhihu.com##.GlobalSideBar-categoryList
+zhihu.com##div:has(> div.CreatorEntrance)
+zhihu.com##div.GlobalSideBar-category
 !! 问题侧栏
 zhihu.com##div.Question-sideColumn
-www.zhihu.com/api/v4/answers/*/favlists
-www.zhihu.com/api/v4/questions/*/similar-questions
+||www.zhihu.com/api/v4/answers/*/favlists
+||www.zhihu.com/api/v4/questions/*/similar-questions
 !! 主页侧栏
-www.zhihu.com/api/v4/creators/extra_card
-www.zhihu.com/api/v4/moments/recommend_follow_people
+||www.zhihu.com/api/v4/creators/extra_card
+||www.zhihu.com/api/v4/moments/recommend_follow_people
 
 ! tieba
 tieba.baidu.com##.app_download_box
