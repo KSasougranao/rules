@@ -161,8 +161,8 @@ live.bilibili.com##.player-ctnr #live-video
 !! 购物小黄车
 live.bilibili.com###shop-popover-vm
 !! 搜索栏默认值
-||api.bilibili.com/x/web-interface/wbi/search/default$xhr,domain=www.bilibili.com
-||api.bilibili.com//x/web-interface/search/default$xhr,domain=live.bilibili.com
+||api.bilibili.com/x/web-interface/wbi/search/default$xhr,domain=bilibili.com
+||api.bilibili.com//x/web-interface/search/default$xhr,domain=bilibili.com
 
 ! zhihu
 !! 创作者中心
