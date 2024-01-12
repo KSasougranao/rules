@@ -152,7 +152,7 @@ live.bilibili.com###my-dear-haruna-vm
 !! 视频侧栏推荐
 bilibili.com##.video-page-special-card-small
 !! 视频推荐底部直播推荐
-api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList
+||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList
 bilibili.com##.pop-live-small-mode
 !! 直播下方活动推荐
 live.bilibili.com##.flip-view
@@ -163,7 +163,7 @@ live.bilibili.com###shop-popover-vm
 
 ! bilibili api
 !! 搜索栏默认值
-api.bilibili.com/*/search/default
+||api.bilibili.com/*/search/default
 
 ! zhihu
 !! 创作者中心
@@ -183,8 +183,8 @@ tieba.baidu.com##div.topic_list_box
 tieba.baidu.com###celebrity
 
 ! track
-api.growingio.com
-addthis.com
+api.growingio.com^
+addthis.com^
 
 ! other
 ||hycdes.com/img/ro-orchestra.png
