@@ -1,0 +1,24 @@
+[SwitchyOmega Conditions]
+; Require: SwitchyOmega >= 2.3.2
+; Date: 2024/1/24
+; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
+
+192.168.*
+223.5.5.5
+www.recaptcha.net
+fonts.gstatic.com
+detectportal.firefox.com
+.hls.ttvnw.net
+.chat.bilibili.com
+.mcdn.bilivideo.cn
+.bilivideo.com
+.hdslb.com
+.flv.huya.com
+a.msstatic.com
+.edgesrv.com
+.douyucdn.cn
+.douyucdn2.cn
+.douyinvod.com
+.h2.smtcdns.net
+.v2l.szbdyd.com
+.node.ppio.cloud
