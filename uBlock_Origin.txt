@@ -33,6 +33,8 @@ live.bilibili.com##.flip-view
 live.bilibili.com##.player-ctnr #live-video
 ! 购物小黄车
 live.bilibili.com###shop-popover-vm
+! track
+||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
 ! https://t.bilibili.com/
 ! 主页热门话题
@@ -70,6 +72,8 @@ tieba.baidu.com###plat_recom_carousel
 tieba.baidu.com##.card_banner
 ! 选词搜索
 tieba.baidu.com###selectsearch-icon
+! track
+||gsp0.baidu.com^$image,domain=tieba.baidu.com
 
 ! https://www.jianshu.com
 ||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,domain=www.jianshu.com
@@ -79,6 +83,13 @@ www.jianshu.com##._13lIbp
 www.jianshu.com##aside._2OwGUo > div
 ! 底部推广
 www.jianshu.com##section.ouvJEz:nth-of-type(2)
+
+! https://www.douyin.com
+! 登录弹窗
+www.douyin.com##body:style(overflow: auto !important;)
+www.douyin.com##.screen-mask
+! 跟踪参数
+||www.iesdouyin.com/share/video/$document,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/,domain=www.iesdouyin.com
 
 ! track
 ||api.growingio.com^
