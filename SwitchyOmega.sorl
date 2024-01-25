@@ -1,6 +1,6 @@
 [SwitchyOmega Conditions]
 ; Require: SwitchyOmega >= 2.3.2
-; Date: 2024/1/25
+; Date: 2024/1/24
 ; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
 
 192.168.*
@@ -9,41 +9,12 @@ www.recaptcha.net
 fonts.gstatic.com
 detectportal.firefox.com
 **.hls.ttvnw.net
-www.bilibili.com
-t.bilibili.com
-space.bilibili.com
-live.bilibili.com
-search.bilibili.com
-passport.bilibili.com
-interface.bilibili.com
-api.bilibili.com
-api.live.bilibili.com
-api.vc.bilibili.com
-album.biliimg.com
 **.chat.bilibili.com
 **.mcdn.bilivideo.cn
 **.bilivideo.com
 **.hdslb.com
-live-trace.bilibili.com
-www.zhihu.com
-zhuanlan.zhihu.com
-api.zhihu.com
-mqtt-web.zhihu.com
-static.zhihu.com
 **.zhimg.com
-m.weibo.cn
 **.sinaimg.cn
-.gtimg.cn
-www.baidu.com
-tieba.baidu.com
-passport.baidu.com
-.cdn.bcebos.com
-.bdstatic.com
-tiebapic.baidu.com
-bbs.nga.cn
-img.nga.178.com
-www.huya.com
-wsapi.huya.com
 **.flv.huya.com
 a.msstatic.com
 **.edgesrv.com
@@ -53,4 +24,3 @@ a.msstatic.com
 **.h2.smtcdns.net
 **.v2l.szbdyd.com
 **.node.ppio.cloud
-**.cloudvdn.com
