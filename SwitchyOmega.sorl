@@ -1,6 +1,6 @@
 [SwitchyOmega Conditions]
 ; Require: SwitchyOmega >= 2.3.2
-; Date: 2024/1/24
+; Date: 2024/1/25
 ; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
 
 192.168.*
@@ -15,6 +15,7 @@ detectportal.firefox.com
 **.hdslb.com
 **.zhimg.com
 **.sinaimg.cn
+img.nga.178.com
 **.flv.huya.com
 a.msstatic.com
 **.edgesrv.com
@@ -24,3 +25,4 @@ a.msstatic.com
 **.h2.smtcdns.net
 **.v2l.szbdyd.com
 **.node.ppio.cloud
+**.cloudvdn.com
