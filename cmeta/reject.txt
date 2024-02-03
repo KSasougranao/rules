@@ -31,3 +31,17 @@ payload:
 # pica
 - +.bidobido.xyz
 - +.diwodiwo.xyz
+# [mobile]
+- +.gepush.com
+- +.getui.com
+- +.getui.net
+- +.resolver.msg.xiaomi.net
+- +.app.chat.xiaomi.net
+- +.crash.xiaohongshu.com
+- +.referee.xiaohongshu.com
+- +.volceapplog.com
+- +.fp-it.fengkongcloud.com
+- +.dns.weixin.qq.com.cn
+- +.ylog.huya.com
+- +.xelements.cn
+- +.ef-dongfeng.tanx.com
