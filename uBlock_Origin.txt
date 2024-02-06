@@ -74,7 +74,7 @@ tieba.baidu.com##.card_banner
 ! 选词搜索
 tieba.baidu.com###selectsearch-icon
 ! track
-||gsp0.baidu.com^$image,domain=tieba.baidu.com
+||gsp0.baidu.com^$domain=tieba.baidu.com
 
 ! https://www.jianshu.com
 ||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,domain=www.jianshu.com
