@@ -42,6 +42,7 @@ payload:
 - +.fclick.baidu.com
 - +.feed.baidu.com
 - +.hpd.baidu.com
+- +.live-trace.bilibili.com
 - +.miniapp.bilibili.com
 - +.fp-it.fengkongcloud.com
 - +.gdtimg.com
@@ -56,6 +57,7 @@ payload:
 - +.qappcenterv6.3g.qq.com
 - +.tools.3g.qq.com
 - +.qqdata.ab.qq.com
+- +.d3g.qq.com
 - +.tbsone.imtt.qq.com
 - +.mdt.qq.com
 - +.rdelivery.qq.com
