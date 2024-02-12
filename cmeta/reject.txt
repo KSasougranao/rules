@@ -1,8 +1,6 @@
 payload:
 - +.knet.cn
 - +.tagtic.cn
-# baidu
-- +.gsp0.baidu.com
 # bilibili
 - +.cm.bilibili.com
 - +.data.bilibili.com
@@ -15,6 +13,8 @@ payload:
 - +.mtalk.google.com
 # huya
 - +.p2p.huya.com
+- +.wsapi.huya.com
+- +.livewebbs2.msstatic.com
 # nga
 - +.huuua.com
 # pixiv
