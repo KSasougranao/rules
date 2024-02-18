@@ -6,14 +6,18 @@ payload:
 - api.bilibili.com
 - api.live.bilibili.com
 - api.vc.bilibili.com
+- app.bilibili.com
 - .chat.bilibili.com
 - .mcdn.bilivideo.cn
 - .bilivideo.com
 - .hdslb.com
+- album.biliimg.com
 - .zhimg.com
 - .sinaimg.cn
 - f.video.weibocdn.com
 - game.gtimg.cn
+- bsy.yyb.tcdnos.com
+- .file.myqcloud.com
 - tiebapic.baidu.com
 - img.nga.178.com
 - img4.nga.178.com
@@ -31,3 +35,4 @@ payload:
 - .node.ppio.cloud
 - .bytefcdnrd.com
 - .cloudvdn.com
+- .qnqcdn.net
