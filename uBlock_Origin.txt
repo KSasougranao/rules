@@ -3,6 +3,15 @@
 ! Expires: 7 days
 ! Homepage: https://gitee.com/KSasougranao/UNK
 
+! https://www.pixiv.net
+! 右侧广告占位
+www.pixiv.net##section:has(> div > iframe[name="responsive"])
+www.pixiv.net##div:has(> div > iframe[name="rectangle"])
+! 收藏后广告
+www.pixiv.net##div:has(> iframe[name="500x500"])
+! 底部广告
+www.pixiv.net##div:has(> iframe[name="expandedFooter"])
+
 ! https://www.bilibili.com
 ! 自动展开动态
 bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
@@ -10,6 +19,7 @@ bilibili.com##.bili-rich-text__content:remove-class(/folded|line--6/)
 bilibili.com##.bili-rich-text__action
 ! 展开视频列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
+www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
 ! 视频下直播推荐
 www.bilibili.com###live_recommand_report
 ! 视频右下广告
@@ -110,7 +120,7 @@ tieba.baidu.com##.card_banner
 ! 选词搜索
 tieba.baidu.com###selectsearch-icon
 ! track
-||gsp0.baidu.com/*/track.gif$image,1p
+||gsp0.baidu.com/*/track.gif^$image,1p
 ! 自动展开楼中楼
 tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
 tieba.baidu.com##.lzl_more
@@ -134,6 +144,9 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ||diy-assets.msstatic.com^$image,domain=www.huya.com
 ||p2p.huya.com^$1p
 ||wsapi.huya.com^$1p
+||electric-shop.yaoguo.com^$domain=huya.com
+||ext.huya.com^$image,1p
+||zt.msstatic.com^$image,domain=huya.com
 
 ! https://www.douyin.com
 ! 登录弹窗
