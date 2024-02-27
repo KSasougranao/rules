@@ -95,6 +95,10 @@ www.zhihu.com##div.GlobalSideBar-category
 www.zhihu.com##.Reward
 ! 回答作者
 www.zhihu.com##.AnswerAuthor.Card
+! 邀请回答
+||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
+||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
+||www.zhihu.com/api/v4/questions/*/inviters$xhr,1p
 
 ! https://weibo.com
 ! 推广
@@ -127,6 +131,10 @@ tieba.baidu.com##.lzl_more
 tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ! 本吧会员
 tieba.baidu.com##.celebrity
+! 直播贴
+||tieba.baidu.com/live/getLiveTopicInfo$xhr,domain=tieba.baidu.com
+!
+||hm.baidu.com^$1p
 
 ! https://www.jianshu.com
 ||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,domain=www.jianshu.com
@@ -142,8 +150,10 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ||livewebbs2.msstatic.com^$image,domain=www.huya.com
 ||cdnws.api.huya.com^$xhr,1p
 ||diy-assets.msstatic.com^$image,domain=www.huya.com
-||p2p.huya.com^$1p
+||va.huya.com^$1p
 ||wsapi.huya.com^$1p
+||statwup.huya.com^$1p
+||metric.huya.com^$1p
 ||electric-shop.yaoguo.com^$domain=huya.com
 ||ext.huya.com^$image,1p
 ||zt.msstatic.com^$image,domain=huya.com
