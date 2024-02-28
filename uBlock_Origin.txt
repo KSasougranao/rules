@@ -99,6 +99,9 @@ www.zhihu.com##.AnswerAuthor.Card
 ||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
 ||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
 ||www.zhihu.com/api/v4/questions/*/inviters$xhr,1p
+! ??
+||mqtt-web.zhihu.com^$1p
+||apm.zhihu.com^$1p
 
 ! https://weibo.com
 ! 推广
@@ -147,15 +150,17 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 
 ! 2024-02-11 https://www.huya.com
 ||huyaimg.msstatic.com/cdnimage/*$image,domain=www.huya.com
-||livewebbs2.msstatic.com^$image,domain=www.huya.com
-||cdnws.api.huya.com^$xhr,1p
+||livewebbs2.msstatic.com^$domain=www.huya.com
 ||diy-assets.msstatic.com^$image,domain=www.huya.com
+||cdnws.api.huya.com^$xhr,1p
 ||va.huya.com^$1p
 ||wsapi.huya.com^$1p
 ||statwup.huya.com^$1p
 ||metric.huya.com^$1p
+||df.huya.com^$1p
+||udblgn.huya.com^$1p
+||ext.huya.com^$1p
 ||electric-shop.yaoguo.com^$domain=huya.com
-||ext.huya.com^$image,1p
 ||zt.msstatic.com^$image,domain=huya.com
 
 ! https://www.douyin.com
