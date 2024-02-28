@@ -12,7 +12,7 @@ payload:
 # google
 - +.mtalk.google.com
 # huya
-- +.p2p.huya.com
+- +.va.huya.com
 - +.wsapi.huya.com
 - +.livewebbs2.msstatic.com
 # nga
@@ -31,6 +31,10 @@ payload:
 # pica
 - +.bidobido.xyz
 - +.diwodiwo.xyz
+# [mobile2]
+- +.master.wap.dphub.sandai.net
+- +.idx.m.hub.sandai.net
+- +.resolver.msg.xiaomi.net
 # [mobile]
 - +.dns.weixin.qq.com.cn
 - +.tianshu.gtimg.cn
@@ -44,12 +48,14 @@ payload:
 - +.hpd.baidu.com
 - +.live-trace.bilibili.com
 - +.miniapp.bilibili.com
+- +.dutils.com
 - +.fp-it.fengkongcloud.com
 - +.gdtimg.com
 - +.gepush.com
 - +.getui.com
 - +.clientservices.googleapis.com
 - +.gvt1-cn.com
+- +.e-ad-monitor.huya.com
 - +.ylog.huya.com
 - +.gia.jd.com
 - +.im-x.jd.com
@@ -60,6 +66,7 @@ payload:
 - +.security.browser.miui.com
 - +.xlmc.sec.miui.com
 - +.ccc.sys.miui.com
+- +.mob.com
 - +.masdkv6.3g.qq.com
 - +.qappcenterv6.3g.qq.com
 - +.tools.3g.qq.com
@@ -77,11 +84,11 @@ payload:
 - +.crash.xiaohongshu.com
 - +.referee.xiaohongshu.com
 - +.api.installer.xiaomi.com
+- +.wtradv.market.xiaomi.com
 - +.getui.net
-- +.master.wap.dphub.sandai.net
+- +.data-sdk-uuid-log.d.meituan.net
+- +.dreport.meituan.net
 - +.etl-xlmc-ssl.sandai.net
-- +.idx.m.hub.sandai.net
 - +.apd-vodp2plogin.teg.tencent-cloud.net
 - +.app.chat.xiaomi.net
-- +.resolver.msg.xiaomi.net
 - +.aliapp.org
