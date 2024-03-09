@@ -6,6 +6,9 @@ payload:
 - ublockorigin.pages.dev
 - +.ucup.ac
 - +.geeksforgeeks.org
+# spotify
+- +.akamaized.net
+- +.scdn.co
 # firefox
 - detectportal.firefox.com
 - +.services.mozilla.com
@@ -14,7 +17,7 @@ payload:
 - www.recaptcha.com
 # steam
 - +.steamcontent.com
-# twitch
+# twitter
 - static-cdn.jtvnw.net
 - +.hls.ttvnw.net
 - +.abs.hls.ttvnw.net
