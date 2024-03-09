@@ -158,7 +158,6 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ||statwup.huya.com^$1p
 ||metric.huya.com^$1p
 ||df.huya.com^$1p
-||udblgn.huya.com^$1p
 ||ext.huya.com^$1p
 ||electric-shop.yaoguo.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
