@@ -11,6 +11,18 @@ www.pixiv.net##div:has(> div > iframe[name="rectangle"])
 www.pixiv.net##div:has(> iframe[name="500x500"])
 ! 底部广告
 www.pixiv.net##div:has(> iframe[name="expandedFooter"])
+! track
+||www.pixiv.net/OneSignalSDKWorker.js$script,domain=www.pixiv.net
+||errortrace.dev^$xhr,domain=www.pixiv.net
+||cdn.onesignal.com/sdks$script,domain=www.pixiv.net
+||www.googletagmanager.com^$script,domain=www.pixiv.net
+@@||googletagmanager.com/gtag/js$script,redirect-rule,domain=www.pixiv.net
+@@||googletagmanager.com/gtm.js$script,redirect-rule,domain=www.pixiv.net
+! 其他请求
+||api.booth.pm/pixiv/shops/show.json$xhr,domain=www.pixiv.net
+||imp.pixiv.net/premium_lp$subdocument,domain=www.pixiv.net
+||www.pixiv.net/rpc/notify_count.php$xhr,domain=www.pixiv.net
+||www.pixiv.net/ajax/message/can_send/*$xhr,1p
 
 ! https://www.bilibili.com
 ! 自动展开动态
@@ -37,7 +49,7 @@ www.bilibili.com##.pop-live-small-mode
 ||www.bilibili.com/read/$document,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/,domain=www.bilibili.com
 ||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter)=/,domain=www.bilibili.com
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
-https://live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from)=/
+||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/
 
 ! https://live.bilibili.com
 live.bilibili.com##div > a:is([href*="/5275?"], [href*="/15536?"], [href*="/876396?"], [href*="/10545?"], [href*="/24393?"], [href*="/22333522?"], [href*="/14893?"], [href*="/870004?"], [href*="/92450?"], [href*="/17961?"], [href*="/56237?"], [href*="/3415150?"], [href*="/938957?"], [href*="/80397?"], [href*="/7038458?"], [href*="/725364?"], [href*="/22262300?"], [href*="/6374209?"], [href*="/4726132?"], [href*="/4316215?"], [href*="/2603963?"], [href*="/21756924?"], [href*="/23199319?"], [href*="/7688602?"], [href*="/11588230?"], [href*="/12235923?"], [href*="/13576775?"], [href*="/21129632?"], [href*="/21713184?"], [href*="/21402309?"], [href*="/21302477?"], [href*="/21420932?"], [href*="/21421141?"], [href*="/21412734?"], [href*="/21452505?"], [href*="/21463219?"], [href*="/21545232?"], [href*="/21669084?"], [href*="/21672023?"], [href*="/21696950?"], [href*="/21919321?"], [href*="/21879412?"], [href*="/22389319?"], [href*="/22288644?"], [href*="/22347054?"], [href*="/22470208?"], [href*="/22622535?"], [href*="/22924075?"], [href*="/25290861?"], [href*="/22603245?"], [href*="/22816111?"], [href*="/23771189?"], [href*="/23770996?"], [href*="/22824550?"], [href*="/23969425?"], [href*="/23652569?"], [href*="/22976643?"], [href*="/594461?"], [href*="/21013446?"], [href*="/26276187?"], [href*="/25512501?"], [href*="/22746343?"], [href*="/22696653?"])
@@ -48,6 +60,8 @@ live.bilibili.com##.banner-ctn
 live.bilibili.com###my-dear-haruna-vm
 ! 直播下方活动推荐
 live.bilibili.com##.flip-view
+! 直播下方直播间推荐
+live.bilibili.com##.room-info-ctnr > .card-box
 ! 直播首页直播间
 live.bilibili.com##.player-ctnr #live-video
 ! 购物小黄车
@@ -58,6 +72,8 @@ live.bilibili.com##div.danmaku-item.chat-item.top3-notice
 live.bilibili.com##div.danmaku-item.chat-item .rank-icon
 ! 头衔
 live.bilibili.com##div.danmaku-item.chat-item .title-label
+! 幻星派对
+live.bilibili.com##div#game-id
 ! track
 ||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
@@ -132,6 +148,9 @@ tieba.baidu.com###selectsearch-icon
 tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
 tieba.baidu.com##.lzl_more
 tieba.baidu.com##.lzl_pager:style(display: block !important;)
+! 自动展开图片
+tieba.baidu.com##.replace_div:has(img):style(height: auto !important;)
+tieba.baidu.com##.replace_tip
 ! 本吧会员
 tieba.baidu.com##.celebrity
 ! 直播贴
@@ -168,6 +187,24 @@ www.douyin.com##body:style(overflow: auto !important;)
 www.douyin.com##.screen-mask
 ! 跟踪参数
 ||www.iesdouyin.com/share/video/$document,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/,domain=www.iesdouyin.com
+
+! 2024-03-12 https://blog.csdn.net
+! 左侧广告
+blog.csdn.net###asideWriteGuide
+! 左侧评价
+blog.csdn.net###asideNewNps
+! 博客成就
+blog.csdn.net##.aside-box-footer
+! 博客数据
+blog.csdn.net##div.item-tiling.d-flex.data-info
+! 右侧工具栏
+blog.csdn.net##.csdn-side-toolbar
+! 底部浮动栏
+blog.csdn.net##.left-toolbox
+
+! 2024-03-05 https://ascii2d.net
+||ascii2d.net/images/*$image,1p
+ascii2d.net##div.p-t-1
 
 ! track
 ||api.growingio.com^
