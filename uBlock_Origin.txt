@@ -25,6 +25,13 @@ www.pixiv.net##div:has(> iframe[name="expandedFooter"])
 ||www.pixiv.net/ajax/message/can_send/*$xhr,1p
 
 ! https://www.bilibili.com
+! 首页广告
+www.bilibili.com##.is-rcmd.bili-video-card:has(.bili-video-card__info--ad)
+www.bilibili.com##.feed-card:has(.is-rcmd.bili-video-card .bili-video-card__info--ad)
+! 首页直播间推荐
+www.bilibili.com##.is-rcmd.bili-live-card
+! 首页频道推荐
+www.bilibili.com##.floor-single-card
 ! 自动展开动态
 bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
 bilibili.com##.bili-rich-text__content:remove-class(/folded|line--6/)
@@ -32,6 +39,10 @@ bilibili.com##.bili-rich-text__action
 ! 展开视频列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
 www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
+! 视频弹窗
+www.bilibili.com##.bili-vote
+www.bilibili.com##.bili-score
+www.bilibili.com##.bili-guide.bili-guide-all.bili-follow-to-electric
 ! 视频下直播推荐
 www.bilibili.com###live_recommand_report
 ! 视频右下广告
@@ -74,6 +85,11 @@ live.bilibili.com##div.danmaku-item.chat-item .rank-icon
 live.bilibili.com##div.danmaku-item.chat-item .title-label
 ! 幻星派对
 live.bilibili.com##div#game-id
+! 导航栏
+live.bilibili.com##.帮我玩
+live.bilibili.com##.互动玩法
+live.bilibili.com##.购物
+live.bilibili.com##.聊天室
 ! track
 ||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
@@ -86,6 +102,8 @@ t.bilibili.com##div.bili-dyn-publishing
 ! 动态下方的广告
 space.bilibili.com##.notice-item
 bilibili.com##.reply-notice
+! 购物动态
+t.bilibili.com##div.bili-dyn-list__item:has(.bili-dyn-card-goods__mark span:has-text(UP主的推荐 · 来自淘宝))
 ! 搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,domain=bilibili.com
 ||api.bilibili.com//x/web-interface/search/default$xhr,domain=bilibili.com
@@ -120,6 +138,8 @@ www.zhihu.com##.AnswerAuthor.Card
 ||apm.zhihu.com^$1p
 
 ! https://weibo.com
+! 顶部游戏入口
+weibo.com##.Links_box_17T3k.woo-box-alignCenter.woo-box-flex
 ! 推广
 weibo.com##div:has(> .wbpro-scroller-item .head-info_tag_3iMJw.wbpro-tag-c2.wbpro-tag)
 ! 底部版权信息
@@ -155,6 +175,9 @@ tieba.baidu.com##.replace_tip
 tieba.baidu.com##.celebrity
 ! 直播贴
 ||tieba.baidu.com/live/getLiveTopicInfo$xhr,domain=tieba.baidu.com
+! 身份图标
+tieba.baidu.com##.d_icons
+tieba.baidu.com##.frs_bright_icons.icon_wrap_theme1.icon_wrap
 !
 ||hm.baidu.com^$1p
 
@@ -205,6 +228,9 @@ blog.csdn.net##.left-toolbox
 ! 2024-03-05 https://ascii2d.net
 ||ascii2d.net/images/*$image,1p
 ascii2d.net##div.p-t-1
+
+! 2024-03-17 https://bbs.hupu.com
+bbs.hupu.com##div:has(> #game-center-entrance-container)
 
 ! track
 ||api.growingio.com^
