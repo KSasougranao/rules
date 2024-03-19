@@ -42,7 +42,7 @@ www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-heig
 ! 视频弹窗
 www.bilibili.com##.bili-vote
 www.bilibili.com##.bili-score
-www.bilibili.com##.bili-guide.bili-guide-all.bili-follow-to-electric
+www.bilibili.com##.bili-guide.bili-guide-all
 ! 视频下直播推荐
 www.bilibili.com###live_recommand_report
 ! 视频右下广告
