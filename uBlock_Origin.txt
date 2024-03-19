@@ -39,6 +39,8 @@ bilibili.com##.bili-rich-text__action
 ! 展开视频列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
 www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
+! 增大视频列表标题宽度
+www.bilibili.com##.video-episode-card__info-title:style(width: auto !important;)
 ! 视频弹窗
 www.bilibili.com##.bili-vote
 www.bilibili.com##.bili-score
@@ -66,6 +68,10 @@ www.bilibili.com##.pop-live-small-mode
 live.bilibili.com##div > a:is([href*="/5275?"], [href*="/15536?"], [href*="/876396?"], [href*="/10545?"], [href*="/24393?"], [href*="/22333522?"], [href*="/14893?"], [href*="/870004?"], [href*="/92450?"], [href*="/17961?"], [href*="/56237?"], [href*="/3415150?"], [href*="/938957?"], [href*="/80397?"], [href*="/7038458?"], [href*="/725364?"], [href*="/22262300?"], [href*="/6374209?"], [href*="/4726132?"], [href*="/4316215?"], [href*="/2603963?"], [href*="/21756924?"], [href*="/23199319?"], [href*="/7688602?"], [href*="/11588230?"], [href*="/12235923?"], [href*="/13576775?"], [href*="/21129632?"], [href*="/21713184?"], [href*="/21402309?"], [href*="/21302477?"], [href*="/21420932?"], [href*="/21421141?"], [href*="/21412734?"], [href*="/21452505?"], [href*="/21463219?"], [href*="/21545232?"], [href*="/21669084?"], [href*="/21672023?"], [href*="/21696950?"], [href*="/21919321?"], [href*="/21879412?"], [href*="/22389319?"], [href*="/22288644?"], [href*="/22347054?"], [href*="/22470208?"], [href*="/22622535?"], [href*="/22924075?"], [href*="/25290861?"], [href*="/22603245?"], [href*="/22816111?"], [href*="/23771189?"], [href*="/23770996?"], [href*="/22824550?"], [href*="/23969425?"], [href*="/23652569?"], [href*="/22976643?"], [href*="/594461?"], [href*="/21013446?"], [href*="/26276187?"], [href*="/25512501?"], [href*="/22746343?"], [href*="/22696653?"])
 ! 高亮本人弹幕
 live.bilibili.com##div.chat-item.danmaku-item:has(span.my-self):style(border-radius: 10px !important; background-color: rgba(32, 160, 255, 0.1) !important; border: 2px solid rgba(32, 160, 255, 0.5) !important;)
+! 礼物栏
+live.bilibili.com###gift-control-vm
+! 右上角活动
+live.bilibili.com##.lower-row > .right-ctnr
 ! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
 live.bilibili.com###my-dear-haruna-vm
@@ -86,10 +92,8 @@ live.bilibili.com##div.danmaku-item.chat-item .title-label
 ! 幻星派对
 live.bilibili.com##div#game-id
 ! 导航栏
-live.bilibili.com##.帮我玩
-live.bilibili.com##.互动玩法
-live.bilibili.com##.购物
-live.bilibili.com##.聊天室
+live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|生活|帮我玩|互动玩法|购物/))
+live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
 ! track
 ||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
@@ -138,6 +142,11 @@ www.zhihu.com##.AnswerAuthor.Card
 ||apm.zhihu.com^$1p
 
 ! https://weibo.com
+! 热门榜单美化
+weibo.com##div.wbpro-side-panel .icon
+weibo.com##div.wbpro-side-panel .clb.f13
+weibo.com##.woo-box-alignCenter.woo-box-flex.con:style(padding-right: 0 !important;)
+weibo.com##div.wbpro-side-panel .wbpro-textcut:style(margin-right: 0 !important;)
 ! 顶部游戏入口
 weibo.com##.Links_box_17T3k.woo-box-alignCenter.woo-box-flex
 ! 推广
@@ -231,6 +240,9 @@ ascii2d.net##div.p-t-1
 
 ! 2024-03-17 https://bbs.hupu.com
 bbs.hupu.com##div:has(> #game-center-entrance-container)
+
+! 2024-03-18 https://bbs.nga.cn
+bbs.nga.cn##.headline
 
 ! track
 ||api.growingio.com^
