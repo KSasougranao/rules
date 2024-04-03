@@ -40,7 +40,6 @@ payload:
 - www.huya.com
 - cdnws.api.huya.com
 - +.cdn.huya.com
-- +.p2p.huya.com
 - +.flv.huya.com
 - tx-vod.cdn.huya.com
 - a.msstatic.com

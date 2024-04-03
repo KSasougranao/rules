@@ -17,7 +17,7 @@ payload:
 - www.recaptcha.com
 # steam
 - +.steamcontent.com
-# twitter
+# twitch
 - static-cdn.jtvnw.net
 - +.hls.ttvnw.net
 - +.abs.hls.ttvnw.net

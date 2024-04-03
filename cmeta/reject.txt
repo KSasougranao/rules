@@ -15,6 +15,7 @@ payload:
 - +.va.huya.com
 - +.wsapi.huya.com
 - +.livewebbs2.msstatic.com
+- +.p2p.huya.com
 # nga
 - +.huuua.com
 # pixiv
