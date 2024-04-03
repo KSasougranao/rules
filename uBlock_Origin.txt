@@ -36,15 +36,17 @@ www.bilibili.com##.floor-single-card
 bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
 bilibili.com##.bili-rich-text__content:remove-class(/folded|line--6/)
 bilibili.com##.bili-rich-text__action
+! 浮动评论栏
+t.bilibili.com##.fixed-reply-box
 ! 展开视频列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
 www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
 ! 增大视频列表标题宽度
 www.bilibili.com##.video-episode-card__info-title:style(width: auto !important;)
 ! 视频弹窗
-www.bilibili.com##.bili-vote
-www.bilibili.com##.bili-score
-www.bilibili.com##.bili-guide.bili-guide-all
+www.bilibili.com##.bpx-player-cmd-dm-inside > :is(.bili-guide, .bili-vote, .bili-score)
+! 视频弹窗-推荐
+www.bilibili.com##.bili-cmd-shrink
 ! 视频下直播推荐
 www.bilibili.com###live_recommand_report
 ! 视频右下广告
@@ -63,6 +65,7 @@ www.bilibili.com##.pop-live-small-mode
 ||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter)=/,domain=www.bilibili.com
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
 ||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/
+||space.bilibili.com/$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
 
 ! https://live.bilibili.com
 live.bilibili.com##div > a:is([href*="/5275?"], [href*="/15536?"], [href*="/876396?"], [href*="/10545?"], [href*="/24393?"], [href*="/22333522?"], [href*="/14893?"], [href*="/870004?"], [href*="/92450?"], [href*="/17961?"], [href*="/56237?"], [href*="/3415150?"], [href*="/938957?"], [href*="/80397?"], [href*="/7038458?"], [href*="/725364?"], [href*="/22262300?"], [href*="/6374209?"], [href*="/4726132?"], [href*="/4316215?"], [href*="/2603963?"], [href*="/21756924?"], [href*="/23199319?"], [href*="/7688602?"], [href*="/11588230?"], [href*="/12235923?"], [href*="/13576775?"], [href*="/21129632?"], [href*="/21713184?"], [href*="/21402309?"], [href*="/21302477?"], [href*="/21420932?"], [href*="/21421141?"], [href*="/21412734?"], [href*="/21452505?"], [href*="/21463219?"], [href*="/21545232?"], [href*="/21669084?"], [href*="/21672023?"], [href*="/21696950?"], [href*="/21919321?"], [href*="/21879412?"], [href*="/22389319?"], [href*="/22288644?"], [href*="/22347054?"], [href*="/22470208?"], [href*="/22622535?"], [href*="/22924075?"], [href*="/25290861?"], [href*="/22603245?"], [href*="/22816111?"], [href*="/23771189?"], [href*="/23770996?"], [href*="/22824550?"], [href*="/23969425?"], [href*="/23652569?"], [href*="/22976643?"], [href*="/594461?"], [href*="/21013446?"], [href*="/26276187?"], [href*="/25512501?"], [href*="/22746343?"], [href*="/22696653?"])
@@ -153,10 +156,14 @@ weibo.com##.Links_box_17T3k.woo-box-alignCenter.woo-box-flex
 weibo.com##div:has(> .wbpro-scroller-item .head-info_tag_3iMJw.wbpro-tag-c2.wbpro-tag)
 ! 底部版权信息
 weibo.com##.wbpro-side-copy
+||weibo.com/ajax/common/getCopyright$xhr,1p
 ! 赞赏
 weibo.com##.Reward_box_27GVq.wrap
 ! 创作者中心
 weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
+||weibo.com/ajax/side/cards/sideBusiness$xhr,1p
+! track
+||weibo.com/ajax/log$xhr,1p
 
 ! https://tieba.baidu.com
 tieba.baidu.com##.app_download_box
@@ -206,6 +213,7 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ||cdnws.api.huya.com^$xhr,1p
 ||va.huya.com^$1p
 ||wsapi.huya.com^$1p
+||p2p.huya.com^$1p
 ||statwup.huya.com^$1p
 ||metric.huya.com^$1p
 ||df.huya.com^$1p
