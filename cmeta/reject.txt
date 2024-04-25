@@ -101,6 +101,7 @@ payload:
 - +.tanx.com
 - +.eco.taobao.com
 - +.wcp.taobao.com
+- +.ugdtimg.com
 - +.umeng.com
 - +.volceapplog.com
 - +.crash.xiaohongshu.com
