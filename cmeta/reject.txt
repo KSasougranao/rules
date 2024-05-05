@@ -43,6 +43,7 @@ payload:
 - +.ifs.tanx.com
 - +.kgb-ifs.tanx.com
 - +.lf1-cdn-tos.bytegoofy.com
+- +.myzhiniu.com
 # [mobile]
 - +.dns.weixin.qq.com.cn
 - +.tianshu.gtimg.cn
@@ -62,7 +63,9 @@ payload:
 - +.feed-image.baidu.com
 - +.hmma.baidu.com
 - +.hpd.baidu.com
+- +.miao.baidu.com
 - +.nadvideo2.baidu.com
+- +.pimlog.baidu.com
 - +.sofire.baidu.com
 - +.tcbox.baidu.com
 - +.tuisong.baidu.com
@@ -83,6 +86,7 @@ payload:
 - +.blackhole.m.jd.com
 - +.mars.jd.com
 - +.policy.jd.com
+- +.api.kingdata.ksyun.com
 - +.security.browser.miui.com
 - +.xlmc.sec.miui.com
 - +.ccc.sys.miui.com
@@ -98,6 +102,7 @@ payload:
 - +.mdt.qq.com
 - +.rdelivery.qq.com
 - +.wspeed.qq.com
+- +.wxs.qq.com
 - +.tanx.com
 - +.eco.taobao.com
 - +.wcp.taobao.com

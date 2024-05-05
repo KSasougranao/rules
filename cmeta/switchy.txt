@@ -32,8 +32,10 @@ payload:
 - +.file.myqcloud.com
 - passport.baidu.com
 - wappass.baidu.com
+- gsp0.baidu.com
 - www.baidu.com
 - tieba.baidu.com
+- tb.himg.baidu.com
 - tiebapic.baidu.com
 - tiebac.baidu.com
 - bbs.nga.cn
