@@ -101,6 +101,14 @@ live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮�
 ||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
 ! https://t.bilibili.com/
+! 顶部导航
+bilibili.com##ul.left-entry > li.v-popover-wrap:has(> a > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
+bilibili.com##ul.right-entry :is(div, li):has(span:has-text(/^(大会员)$/))
+! 动态页宽度
+t.bilibili.com##aside.left:style(min-width: 264px !important;)
+t.bilibili.com##main:style(min-width: 724px !important;)
+! 关注动态水平滚动条
+t.bilibili.com##.bili-dyn-up-list__window:style(overflow-x: hidden !important;)
 ! 主页热门话题
 t.bilibili.com##aside.right
 ||app.bilibili.com/x/topic/web/dynamic/rcmd$xhr,domain=t.bilibili.com
@@ -110,7 +118,9 @@ t.bilibili.com##div.bili-dyn-publishing
 space.bilibili.com##.notice-item
 bilibili.com##.reply-notice
 ! 购物动态
-t.bilibili.com##div.bili-dyn-list__item:has(.bili-dyn-card-goods__mark span:has-text(UP主的推荐 · 来自淘宝))
+t.bilibili.com##div.bili-dyn-list__item:has(.bili-dyn-card-goods__mark span:has-text(/UP主的推荐 · 来自(淘宝|京东)/))
+! 搜索栏趋势
+t.bilibili.com##.search-panel .trending
 ! 搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,domain=bilibili.com
 ||api.bilibili.com//x/web-interface/search/default$xhr,domain=bilibili.com
@@ -218,6 +228,7 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ||metric.huya.com^$1p
 ||df.huya.com^$1p
 ||ext.huya.com^$1p
+||ylog.huya.com^$1p
 ||electric-shop.yaoguo.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
 
