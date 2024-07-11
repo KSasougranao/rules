@@ -62,7 +62,7 @@ www.bilibili.com##.pop-live-small-mode
 ||api.bilibili.com/x/web-show/wbi/res/locs$xhr,1p
 ! 跟踪参数
 ||www.bilibili.com/read/$document,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/,domain=www.bilibili.com
-||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter)=/,domain=www.bilibili.com
+||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/,domain=www.bilibili.com
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
 ||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/
 ||space.bilibili.com/$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
@@ -262,6 +262,12 @@ www.huya.com##em.tag-recommend
 ! 直播列表蓝光标志
 www.huya.com##em.tag-blue
 
+! 2024年7月11日 https://live.kuaishou.com
+||log-sdk.ksapisrv.com$important
+||static.yximgs.com/live/game/screenshot$image
+||yximgs.com$image
+||gifshow.com
+
 ! https://www.douyin.com
 ! 登录弹窗
 www.douyin.com##body:style(overflow: auto !important;)
@@ -298,3 +304,4 @@ bbs.nga.cn##.headline
 ||addthis.com^
 ||logs.leetcode-cn.com^$xhr,domain=leetcode.cn
 ||logs.leetcode.cn^$xhr,1p
+||ff-proxy.leetcode.cn
