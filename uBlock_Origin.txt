@@ -100,6 +100,12 @@ live.bilibili.com##.room-info-ctnr > .card-box
 live.bilibili.com##.player-ctnr #live-video
 ! 购物小黄车
 live.bilibili.com###shop-popover-vm
+! 进房风险提醒
+live.bilibili.com##div.border-box.chat-item.convention-msg
+! PK 开始提醒
+live.bilibili.com##div.chat-item.new-video-pk-item-dm
+! PK 绝杀提醒
+live.bilibili.com##div.border-box.chat-item.common-danmuku-msg
 ! 贡献榜前三变动通知
 live.bilibili.com##div.danmaku-item.chat-item.top3-notice
 ! 贡献榜前三标志
@@ -108,6 +114,8 @@ live.bilibili.com##div.danmaku-item.chat-item .rank-icon
 live.bilibili.com##div.danmaku-item.chat-item .title-label
 ! 幻星派对
 live.bilibili.com##div#game-id
+! PK 图层
+live.bilibili.com##.awesome-pk-box
 ! track
 ||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
@@ -257,10 +265,20 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ||ylog.huya.com^$1p
 ||electric-shop.yaoguo.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
+! 导航栏开播
+www.huya.com##.NavKaiBo--3_pcnDZbeaycODmpgNFBtt.NavItem--1jr9x80QTPbnrDwqn834hF
+! 导航栏下载
+www.huya.com##.NavDownload--14eln2LYTFMgF_MZOue4Gu.NavItem--1jr9x80QTPbnrDwqn834hF
+! 导航栏任务
+www.huya.com##div.NavItem--1jr9x80QTPbnrDwqn834hF:nth-of-type(5)
 ! 直播列表推荐标志
 www.huya.com##em.tag-recommend
 ! 直播列表蓝光标志
 www.huya.com##em.tag-blue
+! 直播右上标签美化
+www.huya.com##.game-live-item > a.video-info > p.tag-right > em.tag-pos2-content:style(background-color: rgba(0,0,0,0.6); font-size: 14px; line-height: 14px !important; padding: 5px !important;)
+! AI 弹幕
+www.huya.com##div:has(> .msg-normal > .msg-normal-decorationPrefix > img[src*=aizhushou])
 
 ! 2024年7月11日 https://live.kuaishou.com
 ||log-sdk.ksapisrv.com$important
