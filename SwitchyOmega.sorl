@@ -38,8 +38,10 @@ bsy.yyb.tcdnos.com
 **.file.myqcloud.com
 passport.baidu.com
 wappass.baidu.com
+gsp0.baidu.com
 www.baidu.com
 tieba.baidu.com
+tb.himg.baidu.com
 tiebapic.baidu.com
 tiebac.baidu.com
 bbs.nga.cn
@@ -51,10 +53,14 @@ cdnws.api.huya.com
 **.flv.huya.com
 tx-vod.cdn.huya.com
 a.msstatic.com
+live-cover.msstatic.com
+huyaimg.msstatic.com
+tx-live-cover.msstatic.com
 **.edgesrv.com
 **.douyucdn.cn
 **.douyucdn2.cn
 **.douyinvod.com
+live.kuaishou.com
 **.h2.smtcdns.net
 **.szbdyd.com
 **.node.ppio.cloud
@@ -64,5 +70,6 @@ a.msstatic.com
 **.mobgslb.tbcache.com
 **.livehwc3.cn
 **.hiecheimaetu.com
+**.vzuu.com
 leetcode.cn
 **.hoopchina.com.cn
