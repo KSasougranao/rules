@@ -76,6 +76,8 @@ live.bilibili.com##.banner-ctn
 live.bilibili.com###my-dear-haruna-vm
 ! 直播列表头像框
 live.bilibili.com##.blive-avatar-pendant
+! 黄色闪电标志
+live.bilibili.com##.blive-avatar-icons
 ! 直播列表百舰标志、活动标志
 live.bilibili.com##a#card .img-bright-filter[style^=background-image]
 ! 屏蔽用户
@@ -137,6 +139,10 @@ t.bilibili.com##div.bili-dyn-publishing
 t.bilibili.com##.b-avatar__layer.center:nth-of-type(2)
 ! 头像缩放到标准大小
 t.bilibili.com##.b-avatar__layer.center:style(width: 48px !important; height: 48px !important;)
+! 黄色闪电标志
+t.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
+! 会员名称变色
+t.bilibili.com##.bili-dyn-title span.bili-dyn-title__text:remove-class(normal-vip-color)
 ! 动态下方的广告
 space.bilibili.com##.notice-item
 bilibili.com##.reply-notice
@@ -285,6 +291,12 @@ www.huya.com##div:has(> .msg-normal > .msg-normal-decorationPrefix > img[src*=ai
 ||static.yximgs.com/live/game/screenshot$image
 ||yximgs.com$image
 ||gifshow.com
+! 直播滑动切换
+live.kuaishou.com##.control:has(> .switch-group)
+! 隐藏右侧评论栏
+live.kuaishou.com###liveroom__sidebar
+! 放大视频区域
+live.kuaishou.com##.swiper-wrapper:style(width: 100vw !important; height: 100vh !important;)
 
 ! https://www.douyin.com
 ! 登录弹窗
