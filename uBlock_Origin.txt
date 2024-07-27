@@ -44,6 +44,7 @@ www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-heig
 ! 增大视频列表标题宽度
 www.bilibili.com##.video-episode-card__info-title:style(width: auto !important;)
 ! 视频弹窗
+www.bilibili.com##.bpx-player-toast-wrap
 www.bilibili.com##.bpx-player-cmd-dm-inside > :is(.bili-guide, .bili-vote, .bili-score)
 ! 视频弹窗-推荐
 www.bilibili.com##.bili-cmd-shrink
@@ -271,6 +272,14 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ||ylog.huya.com^$1p
 ||electric-shop.yaoguo.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
+! 直播脚本
+||a.msstatic.com/huya/main3/assets
+||a.msstatic.com/huya/main3/components
+||a.msstatic.com/huya/main3/node_modules
+||a.msstatic.com/huya/main3/static
+||a.msstatic.com/huya/main3/widget
+! 去除无用参数
+||www.huya.com$document,removeparam=/^(|curpage|curlocation)=/,domain=www.huya.com
 ! 导航栏开播
 www.huya.com##.NavKaiBo--3_pcnDZbeaycODmpgNFBtt.NavItem--1jr9x80QTPbnrDwqn834hF
 ! 导航栏下载
@@ -297,6 +306,14 @@ live.kuaishou.com##.control:has(> .switch-group)
 live.kuaishou.com###liveroom__sidebar
 ! 放大视频区域
 live.kuaishou.com##.swiper-wrapper:style(width: 100vw !important; height: 100vh !important;)
+! 禁用其他播放区域，可以使自动跳转直播间失效
+live.kuaishou.com##.swiper-slide:nth-child(n + 2)
+
+! https://www.douyu.com
+||dz11.com
+!shark2.douyucdn.cn/front-publish/live-master/js/room
+||webconf.douyucdn.cn/resource
+||www.douyu.com$document,removeparam=/^(dyshid|dyshci)=/,domain=www.douyu.com
 
 ! https://www.douyin.com
 ! 登录弹窗
@@ -328,6 +345,8 @@ bbs.hupu.com##div:has(> #game-center-entrance-container)
 
 ! 2024-03-18 https://bbs.nga.cn
 bbs.nga.cn##.headline
+! 右侧助手
+bbs.nga.cn##.hld__docker
 
 ! track
 ||api.growingio.com^
