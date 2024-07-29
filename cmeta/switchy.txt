@@ -22,11 +22,13 @@ payload:
 - album.biliimg.com
 - www.zhihu.com
 - zhuanlan.zhihu.com
+- api.zhihu.com
 - +.zhimg.com
 - weibo.com
 - m.weibo.cn
 - +.sinaimg.cn
 - f.video.weibocdn.com
+- docs.qq.com
 - game.gtimg.cn
 - bsy.yyb.tcdnos.com
 - +.file.myqcloud.com
@@ -55,6 +57,10 @@ payload:
 - +.douyucdn2.cn
 - +.douyinvod.com
 - live.kuaishou.com
+- +.yximgs.com
+- www.xiaohongshu.com
+- ci.xiaohongshu.com
+- +.xhscdn.com
 - +.h2.smtcdns.net
 - +.szbdyd.com
 - +.node.ppio.cloud
@@ -65,5 +71,11 @@ payload:
 - +.livehwc3.cn
 - +.hiecheimaetu.com
 - +.vzuu.com
+- +.v.myalicdn.com
+- www.miguvideo.com
+- live.miguvideo.com
+- wsschatpush.miguvideo.com
+- +.vod.miguvideo.com
+- flv*.miguvideo.com
 - leetcode.cn
 - +.hoopchina.com.cn
