@@ -1,10 +1,4 @@
 [SwitchyOmega Conditions]
-; Require: SwitchyOmega >= 2.3.2
-; Date: 2024/2/4
-; Usage: https://github.com/FelisCatus/SwitchyOmega/wiki/RuleListUsage
-
-192.168.*
-223.5.5.5
 www.recaptcha.net
 fonts.gstatic.com
 detectportal.firefox.com
@@ -29,6 +23,7 @@ album.biliimg.com
 www.zhihu.com
 zhuanlan.zhihu.com
 api.zhihu.com
+static.zhihu.com
 **.zhimg.com
 weibo.com
 m.weibo.cn
@@ -38,11 +33,18 @@ docs.qq.com
 game.gtimg.cn
 bsy.yyb.tcdnos.com
 **.file.myqcloud.com
+y.qq.com
+qpic.y.qq.com
+music-file.y.qq.com
+**.stream.qqmusic.qq.com
 passport.baidu.com
 wappass.baidu.com
 gsp0.baidu.com
 www.baidu.com
+baike.baidu.com
 tieba.baidu.com
+R: ^gimg\d+\.baidu\.com$
+R: ^t\d+\.baidu\.com$
 tb.himg.baidu.com
 tiebapic.baidu.com
 tiebac.baidu.com
