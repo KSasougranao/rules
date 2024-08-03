@@ -11,7 +11,7 @@ jobs:
         run: |
           echo "Loyalsoldier_reject=https://github.com/Loyalsoldier/clash-rules/releases/download/202408022237/reject.txt" >>$GITHUB_ENV
           echo "antiad_reject=https://github.com/privacy-protection-tools/anti-AD/raw/master/anti-ad-clash.yaml" >>$GITHUB_ENV
-          
+
       - name: checkout
         uses: actions/checkout@v4
         with:
@@ -32,7 +32,7 @@ jobs:
           echo "payload:" > reject.yaml
           cat reject-lines.txt | sort | uniq | awk '{printf "- '%s'\n", $1}' >> reject.yaml
           wc reject.yaml
-      
+
       - name: Git commit
         run: |
           git config --global user.email "action@github.com"
