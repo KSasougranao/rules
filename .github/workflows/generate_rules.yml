@@ -28,8 +28,10 @@ jobs:
           cmd: yq '.payload | .[]' Loyalsoldier_reject.yaml antiad_reject.yaml >> reject-lines.txt
       - name: Generate reject.yaml
         run: |
+          wc reject-lines.txt
           echo "payload:" > reject.yaml
-          cat reject-lines.txt | sort | uniq | awk '{printf "- '%s'", $1}' >> reject.yaml
+          cat reject-lines.txt | sort | uniq | awk '{printf "- '%s'\n", $1}' >> reject.yaml
+          wc reject.yaml
       
       - name: Git commit
         run: |
