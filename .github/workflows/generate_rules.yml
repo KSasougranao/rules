@@ -25,7 +25,7 @@ jobs:
       - name: Collect reject 2
         uses: mikefarah/yq@master
         with:
-          cmd: yq '.payload | .[]' Loyalsoldier_reject.yaml antiad_reject.yaml >> reject-lines.txt
+          cmd: yq '. as $item ireduce ({}; . *+ $item) | .payload | .[]' Loyalsoldier_reject.yaml antiad_reject.yaml >> reject-lines.txt
       - name: Generate reject.yaml
         run: |
           wc reject-lines.txt
