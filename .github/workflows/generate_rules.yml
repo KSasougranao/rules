@@ -26,18 +26,18 @@ jobs:
         uses: mikefarah/yq@master
         with:
           cmd: yq '. as $item ireduce ({}; . *+ $item) | .payload | .[]' Loyalsoldier_reject.yaml antiad_reject.yaml >> reject-lines.txt
-      - name: Generate reject.yaml
+      - name: Generate reject.txt
         run: |
           wc reject-lines.txt
-          echo "payload:" > reject.yaml
-          cat reject-lines.txt | sort | uniq | awk '{printf "- '%s'\n", $1}' >> reject.yaml
-          wc reject.yaml
+          echo -n > reject.txt
+          cat reject-lines.txt | sort | uniq >> reject.txt
+          wc reject.txt
 
       - name: Git commit
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action[bot]"
-          git add reject.yaml
+          git add reject.txt
           git commit -m 'Auto update rules' || echo 'Nothing new'
 
       - name: Git push
