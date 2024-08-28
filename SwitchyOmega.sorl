@@ -1,10 +1,4 @@
 [SwitchyOmega Conditions]
-www.recaptcha.net
-fonts.gstatic.com
-detectportal.firefox.com
-push.services.mozilla.com
-**.sync.services.mozilla.com
-**.hls.ttvnw.net
 passport.bilibili.com
 www.bilibili.com
 t.bilibili.com
@@ -63,6 +57,7 @@ tx-live-cover.msstatic.com
 **.edgesrv.com
 **.douyucdn.cn
 **.douyucdn2.cn
+**.douyincdn.com
 **.douyinvod.com
 live.kuaishou.com
 **.yximgs.com
@@ -70,6 +65,7 @@ www.xiaohongshu.com
 ci.xiaohongshu.com
 **.xhscdn.com
 **.h2.smtcdns.net
+**.v.smtcdns.net
 **.szbdyd.com
 **.node.ppio.cloud
 **.bytefcdnrd.com
@@ -87,3 +83,13 @@ wsschatpush.miguvideo.com
 flv*.miguvideo.com
 leetcode.cn
 **.hoopchina.com.cn
+detectportal.firefox.com
+push.services.mozilla.com
+**.sync.services.mozilla.com
+fonts.gstatic.com
+www.recaptcha.net
+pixiv.pximg.net
+**.akamai.steamstatic.com
+cf.mhgui.com
+i.hamreus.com
+eu1.hamreus.com
