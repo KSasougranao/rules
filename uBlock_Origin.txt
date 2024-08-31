@@ -3,9 +3,22 @@
 ! Expires: 1 days
 ! Homepage: https://gitee.com/KSasougranao/UNK
 
+! https://twitter.com
+! 调整 media 页多图标志的位置
+twitter.com,x.com##li[role=listitem] > div a > svg:style(bottom: none !important; top: 8px !important;)
+! 增加 media 页多图标志的描边
+twitter.com,x.com##li[role=listitem] > div a > svg g:style(stroke: black; stroke-width: 1px;)
+! 右侧栏趋势
+twitter.com,x.com##div[data-testid=sidebarColumn] > div > div:nth-of-type(2) > div > div > div > div:nth-last-of-type(2)
+! 右侧栏趋势
+||x.com/i/api/graphql/*/ExploreSidebar
+! 右侧栏页脚
+twitter.com,x.com##div[data-testid=sidebarColumn] [role=navigation]
+
 ! https://www.pixiv.net
 ! 右侧广告占位
 www.pixiv.net##section:has(> div > iframe[name="responsive"])
+! 右侧广告占位
 www.pixiv.net##div:has(> div > iframe[name="rectangle"])
 ! 作品点赞按钮
 www.pixiv.net##.eqsIB.sc-181ts2x-5
@@ -15,6 +28,8 @@ www.pixiv.net##div > section.dmnOnu
 www.pixiv.net##div:has(> iframe[name="500x500"])
 ! 底部广告
 www.pixiv.net##div:has(> iframe[name="expandedFooter"])
+! 隐藏书签页过多候选 tag
+www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
 ! track
 ||www.pixiv.net/OneSignalSDKWorker.js$script,domain=www.pixiv.net
 ||errortrace.dev^$xhr,domain=www.pixiv.net
@@ -30,7 +45,6 @@ www.pixiv.net##div:has(> iframe[name="expandedFooter"])
 
 ! https://www.bilibili.com
 ! 首页广告
-www.bilibili.com##.is-rcmd.bili-video-card:has(.bili-video-card__info--ad)
 www.bilibili.com##.feed-card:has(.is-rcmd.bili-video-card .bili-video-card__info--ad)
 ! 首页直播间推荐
 www.bilibili.com##.is-rcmd.bili-live-card
@@ -40,17 +54,19 @@ www.bilibili.com##.floor-single-card
 bilibili.com##.search-panel .trending
 ! 屏蔽搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,domain=bilibili.com
-||api.bilibili.com//x/web-interface/search/default$xhr,domain=bilibili.com
+||api.bilibili.com/x/web-interface/search/default$xhr,domain=bilibili.com
 ! 屏蔽搜索结果-直播
 search.bilibili.com##.video-list > div:has(> div.bili-video-card .bili-video-card__info--living)
-! 展开视频列表
+! 展开视频合集列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
+! 展开视频分 P 选集列表
 www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
 ! 增大视频列表标题宽度
 www.bilibili.com##.video-episode-card__info-title:style(width: auto !important;)
 ! 视频弹窗
 www.bilibili.com##.bpx-player-toast-wrap
-www.bilibili.com##.bpx-player-cmd-dm-inside > :is(.bili-guide, .bili-vote, .bili-score)
+! 视频弹窗-投票、三连等
+www.bilibili.com##.bpx-player-cmd-dm-wrap
 ! 视频弹窗-推荐
 www.bilibili.com##.bili-cmd-shrink
 ! 视频下直播推荐
@@ -59,10 +75,11 @@ www.bilibili.com###live_recommand_report
 www.bilibili.com###right-bottom-banner
 ! 视频侧栏推荐
 www.bilibili.com##.video-page-special-card-small
+! 视频侧栏推荐
 www.bilibili.com##.video-page-operator-card-small
 ! 视频推荐底部直播推荐
-||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList$xhr,domain=www.bilibili.com
 www.bilibili.com##.pop-live-small-mode
+||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList$xhr,domain=www.bilibili.com
 ! 上报
 ||api.bilibili.com/x/web-show/res/locs$xhr,1p
 ||api.bilibili.com/x/web-show/wbi/res/locs$xhr,1p
@@ -76,7 +93,10 @@ www.bilibili.com##.pop-live-small-mode
 ! https://live.bilibili.com
 ! 导航栏
 live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|生活|帮我玩|互动玩法|购物/))
+! 导航栏
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
+! 屏蔽首页直播间
+||hdslb.com/bfs/blive-engineer/live-web-player/home-player.prod.min.js$domain=live.bilibili.com,script,redirect=noopjs
 ! 直播首页直播间
 live.bilibili.com##.t-center.p-relative.border-box.player-area-ctnr
 ! 热门榜单
@@ -148,19 +168,22 @@ live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
 ||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
 ! https://t.bilibili.com/
-! 顶部导航
+! 简化顶部导航
 bilibili.com##ul.left-entry > li.v-popover-wrap:has(> a > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
+! 简化顶部导航
 bilibili.com##ul.right-entry :is(div, li):has(span:has-text(/^(大会员)$/))
-! 动态页宽度
+! 增大动态页左侧栏宽度
 t.bilibili.com##aside.left:style(min-width: 264px !important;)
+! 增大动态页主栏宽度
 t.bilibili.com##main:style(min-width: 724px !important;)
+! 增大动态页主栏宽度
 t.bilibili.com###app .content:style(min-width: 724px !important;)
-! 关注动态水平滚动条
+! 隐藏关注动态水平滚动条
 t.bilibili.com##.bili-dyn-up-list__window:style(overflow-x: hidden !important;)
-! 主页热门话题
+! 屏蔽主页右侧热门话题
 t.bilibili.com##aside.right
 ||app.bilibili.com/x/topic/web/dynamic/rcmd$xhr,domain=t.bilibili.com
-! 发表动态
+! 隐藏动态发表框
 t.bilibili.com##div.bili-dyn-publishing
 ! 头像框
 t.bilibili.com##.b-avatar__layer.center:nth-of-type(2)
@@ -181,7 +204,9 @@ t.bilibili.com##div.bili-dyn-list__item:has(.bili-dyn-card-goods__mark span:has-
 t.bilibili.com##.fixed-reply-box
 ! 自动展开动态
 bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
+! 自动展开动态
 bilibili.com##.bili-rich-text__content:remove-class(/folded|line--6/)
+! 自动展开动态
 bilibili.com##.bili-rich-text__action
 
 ! https://www.zhihu.com
@@ -194,8 +219,10 @@ www.zhihu.com##div:has(> div.CreatorEntrance)
 www.zhihu.com##div.GlobalSideBar-category
 ! 问题侧栏
 !www.zhihu.com##div.Question-sideColumn
-||www.zhihu.com/api/v4/answers/*/favlists$xhr,domain=www.zhihu.com
+! 相似问题
 !||www.zhihu.com/api/v4/questions/*/similar-questions$xhr,domain=www.zhihu.com
+! 回答相关收藏夹
+||www.zhihu.com/api/v4/answers/*/favlists$xhr,domain=www.zhihu.com
 ! 主页侧栏
 ||www.zhihu.com/api/v4/creators/extra_card$xhr,domain=www.zhihu.com
 ||www.zhihu.com/api/v4/moments/recommend_follow_people$xhr,domain=www.zhihu.com
