@@ -7,6 +7,10 @@
 ! 右侧广告占位
 www.pixiv.net##section:has(> div > iframe[name="responsive"])
 www.pixiv.net##div:has(> div > iframe[name="rectangle"])
+! 作品点赞按钮
+www.pixiv.net##.eqsIB.sc-181ts2x-5
+! 评论
+www.pixiv.net##div > section.dmnOnu
 ! 收藏后广告
 www.pixiv.net##div:has(> iframe[name="500x500"])
 ! 底部广告
@@ -73,6 +77,20 @@ www.bilibili.com##.pop-live-small-mode
 ! 导航栏
 live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|生活|帮我玩|互动玩法|购物/))
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
+! 直播首页直播间
+live.bilibili.com##.t-center.p-relative.border-box.player-area-ctnr
+! 热门榜单
+live.bilibili.com##.t-center.grid-area-ctnr
+! 推荐直播
+live.bilibili.com##.m-auto.area-detail-ctnr
+! 颜值领域
+live.bilibili.com##.yzly-ctnr
+! 推荐分区
+live.bilibili.com##.recommend-area-ctnr
+! 底部
+live.bilibili.com##.link-footer-ctnr
+! 屏蔽分区推荐 popup header
+live.bilibili.com##.hover-panel-wrap .area-banner
 ! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
 live.bilibili.com###my-dear-haruna-vm
@@ -83,9 +101,11 @@ live.bilibili.com##.blive-avatar-icons
 ! 直播列表百舰标志、活动标志
 live.bilibili.com##a#card .img-bright-filter[style^=background-image]
 ! 屏蔽用户
-live.bilibili.com##div > a:is([href*="/5275?"], [href*="/15536?"], [href*="/876396?"], [href*="/10545?"], [href*="/24393?"], [href*="/22333522?"], [href*="/14893?"], [href*="/870004?"], [href*="/92450?"], [href*="/17961?"], [href*="/56237?"], [href*="/3415150?"], [href*="/938957?"], [href*="/80397?"], [href*="/7038458?"], [href*="/725364?"], [href*="/22262300?"], [href*="/6374209?"], [href*="/4726132?"], [href*="/4316215?"], [href*="/2603963?"], [href*="/21756924?"], [href*="/23199319?"], [href*="/7688602?"], [href*="/11588230?"], [href*="/12235923?"], [href*="/13576775?"], [href*="/21129632?"], [href*="/21713184?"], [href*="/21402309?"], [href*="/21302477?"], [href*="/21420932?"], [href*="/21421141?"], [href*="/21412734?"], [href*="/21452505?"], [href*="/21463219?"], [href*="/21545232?"], [href*="/21669084?"], [href*="/21672023?"], [href*="/21696950?"], [href*="/21919321?"], [href*="/21879412?"], [href*="/22389319?"], [href*="/22288644?"], [href*="/22347054?"], [href*="/22470208?"], [href*="/22622535?"], [href*="/22924075?"], [href*="/25290861?"], [href*="/22603245?"], [href*="/22816111?"], [href*="/23771189?"], [href*="/23770996?"], [href*="/22824550?"], [href*="/23969425?"], [href*="/23652569?"], [href*="/22976643?"], [href*="/594461?"], [href*="/21013446?"], [href*="/26276187?"], [href*="/25512501?"], [href*="/22746343?"], [href*="/22696653?"])
+live.bilibili.com##div > a.card:matches-attr(href=/\/(10545|11588230|12235923|13576775|14893|15536|17961|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22262300|22288644|22333522|22347054|22389319|22470208|22603245|22622535|22696653|22746343|22816111|22824550|22924075|22976643|23199319|23652569|23770996|23771189|23969425|24393|25290861|25512501|2603963|26276187|3415150|4316215|4726132|5275|56237|594461|6374209|7038458|725364|7688602|80397|870004|876396|92450|938957)\?/)
 ! 高亮本人弹幕
 live.bilibili.com##div.chat-item.danmaku-item:has(span.my-self):style(border-radius: 10px !important; background-color: rgba(32, 160, 255, 0.1) !important; border: 2px solid rgba(32, 160, 255, 0.5) !important;)
+! 底部弹幕
+live.bilibili.com##div.bili-dm.bili-center.bili-show
 ! 礼物栏
 live.bilibili.com###gift-control-vm
 ! 网页全屏礼物栏
@@ -150,6 +170,8 @@ t.bilibili.com##.b-avatar__layer.center:style(width: 48px !important; height: 48
 t.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
 ! 会员名称变色
 t.bilibili.com##.bili-dyn-title span.bili-dyn-title__text:remove-class(normal-vip-color)
+! 增大动态中表情，配合 greasemonkey 修改 src
+bilibili.com##img.bili-rich-text-emoji[alt*="_"]:style(height: 48px !important; width: 48px !important;)
 ! 动态下方的广告
 space.bilibili.com##.notice-item
 bilibili.com##.reply-notice
@@ -202,6 +224,26 @@ zhuanlan.zhihu.com##.Reward
 zhuanlan.zhihu.com##.is-bottom.is-fixed.RichContent-actions.Sticky
 
 ! https://weibo.com
+! 用户推荐
+weibo.com##div:nth-of-type(2) > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
+! 用户推荐
+weibo.com##.SideIndex_sideMain_3jrwf.wbpro-side-main > div > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
+! 用户推荐
+||weibo.com/ajax/side/cards/sideInterested$xhr,1p
+! 主页发表微博
+weibo.com###homeWrap > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
+! 主页右侧栏
+||weibo.com/ajax/side/cards$xhr,1p
+! 未读消息？
+||weibo.com/ajax/message/unreadHint$xhr,1p
+! 微博页评论微博
+weibo.com##.Detail_mar2_2Q6IG.woo-box-flex
+! 微博页分享按钮
+weibo.com##.toolbar_cursor_34j5V.toolbar_share_39C6P
+! 用户页右侧栏：赞赏、粉丝群、关注推荐等
+||weibo.com/ajax/profile/sidedetail$xhr,1p
+! 热搜榜单
+||weibo.com/ajax/side/hotSearch$xhr,1p
 ! 热门榜单美化
 weibo.com##div.wbpro-side-panel .icon
 weibo.com##div.wbpro-side-panel .clb.f13
@@ -216,6 +258,8 @@ weibo.com##.wbpro-side-copy
 ||weibo.com/ajax/common/getCopyright$xhr,1p
 ! 赞赏
 weibo.com##.Reward_box_27GVq.wrap
+! 隐藏右侧栏加载动画
+weibo.com###__sidebar
 ! 创作者中心
 weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
 ||weibo.com/ajax/side/cards/sideBusiness$xhr,1p
@@ -321,6 +365,10 @@ live.kuaishou.com##.gift-bar
 live.kuaishou.com##.kcoin
 
 ! https://www.douyu.com
+! 统一滚动弹幕颜色为白色
+www.douyu.com##div.scroll-209d08.danmuItem-31f924:style(color: white !important;)
+! 统一侧栏弹幕颜色为黑色
+www.douyu.com##.Barrage-content:style(color: black !important;)
 ||dz11.com
 !shark2.douyucdn.cn/front-publish/live-master/js/room
 ||webconf.douyucdn.cn/resource
@@ -394,6 +442,17 @@ bbs.nga.cn##.hld__docker
 bbs.nga.cn##.cpinfo
 ! 顶部 tab
 bbs.nga.cn##.innerbg > div:nth-of-type(2) > div.td
+
+! https://www.miguvideo.com
+www.miguvideo.com##.com-comment
+! 底部信息
+www.miguvideo.com##.footer-inner
+! app 下载引导
+www.miguvideo.com##.user-guide-app
+
+! https://olympics.com
+! 屏蔽广告
+olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row-type^=day-schedule-]))
 
 ! track
 ||api.growingio.com^
