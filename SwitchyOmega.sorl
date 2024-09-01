@@ -39,12 +39,14 @@ baike.baidu.com
 tieba.baidu.com
 R: ^gimg\d+\.baidu\.com$
 R: ^t\d+\.baidu\.com$
+R: ^tb\d+\.bdstatic\.com$
 tb.himg.baidu.com
 tiebapic.baidu.com
 tiebac.baidu.com
 bbs.nga.cn
 img.nga.178.com
 img4.nga.178.com
+img.nga.cn
 www.huya.com
 cdnws.api.huya.com
 **.cdn.huya.com
@@ -57,7 +59,11 @@ tx-live-cover.msstatic.com
 **.edgesrv.com
 **.douyucdn.cn
 **.douyucdn2.cn
+www.douyin.com
+live.douyin.com
+**.douyinpic.com
 **.douyincdn.com
+**.douyinliving.com
 **.douyinvod.com
 live.kuaishou.com
 **.yximgs.com
