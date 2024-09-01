@@ -53,8 +53,9 @@ www.bilibili.com##.floor-single-card
 ! 屏蔽搜索推荐
 bilibili.com##.search-panel .trending
 ! 屏蔽搜索栏默认值
-||api.bilibili.com/x/web-interface/wbi/search/default$xhr,domain=bilibili.com
-||api.bilibili.com//x/web-interface/search/default$xhr,domain=bilibili.com
+||api.bilibili.com/x/web-interface/wbi/search/default$xhr,1p
+! 屏蔽搜索栏默认值
+||api.bilibili.com//x/web-interface/search/default$xhr,1p
 ! 屏蔽搜索结果-直播
 search.bilibili.com##.video-list > div:has(> div.bili-video-card .bili-video-card__info--living)
 ! 展开视频合集列表
@@ -96,7 +97,9 @@ live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|�
 ! 导航栏
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
 ! 屏蔽首页直播间
-||hdslb.com/bfs/blive-engineer/live-web-player/home-player.prod.min.js$domain=live.bilibili.com,script,redirect=noopjs
+||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,domain=live.bilibili.com
+! 屏蔽首页直播间
+||hdslb.com/bfs/blive-engineer/live-web-player/home-player.prod.min.js$script,redirect=noopjs,domain=live.bilibili.com
 ! 直播首页直播间
 live.bilibili.com##.t-center.p-relative.border-box.player-area-ctnr
 ! 热门榜单
