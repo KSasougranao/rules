@@ -54,7 +54,7 @@ www.bilibili.com##.floor-single-card
 bilibili.com##.search-panel .trending
 ! 屏蔽搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,domain=bilibili.com
-||api.bilibili.com/x/web-interface/search/default$xhr,domain=bilibili.com
+||api.bilibili.com//x/web-interface/search/default$xhr,domain=bilibili.com
 ! 屏蔽搜索结果-直播
 search.bilibili.com##.video-list > div:has(> div.bili-video-card .bili-video-card__info--living)
 ! 展开视频合集列表
@@ -294,39 +294,64 @@ weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-
 ||weibo.com/ajax/log$xhr,1p
 
 ! https://tieba.baidu.com
-tieba.baidu.com##.app_download_box
-tieba.baidu.com##div.topic_list_box
-tieba.baidu.com##.tbui_aside_float_bar
-tieba.baidu.com##.save_face_bg_2.save_face_bg
-tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
 ! 登录弹窗
 tieba.baidu.com###tiebaCustomPassLogin
+! 导航栏
+tieba.baidu.com##.j_search_nav.search_nav > a:has-text(/^(资讯|视频|采购)$/)
+! 导航栏-官方号
+tieba.baidu.com###com_userbar > ul > .u_official
+! 导航栏-会员
+tieba.baidu.com###com_userbar > ul > .u_member
 ! 顶部大图
 tieba.baidu.com###plat_recom_carousel
+! 顶部大图
 tieba.baidu.com##.card_banner
-! 选词搜索
-tieba.baidu.com###selectsearch-icon
-! track
-||gsp0.baidu.com/*/track.gif^$image,1p
-! 自动展开楼中楼
-tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
-tieba.baidu.com##.lzl_more
-tieba.baidu.com##.lzl_pager:style(display: block !important;)
-! 自动展开图片
-tieba.baidu.com##.replace_div:has(img):style(height: auto !important;)
-tieba.baidu.com##.replace_tip
-! 本吧会员
-tieba.baidu.com##.celebrity
+! 右上角签到
+tieba.baidu.com##.card_top_right
 ! 直播贴
 tieba.baidu.com##div:has( > div > div > .threadListGroupCnt)
+! 直播贴轮询
 ||tieba.baidu.com/live/getLiveTopicInfo$xhr,domain=tieba.baidu.com
-! 身份图标
+! 右侧栏-本吧会员
+tieba.baidu.com##.celebrity
+! 贴吧右侧栏-我在贴吧
+tieba.baidu.com##.my_tieba.aside_region
+! 贴吧右侧栏-下载客户端
+tieba.baidu.com##.app_download_box
+! 帖子右侧栏-我在贴吧
+tieba.baidu.com###my_tieba_mod
+! 帖子右侧栏-意见反馈
+tieba.baidu.com###tieba-notice
+! 帖子右侧栏-热门
+tieba.baidu.com##div > div.topic_list_box
+! 右侧浮动栏
+tieba.baidu.com##.tbui_aside_float_bar
+! 用户会员标志
+tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
+! 用户身份标志
 tieba.baidu.com##.d_icons
+! 用户身份标志
 tieba.baidu.com##.frs_bright_icons.icon_wrap_theme1.icon_wrap
-!
+! 帖子楼层背景
+tieba.baidu.com##.save_face_bg_2.save_face_bg
+! 选词搜索
+tieba.baidu.com###selectsearch-icon
+! 自动展开图片
+tieba.baidu.com##.replace_div:has(img):style(height: auto !important;)
+! 自动展开图片-隐藏展开按钮
+tieba.baidu.com##.replace_tip
+! 自动展开楼中楼
+tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
+! 自动展开楼中楼-隐藏展开按钮
+tieba.baidu.com##.lzl_more
+! 自动展开楼中楼-底部
+tieba.baidu.com##.lzl_pager:style(display: block !important;)
+! track
+||gsp0.baidu.com/*/track.gif^$image,1p
 ||hm.baidu.com^$1p
 
 ! https://www.jianshu.com
+! 推荐
 ||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,domain=www.jianshu.com
 ! 赞赏
 www.jianshu.com##._13lIbp
@@ -404,6 +429,7 @@ www.douyu.com##.Barrage-content:style(color: black !important;)
 ! https://www.douyin.com
 ! 登录弹窗
 www.douyin.com##body:style(overflow: auto !important;)
+! 登录弹窗
 www.douyin.com##.screen-mask
 ! 热门推荐
 www.douyin.com###hotItem
@@ -428,6 +454,7 @@ live.douyin.com##.GiftTrayPlugin
 live.douyin.com##.ShortTouchContainer
 ! 礼物栏
 live.douyin.com##.aqK_4_5U
+! 礼物栏
 live.douyin.com##.xgplayer > pace-island > div > span > pace-island > div > a
 ! 观众榜单
 live.douyin.com##.Qsns7NdQ.kz8VfOyK
