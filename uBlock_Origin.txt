@@ -14,6 +14,8 @@ twitter.com,x.com##div[data-testid=sidebarColumn] > div > div:nth-of-type(2) > d
 ||x.com/i/api/graphql/*/ExploreSidebar
 ! 右侧栏页脚
 twitter.com,x.com##div[data-testid=sidebarColumn] [role=navigation]
+! 未知请求
+||ton.local.twitter.com
 
 ! https://www.pixiv.net
 ! 右侧广告占位
@@ -58,6 +60,8 @@ bilibili.com##.search-panel .trending
 ||api.bilibili.com//x/web-interface/search/default$xhr,1p
 ! 屏蔽搜索结果-直播
 search.bilibili.com##.video-list > div:has(> div.bili-video-card .bili-video-card__info--living)
+! 游戏活动屏蔽
+search.bilibili.com##.activity-game-list
 ! 展开视频合集列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
 ! 展开视频分 P 选集列表
@@ -82,6 +86,7 @@ www.bilibili.com##.video-page-operator-card-small
 www.bilibili.com##.pop-live-small-mode
 ||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList$xhr,domain=www.bilibili.com
 ! 上报
+||data.bilibili.com
 ||api.bilibili.com/x/web-show/res/locs$xhr,1p
 ||api.bilibili.com/x/web-show/wbi/res/locs$xhr,1p
 ! 跟踪参数
@@ -237,6 +242,8 @@ www.zhihu.com##div.GlobalSideBar-category
 www.zhihu.com##.Reward
 ! 回答作者
 www.zhihu.com##.AnswerAuthor.Card
+! 推荐页视频筛选
+www.zhihu.com##div.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
 ! 邀请回答
 ||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
 ||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
@@ -527,13 +534,28 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||cimg.178.com
 ||mtalk.google.com
 
+||msg.douyu.com
+||g.wan.douyu.com
+! 鱼吧
+||yuba.douyu.com
+
 ||udblgn.huya.com
 ||upevent.huya.com
 
 ||mssdk.bytedance.com
-||frontier-im.douyin.com
-||frontier-pc.douyin.com
-||lf1-cdn-tos.bytegoofy.com
+||frontier-im.douyin.com$1p
+||frontier-pc.douyin.com$1p
+! ?
+||vegslb.com
+||volcsirius.com
+||zijieapi.com
+||api.feelgood.cn
+||imapi.douyin.com
+||new.gracebot.cn
+! 反屏蔽？
+||bytednsdoc.com
+! search default 等
+||bytetcc.com
 
 ||uem.migu.cn
 ||m.miguvideo.com
