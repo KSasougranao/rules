@@ -1,4 +1,6 @@
 [SwitchyOmega Conditions]
+.lencr.org
+ocsp.globalsign.com
 passport.bilibili.com
 www.bilibili.com
 t.bilibili.com
@@ -24,6 +26,7 @@ m.weibo.cn
 **.sinaimg.cn
 f.video.weibocdn.com
 docs.qq.com
+docs.gtimg.com
 game.gtimg.cn
 bsy.yyb.tcdnos.com
 **.file.myqcloud.com
@@ -61,9 +64,13 @@ tx-live-cover.msstatic.com
 **.douyucdn2.cn
 www.douyin.com
 live.douyin.com
+**.bytegoofy.com
+**.byteimg.com
+**.bytescm.com
 **.douyinpic.com
 **.douyincdn.com
 **.douyinliving.com
+**.douyinstatic.com
 **.douyinvod.com
 live.kuaishou.com
 **.yximgs.com
@@ -90,12 +97,17 @@ flv*.miguvideo.com
 leetcode.cn
 **.hoopchina.com.cn
 detectportal.firefox.com
+profile.accounts.firefox.com
 push.services.mozilla.com
+firefox.settings.services.mozilla.com
 **.sync.services.mozilla.com
+token.services.mozilla.com
+safebrowsing.googleapis.com
 fonts.gstatic.com
 www.recaptcha.net
 pixiv.pximg.net
 **.akamai.steamstatic.com
 cf.mhgui.com
 i.hamreus.com
+eu.hamreus.com
 eu1.hamreus.com
