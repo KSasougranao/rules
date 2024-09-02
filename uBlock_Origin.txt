@@ -44,6 +44,7 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 ||imp.pixiv.net/premium_lp$subdocument,domain=www.pixiv.net
 ||www.pixiv.net/rpc/notify_count.php$xhr,domain=www.pixiv.net
 ||www.pixiv.net/ajax/message/can_send/*$xhr,1p
+||pixon.ads-pixiv.net
 
 ! https://www.bilibili.com
 ! 首页广告
@@ -524,23 +525,34 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||logs.leetcode-cn.com^$xhr,domain=leetcode.cn
 ||logs.leetcode.cn^$xhr,1p
 ||ff-proxy.leetcode.cn
+||cimg.178.com
+
+||biligame.com
+||cm.bilibili.com$1p
+||manga.bilibili.com$1p
+||dataflow.biliapi.com
 
 ! 似乎是和搜索有关的请求
 ||ug.baidu.com
+||hectorstatic.baidu.com
+||mbd.baidu.com
+||ns-strategy.cdn.bcebos.com
 
 ||stat6.y.qq.com
 ||galileotelemetry.tencent.com
 ||tpstelemetry.tencent.com
-||cimg.178.com
-||mtalk.google.com
 
-||msg.douyu.com
-||g.wan.douyu.com
+||msg.douyu.com$1p
+||g.wan.douyu.com$1p
 ! 鱼吧
-||yuba.douyu.com
+||yuba.douyu.com$1p
 
-||udblgn.huya.com
-||upevent.huya.com
+||bee-wpm.huya.com$1p
+||udblgn.huya.com$1p
+||upevent.huya.com$1p
+||anchorpost.msstatic.com
+||static-jw.msstatic.com
+||business.msstatic.com
 
 ||mssdk.bytedance.com
 ||frontier-im.douyin.com$1p
@@ -550,7 +562,7 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||volcsirius.com
 ||zijieapi.com
 ||api.feelgood.cn
-||imapi.douyin.com
+||imapi.douyin.com$1p
 ||new.gracebot.cn
 ! 反屏蔽？
 ||bytednsdoc.com
@@ -563,4 +575,8 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||jadeite.miguvideo.com
 
 ||knet.cn
-||ns-strategy.cdn.bcebos.com
+
+||dp3.qq.com
+||mazu.3g.qq.com
+||pingjs.qq.com
+||rmonitor.qq.com
