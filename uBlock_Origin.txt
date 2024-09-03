@@ -5,31 +5,31 @@
 
 ! https://twitter.com
 ! 调整 media 页多图标志的位置
-twitter.com,x.com##li[role=listitem] > div a > svg:style(bottom: none !important; top: 8px !important;)
+twitter.com,x.com##li[role=listitem] a[role=link] > svg:style(bottom: none !important; top: 8px !important;)
 ! 增加 media 页多图标志的描边
-twitter.com,x.com##li[role=listitem] > div a > svg g:style(stroke: black; stroke-width: 1px;)
+twitter.com,x.com##li[role=listitem] a[role=link] > svg g:style(stroke: black; stroke-width: 1px;)
 ! 右侧栏趋势
 twitter.com,x.com##div[data-testid=sidebarColumn] > div > div:nth-of-type(2) > div > div > div > div:nth-last-of-type(2)
 ! 右侧栏趋势
 ||x.com/i/api/graphql/*/ExploreSidebar
 ! 右侧栏页脚
-twitter.com,x.com##div[data-testid=sidebarColumn] [role=navigation]
+twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ! 未知请求
 ||ton.local.twitter.com
 
 ! https://www.pixiv.net
 ! 右侧广告占位
-www.pixiv.net##section:has(> div > iframe[name="responsive"])
+www.pixiv.net##iframe[name="responsive"]:upward(2)
 ! 右侧广告占位
-www.pixiv.net##div:has(> div > iframe[name="rectangle"])
+www.pixiv.net##iframe[name="rectangle"]:upward(2)
 ! 作品点赞按钮
 www.pixiv.net##.eqsIB.sc-181ts2x-5
 ! 评论
-www.pixiv.net##div > section.dmnOnu
+www.pixiv.net##:has(> .dmnOnu)
 ! 收藏后广告
-www.pixiv.net##div:has(> iframe[name="500x500"])
+www.pixiv.net##iframe[name="500x500"]:upward(1)
 ! 底部广告
-www.pixiv.net##div:has(> iframe[name="expandedFooter"])
+www.pixiv.net##iframe[name="footer"]:upward(1)
 ! 隐藏书签页过多候选 tag
 www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
 ! track
@@ -48,7 +48,9 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 
 ! https://www.bilibili.com
 ! 首页广告
-www.bilibili.com##.feed-card:has(.is-rcmd.bili-video-card .bili-video-card__info--ad)
+www.bilibili.com##.feed-card:has(.bili-video-card__info--ad)
+! 首页广告
+www.bilibili.com##.bili-video-card:has(.bili-video-card__info--ad)
 ! 首页直播间推荐
 www.bilibili.com##.is-rcmd.bili-live-card
 ! 首页频道推荐
@@ -60,7 +62,7 @@ bilibili.com##.search-panel .trending
 ! 屏蔽搜索栏默认值
 ||api.bilibili.com//x/web-interface/search/default$xhr,1p
 ! 屏蔽搜索结果-直播
-search.bilibili.com##.video-list > div:has(> div.bili-video-card .bili-video-card__info--living)
+search.bilibili.com##.bili-video-card:has(.bili-video-card__info--living):upward(1)
 ! 游戏活动屏蔽
 search.bilibili.com##.activity-game-list
 ! 展开视频合集列表
@@ -106,8 +108,10 @@ live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮�
 ||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,domain=live.bilibili.com
 ! 屏蔽首页直播间
 ||hdslb.com/bfs/blive-engineer/live-web-player/home-player.prod.min.js$script,redirect=noopjs,domain=live.bilibili.com
-! 直播首页直播间
+! 屏蔽首页直播间
 live.bilibili.com##.t-center.p-relative.border-box.player-area-ctnr
+! 屏蔽首页直播间
+live.bilibili.com##.player-ctnr #live-video
 ! 热门榜单
 live.bilibili.com##.t-center.grid-area-ctnr
 ! 推荐直播
@@ -122,19 +126,20 @@ live.bilibili.com##.link-footer-ctnr
 live.bilibili.com##.hover-panel-wrap .area-banner
 ! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
+! 2233 形象
 live.bilibili.com###my-dear-haruna-vm
 ! 直播列表头像框
 live.bilibili.com##.blive-avatar-pendant
 ! 黄色闪电标志
 live.bilibili.com##.blive-avatar-icons
 ! 直播列表百舰标志、活动标志
-live.bilibili.com##a#card .img-bright-filter[style^=background-image]
+live.bilibili.com###card .img-bright-filter[style^=background-image]
 ! 屏蔽用户
-live.bilibili.com##div > a.card:matches-attr(href=/\/(10545|11588230|12235923|13576775|14893|15536|17961|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22262300|22288644|22333522|22347054|22389319|22470208|22603245|22622535|22696653|22746343|22816111|22824550|22924075|22976643|23199319|23652569|23770996|23771189|23969425|24393|25290861|25512501|2603963|26276187|3415150|4316215|4726132|5275|56237|594461|6374209|7038458|725364|7688602|80397|870004|876396|92450|938957)\?/)
+live.bilibili.com###card:matches-attr(href=/\/(10545|11588230|12235923|13576775|14893|15536|17961|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22262300|22288644|22333522|22347054|22389319|22470208|22603245|22622535|22696653|22746343|22816111|22824550|22924075|22976643|23199319|23652569|23770996|23771189|23969425|24393|25290861|25512501|2603963|26276187|3415150|4316215|4726132|5275|56237|594461|6374209|7038458|725364|7688602|80397|870004|876396|92450|938957)\?/):upward(1)
 ! 高亮本人弹幕
-live.bilibili.com##div.chat-item.danmaku-item:has(span.my-self):style(border-radius: 10px !important; background-color: rgba(32, 160, 255, 0.1) !important; border: 2px solid rgba(32, 160, 255, 0.5) !important;)
+live.bilibili.com##.chat-item.danmaku-item:has(span.my-self):style(border-radius: 10px !important; background-color: rgba(32, 160, 255, 0.1) !important; border: 2px solid rgba(32, 160, 255, 0.5) !important;)
 ! 底部弹幕
-live.bilibili.com##div.bili-dm.bili-center.bili-show
+live.bilibili.com##.bili-dm.bili-center.bili-show
 ! 礼物栏
 live.bilibili.com###gift-control-vm
 ! 网页全屏礼物栏
@@ -148,25 +153,23 @@ live.bilibili.com##.lower-row > .right-ctnr
 ! 直播下方活动推荐
 live.bilibili.com##.flip-view
 ! 直播下方直播间推荐
-live.bilibili.com##.room-info-ctnr > .card-box
-! 直播首页直播间
-live.bilibili.com##.player-ctnr #live-video
+live.bilibili.com###observerTarget
 ! 购物小黄车
 live.bilibili.com###shop-popover-vm
 ! 进房风险提醒
-live.bilibili.com##div.border-box.chat-item.convention-msg
+live.bilibili.com##.border-box.chat-item.convention-msg
 ! PK 开始提醒
-live.bilibili.com##div.chat-item.new-video-pk-item-dm
+live.bilibili.com##.chat-item.new-video-pk-item-dm
 ! PK 绝杀提醒
-live.bilibili.com##div.border-box.chat-item.common-danmuku-msg
+live.bilibili.com##.border-box.chat-item.common-danmuku-msg
 ! 贡献榜前三变动通知
-live.bilibili.com##div.danmaku-item.chat-item.top3-notice
+live.bilibili.com##.danmaku-item.chat-item.top3-notice
 ! 贡献榜前三标志
-live.bilibili.com##div.danmaku-item.chat-item .rank-icon
+live.bilibili.com##.danmaku-item.chat-item .rank-icon
 ! 头衔
-live.bilibili.com##div.danmaku-item.chat-item .title-label
+live.bilibili.com##.danmaku-item.chat-item .title-label
 ! 幻星派对
-live.bilibili.com##div#game-id
+live.bilibili.com###game-id
 ! PK 图层
 live.bilibili.com##.awesome-pk-box
 ! 屏蔽天选抽奖
@@ -178,9 +181,9 @@ live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
 
 ! https://t.bilibili.com/
 ! 简化顶部导航
-bilibili.com##ul.left-entry > li.v-popover-wrap:has(> a > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
+bilibili.com##.left-entry .v-popover-wrap:has(span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
 ! 简化顶部导航
-bilibili.com##ul.right-entry :is(div, li):has(span:has-text(/^(大会员)$/))
+bilibili.com##.right-entry > :is(div, li):has(span:has-text(/^(大会员)$/))
 ! 增大动态页左侧栏宽度
 t.bilibili.com##aside.left:style(min-width: 264px !important;)
 ! 增大动态页主栏宽度
@@ -193,30 +196,30 @@ t.bilibili.com##.bili-dyn-up-list__window:style(overflow-x: hidden !important;)
 t.bilibili.com##aside.right
 ||app.bilibili.com/x/topic/web/dynamic/rcmd$xhr,domain=t.bilibili.com
 ! 隐藏动态发表框
-t.bilibili.com##div.bili-dyn-publishing
+t.bilibili.com##.bili-dyn-publishing
 ! 头像框
-t.bilibili.com##.b-avatar__layer.center:nth-of-type(2)
+t.bilibili.com,space.bilibili.com##.b-avatar__layer.center:nth-of-type(2)
 ! 头像缩放到标准大小
-t.bilibili.com##.b-avatar__layer.center:style(width: 48px !important; height: 48px !important;)
+t.bilibili.com,space.bilibili.com##.b-avatar__layer.center:style(width: 48px !important; height: 48px !important;)
 ! 黄色闪电标志
-t.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
+t.bilibili.com,space.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
 ! 会员名称变色
-t.bilibili.com##.bili-dyn-title span.bili-dyn-title__text:remove-class(normal-vip-color)
+t.bilibili.com,space.bilibili.com##.bili-dyn-title__text:remove-class(normal-vip-color)
 ! 增大动态中表情，配合 greasemonkey 修改 src
-bilibili.com##img.bili-rich-text-emoji[alt*="_"]:style(height: 48px !important; width: 48px !important;)
+t.bilibili.com,space.bilibili.com##.bili-rich-text-emoji[alt*="_"]:style(height: 48px !important; width: 48px !important;)
 ! 动态下方的广告
-space.bilibili.com##.notice-item
-bilibili.com##.reply-notice
+t.bilibili.com,space.bilibili.com##.notice-item
+t.bilibili.com,space.bilibili.com##.reply-notice
 ! 购物动态
-t.bilibili.com##div.bili-dyn-list__item:has(.bili-dyn-card-goods__mark span:has-text(/UP主的推荐 · 来自(淘宝|京东)/))
+t.bilibili.com,space.bilibili.com##.bili-dyn-list__item:has(.bili-dyn-card-goods__mark > span:has-text(/UP主的推荐 · 来自(淘宝|京东)/))
 ! 屏蔽浮动评论栏
-t.bilibili.com##.fixed-reply-box
+t.bilibili.com,space.bilibili.com##.fixed-reply-box
 ! 自动展开动态
-bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
+t.bilibili.com,space.bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
 ! 自动展开动态
-bilibili.com##.bili-rich-text__content:remove-class(/folded|line--6/)
+t.bilibili.com,space.bilibili.com##.bili-rich-text__content:remove-class(/folded|line--6/)
 ! 自动展开动态
-bilibili.com##.bili-rich-text__action
+t.bilibili.com,space.bilibili.com##.bili-rich-text__action
 
 ! https://www.zhihu.com
 ! 主页顶部横幅
