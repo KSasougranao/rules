@@ -227,10 +227,10 @@ www.zhihu.com##.Topstory > div:nth-of-type(1)
 ! 底部版权信息
 www.zhihu.com##footer
 ! 创作者中心
-www.zhihu.com##div:has(> div.CreatorEntrance)
-www.zhihu.com##div.GlobalSideBar-category
+www.zhihu.com##.CreatorEntrance:upward(1)
+www.zhihu.com##.GlobalSideBar-category
 ! 问题侧栏
-!www.zhihu.com##div.Question-sideColumn
+!www.zhihu.com##.Question-sideColumn
 ! 相似问题
 !||www.zhihu.com/api/v4/questions/*/similar-questions$xhr,domain=www.zhihu.com
 ! 回答相关收藏夹
@@ -247,7 +247,7 @@ www.zhihu.com##.Reward
 ! 回答作者
 www.zhihu.com##.AnswerAuthor.Card
 ! 推荐页视频筛选
-www.zhihu.com##div.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
+www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
 ! 邀请回答
 ||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
 ||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
@@ -286,14 +286,14 @@ weibo.com##.toolbar_cursor_34j5V.toolbar_share_39C6P
 ! 热搜榜单
 ||weibo.com/ajax/side/hotSearch$xhr,1p
 ! 热门榜单美化
-weibo.com##div.wbpro-side-panel .icon
-weibo.com##div.wbpro-side-panel .clb.f13
+weibo.com##.wbpro-side-panel .icon
+weibo.com##.wbpro-side-panel .clb.f13
 weibo.com##.woo-box-alignCenter.woo-box-flex.con:style(padding-right: 0 !important;)
-weibo.com##div.wbpro-side-panel .wbpro-textcut:style(margin-right: 0 !important;)
+weibo.com##.wbpro-side-panel .wbpro-textcut:style(margin-right: 0 !important;)
 ! 顶部游戏入口
 weibo.com##.Links_box_17T3k.woo-box-alignCenter.woo-box-flex
 ! 推广
-weibo.com##div:has(> .wbpro-scroller-item .head-info_tag_3iMJw.wbpro-tag-c2.wbpro-tag)
+weibo.com##.wbpro-scroller-item:has(.head-info_tag_3iMJw.wbpro-tag-c2.wbpro-tag):upward(1)
 ! 底部版权信息
 weibo.com##.wbpro-side-copy
 ||weibo.com/ajax/common/getCopyright$xhr,1p
@@ -313,9 +313,9 @@ tieba.baidu.com###tiebaCustomPassLogin
 ! 导航栏
 tieba.baidu.com##.j_search_nav.search_nav > a:has-text(/^(资讯|视频|采购)$/)
 ! 导航栏-官方号
-tieba.baidu.com###com_userbar > ul > .u_official
+tieba.baidu.com##.u_official
 ! 导航栏-会员
-tieba.baidu.com###com_userbar > ul > .u_member
+tieba.baidu.com##.u_member
 ! 顶部大图
 tieba.baidu.com###plat_recom_carousel
 ! 顶部大图
@@ -323,7 +323,7 @@ tieba.baidu.com##.card_banner
 ! 右上角签到
 tieba.baidu.com##.card_top_right
 ! 直播贴
-tieba.baidu.com##div:has( > div > div > .threadListGroupCnt)
+tieba.baidu.com##.threadListGroupCnt:upward(3)
 ! 直播贴轮询
 ||tieba.baidu.com/live/getLiveTopicInfo$xhr,domain=tieba.baidu.com
 ! 右侧栏-本吧会员
@@ -337,7 +337,7 @@ tieba.baidu.com###my_tieba_mod
 ! 帖子右侧栏-意见反馈
 tieba.baidu.com###tieba-notice
 ! 帖子右侧栏-热门
-tieba.baidu.com##div > div.topic_list_box
+tieba.baidu.com##.topic_list_box:upward(1)
 ! 右侧浮动栏
 tieba.baidu.com##.tbui_aside_float_bar
 ! 用户会员标志
@@ -375,20 +375,6 @@ www.jianshu.com##aside._2OwGUo > div
 www.jianshu.com##section.ouvJEz:nth-of-type(2)
 
 ! 2024-02-11 https://www.huya.com
-||huyaimg.msstatic.com/cdnimage/*$image,domain=www.huya.com
-||livewebbs2.msstatic.com^$domain=www.huya.com
-||diy-assets.msstatic.com^$image,domain=www.huya.com
-||cdnws.api.huya.com^$xhr,1p
-||va.huya.com^$1p
-||wsapi.huya.com^$1p
-||p2p.huya.com^$1p
-||statwup.huya.com^$1p
-||metric.huya.com^$1p
-||df.huya.com^$1p
-||ext.huya.com^$1p
-||ylog.huya.com^$1p
-||electric-shop.yaoguo.com^$domain=huya.com
-||zt.msstatic.com^$image,domain=huya.com
 ! 直播脚本
 ||a.msstatic.com/huya/main3/assets
 ||a.msstatic.com/huya/main3/components
@@ -408,9 +394,9 @@ www.huya.com##em.tag-recommend
 ! 直播列表蓝光标志
 www.huya.com##em.tag-blue
 ! 直播右上标签美化
-www.huya.com##.game-live-item > a.video-info > p.tag-right > em.tag-pos2-content:style(background-color: rgba(0,0,0,0.6); font-size: 14px; line-height: 14px !important; padding: 5px !important;)
+www.huya.com##.tag-pos2-content:style(background-color: rgba(0,0,0,0.6); font-size: 14px; line-height: 14px !important; padding: 5px !important;)
 ! AI 弹幕
-www.huya.com##div:has(> .msg-normal > .msg-normal-decorationPrefix > img[src*=aizhushou])
+www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
 
 ! 2024年7月11日 https://live.kuaishou.com
 ||log-sdk.ksapisrv.com$important
@@ -448,16 +434,15 @@ www.douyin.com##.screen-mask
 ! 热门推荐
 www.douyin.com###hotItem
 ! 搜索栏精简
-douyin.com##button[data-e2e=searchbar-button] + div div[data-e2e=search-history-container] + div
-douyin.com##button[data-e2e=searchbar-button] + div div[data-e2e=search-guess-container]
-douyin.com##button[data-e2e=searchbar-button] + div div[data-e2e=search-guess-container] + div
-douyin.com##button[data-e2e=searchbar-button] + div div[data-e2e=search-hot-container]
+douyin.com##div[data-e2e=search-history-container] + div
+douyin.com##div[data-e2e=search-guess-container]
+douyin.com##div[data-e2e=search-guess-container] + div
+douyin.com##div[data-e2e=search-hot-container]
 ! 搜索栏猜你喜欢
 ||douyin.com/aweme/v1/web/api/suggest_words
 ! 跟踪参数
 ||www.iesdouyin.com/share/video/$document,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/,domain=www.iesdouyin.com
 ||douyin.com$document,removeparam=/^(aid|aweme_id|enter_from|gid|source)=/,domain=douyin.com
-
 
 ! https://live.douyin.com
 ! 去除跟踪参数
@@ -550,12 +535,26 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ! 鱼吧
 ||yuba.douyu.com$1p
 
+||cdnws.api.huya.com^$xhr,1p
 ||bee-wpm.huya.com$1p
 ||udblgn.huya.com$1p
 ||upevent.huya.com$1p
-||anchorpost.msstatic.com
-||static-jw.msstatic.com
-||business.msstatic.com
+||va.huya.com^$1p
+||wsapi.huya.com^$1p
+||p2p.huya.com^$1p
+||statwup.huya.com^$1p
+||metric.huya.com^$1p
+||df.huya.com^$1p
+||ext.huya.com^$1p
+||ylog.huya.com^$1p
+||electric-shop.yaoguo.com^$domain=huya.com
+||zt.msstatic.com^$image,domain=huya.com
+||anchorpost.msstatic.com^$domain=www.huya.com
+||static-jw.msstatic.com^$domain=www.huya.com
+||business.msstatic.com^$domain=www.huya.com
+||huyaimg.msstatic.com/cdnimage/*$image,domain=www.huya.com
+||livewebbs2.msstatic.com^$domain=www.huya.com
+||diy-assets.msstatic.com^$image,domain=www.huya.com
 
 ||mssdk.bytedance.com
 ||frontier-im.douyin.com$1p
