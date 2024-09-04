@@ -47,6 +47,8 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 ||pixon.ads-pixiv.net
 
 ! https://www.bilibili.com
+! 首页推荐橱窗
+www.bilibili.com##.carousel-container
 ! 首页广告
 www.bilibili.com##.feed-card:has(.bili-video-card__info--ad)
 ! 首页广告
@@ -324,6 +326,8 @@ tieba.baidu.com##.u_member
 tieba.baidu.com###plat_recom_carousel
 ! 顶部大图
 tieba.baidu.com##.card_banner
+! 固定搜索栏
+tieba.baidu.com##.search_main_fixed
 ! 右上角签到
 tieba.baidu.com##.card_top_right
 ! 直播贴
@@ -401,6 +405,18 @@ www.huya.com##em.tag-blue
 www.huya.com##.tag-pos2-content:style(background-color: rgba(0,0,0,0.6); font-size: 14px; line-height: 14px !important; padding: 5px !important;)
 ! AI 弹幕
 www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
+! 左侧导航栏
+www.huya.com##.sidebar-hide
+! 右侧弹幕区顶部
+www.huya.com##.room-sidebar-hd
+! 弹幕区系统提示消息
+www.huya.com###chat-room__list > div:nth-of-type(1)
+! 视频底部主播动态等
+www.huya.com##.room-footer
+! 播放器内主播订阅提醒
+www.huya.com###player-subscribe-wap
+! 常态隐藏播放器控制条
+www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transition: all 0ms !important;)
 
 ! 2024年7月11日 https://live.kuaishou.com
 ||log-sdk.ksapisrv.com$important
@@ -408,19 +424,35 @@ www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
 ||yximgs.com$image
 ||gifshow.com
 ! 直播滑动切换
-live.kuaishou.com##.control:has(> .switch-group)
+live.kuaishou.com##.control-wrapper
+! 侧栏礼物特效
+live.kuaishou.com##.show.gift-stack
+! 系统安全提醒
+live.kuaishou.com##.system.comment-cell:upward(1)
+! 侧栏底部消息
+live.kuaishou.com##.fold-message
 ! 隐藏右侧评论栏
-live.kuaishou.com###liveroom__sidebar
+!live.kuaishou.com###liveroom__sidebar
 ! 放大视频区域
-live.kuaishou.com##.swiper-wrapper:style(width: 100vw !important; height: 100vh !important;)
+!live.kuaishou.com##.swiper-wrapper:style(width: 100vw !important; height: 100vh !important;)
 ! 禁用其他播放区域，可以使自动跳转直播间失效
 live.kuaishou.com##.swiper-slide:nth-child(n + 2)
 ! 屏蔽礼物栏
 live.kuaishou.com##.gift-bar
 ! 屏蔽 K 币
 live.kuaishou.com##.kcoin
+! 偶现浮窗
+live.kuaishou.com##.top.tooltip-content:has-text(/^正常模式$/)
 
 ! https://www.douyu.com
+! 安全提示
+www.douyu.com##.Barrage-notice:upward(1)
+! 主播认证
+www.douyu.com##.Barrage-newAuth:upward(1)
+! 进入房间提醒
+www.douyu.com###js-barrage-extend-container
+! 弹幕列表紧贴顶部
+www.douyu.com##.Barrage:style(top: 0px !important;)
 ! 统一滚动弹幕颜色为白色
 www.douyu.com##div.scroll-209d08.danmuItem-31f924:style(color: white !important;)
 ! 统一侧栏弹幕颜色为黑色
@@ -442,6 +474,12 @@ douyin.com##div[data-e2e=search-history-container] + div
 douyin.com##div[data-e2e=search-guess-container]
 douyin.com##div[data-e2e=search-guess-container] + div
 douyin.com##div[data-e2e=search-hot-container]
+! 顶部导航
+douyin.com###douyin-header-menuCt pace-island > div > :has-text(/充钻石|客户端|快捷访问|壁纸|投稿/)
+! 左侧类目
+douyin.com##div[data-e2e=douyin-navigation] .prlW7G_5:has-text(/我的|放映厅|短剧|美食/)
+! 左侧类目
+douyin.com##div.n0rJzjLU.rsgoNBIr:nth-of-type(2)
 ! 搜索栏猜你喜欢
 ||douyin.com/aweme/v1/web/api/suggest_words
 ! 跟踪参数
@@ -549,6 +587,8 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||df.huya.com^$1p
 ||ext.huya.com^$1p
 ||ylog.huya.com^$1p
+||user.huya.com/user/getUserInfo^$1p
+||liveapi.huya.com/cache/room/roomMonitor^$1p
 ||electric-shop.yaoguo.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
 ||anchorpost.msstatic.com^$domain=www.huya.com
