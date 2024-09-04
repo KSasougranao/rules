@@ -185,7 +185,7 @@ live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
 
 ! https://t.bilibili.com/
 ! 简化顶部导航
-bilibili.com##.left-entry .v-popover-wrap:has(> .default-entry > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
+bilibili.com##.left-entry .v-popover-wrap:has(> a > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
 ! 简化顶部导航
 bilibili.com##.right-entry > :is(div, li):has(span:has-text(/^(大会员)$/))
 ! 增大动态页左侧栏宽度
