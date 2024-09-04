@@ -409,14 +409,30 @@ www.huya.com##.tag-pos2-content:style(background-color: rgba(0,0,0,0.6); font-si
 www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
 ! 左侧导航栏
 www.huya.com##.sidebar-hide
+! 手机观看
+www.huya.com##.jump-to-phone
+! 分享
+www.huya.com##.share-entrance
+! 举报
+www.huya.com###J_illegalReport
 ! 右侧弹幕区顶部
 www.huya.com##.room-sidebar-hd
+! 弹幕区锁屏
+www.huya.com##.lockBtn
+! 弹幕区清屏
+www.huya.com##.clearBtn
 ! 弹幕区系统提示消息
 www.huya.com###chat-room__list > div:nth-of-type(1)
 ! 礼物栏
 www.huya.com###player-gift-wrap
 ! 视频底部主播动态等
 www.huya.com##.room-footer
+! 大号播放按钮
+www.huya.com##.player-play-big
+! 暂停浮窗
+www.huya.com##.player-app-qrcode
+! 分享、画中画
+www.huya.com##.player-top-right-btn
 ! 播放器内主播订阅提醒
 www.huya.com###player-subscribe-wap
 ! 增大播放器
