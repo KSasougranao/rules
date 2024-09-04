@@ -397,6 +397,8 @@ www.huya.com##.NavKaiBo--3_pcnDZbeaycODmpgNFBtt.NavItem--1jr9x80QTPbnrDwqn834hF
 www.huya.com##.NavDownload--14eln2LYTFMgF_MZOue4Gu.NavItem--1jr9x80QTPbnrDwqn834hF
 ! 导航栏任务
 www.huya.com##div.NavItem--1jr9x80QTPbnrDwqn834hF:nth-of-type(5)
+! 分区顶部橱窗
+www.huya.com###J_listAdx
 ! 直播列表推荐标志
 www.huya.com##em.tag-recommend
 ! 直播列表蓝光标志
@@ -411,10 +413,14 @@ www.huya.com##.sidebar-hide
 www.huya.com##.room-sidebar-hd
 ! 弹幕区系统提示消息
 www.huya.com###chat-room__list > div:nth-of-type(1)
+! 礼物栏
+www.huya.com###player-gift-wrap
 ! 视频底部主播动态等
 www.huya.com##.room-footer
 ! 播放器内主播订阅提醒
 www.huya.com###player-subscribe-wap
+! 增大播放器
+www.huya.com###player-wrap:style(height: 100% !important;)
 ! 常态隐藏播放器控制条
 www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transition: all 0ms !important;)
 
