@@ -55,6 +55,8 @@ www.bilibili.com##.bili-video-card:has(.bili-video-card__info--ad)
 www.bilibili.com##.is-rcmd.bili-live-card
 ! 首页频道推荐
 www.bilibili.com##.floor-single-card
+! 首页视频卡片高度不一致
+www.bilibili.com##.enable-no-interest.is-rcmd.bili-video-card:nth-of-type(13):style(margin-top: 40px !important;)
 ! 屏蔽搜索推荐
 bilibili.com##.search-panel .trending
 ! 屏蔽搜索栏默认值
@@ -77,6 +79,8 @@ www.bilibili.com##.bpx-player-toast-wrap
 www.bilibili.com##.bpx-player-cmd-dm-wrap
 ! 视频弹窗-推荐
 www.bilibili.com##.bili-cmd-shrink
+! 视频下投稿活动
+www.bilibili.com###activity_vote
 ! 视频下直播推荐
 www.bilibili.com###live_recommand_report
 ! 视频右下广告
@@ -181,7 +185,7 @@ live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
 
 ! https://t.bilibili.com/
 ! 简化顶部导航
-bilibili.com##.left-entry .v-popover-wrap:has(span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
+bilibili.com##.left-entry .v-popover-wrap:has(> .default-entry > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
 ! 简化顶部导航
 bilibili.com##.right-entry > :is(div, li):has(span:has-text(/^(大会员)$/))
 ! 增大动态页左侧栏宽度
@@ -521,14 +525,12 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||dataflow.biliapi.com
 
 ! 似乎是和搜索有关的请求
-||ug.baidu.com
 ||hectorstatic.baidu.com
 ||mbd.baidu.com
+||miaowu.baidu.com
+||ug.baidu.com
+||xlab.baidu.com
 ||ns-strategy.cdn.bcebos.com
-
-||stat6.y.qq.com
-||galileotelemetry.tencent.com
-||tpstelemetry.tencent.com
 
 ||msg.douyu.com$1p
 ||g.wan.douyu.com$1p
@@ -582,3 +584,6 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||mazu.3g.qq.com
 ||pingjs.qq.com
 ||rmonitor.qq.com
+||stat6.y.qq.com
+||galileotelemetry.tencent.com
+||tpstelemetry.tencent.com
