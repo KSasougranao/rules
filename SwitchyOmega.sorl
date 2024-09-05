@@ -1,6 +1,7 @@
 [SwitchyOmega Conditions]
 .lencr.org
 ocsp.globalsign.com
+ocsp2.globalsign.com
 passport.bilibili.com
 www.bilibili.com
 t.bilibili.com
@@ -51,14 +52,16 @@ img.nga.178.com
 img4.nga.178.com
 img.nga.cn
 www.huya.com
-cdnws.api.huya.com
 **.cdn.huya.com
 **.flv.huya.com
 tx-vod.cdn.huya.com
 a.msstatic.com
-live-cover.msstatic.com
 huyaimg.msstatic.com
+cdnws.api.huya.com
+anchorpost.msstatic.com
+live-cover.msstatic.com
 tx-live-cover.msstatic.com
+www.douyu.com
 **.edgesrv.com
 **.douyucdn.cn
 **.douyucdn2.cn
@@ -74,6 +77,8 @@ live.douyin.com
 **.douyinvod.com
 live.kuaishou.com
 **.yximgs.com
+**.kwimgs.com
+**.kskwai.com
 www.xiaohongshu.com
 ci.xiaohongshu.com
 **.xhscdn.com
@@ -105,6 +110,8 @@ token.services.mozilla.com
 safebrowsing.googleapis.com
 fonts.gstatic.com
 www.recaptcha.net
+www.gstatic.cn
+www.gstatic.com
 pixiv.pximg.net
 **.akamai.steamstatic.com
 cf.mhgui.com
