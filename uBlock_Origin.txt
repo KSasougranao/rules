@@ -18,6 +18,7 @@ twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ||ton.local.twitter.com
 
 ! https://www.pixiv.net
+!! 作品页
 ! 右侧广告占位
 www.pixiv.net##iframe[name="responsive"]:upward(2)
 ! 右侧广告占位
@@ -30,6 +31,7 @@ www.pixiv.net##:has(> .dmnOnu)
 www.pixiv.net##iframe[name="500x500"]:upward(1)
 ! 底部广告
 www.pixiv.net##iframe[name="footer"]:upward(1)
+!! 书签页
 ! 隐藏书签页过多候选 tag
 www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
 ! track
@@ -39,14 +41,16 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 ||www.googletagmanager.com^$script,domain=www.pixiv.net
 @@||googletagmanager.com/gtag/js$script,redirect-rule,domain=www.pixiv.net
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=www.pixiv.net
-! 其他请求
+! 广告和会员
+||pixon.ads-pixiv.net
 ||api.booth.pm/pixiv/shops/show.json$xhr,domain=www.pixiv.net
 ||imp.pixiv.net/premium_lp$subdocument,domain=www.pixiv.net
+! 其他
 ||www.pixiv.net/rpc/notify_count.php$xhr,domain=www.pixiv.net
 ||www.pixiv.net/ajax/message/can_send/*$xhr,1p
-||pixon.ads-pixiv.net
 
 ! https://www.bilibili.com
+!! 首页
 ! 首页推荐橱窗
 www.bilibili.com##.carousel-container
 ! 首页广告
@@ -59,6 +63,7 @@ www.bilibili.com##.is-rcmd.bili-live-card
 www.bilibili.com##.floor-single-card
 ! 首页视频卡片高度不一致
 www.bilibili.com##.enable-no-interest.is-rcmd.bili-video-card:nth-of-type(13):style(margin-top: 40px !important;)
+!! 搜索
 ! 屏蔽搜索推荐
 bilibili.com##.search-panel .trending
 ! 屏蔽搜索栏默认值
@@ -69,6 +74,7 @@ bilibili.com##.search-panel .trending
 search.bilibili.com##.bili-video-card:has(.bili-video-card__info--living):upward(1)
 ! 游戏活动屏蔽
 search.bilibili.com##.activity-game-list
+!! 视频页
 ! 展开视频合集列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
 ! 展开视频分 P 选集列表
@@ -93,23 +99,30 @@ www.bilibili.com##.video-page-special-card-small
 www.bilibili.com##.video-page-operator-card-small
 ! 视频推荐底部直播推荐
 www.bilibili.com##.pop-live-small-mode
+! 视频推荐底部直播推荐
 ||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList$xhr,domain=www.bilibili.com
-! 上报
-||data.bilibili.com
+! track
 ||api.bilibili.com/x/web-show/res/locs$xhr,1p
 ||api.bilibili.com/x/web-show/wbi/res/locs$xhr,1p
+||dataflow.biliapi.com$domain=bilibili.com
+||data.bilibili.com$1p
 ! 跟踪参数
 ||www.bilibili.com/read/$document,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/,domain=www.bilibili.com
 ||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/,domain=www.bilibili.com
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
 ||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/
 ||space.bilibili.com/$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
+! 其他
+||cm.bilibili.com$1p
+||manga.bilibili.com$1p
+||biligame.com$domain=bilibili.com
 
 ! https://live.bilibili.com
 ! 导航栏
 live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|生活|帮我玩|互动玩法|购物/))
 ! 导航栏
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
+!! 直播站首页
 ! 屏蔽首页直播间
 ||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,domain=live.bilibili.com
 ! 屏蔽首页直播间
@@ -130,10 +143,9 @@ live.bilibili.com##.recommend-area-ctnr
 live.bilibili.com##.link-footer-ctnr
 ! 屏蔽分区推荐 popup header
 live.bilibili.com##.hover-panel-wrap .area-banner
+!! 直播分区
 ! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
-! 2233 形象
-live.bilibili.com###my-dear-haruna-vm
 ! 直播列表头像框
 live.bilibili.com##.blive-avatar-pendant
 ! 黄色闪电标志
@@ -142,26 +154,32 @@ live.bilibili.com##.blive-avatar-icons
 live.bilibili.com###card .img-bright-filter[style^=background-image]
 ! 屏蔽用户
 live.bilibili.com###card:matches-attr(href=/\/(10545|11588230|12235923|13576775|14893|15536|17961|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22262300|22288644|22333522|22347054|22389319|22470208|22603245|22622535|22696653|22746343|22816111|22824550|22924075|22976643|23199319|23652569|23770996|23771189|23969425|24393|25290861|25512501|2603963|26276187|3415150|4316215|4726132|5275|56237|594461|6374209|7038458|725364|7688602|80397|870004|876396|92450|938957)\?/):upward(1)
-! 高亮本人弹幕
-live.bilibili.com##.chat-item.danmaku-item:has(span.my-self):style(border-radius: 10px !important; background-color: rgba(32, 160, 255, 0.1) !important; border: 2px solid rgba(32, 160, 255, 0.5) !important;)
-! 底部弹幕
-live.bilibili.com##.bili-dm.bili-center.bili-show
+!! 直播间
 ! 礼物栏
 live.bilibili.com###gift-control-vm
 ! 网页全屏礼物栏
 live.bilibili.com###web-player__bottom-bar__container
-! 未登录时游客隐私提醒
-live.bilibili.com##.privacy-dialog
-! 未登录时隐藏弹幕输入栏
-live.bilibili.com###switch-login-guide-vm
 ! 右上角活动
 live.bilibili.com##.lower-row > .right-ctnr
+! 购物小黄车
+live.bilibili.com###shop-popover-vm
 ! 直播下方活动推荐
 live.bilibili.com##.flip-view
 ! 直播下方直播间推荐
 live.bilibili.com###observerTarget
-! 购物小黄车
-live.bilibili.com###shop-popover-vm
+! 幻星派对
+live.bilibili.com###game-id
+! PK 图层
+live.bilibili.com##.awesome-pk-box
+! 屏蔽天选抽奖
+live.bilibili.com###anchor-guest-box-id
+! 2233 形象
+live.bilibili.com###my-dear-haruna-vm
+! 高亮本人弹幕
+live.bilibili.com##.chat-item.danmaku-item:has(span.my-self):style(border-radius: 10px !important; background-color: rgba(32, 160, 255, 0.1) !important; border: 2px solid rgba(32, 160, 255, 0.5) !important;)
+!! 直播间右侧弹幕栏
+! 未登录时游客隐私提醒
+live.bilibili.com##.privacy-dialog
 ! 进房风险提醒
 live.bilibili.com##.border-box.chat-item.convention-msg
 ! PK 开始提醒
@@ -174,12 +192,13 @@ live.bilibili.com##.danmaku-item.chat-item.top3-notice
 live.bilibili.com##.danmaku-item.chat-item .rank-icon
 ! 头衔
 live.bilibili.com##.danmaku-item.chat-item .title-label
-! 幻星派对
-live.bilibili.com###game-id
-! PK 图层
-live.bilibili.com##.awesome-pk-box
-! 屏蔽天选抽奖
-live.bilibili.com###anchor-guest-box-id
+! 侧栏底部进房提醒、礼物提醒等
+live.bilibili.com###brush-prompt
+! 未登录时隐藏弹幕输入栏
+live.bilibili.com###switch-login-guide-vm
+!! 直播间播放器
+! 底部弹幕
+live.bilibili.com##.bili-dm.bili-center.bili-show
 ! 统一弹幕颜色为白色
 live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
 ! track
@@ -190,6 +209,7 @@ live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
 bilibili.com##.left-entry .v-popover-wrap:has(> a > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
 ! 简化顶部导航
 bilibili.com##.right-entry > :is(div, li):has(span:has-text(/^(大会员)$/))
+!! 时间线
 ! 增大动态页左侧栏宽度
 t.bilibili.com##aside.left:style(min-width: 264px !important;)
 ! 增大动态页主栏宽度
@@ -203,6 +223,7 @@ t.bilibili.com##aside.right
 ||app.bilibili.com/x/topic/web/dynamic/rcmd$xhr,domain=t.bilibili.com
 ! 隐藏动态发表框
 t.bilibili.com##.bili-dyn-publishing
+!! 动态
 ! 头像框
 t.bilibili.com,space.bilibili.com##.b-avatar__layer.center:nth-of-type(2)
 ! 头像缩放到标准大小
@@ -213,8 +234,9 @@ t.bilibili.com,space.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
 t.bilibili.com,space.bilibili.com##.bili-dyn-title__text:remove-class(normal-vip-color)
 ! 增大动态中表情，配合 greasemonkey 修改 src
 t.bilibili.com,space.bilibili.com##.bili-rich-text-emoji[alt*="_"]:style(height: 48px !important; width: 48px !important;)
-! 动态下方的广告
+! 动态下方广告
 t.bilibili.com,space.bilibili.com##.notice-item
+! 动态下方广告
 t.bilibili.com,space.bilibili.com##.reply-notice
 ! 购物动态
 t.bilibili.com,space.bilibili.com##.bili-dyn-list__item:has(.bili-dyn-card-goods__mark > span:has-text(/UP主的推荐 · 来自(淘宝|京东)/))
@@ -224,41 +246,52 @@ t.bilibili.com,space.bilibili.com##.fixed-reply-box
 t.bilibili.com,space.bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
 ! 自动展开动态
 t.bilibili.com,space.bilibili.com##.bili-rich-text__content:remove-class(/folded|line--6/)
-! 自动展开动态
+! 自动展开动态-隐藏按钮
 t.bilibili.com,space.bilibili.com##.bili-rich-text__action
 
 ! https://www.zhihu.com
+! 导航栏活动
+www.zhihu.com##.AppHeader-Tabs.Tabs
 ! 主页顶部横幅
 www.zhihu.com##.Topstory > div:nth-of-type(1)
-! 底部版权信息
-www.zhihu.com##footer
+! 推荐页视频筛选
+www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
+!! 主页右侧栏
+! 主页右侧栏
+www.zhihu.com##.Topstory-mainColumn ~ div
 ! 创作者中心
 www.zhihu.com##.CreatorEntrance:upward(1)
+! 分类入口
 www.zhihu.com##.GlobalSideBar-category
+! 底部版权信息
+www.zhihu.com##footer
+! 主页侧栏创作者相关请求
+||www.zhihu.com/api/v4/creators/extra_card$xhr,domain=www.zhihu.com
+! 主页侧栏用户推荐
+||www.zhihu.com/api/v4/moments/recommend_follow_people$xhr,domain=www.zhihu.com
+!! 问题页
+! 邀请用户
+www.zhihu.com##.QuestionInvitation.Card
 ! 问题侧栏
 !www.zhihu.com##.Question-sideColumn
 ! 相似问题
 !||www.zhihu.com/api/v4/questions/*/similar-questions$xhr,domain=www.zhihu.com
-! 回答相关收藏夹
-||www.zhihu.com/api/v4/answers/*/favlists$xhr,domain=www.zhihu.com
-! 主页侧栏
-||www.zhihu.com/api/v4/creators/extra_card$xhr,domain=www.zhihu.com
-||www.zhihu.com/api/v4/moments/recommend_follow_people$xhr,domain=www.zhihu.com
 ! 搜索词、话题识别
 ||www.zhihu.com/api/v3/entity_word$xhr,1p
+! 邀请回答
+||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
+||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
+||www.zhihu.com/api/v4/questions/*/inviters$xhr,1p
+!! 回答和回答页
 ! 点赞用户
 ||www.zhihu.com/api/v4/answers/*/relationship$xhr,1p
 ! 赞赏
 www.zhihu.com##.Reward
 ! 回答作者
 www.zhihu.com##.AnswerAuthor.Card
-! 推荐页视频筛选
-www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
-! 邀请回答
-||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
-||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
-||www.zhihu.com/api/v4/questions/*/inviters$xhr,1p
-! ??
+! 回答相关收藏夹
+||www.zhihu.com/api/v4/answers/*/favlists$xhr,domain=www.zhihu.com
+! track??
 ||mqtt-web.zhihu.com^$1p
 ||apm.zhihu.com^$1p
 
@@ -316,12 +349,14 @@ weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-
 ! https://tieba.baidu.com
 ! 登录弹窗
 tieba.baidu.com###tiebaCustomPassLogin
+!! 贴吧页
 ! 导航栏
 tieba.baidu.com##.j_search_nav.search_nav > a:has-text(/^(资讯|视频|采购)$/)
 ! 导航栏-官方号
 tieba.baidu.com##.u_official
 ! 导航栏-会员
 tieba.baidu.com##.u_member
+!! 贴吧内容
 ! 顶部大图
 tieba.baidu.com###plat_recom_carousel
 ! 顶部大图
@@ -348,12 +383,14 @@ tieba.baidu.com###tieba-notice
 tieba.baidu.com##.topic_list_box:upward(1)
 ! 右侧浮动栏
 tieba.baidu.com##.tbui_aside_float_bar
+!! 用户展示
 ! 用户会员标志
 tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
 ! 用户身份标志
 tieba.baidu.com##.d_icons
 ! 用户身份标志
 tieba.baidu.com##.frs_bright_icons.icon_wrap_theme1.icon_wrap
+!! 帖子页
 ! 帖子楼层背景
 tieba.baidu.com##.save_face_bg_2.save_face_bg
 ! 选词搜索
@@ -383,13 +420,8 @@ www.jianshu.com##aside._2OwGUo > div
 www.jianshu.com##section.ouvJEz:nth-of-type(2)
 
 ! 2024-02-11 https://www.huya.com
-! 直播脚本
-||a.msstatic.com/huya/main3/assets
-||a.msstatic.com/huya/main3/components
-||a.msstatic.com/huya/main3/node_modules
-||a.msstatic.com/huya/main3/static
-||a.msstatic.com/huya/main3/widget
-! 去除无用参数
+!! 全站
+! 跟踪参数
 ||www.huya.com$document,removeparam=/^(|curpage|curlocation)=/,domain=www.huya.com
 ! 导航栏开播
 www.huya.com##.NavKaiBo--3_pcnDZbeaycODmpgNFBtt.NavItem--1jr9x80QTPbnrDwqn834hF
@@ -397,6 +429,7 @@ www.huya.com##.NavKaiBo--3_pcnDZbeaycODmpgNFBtt.NavItem--1jr9x80QTPbnrDwqn834hF
 www.huya.com##.NavDownload--14eln2LYTFMgF_MZOue4Gu.NavItem--1jr9x80QTPbnrDwqn834hF
 ! 导航栏任务
 www.huya.com##div.NavItem--1jr9x80QTPbnrDwqn834hF:nth-of-type(5)
+!! 直播分区
 ! 分区顶部橱窗
 www.huya.com###J_listAdx
 ! 直播列表推荐标志
@@ -405,8 +438,11 @@ www.huya.com##em.tag-recommend
 www.huya.com##em.tag-blue
 ! 直播右上标签美化
 www.huya.com##.tag-pos2-content:style(background-color: rgba(0,0,0,0.6); font-size: 14px; line-height: 14px !important; padding: 5px !important;)
-! AI 弹幕
-www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
+!! 直播间
+! 直播间背景
+www.huya.com##.special-bg
+! 直播间头图
+www.huya.com##.J_un_race.diy-toutu2
 ! 左侧导航栏
 www.huya.com##.sidebar-hide
 ! 手机观看
@@ -415,6 +451,10 @@ www.huya.com##.jump-to-phone
 www.huya.com##.share-entrance
 ! 举报
 www.huya.com###J_illegalReport
+! 礼物栏
+www.huya.com###player-gift-wrap
+! 视频底部主播动态等
+www.huya.com##.room-footer
 ! 右侧弹幕区顶部
 www.huya.com##.room-sidebar-hd
 ! 弹幕区锁屏
@@ -423,10 +463,9 @@ www.huya.com##.lockBtn
 www.huya.com##.clearBtn
 ! 弹幕区系统提示消息
 www.huya.com###chat-room__list > div:nth-of-type(1)
-! 礼物栏
-www.huya.com###player-gift-wrap
-! 视频底部主播动态等
-www.huya.com##.room-footer
+! AI 弹幕
+www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
+!! 直播间播放器
 ! 大号播放按钮
 www.huya.com##.player-play-big
 ! 暂停浮窗
@@ -439,6 +478,41 @@ www.huya.com###player-subscribe-wap
 www.huya.com###player-wrap:style(height: 100% !important;)
 ! 常态隐藏播放器控制条
 www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transition: all 0ms !important;)
+! 直播脚本
+||cdnws.api.huya.com^$xhr,1p
+||bee-wpm.huya.com$1p
+||fileserver.cdn.huya.com$1p
+||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
+||df.huya.com^$1p
+||ext.huya.com^$1p
+||liveapi.huya.com$script,1p
+||liveapi.huya.com/cache/room/roomMonitor^$1p
+||liveapi.huya.com/livelist/getUserLikeList$xhr,1p
+||metric.huya.com^$1p
+||p2p.huya.com^$1p
+||statwup.huya.com^$1p
+||udblgn.huya.com$1p
+||upevent.huya.com$1p
+||user.huya.com/user/getUserInfo^$1p
+||va.huya.com^$1p
+||wsapi.huya.com^$1p
+||ylog.huya.com^$1p
+||a.msstatic.com/huya/hd/cdn_libs/performance_report-min.js$script,domain=huya.com
+||a.msstatic.com/huya/hd/h5/header/components/RichVideo$script,domain=huya.com
+||a.msstatic.com/huya/main3/assets$script,domain=huya.com
+||a.msstatic.com/huya/main3/components$script,domain=huya.com
+||a.msstatic.com/huya/main3/node_modules$script,domain=huya.com
+||a.msstatic.com/huya/main3/static$script,domain=huya.com
+||a.msstatic.com/huya/main3/widget$script,domain=huya.com
+||anchorpost.msstatic.com^$domain=huya.com
+||business.msstatic.com^$domain=huya.com
+||diy-assets.msstatic.com^$image,domain=huya.com
+||huyaimg.msstatic.com/cdnimage/*$image,domain=huya.com
+||livewebbs2.msstatic.com^$domain=huya.com
+||s1-static.msstatic.com$script,domain=huya.com
+||static-jw.msstatic.com^$domain=huya.com
+||zt.msstatic.com^$image,domain=huya.com
+||electric-shop.yaoguo.com^$domain=huya.com
 
 ! 2024年7月11日 https://live.kuaishou.com
 ||log-sdk.ksapisrv.com$important
@@ -479,10 +553,15 @@ www.douyu.com##.Barrage:style(top: 0px !important;)
 www.douyu.com##div.scroll-209d08.danmuItem-31f924:style(color: white !important;)
 ! 统一侧栏弹幕颜色为黑色
 www.douyu.com##.Barrage-content:style(color: black !important;)
-||dz11.com
-!shark2.douyucdn.cn/front-publish/live-master/js/room
-||webconf.douyucdn.cn/resource
+! 跟踪参数
 ||www.douyu.com$document,removeparam=/^(dyshid|dyshci)=/,domain=www.douyu.com
+! 其他
+||dz11.com
+||msg.douyu.com$1p
+||g.wan.douyu.com$1p
+||yuba.douyu.com$1p
+!shark2.douyucdn.cn/front-publish/live-master/js/room$domain=douyu.com
+||webconf.douyucdn.cn/resource$domain=douyu.com
 
 ! https://www.douyin.com
 ! 登录弹窗
@@ -507,10 +586,24 @@ douyin.com##div.n0rJzjLU.rsgoNBIr:nth-of-type(2)
 ! 跟踪参数
 ||www.iesdouyin.com/share/video/$document,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/,domain=www.iesdouyin.com
 ||douyin.com$document,removeparam=/^(aid|aweme_id|enter_from|gid|source)=/,domain=douyin.com
+! 反屏蔽？
+||bytednsdoc.com$domain=douyin.com
+! search default 等
+||bytetcc.com$domain=douyin.com
+! 其他
+||mssdk.bytedance.com$domain=douyin.com
+||frontier-im.douyin.com$1p
+||frontier-pc.douyin.com$1p
+||imapi.douyin.com$1p
+||api.feelgood.cn$domain=douyin.com
+||new.gracebot.cn$domain=douyin.com
+||vegslb.com$domain=douyin.com
+||volcsirius.com$domain=douyin.com
+||zijieapi.com$domain=douyin.com
 
 ! https://live.douyin.com
-! 去除跟踪参数
-||live.douyin.com$document,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/,domain=live.douyin.com
+! 人气、礼物橱窗等
+live.douyin.com##.EEnUp5fM > :not(.chat_room_fold)
 ! 礼物赠送弹窗
 live.douyin.com##.GiftTrayPlugin
 ! 福袋
@@ -519,6 +612,7 @@ live.douyin.com##.ShortTouchContainer
 live.douyin.com##.aqK_4_5U
 ! 礼物栏
 live.douyin.com##.xgplayer > pace-island > div > span > pace-island > div > a
+!! 右侧弹幕区
 ! 观众榜单
 live.douyin.com##.Qsns7NdQ.kz8VfOyK
 ! 观众排名变动
@@ -526,9 +620,11 @@ live.douyin.com##.webcast-chatroom__room-message
 ! 进入房间消息
 live.douyin.com##.webcast-chatroom___bottom-message
 ! 礼物赠送消息-侧栏
-live.douyin.com##div.webcast-chatroom___enter-done.webcast-chatroom___item:has(> div > span:nth-of-type(3) > span > span > img)
+live.douyin.com##.webcast-chatroom___enter-done.webcast-chatroom___item:has(.lEfJhurR)
 ! 礼物赠送消息-滚动
-live.douyin.com##xg-danmu.xgplayer-danmu > div:has(> div > img.content-with-gift_danmaku)
+live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
+! 去除跟踪参数
+||live.douyin.com$document,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/,domain=live.douyin.com
 
 ! 2024-03-12 https://blog.csdn.net
 ! 左侧广告
@@ -559,6 +655,8 @@ bbs.nga.cn##.hld__docker
 bbs.nga.cn##.cpinfo
 ! 顶部 tab
 bbs.nga.cn##.innerbg > div:nth-of-type(2) > div.td
+! 广告图片？
+||cimg.178.com
 
 ! https://www.miguvideo.com
 www.miguvideo.com##.com-comment
@@ -566,6 +664,11 @@ www.miguvideo.com##.com-comment
 www.miguvideo.com##.footer-inner
 ! app 下载引导
 www.miguvideo.com##.user-guide-app
+! 其他
+||uem.migu.cn
+||jadeite.miguvideo.com
+||m.miguvideo.com
+||program-sc.miguvideo.com
 
 ! https://olympics.com
 ! 屏蔽广告
@@ -577,12 +680,6 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||logs.leetcode-cn.com^$xhr,domain=leetcode.cn
 ||logs.leetcode.cn^$xhr,1p
 ||ff-proxy.leetcode.cn
-||cimg.178.com
-
-||biligame.com
-||cm.bilibili.com$1p
-||manga.bilibili.com$1p
-||dataflow.biliapi.com
 
 ! 似乎是和搜索有关的请求
 ||hectorstatic.baidu.com
@@ -592,53 +689,6 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||xlab.baidu.com
 ||ns-strategy.cdn.bcebos.com
 
-||msg.douyu.com$1p
-||g.wan.douyu.com$1p
-! 鱼吧
-||yuba.douyu.com$1p
-
-||cdnws.api.huya.com^$xhr,1p
-||bee-wpm.huya.com$1p
-||udblgn.huya.com$1p
-||upevent.huya.com$1p
-||va.huya.com^$1p
-||wsapi.huya.com^$1p
-||p2p.huya.com^$1p
-||statwup.huya.com^$1p
-||metric.huya.com^$1p
-||df.huya.com^$1p
-||ext.huya.com^$1p
-||ylog.huya.com^$1p
-||user.huya.com/user/getUserInfo^$1p
-||liveapi.huya.com/cache/room/roomMonitor^$1p
-||electric-shop.yaoguo.com^$domain=huya.com
-||zt.msstatic.com^$image,domain=huya.com
-||anchorpost.msstatic.com^$domain=www.huya.com
-||static-jw.msstatic.com^$domain=www.huya.com
-||business.msstatic.com^$domain=www.huya.com
-||huyaimg.msstatic.com/cdnimage/*$image,domain=www.huya.com
-||livewebbs2.msstatic.com^$domain=www.huya.com
-||diy-assets.msstatic.com^$image,domain=www.huya.com
-
-||mssdk.bytedance.com
-||frontier-im.douyin.com$1p
-||frontier-pc.douyin.com$1p
-! ?
-||vegslb.com
-||volcsirius.com
-||zijieapi.com
-||api.feelgood.cn
-||imapi.douyin.com$1p
-||new.gracebot.cn
-! 反屏蔽？
-||bytednsdoc.com
-! search default 等
-||bytetcc.com
-
-||uem.migu.cn
-||m.miguvideo.com
-||program-sc.miguvideo.com
-||jadeite.miguvideo.com
 
 ||knet.cn
 
