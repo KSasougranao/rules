@@ -122,6 +122,8 @@ www.bilibili.com##.pop-live-small-mode
 live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|生活|帮我玩|互动玩法|购物/))
 ! 导航栏
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
+! 导航栏右侧
+live.bilibili.com##.shortcuts-ctnr
 !! 直播站首页
 ! 屏蔽首页直播间
 ||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,domain=live.bilibili.com
@@ -256,6 +258,8 @@ www.zhihu.com##.AppHeader-Tabs.Tabs
 www.zhihu.com##.Topstory > div:nth-of-type(1)
 ! 推荐页视频筛选
 www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
+! 视频分区
+www.zhihu.com##a.Topstory-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
 !! 主页右侧栏
 ! 主页右侧栏
 www.zhihu.com##.Topstory-mainColumn ~ div
@@ -419,7 +423,7 @@ www.jianshu.com##aside._2OwGUo > div
 ! 底部推广
 www.jianshu.com##section.ouvJEz:nth-of-type(2)
 
-! 2024-02-11 https://www.huya.com
+! https://www.huya.com
 !! 全站
 ! 跟踪参数
 ||www.huya.com$document,removeparam=/^(|curpage|curlocation)=/,domain=www.huya.com
@@ -432,6 +436,12 @@ www.huya.com##div.NavItem--1jr9x80QTPbnrDwqn834hF:nth-of-type(5)
 !! 直播分区
 ! 分区顶部橱窗
 www.huya.com###J_listAdx
+! 调整分区名称
+www.huya.com##.game-live-box.box:style(margin-top: 0px !important;)
+! 调整分区名称
+www.huya.com##.liveList-header:style(margin-top: 0px !important;)
+! 节目预告
+www.huya.com###j-list-preview-box
 ! 直播列表推荐标志
 www.huya.com##em.tag-recommend
 ! 直播列表蓝光标志
@@ -504,7 +514,6 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||a.msstatic.com/huya/main3/node_modules$script,domain=huya.com
 ||a.msstatic.com/huya/main3/static$script,domain=huya.com
 ||a.msstatic.com/huya/main3/widget$script,domain=huya.com
-||anchorpost.msstatic.com^$domain=huya.com
 ||business.msstatic.com^$domain=huya.com
 ||diy-assets.msstatic.com^$image,domain=huya.com
 ||huyaimg.msstatic.com/cdnimage/*$image,domain=huya.com
@@ -514,9 +523,8 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||zt.msstatic.com^$image,domain=huya.com
 ||electric-shop.yaoguo.com^$domain=huya.com
 
-! 2024年7月11日 https://live.kuaishou.com
+! https://live.kuaishou.com
 ||log-sdk.ksapisrv.com$important
-||static.yximgs.com/live/game/screenshot$image
 ||yximgs.com$image
 ||gifshow.com
 ! 直播滑动切换
@@ -578,9 +586,9 @@ douyin.com##div[data-e2e=search-hot-container]
 ! 顶部导航
 douyin.com###douyin-header-menuCt pace-island > div > :has-text(/充钻石|客户端|快捷访问|壁纸|投稿/)
 ! 左侧类目
-douyin.com##div[data-e2e=douyin-navigation] .prlW7G_5:has-text(/我的|放映厅|短剧|美食/)
+douyin.com##div[data-e2e=douyin-navigation] :is(.prlW7G_5, .rgiBNcU6):has-text(/我的|放映厅|短剧|美食/)
 ! 左侧类目
-douyin.com##div.n0rJzjLU.rsgoNBIr:nth-of-type(2)
+douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ! 搜索栏猜你喜欢
 ||douyin.com/aweme/v1/web/api/suggest_words
 ! 跟踪参数
@@ -602,6 +610,14 @@ douyin.com##div.n0rJzjLU.rsgoNBIr:nth-of-type(2)
 ||zijieapi.com$domain=douyin.com
 
 ! https://live.douyin.com
+!! 直播首页
+! 首页直播间
+live.douyin.com###player_div:upward(1)
+! 推荐直播
+live.douyin.com##h1:upward(1)
+! 底部
+live.douyin.com###_douyin_live_scroll_container_ > footer
+!! 直播间
 ! 人气、礼物橱窗等
 live.douyin.com##.EEnUp5fM > :not(.chat_room_fold)
 ! 礼物赠送弹窗
@@ -611,7 +627,9 @@ live.douyin.com##.ShortTouchContainer
 ! 礼物栏
 live.douyin.com##.aqK_4_5U
 ! 礼物栏
-live.douyin.com##.xgplayer > pace-island > div > span > pace-island > div > a
+live.douyin.com##.metro.gitBarOptimizeEnabled:upward(1)
+! 播放器按钮 tips
+live.douyin.com##.KICzgjaE
 !! 右侧弹幕区
 ! 观众榜单
 live.douyin.com##.Qsns7NdQ.kz8VfOyK
@@ -626,7 +644,7 @@ live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
 ! 去除跟踪参数
 ||live.douyin.com$document,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/,domain=live.douyin.com
 
-! 2024-03-12 https://blog.csdn.net
+! https://blog.csdn.net
 ! 左侧广告
 blog.csdn.net###asideWriteGuide
 ! 左侧评价
@@ -640,14 +658,14 @@ blog.csdn.net##.csdn-side-toolbar
 ! 底部浮动栏
 blog.csdn.net##.left-toolbox
 
-! 2024-03-05 https://ascii2d.net
+! https://ascii2d.net
 ||ascii2d.net/images/*$image,1p
 ascii2d.net##div.p-t-1
 
-! 2024-03-17 https://bbs.hupu.com
+! https://bbs.hupu.com
 bbs.hupu.com##div:has(> #game-center-entrance-container)
 
-! 2024-03-18 https://bbs.nga.cn
+! https://bbs.nga.cn
 bbs.nga.cn##.headline
 ! 右侧助手
 bbs.nga.cn##.hld__docker
