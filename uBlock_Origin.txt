@@ -52,17 +52,21 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 ! https://www.bilibili.com
 !! 首页
 ! 首页推荐橱窗
-www.bilibili.com##.carousel-container
-! 首页广告
-www.bilibili.com##.feed-card:has(.bili-video-card__info--ad)
+www.bilibili.com##.recommended-swipe
+# 统一卡片高度
+www.bilibili.com##.feed-card:style(margin-top: 24px !important;)
+# 连锁隐藏 feed-card
+www.bilibili.com##.feed-card:has(> .bili-video-card:matches-css(display: none))
+# 隐藏反屏蔽导致的空白 video-card
+www.bilibili.com##.bili-video-card:has(> div:empty)
 ! 首页广告
 www.bilibili.com##.bili-video-card:has(.bili-video-card__info--ad)
 ! 首页直播间推荐
-www.bilibili.com##.is-rcmd.bili-live-card
+www.bilibili.com##.bili-live-card
 ! 首页频道推荐
 www.bilibili.com##.floor-single-card
 ! 首页视频卡片高度不一致
-www.bilibili.com##.enable-no-interest.is-rcmd.bili-video-card:nth-of-type(13):style(margin-top: 40px !important;)
+www.bilibili.com##.bili-video-card:nth-of-type(13):style(margin-top: 40px !important;)
 !! 搜索
 ! 屏蔽搜索推荐
 bilibili.com##.search-panel .trending
@@ -194,6 +198,8 @@ live.bilibili.com##.danmaku-item.chat-item.top3-notice
 live.bilibili.com##.danmaku-item.chat-item .rank-icon
 ! 头衔
 live.bilibili.com##.danmaku-item.chat-item .title-label
+! 礼物
+live.bilibili.com##.chat-item.gift-item
 ! 侧栏底部进房提醒、礼物提醒等
 live.bilibili.com###brush-prompt
 ! 未登录时隐藏弹幕输入栏
@@ -525,7 +531,6 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 
 ! https://live.kuaishou.com
 ||log-sdk.ksapisrv.com$important
-||yximgs.com$image
 ||gifshow.com
 ! 直播滑动切换
 live.kuaishou.com##.control-wrapper
@@ -549,6 +554,10 @@ live.kuaishou.com##.kcoin
 live.kuaishou.com##.top.tooltip-content:has-text(/^正常模式$/)
 
 ! https://www.douyu.com
+!! 直播分区
+! 右侧导航
+www.douyu.com##.layout-Aside
+!! 直播间
 ! 安全提示
 www.douyu.com##.Barrage-notice:upward(1)
 ! 主播认证
@@ -638,7 +647,7 @@ live.douyin.com##.webcast-chatroom__room-message
 ! 进入房间消息
 live.douyin.com##.webcast-chatroom___bottom-message
 ! 礼物赠送消息-侧栏
-live.douyin.com##.webcast-chatroom___enter-done.webcast-chatroom___item:has(.lEfJhurR)
+live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
 ! 礼物赠送消息-滚动
 live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
 ! 去除跟踪参数
