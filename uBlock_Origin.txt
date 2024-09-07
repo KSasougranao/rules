@@ -16,6 +16,7 @@ twitter.com,x.com##div[data-testid=sidebarColumn] > div > div:nth-of-type(2) > d
 twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ! 未知请求
 ||ton.local.twitter.com
+||ads-api.x.com^$domain=x.com
 
 ! https://www.pixiv.net
 !! 作品页
@@ -624,6 +625,7 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||volcsirius.com$domain=douyin.com
 ||zijieapi.com$domain=douyin.com
 ||mcs.zijieapi.com$domain=douyin.com
+||mon.zijieapi.com$domain=douyin.com
 
 ! https://live.douyin.com
 !! 直播首页
@@ -739,3 +741,7 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ! https://docs.qq.com
 ||at.idqqimg.com^$domain=qq.com
 ||report.idqqimg.com^$domain=qq.com
+
+||analysis.leetcode.cn^$domain=leetcode.cn
+
+||www.googletagmanager.com^$script

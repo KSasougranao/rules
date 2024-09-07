@@ -29,6 +29,8 @@ f.video.weibocdn.com
 docs.qq.com
 docs.gtimg.com
 game.gtimg.cn
+thirdqq.qlogo.cn
+R: ^docimg\d+\.docs\.qq\.com$
 bsy.yyb.tcdnos.com
 **.file.myqcloud.com
 y.qq.com
@@ -82,6 +84,7 @@ live.kuaishou.com
 www.xiaohongshu.com
 ci.xiaohongshu.com
 **.xhscdn.com
+cdn.jsdelivr.net
 **.h2.smtcdns.net
 **.v.smtcdns.net
 **.szbdyd.com
@@ -100,6 +103,10 @@ wsschatpush.miguvideo.com
 **.vod.miguvideo.com
 flv*.miguvideo.com
 leetcode.cn
+assets.leetcode.cn
+static.leetcode.cn
+pic.leetcode.cn
+gitee.com
 **.hoopchina.com.cn
 detectportal.firefox.com
 profile.accounts.firefox.com
@@ -110,8 +117,9 @@ token.services.mozilla.com
 safebrowsing.googleapis.com
 fonts.gstatic.com
 www.recaptcha.net
-www.gstatic.cn
+**.gstatic.cn
 www.gstatic.com
+fonts.googleapis.com
 pixiv.pximg.net
 **.akamai.steamstatic.com
 cf.mhgui.com
