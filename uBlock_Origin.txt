@@ -53,11 +53,11 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 !! 首页
 ! 首页推荐橱窗
 www.bilibili.com##.recommended-swipe
-# 统一卡片高度
+! 统一卡片高度
 www.bilibili.com##.feed-card:style(margin-top: 24px !important;)
-# 连锁隐藏 feed-card
+! 连锁隐藏 feed-card
 www.bilibili.com##.feed-card:has(> .bili-video-card:matches-css(display: none))
-# 隐藏反屏蔽导致的空白 video-card
+! 隐藏反屏蔽导致的空白 video-card
 www.bilibili.com##.bili-video-card:has(> div:empty)
 ! 首页广告
 www.bilibili.com##.bili-video-card:has(.bili-video-card__info--ad)
@@ -65,8 +65,6 @@ www.bilibili.com##.bili-video-card:has(.bili-video-card__info--ad)
 www.bilibili.com##.bili-live-card
 ! 首页频道推荐
 www.bilibili.com##.floor-single-card
-! 首页视频卡片高度不一致
-www.bilibili.com##.bili-video-card:nth-of-type(13):style(margin-top: 40px !important;)
 !! 搜索
 ! 屏蔽搜索推荐
 bilibili.com##.search-panel .trending
@@ -116,10 +114,14 @@ www.bilibili.com##.pop-live-small-mode
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
 ||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/
 ||space.bilibili.com/$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
+! 一个设置 serverdate 的简单脚本
+||interface.bilibili.com^$1p
 ! 其他
 ||cm.bilibili.com$1p
 ||manga.bilibili.com$1p
-||biligame.com$domain=bilibili.com
+||bilicomic.com^$domain=bilibili.com
+||bilicomics.com^$domain=bilibili.com
+||biligame.com^$domain=bilibili.com
 
 ! https://live.bilibili.com
 ! 导航栏
@@ -209,6 +211,8 @@ live.bilibili.com###switch-login-guide-vm
 live.bilibili.com##.bili-dm.bili-center.bili-show
 ! 统一弹幕颜色为白色
 live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
+! PK 计时
+||api.live.bilibili.com/xlive/general-interface/v1/battle/getTimestamp
 ! track
 ||live-trace.bilibili.com^$xhr,domain=live.bilibili.com
 
@@ -301,6 +305,8 @@ www.zhihu.com##.Reward
 www.zhihu.com##.AnswerAuthor.Card
 ! 回答相关收藏夹
 ||www.zhihu.com/api/v4/answers/*/favlists$xhr,domain=www.zhihu.com
+! 自建 dns
+||/resolv$domain=zhihu.com
 ! track??
 ||mqtt-web.zhihu.com^$1p
 ||apm.zhihu.com^$1p
@@ -609,14 +615,15 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||bytetcc.com$domain=douyin.com
 ! 其他
 ||mssdk.bytedance.com$domain=douyin.com
-||frontier-im.douyin.com$1p
-||frontier-pc.douyin.com$1p
-||imapi.douyin.com$1p
+||frontier-im.douyin.com$domain=douyin.com
+||frontier-pc.douyin.com$domain=douyin.com
+||imapi.douyin.com$domain=douyin.com
 ||api.feelgood.cn$domain=douyin.com
 ||new.gracebot.cn$domain=douyin.com
 ||vegslb.com$domain=douyin.com
 ||volcsirius.com$domain=douyin.com
 ||zijieapi.com$domain=douyin.com
+||mcs.zijieapi.com$domain=douyin.com
 
 ! https://live.douyin.com
 !! 直播首页
@@ -631,6 +638,8 @@ live.douyin.com###_douyin_live_scroll_container_ > footer
 live.douyin.com##.EEnUp5fM > :not(.chat_room_fold)
 ! 礼物赠送弹窗
 live.douyin.com##.GiftTrayPlugin
+! 福袋
+live.douyin.com##.ShortTouchBigCard
 ! 福袋
 live.douyin.com##.ShortTouchContainer
 ! 礼物栏
@@ -726,3 +735,7 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||stat6.y.qq.com
 ||galileotelemetry.tencent.com
 ||tpstelemetry.tencent.com
+
+! https://docs.qq.com
+||at.idqqimg.com^$domain=qq.com
+||report.idqqimg.com^$domain=qq.com
