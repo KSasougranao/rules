@@ -20655,6 +20655,7 @@
 +.bsbaswq.cn
 +.bsbmex.flaschenpost.ch
 +.bsbrcdna.com
++.bsccdn.net
 +.bschuyenkhoamat.biz
 +.bsdev.cn
 +.bsdigital.co.il
@@ -34574,6 +34575,8 @@
 +.dyntrk.com
 +.dyodrs1kxvg6o.cloudfront.net
 +.dyoiqojlyntvy.com
++.dyp2p-ali.douyucdn.cn
++.dyp2p-hw.douyucdn.cn
 +.dyptanaza.com
 +.dyqebg.aboutyou.hr
 +.dyqjndui.com
@@ -57161,6 +57164,7 @@
 +.kuheju.com
 +.kuhou.com
 +.kuhxhoanlf.com
++.kuiniuca.com
 +.kuk8.com
 +.kukckk.sagefinds.com
 +.kukrosti.com
@@ -75118,6 +75122,7 @@
 +.onetad.com
 +.onetag-sys.com
 +.onetag4you.com
++.onethingpcs.com
 +.onetouch12.com
 +.onetouch17.info
 +.onetouch19.com
@@ -76643,8 +76648,22 @@
 +.p24.hu
 +.p2ijd.space
 +.p2kfynrr.icu
++.p2p-ali.douyucdn.cn
++.p2p.huya.com
++.p2p.qq.com
++.p2pchunk-hw.douyucdn.cn
++.p2pchunk-table.douyucdn.cn
++.p2pchunk-ws.douyucdn.cn
++.p2perrorlog.douyucdn.cn
++.p2plive-ali.douyucdn.cn
++.p2plive-ws.douyucdn.cn
++.p2plog.douyucdn.cn
 +.p2pmid.baofeng.com
 +.p2poolmining.com
++.p2ptun.qq.com
++.p2pupdate.gamedl.qq.com
++.p2pupgrade.gamedl.qq.com
++.p2pvod-ws.douyucdn.cn
 +.p2ro4u.trybawaryjny.pl
 +.p2sdmkj6t.bkt.clouddn.com
 +.p2trc.emv2.com
@@ -77582,6 +77601,7 @@
 +.pccjtxsao.com
 +.pcd.autohome.com.cn
 +.pcdgninekvch.com
++.pcdn.yximgs.com
 +.pcdstm.petbarn.com.au
 +.pcejuyhjucmkiny.ru
 +.pcf.tdscd.com
@@ -79043,6 +79063,7 @@
 +.pkkti888.com
 +.pklujb.xyz
 +.pkmvjx.my-store.ch
++.pkoplink.com
 +.pkoqeg.com
 +.pkpibupbbuvbgwh.xyz
 +.pkqeg5z3xffs.info
@@ -88293,6 +88314,7 @@
 +.saxophonefrontier.com
 +.saxs.sina.cn
 +.saxs.sina.com.cn
++.saxysec.com
 +.say.ac
 +.say.hello.navan.com
 +.say.hello.tripactions.com
@@ -100173,6 +100195,9 @@
 +.stumbledmetropolitanpad.com
 +.stumbleirritable.com
 +.stummedperca.top
++.stun.douyucdn.cn
++.stun.hitv.com
++.stun1.douyucdn.cn
 +.stunkcott.com
 +.stunning-lift.com
 +.stunninglover.com
@@ -101421,6 +101446,7 @@
 +.szalonenagrody.com
 +.szalonepromocje.com
 +.szb.aiyole.com
++.szbdyd.com
 +.szbhb.cn
 +.szbnnqyqn.com
 +.szbpf.cn
@@ -110839,6 +110865,7 @@
 +.ugyyod.com
 +.ugzbsu.klimaworld.com
 +.uh.nakanohito.jp
++.uhabo.com
 +.uhclatdxsbidyk.com
 +.uhd5nn09mgml.fort-shop.kiev.ua
 +.uhdokoq5ocmk.com
@@ -120111,6 +120138,7 @@
 +.xyardnle.com
 +.xyaueuufd.com
 +.xybnfn.xyz
++.xycdn.com
 +.xycstlfoagh.xyz
 +.xycxhgrp.xyz
 +.xyd.sxmdxy.com
