@@ -8,6 +8,7 @@ t.bilibili.com
 space.bilibili.com
 live.bilibili.com
 search.bilibili.com
+b23.tv
 api.bilibili.com
 api.live.bilibili.com
 api.vc.bilibili.com
@@ -30,6 +31,7 @@ docs.qq.com
 docs.gtimg.com
 game.gtimg.cn
 thirdqq.qlogo.cn
+thirdwx.qlogo.cn
 R: ^docimg\d+\.docs\.qq\.com$
 bsy.yyb.tcdnos.com
 **.file.myqcloud.com
@@ -55,6 +57,7 @@ img4.nga.178.com
 img.nga.cn
 www.huya.com
 **.cdn.huya.com
+live.huya.com
 **.flv.huya.com
 tx-vod.cdn.huya.com
 a.msstatic.com
@@ -63,6 +66,7 @@ cdnws.api.huya.com
 anchorpost.msstatic.com
 live-cover.msstatic.com
 tx-live-cover.msstatic.com
+l.huya.com
 www.douyu.com
 **.edgesrv.com
 **.douyucdn.cn
@@ -78,13 +82,17 @@ live.douyin.com
 **.douyinstatic.com
 **.douyinvod.com
 live.kuaishou.com
+id.kuaishou.com
 **.yximgs.com
 **.kwimgs.com
 **.kskwai.com
 www.xiaohongshu.com
 ci.xiaohongshu.com
 **.xhscdn.com
+cdnjs.cloudflare.com
 cdn.jsdelivr.net
+cdn.mathjax.org
+cdn.sstatic.net
 **.h2.smtcdns.net
 **.v.smtcdns.net
 **.szbdyd.com
@@ -121,6 +129,7 @@ www.recaptcha.net
 www.gstatic.com
 fonts.googleapis.com
 pixiv.pximg.net
+steamuserimages-a.akamaihd.net
 **.akamai.steamstatic.com
 cf.mhgui.com
 i.hamreus.com
