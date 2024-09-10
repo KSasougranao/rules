@@ -11,6 +11,7 @@ jobs:
         run: |
           echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt" >>$GITHUB_ENV
           echo "antiad_reject=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml" >>$GITHUB_ENV
+          echo "antiad_pcdn=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/pcdn.txt" >>$GITHUB_ENV
 
       - name: checkout
         uses: actions/checkout@v4
@@ -22,6 +23,7 @@ jobs:
           echo -n > reject-lines.txt
           curl -sSL ${Loyalsoldier_reject} -o Loyalsoldier_reject.yaml
           curl -sSL ${antiad_reject} -o antiad_reject.yaml
+          curl -sSL ${antiad_pcdn} -o antiad_pcdn.txt
       - name: Collect reject 2
         uses: mikefarah/yq@master
         with:
@@ -29,15 +31,22 @@ jobs:
       - name: Generate reject.txt
         run: |
           wc reject-lines.txt
+          cat antiad_pcdn.txt | grep -v '#' | sed 's|^|+.|' > pcdn-lines.txt
+          wc pcdn-lines.txt
+
           echo -n > reject.txt
-          cat reject-lines.txt | sort | uniq >> reject.txt
+          cat reject-lines.txt pcdn-lines.txt | sort | uniq >> reject.txt
           wc reject.txt
+          echo -n > pcdn.txt
+          cat pcdn-lines.txt | sort | uniq >> pcdn.txt
+          wc pcdn.txt
 
       - name: Git commit
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action[bot]"
           git add reject.txt
+          git add pcdn.txt
           git commit -m 'Auto update rules' || echo 'Nothing new'
 
       - name: Git push
