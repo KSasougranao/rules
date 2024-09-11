@@ -33,13 +33,13 @@ GM_addStyle(`
 }
 .link-toast.caution {
   background-color: #ffb243;
-  -webkit-box-shadow: 0 0.2em 0.1em 0.1em rgba(255,190,68,0.2);
-          box-shadow: 0 0.2em 0.1em 0.1em rgba(255,190,68,0.2);
+  -webkit-box-shadow: 0 0.2em 0.1em 0.1em rgba(255,178,67,0.2);
+          box-shadow: 0 0.2em 0.1em 0.1em rgba(255,178,67,0.2);
 }
 .link-toast.error {
   background-color: #ff6464;
-  -webkit-box-shadow: 0 0.2em 1em 0.1em rgba(255,100,100,0.2);
-          box-shadow: 0 0.2em 1em 0.1em rgba(255,100,100,0.2);
+  -webkit-box-shadow: 0 0.2em 0.1em 0.1em rgba(255,100,100,0.2);
+          box-shadow: 0 0.2em 0.1em 0.1em rgba(255,100,100,0.2);
 }
 .link-toast.info {
   background-color: #48bbf8;
