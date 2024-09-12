@@ -239,12 +239,12 @@ t.bilibili.com##aside.right
 ! 隐藏动态发表框
 t.bilibili.com##.bili-dyn-publishing
 !! 动态
-! 头像框
-t.bilibili.com,space.bilibili.com##.b-avatar__layer.center:nth-of-type(2)
 ! 头像缩放到标准大小
 t.bilibili.com,space.bilibili.com##.b-avatar__layer.center:style(width: 48px !important; height: 48px !important;)
-! 黄色闪电标志
+! 头像框和黄色闪电标志
 t.bilibili.com,space.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
+! 头像框和黄色闪电标志。不知为何有两种分层方式
+t.bilibili.com,space.bilibili.com##.b-avatar__layers:nth-of-type(n + 2)
 ! 会员名称变色
 t.bilibili.com,space.bilibili.com##.bili-dyn-title__text:remove-class(normal-vip-color)
 ! 增大动态中表情，配合 greasemonkey 修改 src
@@ -517,7 +517,6 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
 ||df.huya.com^$1p
 ||ext.huya.com^$1p
-||fw.huay.com^$1p
 ||hd.huya.com^$1p
 ||liveapi.huya.com$script,1p
 ||liveapi.huya.com/cache/room/roomMonitor^$1p
@@ -597,12 +596,28 @@ www.douyu.com##.Barrage-content:style(color: black !important;)
 ! 跟踪参数
 ||www.douyu.com$document,removeparam=/^(dyshid|dyshci)=/,domain=www.douyu.com
 ! 其他
-||dz11.com
+||abvolcapi.douyucdn.cn^$domain=douyu.com
+||ams.douyucdn.cn^$domain=douyu.com
+||bjfesdk.douyucdn.cn^$domain=douyu.com
+||dotbeats.douyucdn.cn^$domain=douyu.com
+||gfs-op.douyucdn.cn^$domain=douyu.com
+||gift.douyucdn.cn^$domain=douyu.com
+||pslice.douyucdn.cn^$domain=douyu.com
+||rtbapi.douyucdn.cn^$domain=douyu.com
+||sta-op.douyucdn.cn^$domain=douyu.com
+||streamdot.douyucdn.cn^$domain=douyu.com
+||uact.douyucdn.cn^$domain=douyu.com
+||wconf.douyucdn.cn^$domain=douyu.com
+||webconf.douyucdn.cn^$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-act$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-game$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-pk$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-super$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-task$domain=douyu.com
 ||msg.douyu.com$1p
 ||g.wan.douyu.com$1p
 ||yuba.douyu.com$1p
 !shark2.douyucdn.cn/front-publish/live-master/js/room$domain=douyu.com
-||webconf.douyucdn.cn/resource$domain=douyu.com
 
 ! https://www.douyin.com
 ! 登录弹窗
@@ -768,7 +783,9 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 
 ||analysis.leetcode.cn^$domain=leetcode.cn
 
-||www.googletagmanager.com^$script
+||www.googletagmanager.com^
+||www.googleadservices.com^
+||www.google-analytics.com^
 ||w3-reporting-nel.reddit.com^$1p
 ! atcoder
 ||static.addtoany.com^
