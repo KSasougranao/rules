@@ -433,8 +433,8 @@ tieba.baidu.com##.lzl_more
 ! 自动展开楼中楼-底部
 tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ! track
-||gsp0.baidu.com/*/track.gif^$image,1p
-||hm.baidu.com^$1p
+||gsp0.baidu.com/*/track.gif^$1p
+||hm.baidu.com^
 
 ! https://www.jianshu.com
 ! 推荐
@@ -548,6 +548,8 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||static-jw.msstatic.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
 ||electric-shop.yaoguo.com^$domain=huya.com
+! 限制低质视频线路
+||node.ppio.cloud^$domain=huya.com
 
 ! https://live.kuaishou.com
 ||log-sdk.ksapisrv.com$important
@@ -788,9 +790,12 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 
 ||analysis.leetcode.cn^$domain=leetcode.cn
 
+! https://www.google.com
 ||www.googletagmanager.com^
 ||www.googleadservices.com^
 ||www.google-analytics.com^
+||static.doubleclick.net^
+
 ||w3-reporting-nel.reddit.com^$1p
 ! atcoder
 ||static.addtoany.com^

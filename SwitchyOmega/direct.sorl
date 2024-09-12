@@ -13,6 +13,7 @@ api.bilibili.com
 api.live.bilibili.com
 api.vc.bilibili.com
 app.bilibili.com
+s.search.bilibili.com
 **.mcdn.bilivideo.cn
 **.bilivideo.com
 **.hdslb.com
@@ -25,9 +26,11 @@ static.zhihu.com
 **.zhimg.com
 weibo.com
 m.weibo.cn
+i.sso.sina.com.cn
 **.sinaimg.cn
 f.video.weibocdn.com
 video.weibo.com
+face.t.sinajs.cn
 docs.qq.com
 docs.gtimg.com
 game.gtimg.cn
@@ -60,9 +63,9 @@ img.nga.cn
 www.huya.com
 **.cdn.huya.com
 live.huya.com
-**.flv.huya.com
 tx-vod.cdn.huya.com
 hd2.huya.com
+**.flv.huya.com
 a.msstatic.com
 huyaimg.msstatic.com
 cdnws.api.huya.com
@@ -74,6 +77,7 @@ udblgn.huya.com
 fw.huya.com
 www.douyu.com
 shark.douyucdn.cn
+hlstct.douyucdn2.cn
 apic.douyucdn.cn
 rpic.douyucdn.cn
 shark2.douyucdn.cn
@@ -97,6 +101,7 @@ id.kuaishou.com
 **.yximgs.com
 **.kwimgs.com
 **.kskwai.com
+R: ^live-ws-group\d+\.kuaishou\.com$
 www.xiaohongshu.com
 ci.xiaohongshu.com
 **.xhscdn.com
@@ -157,6 +162,9 @@ eu.hamreus.com
 eu1.hamreus.com
 img.atcoder.jp
 clist.by
+mathjax.codeforces.org
+codeforces.org
+pubsub.codeforces.com
 .lencr.org
 ocsp.globalsign.com
 ocsp2.globalsign.com
