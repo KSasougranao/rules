@@ -1,7 +1,4 @@
 [SwitchyOmega Conditions]
-.lencr.org
-ocsp.globalsign.com
-ocsp2.globalsign.com
 bookface-static.ycombinator.com
 passport.bilibili.com
 www.bilibili.com
@@ -53,6 +50,8 @@ R: ^tb\d+\.bdstatic\.com$
 tb.himg.baidu.com
 tiebapic.baidu.com
 tiebac.baidu.com
+R: ^img\d+\.baidu\.com$
+R: ^pics\d+\.baidu\.com$
 bbs.nga.cn
 img.nga.178.com
 img4.nga.178.com
@@ -79,6 +78,7 @@ www.douyu.com
 www.douyin.com
 live.douyin.com
 **.bytegoofy.com
+R: ^webcast\d+-ws-web-[a-z]+\.douyin\.com$
 **.byteimg.com
 **.bytescm.com
 **.douyinpic.com
@@ -145,3 +145,6 @@ eu.hamreus.com
 eu1.hamreus.com
 img.atcoder.jp
 clist.by
+.lencr.org
+ocsp.globalsign.com
+ocsp2.globalsign.com
