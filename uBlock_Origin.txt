@@ -36,12 +36,10 @@ www.pixiv.net##iframe[name="footer"]:upward(1)
 ! 隐藏书签页过多候选 tag
 www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
 ! track
-||www.pixiv.net/OneSignalSDKWorker.js$script,domain=www.pixiv.net
+||www.pixiv.net/OneSignalSDKWorker.js$script
 ||errortrace.dev^$xhr,domain=www.pixiv.net
-||cdn.onesignal.com/sdks$script,domain=www.pixiv.net
-||www.googletagmanager.com^$script,domain=www.pixiv.net
-@@||googletagmanager.com/gtag/js$script,redirect-rule,domain=www.pixiv.net
-@@||googletagmanager.com/gtm.js$script,redirect-rule,domain=www.pixiv.net
+||cdn.onesignal.com/sdks
+||googletagmanager.com^$script
 ! 广告和会员
 ||a.pixiv.org^$domain=pixiv.net
 ||pixon.ads-pixiv.net
@@ -54,6 +52,8 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 
 ! https://www.bilibili.com
 !! 首页
+! 顶部反屏蔽提示
+www.bilibili.com##.adblock-tips
 ! 首页推荐橱窗
 www.bilibili.com##.recommended-swipe
 ! 统一卡片高度
@@ -105,7 +105,7 @@ www.bilibili.com##.video-page-operator-card-small
 ! 视频推荐底部直播推荐
 www.bilibili.com##.pop-live-small-mode
 ! 视频推荐底部直播推荐
-||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList$xhr,domain=www.bilibili.com
+||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList$xhr,domain=bilibili.com
 ! track
 ||api.bilibili.com/x/web-show/res/locs$xhr,1p
 ||api.bilibili.com/x/web-show/wbi/res/locs$xhr,1p
@@ -115,7 +115,7 @@ www.bilibili.com##.pop-live-small-mode
 ||www.bilibili.com/read/$document,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/,domain=www.bilibili.com
 ||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/,domain=www.bilibili.com
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
-||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/
+||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/,domain=live.bilibili.com
 ||space.bilibili.com/$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
@@ -205,6 +205,8 @@ live.bilibili.com##.danmaku-item.chat-item .title-label
 live.bilibili.com##.chat-item.gift-item
 ! 侧栏底部进房提醒、礼物提醒等
 live.bilibili.com###brush-prompt
+! brush-prompt 出现时会修改弹幕栏的 class，使其高度缩短 30px
+live.bilibili.com###chat-history-list:style(height: 100% !important;)
 ! 礼物愿望单
 live.bilibili.com##.gift-wish-card-root
 ! 未登录时隐藏弹幕输入栏
@@ -600,15 +602,18 @@ www.douyu.com##.Barrage-content:style(color: black !important;)
 ||ams.douyucdn.cn^$domain=douyu.com
 ||bjfesdk.douyucdn.cn^$domain=douyu.com
 ||dotbeats.douyucdn.cn^$domain=douyu.com
+||dotserver.douyucdn.cn^$domain=douyu.com,redirect=1x1.gif
 ||gfs-op.douyucdn.cn^$domain=douyu.com
 ||gift.douyucdn.cn^$domain=douyu.com
 ||pslice.douyucdn.cn^$domain=douyu.com
 ||rtbapi.douyucdn.cn^$domain=douyu.com
-||sta-op.douyucdn.cn^$domain=douyu.com
+||sta-op.douyucdn.cn^$domain=douyu.com,redirect=2x2.png
+||sta-op-test.douyucdn.cn^$domain=douyu.com,redirect=2x2.png
 ||streamdot.douyucdn.cn^$domain=douyu.com
 ||uact.douyucdn.cn^$domain=douyu.com
 ||wconf.douyucdn.cn^$domain=douyu.com
 ||webconf.douyucdn.cn^$domain=douyu.com
+||douyucdn2.cn^$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-act$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-game$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-pk$domain=douyu.com

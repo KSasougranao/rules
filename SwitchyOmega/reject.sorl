@@ -1,12 +1,14 @@
 [SwitchyOmega Conditions]
-! 记录一些无法被 uBlock Origin 拦截的请求
+! 记录一些无法被 uBlock Origin 屏蔽的请求
 ! 可能是浏览器发起的
 ogads-pa.clients6.google.com
 mtalk.google.com
-!www.googleadservices.com
+www.googleadservices.com
 !www.googletagmanager.com
-!www.google-analytics.com
+www.google-analytics.com
 ! 斗鱼本地测试
 fedci.dz11.com
 ! twitter 本地测试
 ton.local.twitter.com
+! 不知为何没有被屏蔽
+mon.zijieapi.com

@@ -73,10 +73,13 @@ l.huya.com
 udblgn.huya.com
 fw.huya.com
 www.douyu.com
+shark.douyucdn.cn
+apic.douyucdn.cn
+rpic.douyucdn.cn
 shark2.douyucdn.cn
 danmuproxy.douyu.com
 wsproxy.douyu.com
-playweb.douyu.com
+playweb.douyucdn.cn
 **.edgesrv.com
 www.douyin.com
 live.douyin.com
@@ -130,6 +133,7 @@ push.services.mozilla.com
 firefox.settings.services.mozilla.com
 **.sync.services.mozilla.com
 token.services.mozilla.com
+tracking-protection.cdn.mozilla.net
 safebrowsing.googleapis.com
 update.googleapis.com
 fonts.googleapis.com
