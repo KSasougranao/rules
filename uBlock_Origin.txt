@@ -43,8 +43,10 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 @@||googletagmanager.com/gtag/js$script,redirect-rule,domain=www.pixiv.net
 @@||googletagmanager.com/gtm.js$script,redirect-rule,domain=www.pixiv.net
 ! 广告和会员
+||a.pixiv.org^$domain=pixiv.net
 ||pixon.ads-pixiv.net
 ||api.booth.pm/pixiv/shops/show.json$xhr,domain=www.pixiv.net
+||api.booth.pm/pixiv/items$xhr,domain=pixiv.net
 ||imp.pixiv.net/premium_lp$subdocument,domain=www.pixiv.net
 ! 其他
 ||www.pixiv.net/rpc/notify_count.php$xhr,domain=www.pixiv.net
@@ -129,8 +131,6 @@ www.bilibili.com##.pop-live-small-mode
 live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|生活|帮我玩|互动玩法|购物/))
 ! 导航栏
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
-! 导航栏右侧
-live.bilibili.com##.shortcuts-ctnr
 !! 直播站首页
 ! 屏蔽首页直播间
 ||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,domain=live.bilibili.com
@@ -205,6 +205,8 @@ live.bilibili.com##.danmaku-item.chat-item .title-label
 live.bilibili.com##.chat-item.gift-item
 ! 侧栏底部进房提醒、礼物提醒等
 live.bilibili.com###brush-prompt
+! 礼物愿望单
+live.bilibili.com##.gift-wish-card-root
 ! 未登录时隐藏弹幕输入栏
 live.bilibili.com###switch-login-guide-vm
 !! 直播间播放器
@@ -271,6 +273,8 @@ www.zhihu.com##.Topstory > div:nth-of-type(1)
 www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
 ! 视频分区
 www.zhihu.com##a.Topstory-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
+! 视频分区-固定导航栏
+www.zhihu.com##.TopstoryPageHeader-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
 !! 主页右侧栏
 ! 主页右侧栏
 www.zhihu.com##.Topstory-mainColumn ~ div
@@ -311,6 +315,8 @@ www.zhihu.com##.AnswerAuthor.Card
 ! track??
 ||mqtt-web.zhihu.com^$1p
 ||apm.zhihu.com^$1p
+! 支付
+||pay.zhihu.com^$1p
 
 ! https://zhuanlan.zhihu.com
 ! 顶部浮动导航
@@ -362,6 +368,8 @@ weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-
 ||weibo.com/ajax/side/cards/sideBusiness$xhr,1p
 ! track
 ||weibo.com/ajax/log$xhr,1p
+! 其他
+||rm.api.weibo.com/2/remind/push_count.json^$script,1p
 
 ! https://tieba.baidu.com
 ! 登录弹窗
@@ -502,24 +510,28 @@ www.huya.com###player-wrap:style(height: 100% !important;)
 ! 常态隐藏播放器控制条
 www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transition: all 0ms !important;)
 ! 直播脚本
-||cdnws.api.huya.com^$xhr,1p
+||api.huya.com^$1p
+@@||cdnws.api.huya.com^$websocket,1p
 ||bee-wpm.huya.com$1p
 ||fileserver.cdn.huya.com$1p
 ||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
 ||df.huya.com^$1p
 ||ext.huya.com^$1p
+||fw.huay.com^$1p
+||hd.huya.com^$1p
 ||liveapi.huya.com$script,1p
 ||liveapi.huya.com/cache/room/roomMonitor^$1p
-||liveapi.huya.com/livelist/getUserLikeList$xhr,1p
+||liveapi.huya.com/livelist/getUserLikeList$1p
+||liveapi.huya.com/livelist/canWatchTogether^$1p
 ||metric.huya.com^$1p
 ||p2p.huya.com^$1p
 ||statwup.huya.com^$1p
-||udblgn.huya.com$1p
 ||upevent.huya.com$1p
 ||user.huya.com/user/getUserInfo^$1p
 ||va.huya.com^$1p
 ||wsapi.huya.com^$1p
 ||ylog.huya.com^$1p
+||zt.huya.com^$1p
 ||a.msstatic.com/huya/hd/cdn_libs/performance_report-min.js$script,domain=huya.com
 ||a.msstatic.com/huya/hd/h5/header/components/RichVideo$script,domain=huya.com
 ||a.msstatic.com/huya/main3/assets$script,domain=huya.com
@@ -559,6 +571,11 @@ live.kuaishou.com##.gift-bar
 live.kuaishou.com##.kcoin
 ! 偶现浮窗
 live.kuaishou.com##.top.tooltip-content:has-text(/^正常模式$/)
+! 其他
+||kgw.com^$domain=kuaishou.com
+||id.kuaishou.com/pass/kuaishou/getCdns$1p
+! 支付？
+||www.kuaishoupay.com$domain=kuaishou.com
 
 ! https://www.douyu.com
 !! 直播分区
@@ -614,13 +631,18 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||bytednsdoc.com$domain=douyin.com
 ! search default 等
 ||bytetcc.com$domain=douyin.com
+! abtest
+||www.douyin.com/service/2/abtest_config^$1p
 ! 其他
+||/get_domains^$domain=douyin.com
 ||mssdk.bytedance.com$domain=douyin.com
+||bytegecko.com^$domain=douyin.com
 ||frontier-im.douyin.com$domain=douyin.com
 ||frontier-pc.douyin.com$domain=douyin.com
 ||imapi.douyin.com$domain=douyin.com
 ||api.feelgood.cn$domain=douyin.com
 ||new.gracebot.cn$domain=douyin.com
+||ibytedapm.com^$domain=douyin.com
 ||vegslb.com$domain=douyin.com
 ||volcsirius.com$domain=douyin.com
 ||zijieapi.com$domain=douyin.com
@@ -720,13 +742,15 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||ff-proxy.leetcode.cn
 
 ! 似乎是和搜索有关的请求
-||hectorstatic.baidu.com
-||mbd.baidu.com
-||miaowu.baidu.com
-||ug.baidu.com
-||xlab.baidu.com
-||ns-strategy.cdn.bcebos.com
-
+||hectorstatic.baidu.com^$1p
+||mbd.baidu.com^$1p
+||miaowu.baidu.com^$1p
+||ug.baidu.com^$1p
+||xlab.baidu.com^$1p
+||drug-platform.cdn.bcebos.com^$domain=baidu.com
+||haokanupdate.cdn.bcebos.com^$domain=baidu.com
+||mediago-static.cdn.bcebos.com^$domain=baidu.com
+||ns-strategy.cdn.bcebos.com^$domain=baidu.com
 
 ||knet.cn
 
@@ -745,3 +769,8 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||analysis.leetcode.cn^$domain=leetcode.cn
 
 ||www.googletagmanager.com^$script
+||w3-reporting-nel.reddit.com^$1p
+! atcoder
+||static.addtoany.com^
+! chatgpt
+||i2.wp.com^

@@ -2,6 +2,7 @@
 .lencr.org
 ocsp.globalsign.com
 ocsp2.globalsign.com
+bookface-static.ycombinator.com
 passport.bilibili.com
 www.bilibili.com
 t.bilibili.com
@@ -13,11 +14,11 @@ api.bilibili.com
 api.live.bilibili.com
 api.vc.bilibili.com
 app.bilibili.com
-**.chat.bilibili.com
 **.mcdn.bilivideo.cn
 **.bilivideo.com
 **.hdslb.com
 album.biliimg.com
+**.chat.bilibili.com
 www.zhihu.com
 zhuanlan.zhihu.com
 api.zhihu.com
@@ -27,6 +28,7 @@ weibo.com
 m.weibo.cn
 **.sinaimg.cn
 f.video.weibocdn.com
+video.weibo.com
 docs.qq.com
 docs.gtimg.com
 game.gtimg.cn
@@ -60,6 +62,7 @@ www.huya.com
 live.huya.com
 **.flv.huya.com
 tx-vod.cdn.huya.com
+hd2.huya.com
 a.msstatic.com
 huyaimg.msstatic.com
 cdnws.api.huya.com
@@ -67,6 +70,8 @@ anchorpost.msstatic.com
 live-cover.msstatic.com
 tx-live-cover.msstatic.com
 l.huya.com
+udblgn.huya.com
+fw.huya.com
 www.douyu.com
 **.edgesrv.com
 **.douyucdn.cn
@@ -93,9 +98,9 @@ cdnjs.cloudflare.com
 cdn.jsdelivr.net
 cdn.mathjax.org
 cdn.sstatic.net
+cdn.oaistatic.com
 **.h2.smtcdns.net
 **.v.smtcdns.net
-**.szbdyd.com
 **.node.ppio.cloud
 **.bytefcdnrd.com
 **.cloudvdn.com
@@ -128,10 +133,15 @@ www.recaptcha.net
 **.gstatic.cn
 www.gstatic.com
 fonts.googleapis.com
+api-edge.cognitive.microsofttranslator.com
 pixiv.pximg.net
+styles.redditmedia.com
+www.redditstatic.com
 steamuserimages-a.akamaihd.net
 **.akamai.steamstatic.com
 cf.mhgui.com
 i.hamreus.com
 eu.hamreus.com
 eu1.hamreus.com
+img.atcoder.jp
+clist.by
