@@ -1,7 +1,22 @@
 [SwitchyOmega Conditions]
 kenkoooo.com
+i2.wp.com
 bookface-static.ycombinator.com
 devdocs.io
+passport.baidu.com
+wap.baidu.com
+wappass.baidu.com
+www.baidu.com
+baike.baidu.com
+tieba.baidu.com
+R: ^gimg\d+\.baidu\.com$
+R: ^t\d+\.baidu\.com$
+tb.himg.baidu.com
+tiebac.baidu.com
+R: ^img\d+\.baidu\.com$
+R: ^pics\d+\.baidu\.com$
+R: ^tb\d+\.bdstatic\.com$
+tiebapic.baidu.com
 passport.bilibili.com
 www.bilibili.com
 t.bilibili.com
@@ -19,47 +34,27 @@ s.search.bilibili.com
 **.hdslb.com
 album.biliimg.com
 **.chat.bilibili.com
-www.zhihu.com
-zhuanlan.zhihu.com
-api.zhihu.com
-static.zhihu.com
-**.zhimg.com
-weibo.com
-m.weibo.cn
-i.sso.sina.com.cn
-**.sinaimg.cn
-f.video.weibocdn.com
-video.weibo.com
-face.t.sinajs.cn
-docs.qq.com
-docs.gtimg.com
-game.gtimg.cn
-R: ^docimg\d+\.docs\.qq\.com$
-bsy.yyb.tcdnos.com
-**.file.myqcloud.com
-thirdqq.qlogo.cn
-thirdwx.qlogo.cn
-y.qq.com
-qpic.y.qq.com
-music-file.y.qq.com
-**.stream.qqmusic.qq.com
-passport.baidu.com
-wappass.baidu.com
-www.baidu.com
-baike.baidu.com
-tieba.baidu.com
-R: ^gimg\d+\.baidu\.com$
-R: ^t\d+\.baidu\.com$
-R: ^tb\d+\.bdstatic\.com$
-tb.himg.baidu.com
-tiebapic.baidu.com
-tiebac.baidu.com
-R: ^img\d+\.baidu\.com$
-R: ^pics\d+\.baidu\.com$
-bbs.nga.cn
-img.nga.178.com
-img4.nga.178.com
-img.nga.cn
+www.douyin.com
+live.douyin.com
+**.bytegoofy.com
+R: ^webcast\d+-ws-web-[a-z]+\.douyin\.com$
+**.byteimg.com
+**.bytescm.com
+**.douyinpic.com
+**.douyincdn.com
+**.douyinliving.com
+**.douyinstatic.com
+**.douyinvod.com
+www.douyu.com
+shark.douyucdn.cn
+hlstct.douyucdn2.cn
+apic.douyucdn.cn
+rpic.douyucdn.cn
+shark2.douyucdn.cn
+danmuproxy.douyu.com
+wsproxy.douyu.com
+playweb.douyucdn.cn
+**.edgesrv.com
 www.huya.com
 **.cdn.huya.com
 live.huya.com
@@ -75,36 +70,48 @@ tx-live-cover.msstatic.com
 l.huya.com
 udblgn.huya.com
 fw.huya.com
-www.douyu.com
-shark.douyucdn.cn
-hlstct.douyucdn2.cn
-apic.douyucdn.cn
-rpic.douyucdn.cn
-shark2.douyucdn.cn
-danmuproxy.douyu.com
-wsproxy.douyu.com
-playweb.douyucdn.cn
-**.edgesrv.com
-www.douyin.com
-live.douyin.com
-**.bytegoofy.com
-R: ^webcast\d+-ws-web-[a-z]+\.douyin\.com$
-**.byteimg.com
-**.bytescm.com
-**.douyinpic.com
-**.douyincdn.com
-**.douyinliving.com
-**.douyinstatic.com
-**.douyinvod.com
 live.kuaishou.com
+www.kuaishou.com
 id.kuaishou.com
 **.yximgs.com
 **.kwimgs.com
 **.kskwai.com
 R: ^live-ws-group\d+\.kuaishou\.com$
+bbs.nga.cn
+img.nga.178.com
+img4.nga.178.com
+img.nga.cn
+y.qq.com
+qpic.y.qq.com
+music-file.y.qq.com
+**.stream.qqmusic.qq.com
+weibo.com
+m.weibo.cn
+i.sso.sina.com.cn
+**.sinaimg.cn
+f.video.weibocdn.com
+video.weibo.com
+face.t.sinajs.cn
+docs.qq.com
+docs.gtimg.com
+game.gtimg.cn
+R: ^docimg\d+\.docs\.qq\.com$
+bsy.yyb.tcdnos.com
+**.file.myqcloud.com
+thirdqq.qlogo.cn
+thirdwx.qlogo.cn
+mp.weixin.qq.com
+mmbiz.qpic.cn
+res.wx.qq.com
 www.xiaohongshu.com
 ci.xiaohongshu.com
 **.xhscdn.com
+www.zhihu.com
+zhuanlan.zhihu.com
+api.zhihu.com
+static.zhihu.com
+**.zhimg.com
+cdn.auth0.com
 cdnjs.cloudflare.com
 cdn.jsdelivr.net
 cdn.mathjax.org
@@ -118,9 +125,12 @@ cdn.oaistatic.com
 **.cloudvdn.com
 **.hiecheimaetu.com
 **.qnqcdn.net
+**.tlivemcdn.com
 **.h2.smtcdns.net
 **.v.smtcdns.net
 **.bytefcdnrd.com
+**.vegslb.com
+**.volcsirius.com
 www.miguvideo.com
 live.miguvideo.com
 wsschatpush.miguvideo.com
@@ -132,6 +142,7 @@ static.leetcode.cn
 pic.leetcode.cn
 gitee.com
 **.hoopchina.com.cn
+api.accounts.firefox.com
 profile.accounts.firefox.com
 detectportal.firefox.com
 push.services.mozilla.com
@@ -139,6 +150,7 @@ firefox.settings.services.mozilla.com
 **.sync.services.mozilla.com
 token.services.mozilla.com
 tracking-protection.cdn.mozilla.net
+aus5.mozilla.org
 safebrowsing.googleapis.com
 update.googleapis.com
 fonts.googleapis.com
