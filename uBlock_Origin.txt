@@ -4,12 +4,20 @@
 ! Homepage: https://gitee.com/KSasougranao/UNK
 
 ! https://twitter.com
+! 左侧开通会员提醒
+x.com##[data-testid=inlinePrompt]:upward(4)
+! 左侧无用标签
+x.com##header nav a:matches-attr(href=//(grok|jobs|communities|premium_sign_up|verified-orgs-signup)$/)
+! 左侧发帖按钮
+x.com##a[data-testid=SideNav_NewTweet_Button]:upward(1)
 ! 调整 media 页多图标志的位置
 twitter.com,x.com##li[role=listitem] a[role=link] > svg:style(bottom: none !important; top: 8px !important;)
 ! 增加 media 页多图标志的描边
 twitter.com,x.com##li[role=listitem] a[role=link] > svg g:style(stroke: black; stroke-width: 1px;)
-! 右侧栏趋势
-twitter.com,x.com##div[data-testid=sidebarColumn] > div > div:nth-of-type(2) > div > div > div > div:nth-last-of-type(2)
+! 左侧开通会员提醒
+x.com##aside[role=complementary]:has(> a[href$=premium_sign_up]):upward(2)
+! 右侧趋势，需要配合 xhr 规则使用
+x.com##[data-testid=sidebarColumn] div.r-rs99b7.r-1phboty.r-jxzhtn:not(:has(ul))
 ! 右侧栏趋势
 ||x.com/i/api/graphql/*/ExploreSidebar
 ! 右侧栏页脚
@@ -94,6 +102,8 @@ www.bilibili.com##.bpx-player-cmd-dm-wrap
 www.bilibili.com##.bili-cmd-shrink
 ! 视频下投稿活动
 www.bilibili.com###activity_vote
+! 视频下广告
+www.bilibili.com###notice
 ! 视频下直播推荐
 www.bilibili.com###live_recommand_report
 ! 视频右下广告
@@ -115,7 +125,7 @@ www.bilibili.com##.pop-live-small-mode
 ||www.bilibili.com/read/$document,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/,domain=www.bilibili.com
 ||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/,domain=www.bilibili.com
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
-||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/,domain=live.bilibili.com
+||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id)=/,domain=bilibili.com
 ||space.bilibili.com/$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
@@ -215,8 +225,12 @@ live.bilibili.com###switch-login-guide-vm
 !! 直播间播放器
 ! 底部弹幕
 live.bilibili.com##.bili-dm.bili-center.bili-show
+! 底部弹幕
+live.bilibili.com##.bili-danmaku-x-dm.bili-danmaku-x-center.bili-danmaku-x-show
 ! 统一弹幕颜色为白色
 live.bilibili.com##.bili-dm.bili-roll.bili-show:style(color: white !important;)
+! 统一弹幕颜色为白色
+live.bilibili.com##.bili-danmaku-x-dm.bili-danmaku-x-show:style(color: white !important;)
 ! PK 计时
 ||api.live.bilibili.com/xlive/general-interface/v1/battle/getTimestamp
 ! track
@@ -579,7 +593,7 @@ live.kuaishou.com##.gift-bar
 ! 屏蔽 K 币
 live.kuaishou.com##.kcoin
 ! 偶现浮窗
-live.kuaishou.com##.top.tooltip-content:has-text(/^正常模式$/)
+live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 ! 其他
 ||kgw.com^$domain=kuaishou.com
 ||id.kuaishou.com/pass/kuaishou/getCdns$1p
@@ -597,6 +611,10 @@ www.douyu.com##.Barrage-notice:upward(1)
 www.douyu.com##.Barrage-newAuth:upward(1)
 ! 进入房间提醒
 www.douyu.com###js-barrage-extend-container
+! 关注提示
+douyu.com##.FullPageFollowGuide
+! 主播视频列表
+douyu.com##.VideoEntry-list
 ! 弹幕列表紧贴顶部
 www.douyu.com##.Barrage:style(top: 0px !important;)
 ! 统一滚动弹幕颜色为白色
@@ -621,7 +639,6 @@ www.douyu.com##.Barrage-content:style(color: black !important;)
 ||uact.douyucdn.cn^$domain=douyu.com
 ||wconf.douyucdn.cn^$domain=douyu.com
 ||webconf.douyucdn.cn^$domain=douyu.com
-||douyucdn2.cn^$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-act$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-game$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-pk$domain=douyu.com
@@ -736,13 +753,13 @@ ascii2d.net##div.p-t-1
 bbs.hupu.com##div:has(> #game-center-entrance-container)
 
 ! https://bbs.nga.cn
-bbs.nga.cn##.headline
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.headline
 ! 右侧助手
-bbs.nga.cn##.hld__docker
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.hld__docker
 ! 底部版权信息
-bbs.nga.cn##.cpinfo
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.cpinfo
 ! 顶部 tab
-bbs.nga.cn##.innerbg > div:nth-of-type(2) > div.td
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.innerbg > div:nth-of-type(2) > div.td
 ! 广告图片？
 ||cimg.178.com
 
@@ -793,6 +810,7 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ! https://docs.qq.com
 ||at.idqqimg.com^$domain=qq.com
 ||report.idqqimg.com^$domain=qq.com
+||docs.qq.com^$xhr,removeparam=/^(groupUin|ADUIN|ADSESSION|ADTAG|ADPUBNO|_t)=/,domain=docs.qq.com
 
 ||analysis.leetcode.cn^$domain=leetcode.cn
 
