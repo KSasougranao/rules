@@ -180,6 +180,7 @@
 +.0op8kh.cn
 +.0oqt9i.cn
 +.0p1ohj2f5f.ru
++.0pdsa.icu
 +.0pengl.com
 +.0pn.ru
 +.0qizz.super-promo.hoxo.info
@@ -10984,6 +10985,7 @@
 +.ajvnragtua.com
 +.ajvzis.triumph.com
 +.ajxx98.online
++.ajybgc.xyz
 +.ak-br-cdn.kwai.net.iberostar.com
 +.ak-tracker.com
 +.ak.5.p2l.info
@@ -15473,7 +15475,6 @@
 +.at1.doubanio.com
 +.at2.doubanio.com
 +.at885.icu
-+.ata-sdk-uuid-report.dreport.meituan.net
 +.atableofcup.com
 +.atacticserena.top
 +.atala-apw.com
@@ -26694,6 +26695,7 @@
 +.cooolyi.com
 +.coop.pop.baofeng.com
 +.coop.vmware.com
++.cooper.geelark.cn
 +.cooperateboneco.com
 +.cooperativechuckledhunter.com
 +.coordinatedbedroom.com
@@ -27196,6 +27198,7 @@
 +.covettunica.com
 +.covivado.club
 +.cow-timerbudder.org
++.cowcuo.xyz
 +.cowerscrowers.top
 +.cowhmc.docmorris.de
 +.cowm199.com
@@ -30597,6 +30600,10 @@
 +.datas3ntinel.com
 +.datasecu.download
 +.dataservices.download
++.datasink.geelark.cn
++.datasink.geelark.com
++.datasink.linkfox.com
++.datasink.ziniao.com
 +.datasteam.io
 +.datastoried.com
 +.datatechdrift.com
@@ -33909,6 +33916,7 @@
 +.drearypassport.com
 +.drecentreshu.info
 +.drenchsealed.com
++.dreport.meituan.net
 +.dressceaseadapt.com
 +.dressedfund.com
 +.dresserbirth.com
@@ -36153,6 +36161,7 @@
 +.effulgent-stroopwafel-efb9ce.netlify.app
 +.effulgentnook.com
 +.effulgenttempest.com
++.efg.zle.com
 +.efgh.5lu.com
 +.efglbp.baur.de
 +.efhis.cn
@@ -40004,6 +40013,7 @@
 +.ffawwuagvom.com
 +.ffb.feihuo.com
 +.ffbbbdc6d3c353211fe2ba39c9f744cd.com
++.ffbdbx.xyz
 +.ffbvhlc.com
 +.ffcclqkmmlmecf.xyz
 +.ffdafx.xyz
@@ -53241,6 +53251,7 @@
 +.irtye.com
 +.irtyf.com
 +.iruiotish.cfd
++.irulws.xyz
 +.irurng.wondershare.jp
 +.irutvnco.top
 +.irvato.com
@@ -54397,6 +54408,7 @@
 +.jingdian230.meilika.net
 +.jingenfirm.com
 +.jingjia.qq.com
++.jingjs.top
 +.jinglehalfbakedparticle.com
 +.jingteinv.com
 +.jinguisiacal.top
@@ -58105,6 +58117,7 @@
 +.leafmedia.io
 +.leafminefield.com
 +.leafy-feel.com
++.leagsmk.icu
 +.league-of-legends.ru
 +.league1.maoyuncloud.cn
 +.leaguedispleasedjut.com
@@ -60735,6 +60748,7 @@
 +.logrocket.io
 +.logru.vietnamplus.vn
 +.logs-api.shoprunner.com
++.logs-collect.ziniao.com
 +.logs-partners.coupang.com
 +.logs.1cdn.vn
 +.logs.51cto.com
@@ -77429,6 +77443,7 @@
 +.pclog.dftoutiao.com
 +.pclog.suishenyun.net
 +.pcm.symantec.com
++.pcmactivity.chinacloudsites.cn
 +.pcmaddwoxex.com
 +.pcmclks.com
 +.pcminitj.dftoutiao.com
@@ -82708,6 +82723,7 @@
 +.qorlxle.com
 +.qortex.ai
 +.qoub.rtslgov.cn
++.qouv.fr
 +.qouxkn.natuurhuisje.nl
 +.qovua60gue.tubewolf.com
 +.qovwrntfxpilyt.com
@@ -84912,6 +84928,7 @@
 +.report.iciba.com
 +.report.iheartmedia.gbqofs.io
 +.report.mediahub.vn
++.report.meeting.tencent.com
 +.report.meituan.com
 +.report.nfa.qq.com
 +.report.qq.com
@@ -89621,6 +89638,7 @@
 +.sentry.alibaba.ir
 +.sentry.bale.sh
 +.sentry.basalam.com
++.sentry.bhbapp.cn
 +.sentry.cafebazaar.org
 +.sentry.d.mi.com
 +.sentry.d.xiaomi.net
@@ -91438,6 +91456,7 @@
 +.simplymeasured.com
 +.simplyscepticaltoad.com
 +.simpunok.com
++.simulatelab-datasink.fzzixun.com
 +.simulateswing.com
 +.sincalled.com
 +.sincenturypro.org
@@ -103296,6 +103315,7 @@
 +.test-app.thetimes.link
 +.test-applink.batterii.com
 +.test-b.todaytix.com
++.test-cb-log.ziniao.com
 +.test-eml.postmates.com
 +.test-extern.nitrosniffer.ottogroup.io
 +.test-fleet-eml.postmates.com
@@ -104939,6 +104959,7 @@
 +.toawaups.net
 +.toawhulo.com
 +.tob-cms.bj.bcebos.com
++.tob-tracker.yximgs.com
 +.tobaccocentgames.com
 +.tobaccoearnestnessmayor.com
 +.tobaitsie.com
@@ -117832,6 +117853,7 @@
 +.wuepo.cn
 +.wuftoars.net
 +.wuidtethhkcko.com
++.wuiqiq.xyz
 +.wuisaq.top
 +.wujiupic.com
 +.wujungexo.net
