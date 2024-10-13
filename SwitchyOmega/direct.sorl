@@ -1,5 +1,7 @@
 [SwitchyOmega Conditions]
+anti-ad.net
 kenkoooo.com
+linux.do
 i2.wp.com
 bookface-static.ycombinator.com
 devdocs.io
@@ -15,6 +17,7 @@ tb.himg.baidu.com
 tiebac.baidu.com
 R: ^img\d+\.baidu\.com$
 R: ^pics\d+\.baidu\.com$
+gss0.bdstatic.com
 R: ^tb\d+\.bdstatic\.com$
 tiebapic.baidu.com
 passport.bilibili.com
@@ -77,6 +80,7 @@ id.kuaishou.com
 **.kwimgs.com
 **.kskwai.com
 R: ^live-ws-group\d+\.kuaishou\.com$
+nga.178.com
 bbs.nga.cn
 img.nga.178.com
 img4.nga.178.com
@@ -92,6 +96,7 @@ i.sso.sina.com.cn
 f.video.weibocdn.com
 video.weibo.com
 face.t.sinajs.cn
+img.t.sinajs.cn
 docs.qq.com
 docs.gtimg.com
 game.gtimg.cn
@@ -141,7 +146,11 @@ assets.leetcode.cn
 static.leetcode.cn
 pic.leetcode.cn
 gitee.com
+segmentfault.com
 **.hoopchina.com.cn
+avatar-static.segmentfault.com
+image-static.segmentfault.com
+static.segmentfault.com
 api.accounts.firefox.com
 profile.accounts.firefox.com
 detectportal.firefox.com
@@ -158,6 +167,7 @@ fonts.gstatic.com
 **.gstatic.cn
 www.gstatic.com
 www.recaptcha.net
+edge.microsoft.com
 api-edge.cognitive.microsofttranslator.com
 pixiv.pximg.net
 **.steamcontent.com
@@ -168,15 +178,20 @@ static-cdn.jtvnw.net
 **.hls.ttvnw.net
 **.abs.hls.ttvnw.net
 **.no-abs.hls.ttvnw.net
-cf.mhgui.com
 i.hamreus.com
 eu.hamreus.com
 eu1.hamreus.com
+**.mangafuna.xyz
 img.atcoder.jp
 clist.by
+.icpc.global
+.ucup.ac
 mathjax.codeforces.org
 codeforces.org
 pubsub.codeforces.com
+apiv2.cipherpuzzles.com
+**.galacticpuzzlehunt.com
+.justhunt.cn
 .lencr.org
 ocsp.globalsign.com
 ocsp2.globalsign.com
