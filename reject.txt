@@ -8115,6 +8115,7 @@
 +.ads.mycricket.com
 +.ads.mysimon.com
 +.ads.mytelus.com
++.ads.mythad.com
 +.ads.nationalreview.com
 +.ads.ndtv1.com
 +.ads.nerve.com
@@ -12244,6 +12245,7 @@
 +.analytics.skinit.com
 +.analytics.skyscanner.net
 +.analytics.slashdotmedia.com
++.analytics.sleeknote.com
 +.analytics.slidesai.io
 +.analytics.smart.mercedes-benz.com
 +.analytics.smhi.se
@@ -19236,6 +19238,7 @@
 +.bottleselement.com
 +.boudinminding.shop
 +.boudja.com
++.bouffeswhaups.com
 +.boufikesha.net
 +.boughtjovialamnesty.com
 +.bougyuestelecom.fr
@@ -20939,6 +20942,7 @@
 +.cad.youku.com
 +.cadaver.org
 +.cadbitff.com
++.cadcc.icu
 +.cadencedisruptgoat.com
 +.caderonline.bu.edu
 +.cadimavume.com
@@ -21366,6 +21370,7 @@
 +.carpfreshtying.com
 +.carpi3fnusbetgu5lus.com
 +.carpincur.com
++.carpuslarrups.com
 +.carrel.services
 +.carreras.unisabana.edu.co
 +.carrfefour.fr
@@ -21895,7 +21900,6 @@
 +.cdn.neon.click
 +.cdn.net.dz.jumia.com
 +.cdn.net.elogia.net
-+.cdn.nhnace.com
 +.cdn.nsimg.net
 +.cdn.onescreen.net
 +.cdn.optmn.cloud
@@ -22761,6 +22765,7 @@
 +.chmae.com
 +.chmnscaurie.space
 +.chmproxy.bid
++.chmueyv.icu
 +.chnci.com
 +.chnvgdkw.xyz
 +.cho7932105co3l2ate3covere53d.com
@@ -25884,6 +25889,7 @@
 +.cottoncabbage.com
 +.cottondivorcefootprint.com
 +.cotwcpcjcrjfj.xyz
++.coublif.top
 +.coucalhidated.com
 +.couchcoaster.jp
 +.coudswamper.com
@@ -28880,6 +28886,7 @@
 +.daraz.com
 +.darcycapacious.com
 +.darcyjellynobles.com
++.dareka4te.shop
 +.daretodreamfarm.com
 +.darghinruskin.com
 +.daringcooper.com
@@ -28956,6 +28963,7 @@
 +.data-dynamic.net
 +.data-formula.com
 +.data-ingenuity.com
++.data-ingestion.flowgpt.com
 +.data-insight365.com
 +.data-logdelivery.wconcept.co.kr
 +.data-news.cdn.cootekservice.com
@@ -30479,6 +30487,7 @@
 +.detectedadvancevisiting.com
 +.detectedpectoral.com
 +.detectiveestrange.com
++.detectivegrilled.com
 +.detectivesbaseballovertake.com
 +.detectivesexception.com
 +.detectivespreferably.com
@@ -30996,6 +31005,7 @@
 +.digestiondrawer.com
 +.digestionethicalcognomen.com
 +.digestionheartlesslid.com
++.diggingrebbes.com
 +.digi-ping.com
 +.digi.vinut.com.vn
 +.digiad.co
@@ -40774,6 +40784,7 @@
 +.ga.webdigi.co.uk
 +.ga1.3dmgame.com
 +.ga2.3dmgame.com
++.ga2.getresponse.com
 +.gaafbi.fashiondays.hu
 +.gabblecongestionhelpful.com
 +.gabblewhining.com
@@ -43505,6 +43516,7 @@
 +.goufldsbktds.com
 +.gouheethsurvey.space
 +.gounevou.net
++.gounodogaptofok.net
 +.gourgoldpieceso.com
 +.gourmetads.com
 +.gousouse.com
@@ -53273,6 +53285,7 @@
 +.kainitwhip.com
 +.kaipteet.com
 +.kaiseki-website.com
++.kaitakavixen.shop
 +.kaitongyewu.com
 +.kaitoupiao.com
 +.kaiu-marketing.com
@@ -53536,6 +53549,7 @@
 +.kelticsully.guru
 +.kelun13.top
 +.kemaz.xyz
++.kemmars.com
 +.kendingfa.com
 +.kendosliny.com
 +.kenduktur.com
@@ -54322,6 +54336,7 @@
 +.kqdqrj.traktorpool.de
 +.kqduogttdmryguw.com
 +.kqhckf.outfits24.de
++.kqhgjmap.com
 +.kqhi97lf.de
 +.kqiivrxlal.xyz
 +.kqjpipl.com
@@ -65608,6 +65623,7 @@
 +.misspelluptown.com
 +.misspkl.com
 +.misstaycedule.com
++.missuitfuffit.com
 +.misszuo.xyz
 +.mistakeadministrationgentlemen.com
 +.mistakeenforce.com
@@ -67749,6 +67765,7 @@
 +.mzlit.com
 +.mznizrhd.xyz
 +.mzol7lbm.com
++.mzpecui.icu
 +.mzteishamp.com
 +.mzthbna.xyz
 +.mztqgmr.com
@@ -69168,6 +69185,7 @@
 +.nhkoze.saneibd.com
 +.nhlvvh.sawadee.nl
 +.nhn.dk
++.nhnace.com
 +.nhnazx.outdoorlook.co.uk
 +.nhopaepzrh.com
 +.nhphkweyx.xyz
@@ -69761,6 +69779,7 @@
 +.novedades.telecomfibercorp.com.ar
 +.novel-inevitable.com
 +.novelcompliance.com
++.novelslopeoppressive.com
 +.novelsns.html5.qq.com
 +.novelty.media
 +.noveltyensue.com
@@ -70100,6 +70119,7 @@
 +.nums.upscale.app
 +.nunearn.com
 +.nuniceberg.com
++.nunsourdaultozy.net
 +.nupdhyzetb.com
 +.nuphizarrafw.com
 +.nuquds.citizenwatch.com
@@ -70146,6 +70166,7 @@
 +.nvjgmugfqmffbgk.xyz
 +.nvjqm.com
 +.nvjqtz.xyz
++.nvlcnvyqvpjppi.xyz
 +.nvpdaa.brightcellars.com
 +.nvqonvfylkxdjc.com
 +.nvrentao8.com
@@ -71737,6 +71758,7 @@
 +.onmlkjiion.carte-gr.total.fr
 +.onmstgh.icu
 +.onmypc.net
++.onoamoutsaitsy.net
 +.onosyej.icu
 +.onoztg.ultimate-guitar.com
 +.onpluslean.com
@@ -72449,6 +72471,7 @@
 +.otnolabttmup.com
 +.otnolatrnup.com
 +.otoadom.com
++.otomacotelugu.com
 +.otoshiana.com
 +.otpercpiheno.blogspot.com
 +.otpercpiheno.hu
@@ -74357,6 +74380,7 @@
 +.pets.channeladvisor.com
 +.pets.finaltips.com
 +.petsavoury.com
++.pettyachras.shop
 +.petzel.be
 +.pevftg.shopee.sg
 +.pexavfro.xyz
@@ -74885,6 +74909,7 @@
 +.pikacn.com
 +.piksrie.icu
 +.pikzor.com
++.pilapilkelps.shop
 +.pilaryhurrah.com
 +.piledannouncing.com
 +.piledchinpitiful.com
@@ -76972,6 +76997,7 @@
 +.prodigysomeone.click
 +.proditor.sparda.de
 +.prodmp.ru
++.prodregistryv2.org
 +.prodresell.com
 +.prodtraff.com
 +.producebreed.com
@@ -95002,6 +95028,7 @@
 +.statystyki.ekspertyzy-szkolenia.pl
 +.statystyki.panelek.com
 +.staubsuthil.com
++.staugloobads.net
 +.staukaul.com
 +.staumersleep.com
 +.staunchgenetwitch.com
@@ -96250,6 +96277,7 @@
 +.sv.sheego.de
 +.sv2.biz
 +.sv2fo.icu
++.sv5nm.icu
 +.sv7momo.com
 +.svanh-xqh.com
 +.svaohpdxn.xyz
@@ -99548,6 +99576,7 @@
 +.tiads.time.com
 +.tiandi.com
 +.tianhuicun.com.cn
++.tianji.flowgpt.com
 +.tianji520.cn
 +.tianjinblg.com
 +.tianmidian.com
@@ -100415,6 +100444,7 @@
 +.toamaustouy.com
 +.toapodazoay.com
 +.toapz.xyz
++.toastbuzuki.com
 +.toastcomprehensiveimperturbable.com
 +.toastibar-cdn.makeprosimp.com
 +.toawaups.net
@@ -104258,6 +104288,7 @@
 +.treenghsas.com
 +.treenvest.com
 +.treepullmerriment.com
++.treferty33.fun
 +.trehtnoas.com
 +.treitrehagdin.top
 +.trek.powtoon.com
@@ -107510,6 +107541,7 @@
 +.v7.kawinhome.com
 +.v7.shaoyumuye.com
 +.v7.viayonetici.com
++.v785.online
 +.v8.analytics.pinsightmedia.com
 +.v8engine.pinsightmedia.com
 +.v8push.pinsightmedia.com
@@ -109918,6 +109950,7 @@
 +.vuftouks.com
 +.vufzuld.com
 +.vugnubier.com
++.vugpakba.com
 +.vuhnvtrfj.com
 +.vui-vay.com
 +.vuiluaz.xyz
@@ -109982,6 +110015,7 @@
 +.vvv.qqdashabi.top
 +.vvv.spahelani.com
 +.vvvietcombank.com
++.vvvvdbrrt.com
 +.vvvvw-icloud.com
 +.vvww-icloud.com
 +.vw.onlinia.net
