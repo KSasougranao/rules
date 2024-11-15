@@ -5021,6 +5021,7 @@
 +.absentlybiddingleopard.com
 +.absentlygratefulcamomile.com
 +.absentlyrindbulk.com
++.absentmissingaccept.com
 +.absentstream.com
 +.abservinean.com
 +.abshop.fr
@@ -7597,6 +7598,7 @@
 +.ads-game-configuration-master.ads.prd.ie.internal.unity3d.com
 +.ads-gdl.imovideo.ru
 +.ads-go.adroi.com.cn
++.ads-image.production-public.tubi.io
 +.ads-img-al.xhscdn.com
 +.ads-img-qc.xhscdn.com
 +.ads-interfaces.sc-cdn.net
@@ -11587,6 +11589,7 @@
 +.analytics-batch.blitz.gg
 +.analytics-beacon.p.uliza.jp
 +.analytics-cdiscount.com
++.analytics-cds.mobiedu.vn
 +.analytics-cf.bigcrunch.com
 +.analytics-cms.whitebeard.me
 +.analytics-coletor-site.ojc.com.br
@@ -15243,6 +15246,7 @@
 +.atsfi.de
 +.atshroomisha.com
 +.atsmetrics.adobe.com
++.atsod.launch.liveramp.com
 +.atspace.tv
 +.atsptp.com
 +.attacarbo.com
@@ -20035,6 +20039,7 @@
 +.builtinproceeding.com
 +.builtrussism.top
 +.bujerdaz.com
++.bujlmitd.icu
 +.bujz.top
 +.bukash2jf8jfpw09.com
 +.bukshiunchair.shop
@@ -20237,6 +20242,7 @@
 +.bux1le001.com
 +.buxbaumiaceae.sbs
 +.buxflow.com
++.buxfmookn.com
 +.buxfznnf.xyz
 +.buxim.com
 +.buxp.org
@@ -20420,6 +20426,7 @@
 +.byluvdiscor.com
 +.bylwtf.xyz
 +.bymahuxv.xyz
++.bynamebosh.com
 +.bynix.xyz
 +.byowner.fr
 +.bypasseaseboot.com
@@ -20879,6 +20886,7 @@
 +.cagakzcwyr.com
 +.cage6west.com
 +.cageinattentiveconfederate.com
++.cagitfiz.com
 +.cagkpu.suitdirect.co.uk
 +.caglaikr.net
 +.caglonseeh.com
@@ -26062,6 +26070,7 @@
 +.coxmt.com
 +.coxziptwo.com
 +.coyizl.embracon.com.br
++.coyureviral.com
 +.cozeswracks.com
 +.cozibaneco.com
 +.cozydusk.com
@@ -31054,6 +31063,7 @@
 +.dinerpropagandatoothbrush.com
 +.dingbu.bj.bcebos.com
 +.dingdong.co.il
++.dingerhoes.shop
 +.dingge.cc
 +.dinghologyden.org
 +.dingjianlm.com
@@ -36380,6 +36390,7 @@
 +.ev.moneymade.io
 +.ev.stellarlabs.ai
 +.ev.tpocdm.com
++.ev2.api.bdg.com
 +.eva-ad.24hstatic.com
 +.evadav.com
 +.evadavdsp.pro
@@ -37377,6 +37388,7 @@
 +.fahmta.theaa.com
 +.fahrrad.bikesshop.de
 +.faibl.org
++.fail.adr.ec
 +.failedmengodless.com
 +.failingaroused.com
 +.failpendingoppose.com
@@ -41907,6 +41919,7 @@
 +.gloumsie.net
 +.glounugeepse.xyz
 +.glouseer.net
++.glousoonomsy.xyz
 +.gloussowu.xyz
 +.gloustoa.net
 +.gloutanacard.com
@@ -50588,6 +50601,7 @@
 +.iwbubcs.v01aelux.space
 +.iwe.ktvgv.com
 +.iwebtrack.com
++.iweisio.top
 +.iwerilxo.top
 +.iwerioo.top
 +.iwgfdj.iko-yo.net
@@ -52196,6 +52210,7 @@
 +.jwatera.top
 +.jwcnjv.xlmoto.eu
 +.jwduahujge.ru
++.jweisia.top
 +.jweqai.amen.fr
 +.jwerilxa.top
 +.jwerioa.top
@@ -57896,6 +57911,7 @@
 +.lwrohd.xyz
 +.lwurserl.top
 +.lwusnt.yogibo.kr
++.lwvrv.icu
 +.lwxjg.com
 +.lwxs99.cc
 +.lwxuo.com
@@ -71265,6 +71281,7 @@
 +.osjpyw.dico.com.mx
 +.oskiwood.com
 +.osm-onead.cdn.hinet.net
++.osmeticjewlike.com
 +.osmoticupbound.com
 +.osmzym.xyz
 +.osnksi.czytam.pl
@@ -71533,6 +71550,7 @@
 +.outrigger-a.outrigger.com
 +.outrotomr.com
 +.outseeltor.com
++.outseethoozet.net
 +.outsetnormalwaited.com
 +.outseylor.com
 +.outsidevibe.com
@@ -75852,6 +75870,7 @@
 +.profit.edc.ca
 +.profitablecpmgate.com
 +.profitablecpmnetwork.com
++.profitablecpmrate.com
 +.profitablecreativeformat.com
 +.profitabledisplaycontent.com
 +.profitabledisplayformat.com
@@ -80233,6 +80252,7 @@
 +.rhombicsomeday.com
 +.rhombusads.com
 +.rhouseoyopers.info
++.rhoxbneasg.xyz
 +.rhoxnc.studentuniverse.com
 +.rhrim.com
 +.rhsorga.com
@@ -84752,6 +84772,7 @@
 +.sharkbleed.com
 +.sharks.vn
 +.sharkskids.com
++.sharondemurer.shop
 +.sharp.ondu.ru
 +.sharpay.io
 +.sharpmarketing.eu
@@ -92639,6 +92660,7 @@
 +.stats.brumtechtapas.co.uk
 +.stats.buddiy.net
 +.stats.bungeefit.co.uk
++.stats.bunkr.ru
 +.stats.burocratin.com
 +.stats.byma.com.br
 +.stats.cable.tech
@@ -95385,6 +95407,7 @@
 +.t.adbxb.cn
 +.t.adcell.com
 +.t.adcrops.net
++.t.adii.se
 +.t.adlpo.com
 +.t.adxchina.cn
 +.t.afry.com
@@ -104024,6 +104047,7 @@
 +.u5e.com
 +.u5i7k.cn
 +.u5lxh1y1pgxy.shop
++.u5ps5.icu
 +.u6.gg
 +.u652.myplainview.com
 +.u68t5.icu
@@ -104590,6 +104614,7 @@
 +.umrstfl.cn
 +.umrvmb.net.anwalt.de
 +.umsns.com
++.umtchdhkrx.com
 +.umtrack.com
 +.umtrack0.com
 +.umtrack1.com
@@ -105376,6 +105401,7 @@
 +.user-metrics.onthemarket.com
 +.user-red.com
 +.user-shield-check.com
++.user-signals.production-public.tubi.io
 +.user-stats.rbl.ms
 +.user.headlines.pw
 +.user.tiankongzudui.com
@@ -107770,6 +107796,7 @@
 +.vntkm.com
 +.vntsm.com
 +.vntsm.io
++.vnuuh.icu
 +.vnvay.top
 +.vnvietcombank.cc
 +.vnvietcombanks.cc
@@ -109541,6 +109568,7 @@
 +.weeklideals.com
 +.ween.bid
 +.weensnandow.com
++.weensydudler.com
 +.weephuwe.xyz
 +.weepingheartache.com
 +.weepingpretext.com
@@ -110813,6 +110841,7 @@
 +.wrathful-alternative.com
 +.wrathyblesmol.com
 +.wrating.com
++.wrdamoe.icu
 +.wrdnaunq.com
 +.wreaksyolkier.com
 +.wreathabble.com
