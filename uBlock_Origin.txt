@@ -79,6 +79,9 @@ www.bilibili.com##.floor-single-card
 !! 搜索
 ! 屏蔽搜索推荐
 bilibili.com##.search-panel .trending
+||api.bilibili.com/x/web-interface/wbi/search/square$xhr,1p
+||api.bilibili.com//x/web-interface/search/square$xhr,1p
+||app.bilibili.com/x/topic/pub/rcmd/search$xhr,1p
 ! 屏蔽搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,1p
 ! 屏蔽搜索栏默认值
@@ -90,6 +93,8 @@ search.bilibili.com##.activity-game-list
 !! 视频页
 ! 展开视频合集列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
+! 展开视频合集列表
+www.bilibili.com##.video-pod__body:style(max-height: 480px !important;)
 ! 展开视频分 P 选集列表
 www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
 ! 增大视频列表标题宽度
@@ -130,8 +135,10 @@ www.bilibili.com##.pop-live-small-mode
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
 ! 其他
+||api.bilibili.com/x/vip/ads^$1p
 ||cm.bilibili.com$1p
 ||game.bilibili.com^$1p
+||api.live.bilibili.com/xlive/web-interface/v1/webMain/getMoreRecList^$1p
 ||manga.bilibili.com$1p
 ||bilicomic.com^$domain=bilibili.com
 ||bilicomics.com^$domain=bilibili.com
@@ -220,6 +227,8 @@ live.bilibili.com###brush-prompt
 live.bilibili.com###chat-history-list:style(height: 100% !important;)
 ! 礼物愿望单
 live.bilibili.com##.gift-wish-card-root
+! 投喂提醒等
+live.bilibili.com###all-guide-cards
 ! 未登录时隐藏弹幕输入栏
 live.bilibili.com###switch-login-guide-vm
 !! 直播间播放器
@@ -271,7 +280,7 @@ t.bilibili.com,space.bilibili.com##.notice-item
 ! 动态下方广告
 t.bilibili.com,space.bilibili.com##.reply-notice
 ! 购物动态
-t.bilibili.com,space.bilibili.com##.bili-dyn-list__item:has(.bili-dyn-card-goods__mark > span:has-text(/UP主的推荐 · 来自(淘宝|京东)/))
+t.bilibili.com,space.bilibili.com##.bili-dyn-item__main:has(.bili-dyn-card-goods__mark > span:has-text(/UP主的推荐 · 来自(淘宝|京东)/))
 ! 屏蔽浮动评论栏
 t.bilibili.com,space.bilibili.com##.fixed-reply-box
 ! 自动展开动态
@@ -451,9 +460,11 @@ tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ! track
 ||gsp0.baidu.com/*/track.gif^$1p
 ||hm.baidu.com^
-# 无用请求
+! 跟踪参数
+||tieba.baidu.com/$document,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique)=|see_lz=0/,domain=tieba.baidu.com
+! 无用请求
 ||tieba.baidu.com/game/duoku/getHotGames$1p
-# 监控
+! 监控
 ||tb3.bdstatic.com/radar-sdk$domain=baidu.com
 
 ! https://www.jianshu.com
@@ -671,7 +682,7 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||douyin.com/aweme/v1/web/api/suggest_words
 ! 跟踪参数
 ||www.iesdouyin.com/share/video/$document,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/,domain=www.iesdouyin.com
-||douyin.com$document,removeparam=/^(aid|aweme_id|enter_from|gid|source)=/,domain=douyin.com
+||douyin.com$document,removeparam=/^(aid|aweme_id|enter_from|gid|source|from_tab_name)=/,domain=douyin.com
 ! 反屏蔽？
 ||bytednsdoc.com$domain=douyin.com
 ! search default 等
@@ -833,3 +844,4 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||cloudvdn.com^
 ||node.ppio.cloud^
 ||tlivemcdn.com^
+||nexusedgeio.com^
