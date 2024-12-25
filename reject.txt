@@ -8288,6 +8288,7 @@
 +.ads.ttv.com.tw
 +.ads.tvb.com
 +.ads.tvp.pl
++.ads.twdcgrid.com
 +.ads.twitter.com
 +.ads.twojatv.info
 +.ads.uigc.net
@@ -11114,6 +11115,7 @@
 +.altastat.com
 +.altavista.ovh
 +.altcoin.care
++.altema-log.com
 +.altenlayer.com
 +.alterassumeaggravate.com
 +.alterhimdecorate.com
@@ -17277,6 +17279,7 @@
 +.beemray.com
 +.beemrdwn.com
 +.beencounter.com
++.beenedsl.com
 +.beenoper.com
 +.beeperdecisivecommunication.com
 +.beepoven.com
@@ -21468,6 +21471,7 @@
 +.cdn-bongdadem-net.cdn.ampproject.org
 +.cdn-channels-pixel.ex.co
 +.cdn-code.host
++.cdn-gw-dv.vip
 +.cdn-haokanapk.baidu.com
 +.cdn-image.com
 +.cdn-jquery.host
@@ -21959,6 +21963,7 @@
 +.cf-eba.everytime.kr
 +.cf-native.karte.io
 +.cf-pixelfront-analytics.widencdn.net
++.cf.adxcel.com
 +.cf.campagnes-france.com
 +.cf.k053f0.cn
 +.cf.kampyle.com
@@ -23401,6 +23406,7 @@
 +.clksite.com
 +.clkslvmiwadfsx.xyz
 +.clkstat.china.cn
++.clktds.org
 +.clktrk.com
 +.clkwnl.xyz
 +.cllctr.any.run
@@ -23502,6 +23508,7 @@
 +.cloud25.xyz
 +.cloud27.xyz
 +.cloudad.asia
++.cloudad.icu
 +.cloudads.net
 +.cloudads.tv
 +.cloudadservers.com
@@ -29283,7 +29290,6 @@
 +.dberthformttete.com
 +.dbex-tracker-v2.driveback.ru
 +.dbfocus.jp
-+.dbfukofby5ycr.cloudfront.net
 +.dbfv8ylr8ykfg.cloudfront.net
 +.dbhbgz.suitableshop.nl
 +.dbhsejcg-meetup-com.cdnjs.network
@@ -32223,6 +32229,7 @@
 +.dripappliance.com
 +.dripe.site
 +.driv-analytics.com
++.drivago.top
 +.drive.carpoollogistics.com
 +.drive.seagate.com
 +.drive.waitrapp.com
@@ -44431,6 +44438,7 @@
 +.hfeoveukrn.info
 +.hffxc.com
 +.hfhppxseee.com
++.hfisngksng.com
 +.hfiwcuodr.com
 +.hfjmvr.xyz
 +.hfjsliu.top
@@ -51884,6 +51892,7 @@
 +.k8trangphim.com
 +.k99.cc
 +.k9gj.site
++.k9u.icu
 +.kaacsi.belvilla.nl
 +.kaan.kakao.com
 +.kaartenhuis.nl.site-id.nl
@@ -56355,6 +56364,7 @@
 +.log.polarisoffice.com
 +.log.prezi.com
 +.log.propermessage.io
++.log.pullcenter.live
 +.log.pvpgang.com
 +.log.quora.com
 +.log.qvb.qcloud.com
@@ -58617,6 +58627,7 @@
 +.m4su.online
 +.m4zoxtrcea1k.controlconceptsusa.com
 +.m5.66077.cn
++.m51.icu
 +.m53frvehb.com
 +.m549z.site
 +.m583.dailydemocrat.com
@@ -77438,6 +77449,7 @@
 +.qwfh39851jtfvkurf21hf.com
 +.qwfuug.phoneclick.it
 +.qwiarjayuffn.xyz
++.qwilmiy.top
 +.qwivhkmuksjodtt.com
 +.qwkmiot.com
 +.qwlbvlyaklmjo.top
@@ -84848,6 +84860,7 @@
 +.shutesaroph.com
 +.shutseashore.com
 +.shuttersurveyednaive.com
++.shuucerz.com
 +.shuzhundsj.cn
 +.shuzilm.cn
 +.shuzilm.com
@@ -84977,6 +84990,7 @@
 +.siiwptfum.xyz
 +.sikapo.top
 +.sikaq.top
++.sikncs.com
 +.silcom.com
 +.silebu.xyz
 +.silenceblindness.com
@@ -96662,6 +96676,7 @@
 +.tgel2ebtx.ru
 +.tget.me
 +.tghbn12.com
++.tghrfv.icu
 +.tgidskii.top
 +.tgirgs.flinders.nl
 +.tgknt.com
@@ -98437,6 +98452,7 @@
 +.towersalighthybrids.com
 +.towerslady.com
 +.towersresent.com
++.towmfs.com
 +.townhouses.woodlea.com.au
 +.townifybabbie.top
 +.townlife-aff.com
@@ -110118,6 +110134,7 @@
 +.wwhnjrg.com
 +.wwhsxwow.xyz
 +.wwija.com
++.wwilmie.top
 +.wwis-dubc1-vip60.adobe.com
 +.wwjnoafuexamtg.com
 +.wwjtdjj.cn
@@ -112194,6 +112211,8 @@
 +.yezilm.com
 +.yezztf.pinkelephant.co.kr
 +.yf5.voyage-prive.at
++.yfanads.cn
++.yfanads.com
 +.yfaqgk.xyz
 +.yfasjfk.icu
 +.yfaygn.natureetdecouvertes.com
