@@ -5311,6 +5311,7 @@
 +.actionrtb.com
 +.actionsplash.com
 +.actionteaser.ru
++.actiontracking.jp
 +.actirinius.com
 +.actitat.com
 +.activate-sea.adobe.com
@@ -5681,6 +5682,7 @@
 +.ad.exyws.org
 +.ad.feedbag.co.kr
 +.ad.filmweb.pl
++.ad.firestorage.jp
 +.ad.firstadsolution.com
 +.ad.flipboard.com
 +.ad.floq.jp
@@ -15360,6 +15362,7 @@
 +.auxin-box.com
 +.auxml.com
 +.auxmoney-partnerprogramm.de
++.auytiuhpu.com
 +.av-scanner.com
 +.av6fm8zw2cvz.furucombo.app
 +.av8d.net
@@ -20167,6 +20170,7 @@
 +.c.45io.com
 +.c.51xmgys.com
 +.c.adbxb.cn
++.c.albss.com
 +.c.alimama.com
 +.c.amazinglybrilliant.com.au
 +.c.anmeilai.net
@@ -21608,6 +21612,7 @@
 +.cdnweb3.pages.dev
 +.cdnwidget.com
 +.cdolhlwq.xyz
++.cdomsif.top
 +.cdoqjxlnegnhm.com
 +.cdoshbf.top
 +.cdotrvjaiupk.com
@@ -31837,6 +31842,7 @@
 +.dpeqm8xv96fuc.cloudfront.net
 +.dpflyingoncs.top
 +.dphunters.com
++.dphwyvcmdki.com
 +.dpirwgljl6cjp.cloudfront.net
 +.dpjlvaveq1byu.cloudfront.net
 +.dpjrba.com
@@ -31936,6 +31942,7 @@
 +.dratio.com
 +.drau.viessmann.si
 +.draughtpoisonous.com
++.drauvea.com
 +.drawbackcaptiverusty.com
 +.drawerenter.com
 +.drawergypsyavalanche.com
@@ -34170,6 +34177,7 @@
 +.eisasbeautifula.info
 +.eisasbeautifulas.com
 +.eisdog.shape.com
++.eisnaisv.com
 +.eisys-bcs.jp
 +.eit3.destinia.nl
 +.eiteribesshaints.com
@@ -55363,6 +55371,7 @@
 +.listing-a8-itp.hello-storage.com
 +.listingcafe.com
 +.listlog.baofeng.net
++.listoukectivetr.com
 +.listrakbi.com
 +.lists-tracking.komando.com
 +.lists.ccmbg.com
@@ -58811,6 +58820,7 @@
 +.mapamnni.com
 +.mapbasin.com
 +.mapchilde.top
++.mapcommand.com
 +.mapeeree.xyz
 +.maper.info
 +.maphonortea.com
@@ -68648,6 +68658,7 @@
 +.ofdb.fr
 +.ofdittor.com
 +.ofdnkro.xyz
++.ofdomjzpix.com
 +.ofdrapiona.com
 +.ofebyk.xyz
 +.ofeetles.pro
@@ -68926,6 +68937,7 @@
 +.ok-server.co.il
 +.ok.5.p2l.info
 +.ok365.com
++.ok5.fun
 +.ok8867s.com
 +.ok88okg.infinityscans.net
 +.okagcw.xyz
@@ -70350,6 +70362,7 @@
 +.oumtirsu.com
 +.ounceanalogous.com
 +.oundandk.cfd
++.oundaymitools.org
 +.oundhertobeconsi.com
 +.oungimuk.net
 +.ounigaugsurvey.space
@@ -75504,6 +75517,7 @@
 +.pugdisguise.com
 +.pugmarktagua.com
 +.pugsgivehugs.com
++.puhmtt.icu
 +.puhtml.com
 +.puitaexb.com
 +.puiwrs.misterspex.de
@@ -76922,6 +76936,7 @@
 +.quilkinhulking.shop
 +.quillion.com
 +.quillkick.com
++.quillsconi.top
 +.quinchdeepish.top
 +.quinst.com
 +.quintag.com
@@ -79048,6 +79063,7 @@
 +.rfmfrg.yamap.com
 +.rfnvqpo.xyz
 +.rfogqbystvgb.com
++.rfoqfifqcyymeb.com
 +.rfpozf.com
 +.rfpx1.com
 +.rfr-69.com
@@ -97516,6 +97532,7 @@
 +.tnctrx.com
 +.tnctufo.com
 +.tnd.ecefibwja.xyz
++.tndbnriz.icu
 +.tneca.com
 +.tneduf.com
 +.tnegqr.bohme.com
@@ -102171,6 +102188,7 @@
 +.tst16infra.com
 +.tstats-13fkh44r.com
 +.tste.startribune.com
++.tstpmasispcw.com
 +.tsvrv.com
 +.tswafl.lascana.nl
 +.tsy-jnugwavj.love
@@ -110704,6 +110722,7 @@
 +.xhnt.snqrk.cn
 +.xhnvgdkw.xyz
 +.xhohnr.fdm.pl
++.xholinqbbicfk.com
 +.xhqmvu.k-uno.co.jp
 +.xhsdwjes.xyz
 +.xhtd.99hg.wang
@@ -113166,6 +113185,7 @@
 +.zopxzq.premiata.it
 +.zorango.com
 +.zorkabiz.ru
++.zotkosplh.com
 +.zougreek.com
 +.zouloafi.net
 +.zounaishuphaucu.xyz
