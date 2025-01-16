@@ -24,7 +24,9 @@ x.com##[data-testid=sidebarColumn] div.r-rs99b7.r-1phboty.r-jxzhtn:not(:has(ul))
 twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ! 未知请求
 ||ton.local.twitter.com
+||twitter.com/i/api/2/guide.json^$domain=x.com
 ||ads-api.x.com^$1p
+||x.com/i/api/2/guide.json^$1p
 
 ! https://www.pixiv.net
 !! 作品页
@@ -36,6 +38,7 @@ www.pixiv.net##iframe[name="rectangle"]:upward(2)
 www.pixiv.net##.eqsIB.sc-181ts2x-5
 ! 评论
 www.pixiv.net##:has(> .dmnOnu)
+www.pixiv.net##.emsveB.sc-1yvhotl-5
 ! 收藏后广告
 www.pixiv.net##iframe[name="500x500"]:upward(1)
 ! 底部广告
@@ -369,6 +372,8 @@ zhuanlan.zhihu.com##.is-bottom.is-fixed.RichContent-actions.Sticky
 ! https://weibo.com
 ! vip 标志
 weibo.com##.woo-icon-wrap
+! 发表设备
+weibo.com##.head-info_source_2zcEX.head-info_cut_1tPQI
 ! 用户推荐
 weibo.com##div:nth-of-type(2) > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
 ! 用户推荐
@@ -595,6 +600,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||bee-wpm.huya.com^$1p
 ||fileserver.cdn.huya.com^$1p
 ||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
+||csp.huya.com^1p
 ||df.huya.com^$1p
 ||ext.huya.com^$1p
 ||hd.huya.com^$1p
@@ -604,6 +610,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||liveapi.huya.com/livelist/canWatchTogether^$1p
 ||metric.huya.com^$1p
 ||p2p.huya.com^$1p
+||pcdngw.huya.com^$1p
 ||statwup.huya.com^$1p
 ||upevent.huya.com^$1p
 ||user.huya.com/user/getUserInfo^$1p
@@ -821,6 +828,8 @@ ascii2d.net##div.p-t-1
 
 ! https://bbs.hupu.com
 bbs.hupu.com##div:has(> #game-center-entrance-container)
+bbs.hupu.com##.image-wrapper
+||hoopchina.com.cn^$image,domain=bbs.hupu.com
 
 ! https://bbs.nga.cn
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.headline
@@ -894,9 +903,11 @@ leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
 ! https://gitee.com
 gitee.com##.pendan-widget.gitee-stars-main-widget
 
+! https://www.reddit.com
 ||w3-reporting-nel.reddit.com^$1p
-! atcoder
-||static.addtoany.com^
+
+! https://atcoder.jp
+||static.addtoany.com^$domain=atcoder.jp
 
 ! 疑似 RTC
 ||xdrtc.com^
@@ -908,3 +919,12 @@ gitee.com##.pendan-widget.gitee-stars-main-widget
 ||node.ppio.cloud^
 ||tlivemcdn.com^
 ||nexusedgeio.com^
+
+! 观察
+||baidu.govwza.cn^$domain=baidu.com
+||b.bdstatic.com^$domain=baidu.com
+||badjs.weixinbridge.com^$domain=qq.com
+||webwan.huya.com^$1p
+||ab.chatgpt.com^$1p
+||tga.qq.com^
+||xiangce.baidu.com^$1p
