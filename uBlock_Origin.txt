@@ -1,7 +1,7 @@
 ! Version:
 ! Title: UNK uBlock Filters
 ! Expires: 1 days
-! Homepage: https://gitee.com/KSasougranao/UNK
+! Homepage: https://gitee.com/KSasougranao/UNK/raw/master/uBlock_Origin.txt
 
 ! https://twitter.com
 ! 左侧开通会员提醒
@@ -84,7 +84,7 @@ bilibili.com##.search-panel .trending
 ||api.bilibili.com//x/web-interface/search/square$xhr,1p
 ||app.bilibili.com/x/topic/pub/rcmd/search$xhr,1p
 ! 心跳
-||api.bilibili.com/x/click-interface/web/heartbeat
+||api.bilibili.com/x/click-interface/web/heartbeat$xhr,1p
 ! 屏蔽搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,1p
 ! 屏蔽搜索栏默认值
@@ -510,7 +510,6 @@ tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ||tieba.baidu.com/present/getForumRank$xhr,domain=tieba.baidu.com
 ||tb5.bdstatic.com/api/wza/config.json$xhr,domain=tieba.baidu.com
 ||tb5.bdstatic.com/api/wza/aria.js$script,domain=tieba.baidu.com
-
 
 ! https://www.jianshu.com
 ! 推荐
