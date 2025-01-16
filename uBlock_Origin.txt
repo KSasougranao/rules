@@ -24,7 +24,7 @@ x.com##[data-testid=sidebarColumn] div.r-rs99b7.r-1phboty.r-jxzhtn:not(:has(ul))
 twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ! 未知请求
 ||ton.local.twitter.com
-||ads-api.x.com^$domain=x.com
+||ads-api.x.com^$1p
 
 ! https://www.pixiv.net
 !! 作品页
@@ -51,13 +51,13 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 ! 广告和会员
 ||a.pixiv.org^$domain=pixiv.net
 ||pixon.ads-pixiv.net
-||api.booth.pm/pixiv/shops/show.json$xhr,domain=www.pixiv.net
+||api.booth.pm/pixiv/shops/show.json$xhr,domain=pixiv.net
 ||api.booth.pm/pixiv/items$xhr,domain=pixiv.net
-||imp.pixiv.net/premium_lp$subdocument,domain=www.pixiv.net
+||imp.pixiv.net/premium_lp$subdocument,1p
 ! 其他
-||www.pixiv.net/rpc/notify_count.php$xhr,domain=www.pixiv.net
+||www.pixiv.net/rpc/notify_count.php$xhr,1p
 ||www.pixiv.net/ajax/message/can_send/*$xhr,1p
-||www.pixiv.net/rpc/index.php$xhr,domain=www.pixiv.net
+||www.pixiv.net/rpc/index.php$xhr,1p
 
 ! https://www.bilibili.com
 !! 首页
@@ -127,26 +127,26 @@ www.bilibili.com##.pop-live-small-mode
 ! track
 ||api.bilibili.com/x/web-show/res/locs$xhr,1p
 ||api.bilibili.com/x/web-show/wbi/res/locs$xhr,1p
-||dataflow.biliapi.com$domain=bilibili.com
-||data.bilibili.com$1p
+||dataflow.biliapi.com^$domain=bilibili.com
+||data.bilibili.com^$1p
 ! 跟踪参数
 ||www.bilibili.com/read/$document,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/,domain=www.bilibili.com
 ||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/,domain=www.bilibili.com
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/,domain=www.bilibili.com
-||live.bilibili.com$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/,domain=bilibili.com
-||space.bilibili.com/$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
-||search.bilibili.com/$document,removeparam=/^(vt|search_source)=/,domain=search.bilibili.com
-||bilibili.com/$removeparam=/^(x-bili-device-req-json|x-bili-web-req-json)=/,domain=1p
+||live.bilibili.com^$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/,domain=live.bilibili.com
+||space.bilibili.com^$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
+||search.bilibili.com^$document,removeparam=/^(vt|search_source)=/,domain=search.bilibili.com
+||bilibili.com^$removeparam=/^(x-bili-device-req-json|x-bili-web-req-json)=/,1p
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
 ! 似乎是广告图片
 ||archive.biliimg.com^$domain=bilibili.com
 ! 其他
 ||api.bilibili.com/x/vip/ads^$1p
-||cm.bilibili.com$1p
+||cm.bilibili.com^$1p
 ||game.bilibili.com^$1p
 ||api.live.bilibili.com/xlive/web-interface/v1/webMain/getMoreRecList^$1p
-||manga.bilibili.com$1p
+||manga.bilibili.com^$1p
 ||bilicomic.com^$domain=bilibili.com
 ||bilicomics.com^$domain=bilibili.com
 ||biligame.com^$domain=bilibili.com
@@ -325,16 +325,16 @@ www.zhihu.com##.GlobalSideBar-category
 ! 底部版权信息
 www.zhihu.com##footer
 ! 主页侧栏创作者相关请求
-||www.zhihu.com/api/v4/creators/extra_card$xhr,domain=www.zhihu.com
+||www.zhihu.com/api/v4/creators/extra_card$xhr,1p
 ! 主页侧栏用户推荐
-||www.zhihu.com/api/v4/moments/recommend_follow_people$xhr,domain=www.zhihu.com
+||www.zhihu.com/api/v4/moments/recommend_follow_people$xhr,1p
 !! 问题页
 ! 邀请用户
 www.zhihu.com##.QuestionInvitation.Card
 ! 问题侧栏
 !www.zhihu.com##.Question-sideColumn
 ! 相似问题
-!||www.zhihu.com/api/v4/questions/*/similar-questions$xhr,domain=www.zhihu.com
+!||www.zhihu.com/api/v4/questions/*/similar-questions$xhr,1p
 ! 搜索词、话题识别
 ||www.zhihu.com/api/v3/entity_word$xhr,1p
 ! 邀请回答
@@ -349,7 +349,7 @@ www.zhihu.com##.Reward
 ! 回答作者
 www.zhihu.com##.AnswerAuthor.Card
 ! 回答相关收藏夹
-||www.zhihu.com/api/v4/answers/*/favlists$xhr,domain=www.zhihu.com
+||www.zhihu.com/api/v4/answers/*/favlists$xhr,1p
 ! 自建 dns
 ||/resolv$domain=zhihu.com
 ! track??
@@ -423,7 +423,7 @@ www.baidu.com##.result-op[tpl=short_video]
 ! 新闻
 www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
 ! 跟踪参数
-||www.baidu.com$document,removeparam=/^(rqlang|ie|tn|f|rsv_bp|oq|rsv_pq|rsv_t|rsv_dl|rsv_denter|rsv_btype|inputT|rsv_sug3|rsv_sug1|rsv_sug7|rsv_sug2|rsv_sug4|rsv_enter)=/,domain=www.baidu.com
+||www.baidu.com^$document,removeparam=/^(rqlang|ie|tn|f|rsv_bp|oq|rsv_pq|rsv_t|rsv_dl|rsv_denter|rsv_btype|inputT|rsv_sug3|rsv_sug1|rsv_sug7|rsv_sug2|rsv_sug4|rsv_enter)=/,domain=www.baidu.com
 ! 似乎是和搜索有关的请求
 ||hectorstatic.baidu.com^$1p
 ||mbd.baidu.com^$1p
@@ -513,7 +513,7 @@ tieba.baidu.com##.lzl_pager:style(display: block !important;)
 
 ! https://www.jianshu.com
 ! 推荐
-||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,domain=www.jianshu.com
+||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,1p
 ! 赞赏
 www.jianshu.com##._13lIbp
 ! 右侧推广
@@ -524,7 +524,7 @@ www.jianshu.com##section.ouvJEz:nth-of-type(2)
 ! https://www.huya.com
 !! 全站
 ! 跟踪参数
-||www.huya.com$document,removeparam=/^(|curpage|curlocation)=/,domain=www.huya.com
+||www.huya.com^$document,removeparam=/^(|curpage|curlocation)=/,1p
 ! 导航栏开播
 www.huya.com##.NavKaiBo--3_pcnDZbeaycODmpgNFBtt.NavItem--1jr9x80QTPbnrDwqn834hF
 ! 导航栏下载
@@ -592,20 +592,20 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ! 直播脚本
 ||api.huya.com^$1p
 @@||cdnws.api.huya.com^$websocket,1p
-||bee-wpm.huya.com$1p
-||fileserver.cdn.huya.com$1p
+||bee-wpm.huya.com^$1p
+||fileserver.cdn.huya.com^$1p
 ||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
 ||df.huya.com^$1p
 ||ext.huya.com^$1p
 ||hd.huya.com^$1p
-||liveapi.huya.com$script,1p
+||liveapi.huya.com^$script,1p
 ||liveapi.huya.com/cache/room/roomMonitor^$1p
 ||liveapi.huya.com/livelist/getUserLikeList$1p
 ||liveapi.huya.com/livelist/canWatchTogether^$1p
 ||metric.huya.com^$1p
 ||p2p.huya.com^$1p
 ||statwup.huya.com^$1p
-||upevent.huya.com$1p
+||upevent.huya.com^$1p
 ||user.huya.com/user/getUserInfo^$1p
 ||va.huya.com^$1p
 ||wsapi.huya.com^$1p
@@ -623,13 +623,13 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||diy-assets.msstatic.com^$image,domain=huya.com
 ||huyaimg.msstatic.com/cdnimage/*$image,domain=huya.com
 ||livewebbs2.msstatic.com^$domain=huya.com
-||s1-static.msstatic.com$script,domain=huya.com
+||s1-static.msstatic.com^$script,domain=huya.com
 ||static-jw.msstatic.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
 ||electric-shop.yaoguo.com^$domain=huya.com
 
 ! https://live.kuaishou.com
-||log-sdk.ksapisrv.com$important
+||log-sdk.ksapisrv.com^$important
 ||gifshow.com
 ! 直播滑动切换
 live.kuaishou.com##.control-wrapper
@@ -655,7 +655,7 @@ live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 ||kgw.com^$domain=kuaishou.com
 ||id.kuaishou.com/pass/kuaishou/getCdns$1p
 ! 支付？
-||www.kuaishoupay.com$domain=kuaishou.com
+||www.kuaishoupay.com^$domain=kuaishou.com
 
 ! https://www.douyu.com
 !! 直播分区
@@ -689,7 +689,7 @@ www.douyu.com##.Barrage-nickName:upward(1):style(padding: 0px 10px !important;)
 ! 隐藏会员标志
 www.douyu.com##.Barrage-icon
 ! 跟踪参数
-||www.douyu.com$document,removeparam=/^(dyshid|dyshci)=/,domain=www.douyu.com
+||www.douyu.com^$document,removeparam=/^(dyshid|dyshci)=/,1p
 ! 其他
 ||abvolcapi.douyucdn.cn^$domain=douyu.com
 ||ams.douyucdn.cn^$domain=douyu.com
@@ -711,9 +711,9 @@ www.douyu.com##.Barrage-icon
 ||shark2.douyucdn.cn/front-publish/live-pk$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-super$domain=douyu.com
 ||shark2.douyucdn.cn/front-publish/live-task$domain=douyu.com
-||msg.douyu.com$1p
-||g.wan.douyu.com$1p
-||yuba.douyu.com$1p
+||msg.douyu.com^$1p
+||g.wan.douyu.com^$1p
+||yuba.douyu.com^$1p
 !shark2.douyucdn.cn/front-publish/live-master/js/room$domain=douyu.com
 
 ! https://www.douyin.com
@@ -737,29 +737,29 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ! 搜索栏猜你喜欢
 ||douyin.com/aweme/v1/web/api/suggest_words
 ! 跟踪参数
-||www.iesdouyin.com/share/video/$document,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/,domain=www.iesdouyin.com
-||douyin.com$document,removeparam=/^(aid|aweme_id|enter_from|gid|source|from_tab_name)=/,domain=douyin.com
+||www.iesdouyin.com/share/video/$document,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/,1p
+||douyin.com^$document,removeparam=/^(aid|aweme_id|enter_from|gid|source|from_tab_name)=/,1p
 ! 反屏蔽？
-||bytednsdoc.com$domain=douyin.com
+||bytednsdoc.com^$domain=douyin.com
 ! search default 等
-||bytetcc.com$domain=douyin.com
+||bytetcc.com^$domain=douyin.com
 ! abtest
 ||www.douyin.com/service/2/abtest_config^$1p
 ! 其他
 ||/get_domains^$domain=douyin.com
-||mssdk.bytedance.com$domain=douyin.com
+||mssdk.bytedance.com^$domain=douyin.com
 ||bytegecko.com^$domain=douyin.com
-||frontier-im.douyin.com$domain=douyin.com
-||frontier-pc.douyin.com$domain=douyin.com
-||imapi.douyin.com$domain=douyin.com
-||api.feelgood.cn$domain=douyin.com
-||new.gracebot.cn$domain=douyin.com
+||frontier-im.douyin.com^$1p
+||frontier-pc.douyin.com^$1p
+||imapi.douyin.com^$1p
+||api.feelgood.cn^$domain=douyin.com
+||new.gracebot.cn^$domain=douyin.com
 ||ibytedapm.com^$domain=douyin.com
-||vegslb.com$domain=douyin.com
-||volcsirius.com$domain=douyin.com
-||zijieapi.com$domain=douyin.com
-||mcs.zijieapi.com$domain=douyin.com
-||mon.zijieapi.com$domain=douyin.com
+||vegslb.com^$domain=douyin.com
+||volcsirius.com^$domain=douyin.com
+||zijieapi.com^$domain=douyin.com
+||mcs.zijieapi.com^$domain=douyin.com
+||mon.zijieapi.com^$domain=douyin.com
 
 ! https://live.douyin.com
 !! 直播首页
@@ -796,10 +796,10 @@ live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
 ! 礼物赠送消息-滚动
 live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
 ! 去除跟踪参数
-||live.douyin.com$document,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/,domain=live.douyin.com
+||live.douyin.com^$document,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/,domain=live.douyin.com
 
 ! https://www.xiaohongshu.com/
-||xiaohongshu.com$document,removeparam=/^(app_platform|ignoreEngage|app_version|share_from_user_hidden|xsec_source|type|author_share|xhsshare|share_id|apptime)=/,domain=xiaohongshu.com
+||xiaohongshu.com^$document,removeparam=/^(app_platform|ignoreEngage|app_version|share_from_user_hidden|xsec_source|type|author_share|xhsshare|share_id|apptime)=/,1p
 
 ! https://blog.csdn.net
 ! 左侧广告
@@ -868,7 +868,7 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||tpstelemetry.tencent.com
 
 ! https://mail.qq.com
-||mail.qq.com$document,removeparam=/^(t|lang|res|speedcheck|url|r)=/,domain=mail.qq.com
+||mail.qq.com^$document,removeparam=/^(t|lang|res|speedcheck|url|r)=/,domain=mail.qq.com
 
 ! https://docs.qq.com
 ||at.idqqimg.com^$domain=qq.com
@@ -887,9 +887,9 @@ leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
 ! 其他
 ||leetcode.cn/timestamp
 ||logs.leetcode-cn.com^$xhr,domain=leetcode.cn
-||logs.leetcode.cn^$xhr,domain=leetcode.cn
-||ff-proxy.leetcode.cn$domain=leetcode.cn
-||analysis.leetcode.cn^$domain=leetcode.cn
+||logs.leetcode.cn^$xhr,1p
+||ff-proxy.leetcode.cn^$1p
+||analysis.leetcode.cn^$1p
 
 ! https://gitee.com
 gitee.com##.pendan-widget.gitee-stars-main-widget
