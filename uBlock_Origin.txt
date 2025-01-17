@@ -81,20 +81,19 @@ www.bilibili.com##.bili-live-card
 ! 首页频道推荐
 www.bilibili.com##.floor-single-card
 !! 搜索
-! 屏蔽搜索推荐
+! 搜索推荐
 bilibili.com##.search-panel .trending
 ||api.bilibili.com/x/web-interface/wbi/search/square$xhr,1p
 ||api.bilibili.com//x/web-interface/search/square$xhr,1p
 ||app.bilibili.com/x/topic/pub/rcmd/search$xhr,1p
 ! 心跳
 ||api.bilibili.com/x/click-interface/web/heartbeat$xhr,1p
-! 屏蔽搜索栏默认值
+! 搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,1p
-! 屏蔽搜索栏默认值
 ||api.bilibili.com//x/web-interface/search/default$xhr,1p
-! 屏蔽搜索结果-直播
+! 搜索结果-直播
 search.bilibili.com##.bili-video-card:has(.bili-video-card__info--living):upward(1)
-! 游戏活动屏蔽
+! 游戏活动
 search.bilibili.com##.activity-game-list
 !! 视频页
 ! 展开视频合集列表
@@ -164,13 +163,10 @@ live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|�
 ! 导航栏
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
 !! 直播站首页
-! 屏蔽首页直播间
+! 首页直播间
 ||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,domain=live.bilibili.com
-! 屏蔽首页直播间
 ||hdslb.com/bfs/blive-engineer/live-web-player/home-player.prod.min.js$script,redirect=noopjs,domain=live.bilibili.com
-! 屏蔽首页直播间
 live.bilibili.com##.t-center.p-relative.border-box.player-area-ctnr
-! 屏蔽首页直播间
 live.bilibili.com##.player-ctnr #live-video
 ! 热门榜单
 live.bilibili.com##.t-center.grid-area-ctnr
@@ -182,7 +178,7 @@ live.bilibili.com##.yzly-ctnr
 live.bilibili.com##.recommend-area-ctnr
 ! 底部
 live.bilibili.com##.link-footer-ctnr
-! 屏蔽分区推荐 popup header
+! 分区推荐 popup header
 live.bilibili.com##.hover-panel-wrap .area-banner
 !! 直播分区
 ! 直播分区页顶部 banner
@@ -194,7 +190,7 @@ live.bilibili.com##.blive-avatar-pendant
 live.bilibili.com##.blive-avatar-icons
 ! 直播列表百舰标志、活动标志
 live.bilibili.com###card .img-bright-filter[style^=background-image]
-! 屏蔽用户
+! 主播
 live.bilibili.com###card:matches-attr(href=/\/(10545|11588230|12235923|13576775|14893|15536|17961|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22262300|22288644|22333522|22347054|22389319|22470208|22603245|22622535|22696653|22746343|22816111|22824550|22924075|22976643|23199319|23652569|23770996|23771189|23969425|24393|25290861|25512501|2603963|26276187|3415150|4316215|4726132|5275|56237|594461|6374209|7038458|725364|7688602|80397|870004|876396|92450|938957)\?/):upward(1)
 !! 直播间
 ! 礼物栏
@@ -282,7 +278,7 @@ www.bilibili.com##.opus-detail:style(width: 60% !important;)
 www.bilibili.com##.right-sidebar-wrap:style(margin-left: calc(60% + 10px) !important;)
 ! 隐藏关注动态水平滚动条
 t.bilibili.com##.bili-dyn-up-list__window:style(overflow-x: hidden !important;)
-! 屏蔽主页右侧热门话题
+! 主页右侧热门话题
 t.bilibili.com##aside.right
 ||app.bilibili.com/x/topic/web/dynamic/rcmd$xhr,domain=1p
 ! 不显示动态的热门互动
@@ -304,7 +300,7 @@ t.bilibili.com,space.bilibili.com##.notice-item
 t.bilibili.com,space.bilibili.com##.reply-notice
 ! 购物动态
 t.bilibili.com,space.bilibili.com##.bili-dyn-item__main:has(.bili-dyn-card-goods__mark > span:has-text(/UP主的推荐 · 来自(淘宝|京东)/))
-! 屏蔽浮动评论栏
+! 浮动评论栏
 t.bilibili.com,space.bilibili.com##.fixed-reply-box
 ! 自动展开动态
 t.bilibili.com,space.bilibili.com##.bili-rich-text__content:style(max-height: none !important;)
@@ -666,9 +662,9 @@ live.kuaishou.com##.fold-message
 !live.kuaishou.com##.swiper-wrapper:style(width: 100vw !important; height: 100vh !important;)
 ! 禁用其他播放区域，可以使自动跳转直播间失效
 live.kuaishou.com##.swiper-slide:nth-child(n + 2)
-! 屏蔽礼物栏
+! 礼物栏
 live.kuaishou.com##.gift-bar
-! 屏蔽 K 币
+! K 币
 live.kuaishou.com##.kcoin
 ! 偶现浮窗
 live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
@@ -873,7 +869,7 @@ www.miguvideo.com##.user-guide-app
 ||program-sc.miguvideo.com
 
 ! https://olympics.com
-! 屏蔽广告
+! 广告
 olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row-type^=day-schedule-]))
 
 ! track
