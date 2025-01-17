@@ -139,7 +139,7 @@ www.bilibili.com##.pop-live-small-mode
 ||live.bilibili.com^$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/,domain=live.bilibili.com
 ||space.bilibili.com^$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
 ||search.bilibili.com^$document,removeparam=/^(vt|search_source)=/,domain=search.bilibili.com
-||bilibili.com^$removeparam=/^(x-bili-device-req-json|x-bili-web-req-json)=/,1p
+||bilibili.com^$removeparam=/^(isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|web_location|gaia_source|from_spmid|spmid|from_trackid|w_rid|wts|x-bili-device-req-json|x-bili-web-req-json)=/,1p
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
 ! 似乎是广告图片
@@ -153,6 +153,10 @@ www.bilibili.com##.pop-live-small-mode
 ||bilicomic.com^$domain=bilibili.com
 ||bilicomics.com^$domain=bilibili.com
 ||biligame.com^$domain=bilibili.com
+! 部分会报错的脚本
+||hdslb.com/bfs/static/nc/$script,redirect=noopjs,domain=bilibili.com
+||hdslb.com/bfs/seed/jinkela/short/reporter-pb/$script,redirect=noopjs,domain=bilibili.com
+||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/$script,redirect=noopjs,domain=bilibili.com
 
 ! https://live.bilibili.com
 ! 导航栏
@@ -183,6 +187,7 @@ live.bilibili.com##.hover-panel-wrap .area-banner
 !! 直播分区
 ! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
+live.bilibili.com##.index_wrapper_fta1j
 ! 直播列表头像框
 live.bilibili.com##.blive-avatar-pendant
 ! 黄色闪电标志
@@ -208,8 +213,9 @@ live.bilibili.com###observerTarget
 live.bilibili.com###game-id
 ! PK 图层
 live.bilibili.com##.awesome-pk-box
-! 屏蔽天选抽奖
+! 天选抽奖
 live.bilibili.com###anchor-guest-box-id
+live.bilibili.com##.m-nobar__popup-container
 ! 2233 形象
 live.bilibili.com###my-dear-haruna-vm
 ! 高亮本人弹幕
@@ -244,6 +250,8 @@ live.bilibili.com###all-guide-cards
 ! 未登录时隐藏弹幕输入栏
 live.bilibili.com###switch-login-guide-vm
 !! 直播间播放器
+! 音量提醒
+live.bilibili.com##div:has(> p:has-text(点击取消静音))
 ! 底部弹幕
 live.bilibili.com##.bili-dm.bili-center.bili-show
 ! 底部弹幕
@@ -439,6 +447,12 @@ www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
 ||haokanupdate.cdn.bcebos.com^$domain=baidu.com
 ||mediago-static.cdn.bcebos.com^$domain=baidu.com
 ||ns-strategy.cdn.bcebos.com^$domain=baidu.com
+! 百度异常上报
+||dmpstatic.cdn.bcebos.com/weirwood-sdk/
+||dlswbr.baidu.com/heicha/
+||miaowu.baidu.com/sdk/heicha/
+||tb3.bdstatic.com/api/acs/paris-v2.min.js
+||push.dui1dui.com
 
 ! https://tieba.baidu.com
 ! 登录弹窗
@@ -504,7 +518,7 @@ tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ||gsp0.baidu.com^$1p
 ||hm.baidu.com^
 ! 跟踪参数
-||tieba.baidu.com/$document,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique)=|see_lz=0/,domain=tieba.baidu.com
+||tieba.baidu.com/$document,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp|ie)=|see_lz=0/,domain=tieba.baidu.com
 ! 无用请求
 ||tieba.baidu.com/game/duoku/getHotGames$1p
 ! 监控
