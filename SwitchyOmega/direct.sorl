@@ -29,6 +29,7 @@ search.bilibili.com
 b23.tv
 api.bilibili.com
 api.live.bilibili.com
+message.bilibili.com
 api.vc.bilibili.com
 app.bilibili.com
 s.search.bilibili.com
@@ -143,8 +144,13 @@ wsschatpush.miguvideo.com
 flv*.miguvideo.com
 leetcode.cn
 assets.leetcode.cn
-static.leetcode.cn
 pic.leetcode.cn
+static.leetcode.cn
+video.leetcode.cn
+assets.leetcode-cn.com
+pic.leetcode-cn.com
+static.leetcode-cn.com
+video.leetcode-cn.com
 gitee.com
 segmentfault.com
 **.hoopchina.com.cn
@@ -183,7 +189,6 @@ eu.hamreus.com
 eu1.hamreus.com
 **.mangafuna.xyz
 img.atcoder.jp
-clist.by
 .icpc.global
 .ucup.ac
 mathjax.codeforces.org
@@ -192,6 +197,3 @@ pubsub.codeforces.com
 apiv2.cipherpuzzles.com
 **.galacticpuzzlehunt.com
 .justhunt.cn
-.lencr.org
-ocsp.globalsign.com
-ocsp2.globalsign.com
