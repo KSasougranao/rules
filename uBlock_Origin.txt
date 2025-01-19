@@ -86,8 +86,8 @@ bilibili.com##.search-panel .trending
 ||api.bilibili.com/x/web-interface/wbi/search/square$xhr,1p
 ||api.bilibili.com//x/web-interface/search/square$xhr,1p
 ||app.bilibili.com/x/topic/pub/rcmd/search$xhr,1p
-! 心跳
-||api.bilibili.com/x/click-interface/web/heartbeat$xhr,1p
+! 播放历史
+!||api.bilibili.com/x/click-interface/web/heartbeat$xhr,1p
 ! 搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,1p
 ||api.bilibili.com//x/web-interface/search/default$xhr,1p
@@ -138,7 +138,8 @@ www.bilibili.com##.pop-live-small-mode
 ||live.bilibili.com^$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/,domain=live.bilibili.com
 ||space.bilibili.com^$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
 ||search.bilibili.com^$document,removeparam=/^(vt|search_source)=/,domain=search.bilibili.com
-||bilibili.com^$removeparam=/^(isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|web_location|gaia_source|from_spmid|spmid|from_trackid|w_rid|wts|x-bili-device-req-json|x-bili-web-req-json)=/,1p
+!! web_location 重要参数
+||bilibili.com^$removeparam=/^(isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|w_rid|wts|x-bili-device-req-json|x-bili-web-req-json)=/,1p
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
 ! 似乎是广告图片
