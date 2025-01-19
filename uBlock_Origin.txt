@@ -139,7 +139,8 @@ www.bilibili.com##.pop-live-small-mode
 ||space.bilibili.com^$document,removeparam=/^(spm_id_from)=/,domain=space.bilibili.com
 ||search.bilibili.com^$document,removeparam=/^(vt|search_source)=/,domain=search.bilibili.com
 !! web_location 重要参数
-||bilibili.com^$removeparam=/^(isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|w_rid|wts|x-bili-device-req-json|x-bili-web-req-json)=/,1p
+!! w_rid,wts 影响权限
+||bilibili.com^$removeparam=/^(isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|x-bili-device-req-json|x-bili-web-req-json)=/,1p
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
 ! 似乎是广告图片
