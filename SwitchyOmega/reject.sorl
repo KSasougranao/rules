@@ -3,6 +3,7 @@ hectorstatic.baidu.com
 hm.baidu.com
 mbd.baidu.com
 miaowu.baidu.com
+ug.baidu.com
 xlab.baidu.com
 drug-platform.cdn.bcebos.com
 haokanupdate.cdn.bcebos.com
@@ -21,6 +22,9 @@ manga.bilibili.com
 bilicomic.com
 bilicomics.com
 **.biligame.com
+**.node.ppio.cloud
+**.cloudvdn.com
+**.tlivemcdn.com
 api.feelgood.cn
 new.gracebot.cn
 mssdk.bytedance.com
@@ -33,6 +37,7 @@ imapi.douyin.com
 **.ibytedapm.com
 **.vegslb.com
 **.volcsirius.com
+**.zijieapi.com
 mcs.zijieapi.com
 mon.zijieapi.com
 abvolcapi.douyucdn.cn
@@ -60,7 +65,7 @@ ogads-pa.clients6.google.com
 mtalk.google.com
 www.google-analytics.com
 www.googleadservices.com
-www.googletagmanager.com
+**.googletagmanager.com
 static.doubleclick.net
 bee-wpm.huya.com
 fileserver.cdn.huya.com
@@ -121,6 +126,7 @@ tpstelemetry.tencent.com
 music-file.y.gtimg.cn
 qpic.y.gtimg.cn
 stat6.y.qq.com
+**.xdrtc.com
 ton.local.twitter.com
 ads-api.x.com
 reward.media.weibo.com
