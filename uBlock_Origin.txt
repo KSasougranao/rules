@@ -195,6 +195,14 @@ live.bilibili.com###card .img-bright-filter[style^=background-image]
 ! 主播
 live.bilibili.com###card:matches-attr(href=/\/(10545|11588230|12235923|13576775|14893|15536|17961|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22262300|22288644|22333522|22347054|22389319|22470208|22603245|22622535|22696653|22746343|22816111|22824550|22924075|22976643|23199319|23652569|23770996|23771189|23969425|24393|25290861|25512501|2603963|26276187|3415150|4316215|4726132|5275|56237|594461|6374209|7038458|725364|7688602|80397|870004|876396|92450|938957)\?/):upward(1)
 !! 直播间
+! 舰队指挥官
+live.bilibili.com##.pilot
+! 展开贡献值/舰长排名
+live.bilibili.com##.switch-section
+! 贡献值/舰长排名
+live.bilibili.com##.tab-content-pilot.tab-content
+! 只保留顶部高度
+live.bilibili.com##:is(#rank-list-vm, #rank-list-ctnr-box):style(height: 33px !important;)
 ! 礼物栏
 live.bilibili.com###gift-control-vm
 ! 网页全屏礼物栏
@@ -223,6 +231,8 @@ live.bilibili.com##.chat-item.danmaku-item:has(span.my-self):style(border-radius
 live.bilibili.com##.privacy-dialog
 ! 进房风险提醒
 live.bilibili.com##.border-box.chat-item.convention-msg
+! 礼物气泡
+live.bilibili.com###chat-gift-bubble-vm
 ! PK 开始提醒
 live.bilibili.com##.chat-item.new-video-pk-item-dm
 ! PK 绝杀提醒
@@ -249,7 +259,7 @@ live.bilibili.com###all-guide-cards
 live.bilibili.com###switch-login-guide-vm
 !! 直播间播放器
 ! 音量提醒
-live.bilibili.com##div:has(> p:has-text(点击取消静音))
+live.bilibili.com##p:has-text(/点击取消静音/):upward(1)
 ! 底部弹幕
 live.bilibili.com##.bili-dm.bili-center.bili-show
 ! 底部弹幕
@@ -612,7 +622,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||bee-wpm.huya.com^$1p
 ||fileserver.cdn.huya.com^$1p
 ||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
-||csp.huya.com^1p
+||csp.huya.com^$1p
 ||df.huya.com^$1p
 ||ext.huya.com^$1p
 ||hd.huya.com^$1p
@@ -897,7 +907,7 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||docs.qq.com^$xhr,removeparam=/^(groupUin|ADUIN|ADSESSION|ADTAG|ADPUBNO|_t)=/,domain=docs.qq.com
 
 ! https://www.google.com
-||www.googletagmanager.com^
+||googletagmanager.com^
 ||www.googleadservices.com^
 ||www.google-analytics.com^
 ||static.doubleclick.net^
