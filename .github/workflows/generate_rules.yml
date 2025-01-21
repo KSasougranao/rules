@@ -12,6 +12,7 @@ jobs:
           echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt" >>$GITHUB_ENV
           echo "antiad_reject=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml" >>$GITHUB_ENV
           echo "antiad_pcdn=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/pcdn.txt" >>$GITHUB_ENV
+          echo "antiad_dns=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/dns.txt" >>$GITHUB_ENV
 
       - name: checkout
         uses: actions/checkout@v4
@@ -24,6 +25,7 @@ jobs:
           curl -sSL ${Loyalsoldier_reject} -o Loyalsoldier_reject.yaml
           curl -sSL ${antiad_reject} -o antiad_reject.yaml
           curl -sSL ${antiad_pcdn} -o antiad_pcdn.txt
+          curl -sSL ${antiad_dns} -o antiad_dns.txt
       - name: Collect reject 2
         uses: mikefarah/yq@master
         with:
@@ -33,6 +35,8 @@ jobs:
           wc reject-lines.txt
           cat antiad_pcdn.txt | grep -v '#' | sed 's|^|+.|' > pcdn-lines.txt
           wc pcdn-lines.txt
+          cat antiad_dns.txt | grep -v '#' | sed 's|^|+.|' > dns-lines.txt
+          wc dns-lines.txt
 
           echo -n > reject.txt
           cat reject-lines.txt pcdn-lines.txt | sort | uniq >> reject.txt
@@ -40,6 +44,9 @@ jobs:
           echo -n > pcdn.txt
           cat pcdn-lines.txt | sort | uniq >> pcdn.txt
           wc pcdn.txt
+          echo -n > dns.txt
+          cat dns-lines.txt | sort | uniq >> dns.txt
+          wc dns.txt
 
       - name: Git commit
         run: |
@@ -47,6 +54,7 @@ jobs:
           git config --global user.name "GitHub Action[bot]"
           git add reject.txt
           git add pcdn.txt
+          git add dns.txt
           git commit -m 'Auto update rules' || echo 'Nothing new'
 
       - name: Git push
