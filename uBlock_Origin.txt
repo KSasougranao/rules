@@ -3,67 +3,127 @@
 ! Expires: 1 days
 ! Homepage: https://gitee.com/KSasougranao/UNK/raw/master/uBlock_Origin.txt
 
-! https://twitter.com
-! 左侧开通会员提醒
-x.com##[data-testid=inlinePrompt]:upward(4)
-! 左侧无用标签
-x.com##header nav a:matches-attr(href=//(grok|jobs|communities|premium_sign_up|verified-orgs-signup)$/)
-! 左侧发帖按钮
-x.com##a[data-testid=SideNav_NewTweet_Button]:upward(1)
-! 调整 media 页多图标志的位置
-twitter.com,x.com##li[role=listitem] a[role=link] > svg:style(bottom: none !important; top: 8px !important;)
-! 增加 media 页多图标志的描边
-twitter.com,x.com##li[role=listitem] a[role=link] > svg g:style(stroke: black; stroke-width: 1px;)
-! 左侧开通会员提醒
-x.com##aside[role=complementary]:has(> a[href$=premium_sign_up]):upward(2)
-! 右侧趋势，需要配合 xhr 规则使用
-x.com##[data-testid=sidebarColumn] div.r-rs99b7.r-1phboty.r-jxzhtn:not(:has(ul))
-! 右侧栏趋势
-||x.com/i/api/graphql/*/ExploreSidebar
-! 右侧栏页脚
-twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
-! 未知请求
-||ton.local.twitter.com
-||twitter.com/i/api/2/guide.json^$domain=x.com
-||ads-api.x.com^$1p
-||x.com/i/api/2/guide.json^$1p
+! https://www.baidu.com
+! 游戏推荐
+www.baidu.com##.result-op[tpl=game-page-profession]
+! 视频推荐
+www.baidu.com##.result-op[tpl=short_video]
+! 新闻
+www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
+! 跟踪参数
+||www.baidu.com^$document,domain=www.baidu.com,removeparam=/^(rqlang|ie|tn|f|rsv_bp|oq|rsv_pq|rsv_t|rsv_dl|rsv_denter|rsv_btype|inputT|rsv_sug3|rsv_sug1|rsv_sug7|rsv_sug2|rsv_sug4|rsv_enter)=/
+! 似乎是和搜索有关的请求
+||hectorstatic.baidu.com^$1p
+||mbd.baidu.com^$1p
+||miaowu.baidu.com^$1p
+||ug.baidu.com^$1p
+||xlab.baidu.com^$1p
+||drug-platform.cdn.bcebos.com^$domain=baidu.com
+||haokanupdate.cdn.bcebos.com^$domain=baidu.com
+||mediago-static.cdn.bcebos.com^$domain=baidu.com
+||ns-strategy.cdn.bcebos.com^$domain=baidu.com
+! 百度异常上报
+||dmpstatic.cdn.bcebos.com/weirwood-sdk/
+||dlswbr.baidu.com/heicha/
+||miaowu.baidu.com/sdk/heicha/
+||tb3.bdstatic.com/api/acs/paris-v2.min.js
+||push.dui1dui.com
+! 图片
+||tb4.bdstatic.com^$domain=baidu.com
+||tb5.bdstatic.com^$domain=baidu.com
+||tb.himg.baidu.com^$1p
+||tiebac.baidu.com^$1p
+||gimg0.baidu.com^$1p
+||gimg2.baidu.com^$1p
+||gimg3.baidu.com^$1p
+||gimg4.baidu.com^$1p
+||img0.baidu.com^$1p
+||img1.baidu.com^$1p
+||img2.baidu.com^$1p
+||pics0.baidu.com^$1p
+||pics1.baidu.com^$1p
+||pics2.baidu.com^$1p
+||pics4.baidu.com^$1p
+||pics5.baidu.com^$1p
+||pics6.baidu.com^$1p
+||pics7.baidu.com^$1p
 
-! https://www.pixiv.net
-!! 作品页
-! 右侧广告占位
-www.pixiv.net##iframe[name="responsive"]:upward(2)
-! 右侧广告占位
-www.pixiv.net##iframe[name="rectangle"]:upward(2)
-! 作品点赞按钮
-www.pixiv.net##.eqsIB.sc-181ts2x-5
-! 评论
-www.pixiv.net##:has(> .dmnOnu)
-www.pixiv.net##.emsveB.sc-1yvhotl-5
-! 收藏后广告
-www.pixiv.net##iframe[name="500x500"]:upward(1)
-! 底部广告
-www.pixiv.net##iframe[name="footer"]:upward(1)
-!! 书签页
-! 隐藏书签页过多候选 tag
-www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
+! https://tieba.baidu.com
+! 登录弹窗
+tieba.baidu.com###tiebaCustomPassLogin
+!! 贴吧页
+! 导航栏
+tieba.baidu.com##.j_search_nav.search_nav > a:has-text(/^(资讯|视频|采购)$/)
+! 导航栏-官方号
+tieba.baidu.com##.u_official
+! 导航栏-会员
+tieba.baidu.com##.u_member
+!! 贴吧内容
+! 顶部大图
+tieba.baidu.com###plat_recom_carousel
+! 顶部大图
+tieba.baidu.com##.card_banner
+! 固定搜索栏
+tieba.baidu.com##.search_main_fixed
+! 右上角签到
+tieba.baidu.com##.card_top_right
+! 直播贴
+tieba.baidu.com##.threadListGroupCnt:upward(3)
+! 直播贴轮询
+||tieba.baidu.com/live/getLiveTopicInfo$xhr,domain=tieba.baidu.com
+! 右侧栏-本吧会员
+tieba.baidu.com##.celebrity
+! 贴吧右侧栏-我在贴吧
+tieba.baidu.com##.my_tieba.aside_region
+! 贴吧右侧栏-下载客户端
+tieba.baidu.com##.app_download_box
+! 帖子右侧栏-我在贴吧
+tieba.baidu.com###my_tieba_mod
+! 帖子右侧栏-意见反馈
+tieba.baidu.com###tieba-notice
+! 帖子右侧栏-热门
+tieba.baidu.com##.topic_list_box:upward(1)
+! 右侧浮动栏
+tieba.baidu.com##.tbui_aside_float_bar
+!! 用户展示
+! 用户会员标志
+tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
+! 用户身份标志
+tieba.baidu.com##.d_icons
+! 用户身份标志
+tieba.baidu.com##.frs_bright_icons.icon_wrap_theme1.icon_wrap
+!! 帖子页
+! 帖子楼层背景
+tieba.baidu.com##.save_face_bg_2.save_face_bg
+! 选词搜索
+tieba.baidu.com###selectsearch-icon
+! 自动展开图片
+tieba.baidu.com##.replace_div:has(img):style(height: auto !important;)
+! 自动展开图片-隐藏展开按钮
+tieba.baidu.com##.replace_tip
+! 自动展开楼中楼
+tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
+! 自动展开楼中楼-隐藏展开按钮
+tieba.baidu.com##.lzl_more
+! 自动展开楼中楼-底部
+tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ! track
-||www.pixiv.net/OneSignalSDKWorker.js$script
-||errortrace.dev^$xhr,domain=www.pixiv.net
-||cdn.onesignal.com/sdks
-||cdn.onesignal.com^
-||googletagmanager.com^$script
-! 广告和会员
-||a.pixiv.org^$domain=pixiv.net
-||pixon.ads-pixiv.net
-||api.booth.pm^$domain=pixiv.net
-||api.booth.pm/pixiv/shops/show.json$xhr,domain=pixiv.net
-||api.booth.pm/pixiv/items$xhr,domain=pixiv.net
-||imp.pixiv.net^$1p
-||imp.pixiv.net/premium_lp$subdocument,1p
-! 其他
-||www.pixiv.net/rpc/notify_count.php$xhr,1p
-||www.pixiv.net/ajax/message/can_send/*$xhr,1p
-||www.pixiv.net/rpc/index.php$xhr,1p
+||dmpstatic.cdn.bcebos.com/weirwood-sdk/$script,domain=baidu.com
+||gsp0.baidu.com/*/track.gif^$1p
+||gsp0.baidu.com^$1p
+||hm.baidu.com^
+! 跟踪参数
+||tieba.baidu.com^$document,domain=tieba.baidu.com,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp|ie)=|see_lz=0/
+! 无用请求
+||tieba.baidu.com/game/duoku/getHotGames$1p
+! 监控
+||tb3.bdstatic.com/radar-sdk$domain=baidu.com
+! UNK
+||tieba.baidu.com/mo/q/sync$xhr,domain=tieba.baidu.com
+||tieba.baidu.com/mo/q/getTiebaplusPowerList$xhr,domain=tieba.baidu.com
+||tieba.baidu.com/present/getForumRank$xhr,domain=tieba.baidu.com
+||tb5.bdstatic.com/api/wza/config.json$xhr,domain=tieba.baidu.com
+||tb5.bdstatic.com/api/wza/aria.js$script,domain=tieba.baidu.com
 
 ! https://www.bilibili.com
 !! 首页
@@ -343,252 +403,185 @@ t.bilibili.com,space.bilibili.com##.bili-rich-text__action
 ! 评论可用表情包
 ||api.bilibili.com/x/emote/user/panel/web$xhr,1p
 
-! https://www.zhihu.com
-! 导航栏活动
-www.zhihu.com##.AppHeader-Tabs.Tabs
-! 主页顶部横幅
-www.zhihu.com##.Topstory > div:nth-of-type(1)
-! 推荐页视频筛选
-www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
-! 视频分区
-www.zhihu.com##a.Topstory-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
-! 视频分区-固定导航栏
-www.zhihu.com##.TopstoryPageHeader-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
-!! 主页右侧栏
-! 主页右侧栏
-www.zhihu.com##.Topstory-mainColumn ~ div
-! 创作者中心
-www.zhihu.com##.CreatorEntrance:upward(1)
-! 分类入口
-www.zhihu.com##.GlobalSideBar-category
-! 底部版权信息
-www.zhihu.com##footer
-! 主页侧栏创作者相关请求
-||www.zhihu.com/api/v4/creators/extra_card$xhr,1p
-! 主页侧栏用户推荐
-||www.zhihu.com/api/v4/moments/recommend_follow_people$xhr,1p
-!! 问题页
-! 邀请用户
-www.zhihu.com##.QuestionInvitation.Card
-! 问题侧栏
-!www.zhihu.com##.Question-sideColumn
-! 相似问题
-!||www.zhihu.com/api/v4/questions/*/similar-questions$xhr,1p
-! 搜索词、话题识别
-||www.zhihu.com/api/v3/entity_word$xhr,1p
-! 邀请回答
-||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
-||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
-||www.zhihu.com/api/v4/questions/*/inviters$xhr,1p
-!! 回答和回答页
-! 点赞用户
-||www.zhihu.com/api/v4/answers/*/relationship$xhr,1p
-! 赞赏
-www.zhihu.com##.Reward
-! 回答作者
-www.zhihu.com##.AnswerAuthor.Card
-! 回答相关收藏夹
-||www.zhihu.com/api/v4/answers/*/favlists$xhr,1p
-! 自建 dns
-||/resolv$domain=zhihu.com
-! track??
-||mqtt-web.zhihu.com^$1p
-||apm.zhihu.com^$1p
-! 支付
-||pay.zhihu.com^$1p
-! 不明
-||api.zhihu.com^$1p
+! https://blog.csdn.net
+! 左侧广告
+blog.csdn.net###asideWriteGuide
+! 左侧评价
+blog.csdn.net###asideNewNps
+! 博客成就
+blog.csdn.net##.aside-box-footer
+! 博客数据
+blog.csdn.net##div.item-tiling.d-flex.data-info
+! 右侧工具栏
+blog.csdn.net##.csdn-side-toolbar
+! 底部浮动栏
+blog.csdn.net##.left-toolbox
 
-! https://zhuanlan.zhihu.com
-! 顶部浮动导航
-zhuanlan.zhihu.com##.is-fixed.ColumnPageHeader:style(opacity: 0;)
-! 专栏赞赏
-zhuanlan.zhihu.com##.Reward
-! 底部浮动评论栏
-zhuanlan.zhihu.com##.is-bottom.is-fixed.RichContent-actions.Sticky
-
-! https://weibo.com
-! vip 标志
-weibo.com##.woo-icon-wrap
-! 发表设备
-weibo.com##.head-info_source_2zcEX.head-info_cut_1tPQI
-! 用户推荐
-weibo.com##div:nth-of-type(2) > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
-! 用户推荐
-weibo.com##.SideIndex_sideMain_3jrwf.wbpro-side-main > div > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
-! 用户推荐
-||weibo.com/ajax/side/cards/sideInterested$xhr,1p
-! 主页发表微博
-weibo.com###homeWrap > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
-! 主页右侧栏
-||weibo.com/ajax/side/cards$xhr,1p
-! 未读消息？
-||weibo.com/ajax/message/unreadHint$xhr,1p
-! 微博页评论微博
-weibo.com##.Detail_mar2_2Q6IG.woo-box-flex
-! 微博页分享按钮
-weibo.com##.toolbar_cursor_34j5V.toolbar_share_39C6P
-! 用户页右侧栏：赞赏、粉丝群、关注推荐等
-||weibo.com/ajax/profile/sidedetail$xhr,1p
-! 热搜榜单
-||weibo.com/ajax/side/hotSearch$xhr,1p
-! 热门榜单美化
-weibo.com##.wbpro-side-panel .icon
-weibo.com##.wbpro-side-panel .clb.f13
-weibo.com##.woo-box-alignCenter.woo-box-flex.con:style(padding-right: 0 !important;)
-weibo.com##.wbpro-side-panel .wbpro-textcut:style(margin-right: 0 !important;)
-! 顶部游戏入口
-weibo.com##.Links_box_17T3k.woo-box-alignCenter.woo-box-flex
-! 推广
-weibo.com##.wbpro-scroller-item:has(.head-info_tag_3iMJw.wbpro-tag-c2.wbpro-tag):upward(1)
-! 底部版权信息
-weibo.com##.wbpro-side-copy
-||weibo.com/ajax/common/getCopyright$xhr,1p
-! 赞赏
-weibo.com##.Reward_box_27GVq.wrap
-! 隐藏右侧栏加载动画
-weibo.com###__sidebar
-! 创作者中心
-weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
-||weibo.com/ajax/side/cards/sideBusiness$xhr,1p
-! track
-||weibo.com/ajax/log$xhr,1p
-||weibo.com/$document,1p,removeparam=pagetype
-! 其他
-||rm.api.weibo.com/2/remind/push_count.json^$script,1p
-||reward.media.weibo.com^$1p
-
-! https://www.baidu.com
-! 游戏推荐
-www.baidu.com##.result-op[tpl=game-page-profession]
-! 视频推荐
-www.baidu.com##.result-op[tpl=short_video]
-! 新闻
-www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
-! 跟踪参数
-||www.baidu.com^$document,domain=www.baidu.com,removeparam=/^(rqlang|ie|tn|f|rsv_bp|oq|rsv_pq|rsv_t|rsv_dl|rsv_denter|rsv_btype|inputT|rsv_sug3|rsv_sug1|rsv_sug7|rsv_sug2|rsv_sug4|rsv_enter)=/
-! 似乎是和搜索有关的请求
-||hectorstatic.baidu.com^$1p
-||mbd.baidu.com^$1p
-||miaowu.baidu.com^$1p
-||ug.baidu.com^$1p
-||xlab.baidu.com^$1p
-||drug-platform.cdn.bcebos.com^$domain=baidu.com
-||haokanupdate.cdn.bcebos.com^$domain=baidu.com
-||mediago-static.cdn.bcebos.com^$domain=baidu.com
-||ns-strategy.cdn.bcebos.com^$domain=baidu.com
-! 百度异常上报
-||dmpstatic.cdn.bcebos.com/weirwood-sdk/
-||dlswbr.baidu.com/heicha/
-||miaowu.baidu.com/sdk/heicha/
-||tb3.bdstatic.com/api/acs/paris-v2.min.js
-||push.dui1dui.com
-! 图片
-||tb4.bdstatic.com^$domain=baidu.com
-||tb5.bdstatic.com^$domain=baidu.com
-||tb.himg.baidu.com^$1p
-||tiebac.baidu.com^$1p
-||gimg0.baidu.com^$1p
-||gimg2.baidu.com^$1p
-||gimg3.baidu.com^$1p
-||gimg4.baidu.com^$1p
-||img0.baidu.com^$1p
-||img1.baidu.com^$1p
-||img2.baidu.com^$1p
-||pics0.baidu.com^$1p
-||pics1.baidu.com^$1p
-||pics2.baidu.com^$1p
-||pics4.baidu.com^$1p
-||pics5.baidu.com^$1p
-||pics6.baidu.com^$1p
-||pics7.baidu.com^$1p
-
-! https://tieba.baidu.com
+! https://www.douyin.com
 ! 登录弹窗
-tieba.baidu.com###tiebaCustomPassLogin
-!! 贴吧页
-! 导航栏
-tieba.baidu.com##.j_search_nav.search_nav > a:has-text(/^(资讯|视频|采购)$/)
-! 导航栏-官方号
-tieba.baidu.com##.u_official
-! 导航栏-会员
-tieba.baidu.com##.u_member
-!! 贴吧内容
-! 顶部大图
-tieba.baidu.com###plat_recom_carousel
-! 顶部大图
-tieba.baidu.com##.card_banner
-! 固定搜索栏
-tieba.baidu.com##.search_main_fixed
-! 右上角签到
-tieba.baidu.com##.card_top_right
-! 直播贴
-tieba.baidu.com##.threadListGroupCnt:upward(3)
-! 直播贴轮询
-||tieba.baidu.com/live/getLiveTopicInfo$xhr,domain=tieba.baidu.com
-! 右侧栏-本吧会员
-tieba.baidu.com##.celebrity
-! 贴吧右侧栏-我在贴吧
-tieba.baidu.com##.my_tieba.aside_region
-! 贴吧右侧栏-下载客户端
-tieba.baidu.com##.app_download_box
-! 帖子右侧栏-我在贴吧
-tieba.baidu.com###my_tieba_mod
-! 帖子右侧栏-意见反馈
-tieba.baidu.com###tieba-notice
-! 帖子右侧栏-热门
-tieba.baidu.com##.topic_list_box:upward(1)
-! 右侧浮动栏
-tieba.baidu.com##.tbui_aside_float_bar
-!! 用户展示
-! 用户会员标志
-tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
-! 用户身份标志
-tieba.baidu.com##.d_icons
-! 用户身份标志
-tieba.baidu.com##.frs_bright_icons.icon_wrap_theme1.icon_wrap
-!! 帖子页
-! 帖子楼层背景
-tieba.baidu.com##.save_face_bg_2.save_face_bg
-! 选词搜索
-tieba.baidu.com###selectsearch-icon
-! 自动展开图片
-tieba.baidu.com##.replace_div:has(img):style(height: auto !important;)
-! 自动展开图片-隐藏展开按钮
-tieba.baidu.com##.replace_tip
-! 自动展开楼中楼
-tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
-! 自动展开楼中楼-隐藏展开按钮
-tieba.baidu.com##.lzl_more
-! 自动展开楼中楼-底部
-tieba.baidu.com##.lzl_pager:style(display: block !important;)
-! track
-||dmpstatic.cdn.bcebos.com/weirwood-sdk/$script,domain=baidu.com
-||gsp0.baidu.com/*/track.gif^$1p
-||gsp0.baidu.com^$1p
-||hm.baidu.com^
+www.douyin.com##body:style(overflow: auto !important;)
+! 登录弹窗
+www.douyin.com##.screen-mask
+! 热门推荐
+www.douyin.com###hotItem
+! 搜索栏精简
+douyin.com##div[data-e2e=search-history-container] + div
+douyin.com##div[data-e2e=search-guess-container]
+douyin.com##div[data-e2e=search-guess-container] + div
+douyin.com##div[data-e2e=search-hot-container]
+! 顶部导航
+douyin.com###douyin-header-menuCt pace-island > div > :has-text(/充钻石|客户端|快捷访问|壁纸|投稿/)
+! 左侧类目
+douyin.com##div[data-e2e=douyin-navigation] :is(.prlW7G_5, .rgiBNcU6):has-text(/我的|放映厅|短剧|美食/)
+! 左侧类目
+douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
+! 搜索栏猜你喜欢
+||douyin.com/aweme/v1/web/api/suggest_words
 ! 跟踪参数
-||tieba.baidu.com^$document,domain=tieba.baidu.com,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp|ie)=|see_lz=0/
-! 无用请求
-||tieba.baidu.com/game/duoku/getHotGames$1p
-! 监控
-||tb3.bdstatic.com/radar-sdk$domain=baidu.com
-! UNK
-||tieba.baidu.com/mo/q/sync$xhr,domain=tieba.baidu.com
-||tieba.baidu.com/mo/q/getTiebaplusPowerList$xhr,domain=tieba.baidu.com
-||tieba.baidu.com/present/getForumRank$xhr,domain=tieba.baidu.com
-||tb5.bdstatic.com/api/wza/config.json$xhr,domain=tieba.baidu.com
-||tb5.bdstatic.com/api/wza/aria.js$script,domain=tieba.baidu.com
+||www.iesdouyin.com/share/video/$document,1p,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/
+||douyin.com^$document,1p,removeparam=/^(aid|aweme_id|enter_from|gid|source|from_tab_name)=/
+! 反屏蔽？
+||bytednsdoc.com^$domain=douyin.com
+! search default 等
+||bytetcc.com^$domain=douyin.com
+! abtest
+||www.douyin.com/service/2/abtest_config^$1p
+! 其他
+||/get_domains^$domain=douyin.com
+||mssdk.bytedance.com^$domain=douyin.com
+||bytegecko.com^$domain=douyin.com
+||lf-security.bytegoofy.com^$domain=douyin.com
+||frontier-im.douyin.com^$1p
+||frontier-pc.douyin.com^$1p
+||imapi.douyin.com^$1p
+||api.feelgood.cn^$domain=douyin.com
+||new.gracebot.cn^$domain=douyin.com
+||ibytedapm.com^$domain=douyin.com
+||vegslb.com^$domain=douyin.com
+||volcsirius.com^$domain=douyin.com
+||zijieapi.com^$domain=douyin.com
+||mcs.zijieapi.com^$domain=douyin.com
+||mon.zijieapi.com^$domain=douyin.com
 
-! https://www.jianshu.com
-! 推荐
-||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,1p
-! 赞赏
-www.jianshu.com##._13lIbp
-! 右侧推广
-www.jianshu.com##aside._2OwGUo > div
-! 底部推广
-www.jianshu.com##section.ouvJEz:nth-of-type(2)
+! https://live.douyin.com
+!! 直播首页
+! 首页直播间
+live.douyin.com###player_div:upward(1)
+! 推荐直播
+live.douyin.com##h1:upward(1)
+! 底部
+live.douyin.com###_douyin_live_scroll_container_ > footer
+!! 直播间
+! 人气、礼物橱窗等
+live.douyin.com##.EEnUp5fM > :not(.chat_room_fold)
+! 礼物赠送弹窗
+live.douyin.com##.GiftTrayPlugin
+! 福袋
+live.douyin.com##.ShortTouchBigCard
+! 福袋
+live.douyin.com##.ShortTouchContainer
+! 礼物栏
+live.douyin.com##.aqK_4_5U
+! 礼物栏
+live.douyin.com##.metro.gitBarOptimizeEnabled:upward(1)
+! 播放器按钮 tips
+live.douyin.com##.KICzgjaE
+!! 右侧弹幕区
+! 观众榜单
+live.douyin.com##.Qsns7NdQ.kz8VfOyK
+! 观众排名变动
+live.douyin.com##.webcast-chatroom__room-message
+! 进入房间消息
+live.douyin.com##.webcast-chatroom___bottom-message
+! 礼物赠送消息-侧栏
+live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
+! 礼物赠送消息-滚动
+live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
+! 服务异常的提醒，屏蔽部分脚本导致
+live.douyin.com###toastContainer
+! 去除跟踪参数
+||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
+! 进入直播间
+||live.douyin.com^$removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
+! 弹幕表情
+||douyinpic.com/img/webcast/$image,domain=douyin.com
+||douyinpic.com/obj/tos-cn$image,domain=douyin.com
+||douyinstatic.com/obj/webcast$image,domain=douyin.com
+! 非必要请求
+||live.douyin.com/aweme/$xhr,domain=live.douyin.com
+||live.douyin.com/aweme/v1/web/im/user/active/update/$xhr,domain=live.douyin.com
+||live.douyin.com/cloudpush/update_sender/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/luckybox/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/lottery/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/ranklist/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/gift/$xhr,domain=live.douyin.com
+
+! https://www.douyu.com
+!! 直播分区
+! 右侧导航
+www.douyu.com##.layout-Aside
+!! 直播间
+! 全屏弹窗
+www.douyu.com##.wm-pop-animation.wm-pop:upward(1)
+! 右侧栏用户排行
+www.douyu.com##.layout-Player-rank
+! 安全提示
+www.douyu.com##.Barrage-notice:upward(1)
+! 主播认证
+www.douyu.com##.Barrage-newAuth:upward(1)
+! 客服
+www.douyu.com##.wm-act-kefu-widget
+! 进入房间提醒
+www.douyu.com###js-barrage-extend-container
+! 关注提示
+douyu.com##.FullPageFollowGuide
+! 主播视频列表
+douyu.com##.VideoEntry-list
+! 弹幕列表紧贴顶部
+www.douyu.com##.Barrage:style(top: 0px !important;)
+! 统一滚动弹幕颜色为白色
+www.douyu.com##div.scroll-209d08.danmuItem-31f924:style(color: white !important;)
+! 统一侧栏弹幕颜色为黑色
+www.douyu.com##.Barrage-content:style(color: black !important;)
+! 统一侧栏弹幕间距
+www.douyu.com##.Barrage-nickName:upward(1):style(padding: 0px 10px !important;)
+! 隐藏会员标志
+www.douyu.com##.Barrage-icon
+! 跟踪参数
+||www.douyu.com^$document,1p,removeparam=/^(dyshid|dyshci)=/
+! 其他
+||abvolcapi.douyucdn.cn^$domain=douyu.com
+||ams.douyucdn.cn^$domain=douyu.com
+||bjfesdk.douyucdn.cn^$domain=douyu.com
+||dotbeats.douyucdn.cn^$domain=douyu.com
+||dotserver.douyucdn.cn^$domain=douyu.com,redirect=1x1.gif
+||gfs-op.douyucdn.cn^$domain=douyu.com
+||gift.douyucdn.cn^$domain=douyu.com
+||pslice.douyucdn.cn^$domain=douyu.com
+||rtbapi.douyucdn.cn^$domain=douyu.com
+||sta-op.douyucdn.cn^$domain=douyu.com,redirect=2x2.png
+||sta-op-test.douyucdn.cn^$domain=douyu.com,redirect=2x2.png
+||streamdot.douyucdn.cn^$domain=douyu.com
+||uact.douyucdn.cn^$domain=douyu.com
+||wconf.douyucdn.cn^$domain=douyu.com
+||webconf.douyucdn.cn^$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-act$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-game$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-pk$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-super$domain=douyu.com
+||shark2.douyucdn.cn/front-publish/live-task$domain=douyu.com
+||msg.douyu.com^$1p
+||g.wan.douyu.com^$1p
+||yuba.douyu.com^$1p
+!shark2.douyucdn.cn/front-publish/live-master/js/room$domain=douyu.com
+
+! https://gitee.com
+gitee.com##.pendan-widget.gitee-stars-main-widget
+
+! https://bbs.hupu.com
+bbs.hupu.com##div:has(> #game-center-entrance-container)
+bbs.hupu.com##.image-wrapper
+||hoopchina.com.cn^$image,domain=bbs.hupu.com
 
 ! https://www.huya.com
 !! 全站
@@ -707,6 +700,16 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||zt.msstatic.com^$image,domain=huya.com
 ||electric-shop.yaoguo.com^$domain=huya.com
 
+! https://www.jianshu.com
+! 推荐
+||www.jianshu.com/shakespeare/v2/notes/recommend$xhr,1p
+! 赞赏
+www.jianshu.com##._13lIbp
+! 右侧推广
+www.jianshu.com##aside._2OwGUo > div
+! 底部推广
+www.jianshu.com##section.ouvJEz:nth-of-type(2)
+
 ! https://live.kuaishou.com
 ||log-sdk.ksapisrv.com^$important
 ||gifshow.com
@@ -735,189 +738,27 @@ live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 ! 支付？
 ||www.kuaishoupay.com^$domain=kuaishou.com
 
-! https://www.douyu.com
-!! 直播分区
-! 右侧导航
-www.douyu.com##.layout-Aside
-!! 直播间
-! 全屏弹窗
-www.douyu.com##.wm-pop-animation.wm-pop:upward(1)
-! 右侧栏用户排行
-www.douyu.com##.layout-Player-rank
-! 安全提示
-www.douyu.com##.Barrage-notice:upward(1)
-! 主播认证
-www.douyu.com##.Barrage-newAuth:upward(1)
-! 客服
-www.douyu.com##.wm-act-kefu-widget
-! 进入房间提醒
-www.douyu.com###js-barrage-extend-container
-! 关注提示
-douyu.com##.FullPageFollowGuide
-! 主播视频列表
-douyu.com##.VideoEntry-list
-! 弹幕列表紧贴顶部
-www.douyu.com##.Barrage:style(top: 0px !important;)
-! 统一滚动弹幕颜色为白色
-www.douyu.com##div.scroll-209d08.danmuItem-31f924:style(color: white !important;)
-! 统一侧栏弹幕颜色为黑色
-www.douyu.com##.Barrage-content:style(color: black !important;)
-! 统一侧栏弹幕间距
-www.douyu.com##.Barrage-nickName:upward(1):style(padding: 0px 10px !important;)
-! 隐藏会员标志
-www.douyu.com##.Barrage-icon
-! 跟踪参数
-||www.douyu.com^$document,1p,removeparam=/^(dyshid|dyshci)=/
+! https://leetcode.cn
+! 等宽框内自动换行
+leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
 ! 其他
-||abvolcapi.douyucdn.cn^$domain=douyu.com
-||ams.douyucdn.cn^$domain=douyu.com
-||bjfesdk.douyucdn.cn^$domain=douyu.com
-||dotbeats.douyucdn.cn^$domain=douyu.com
-||dotserver.douyucdn.cn^$domain=douyu.com,redirect=1x1.gif
-||gfs-op.douyucdn.cn^$domain=douyu.com
-||gift.douyucdn.cn^$domain=douyu.com
-||pslice.douyucdn.cn^$domain=douyu.com
-||rtbapi.douyucdn.cn^$domain=douyu.com
-||sta-op.douyucdn.cn^$domain=douyu.com,redirect=2x2.png
-||sta-op-test.douyucdn.cn^$domain=douyu.com,redirect=2x2.png
-||streamdot.douyucdn.cn^$domain=douyu.com
-||uact.douyucdn.cn^$domain=douyu.com
-||wconf.douyucdn.cn^$domain=douyu.com
-||webconf.douyucdn.cn^$domain=douyu.com
-||shark2.douyucdn.cn/front-publish/live-act$domain=douyu.com
-||shark2.douyucdn.cn/front-publish/live-game$domain=douyu.com
-||shark2.douyucdn.cn/front-publish/live-pk$domain=douyu.com
-||shark2.douyucdn.cn/front-publish/live-super$domain=douyu.com
-||shark2.douyucdn.cn/front-publish/live-task$domain=douyu.com
-||msg.douyu.com^$1p
-||g.wan.douyu.com^$1p
-||yuba.douyu.com^$1p
-!shark2.douyucdn.cn/front-publish/live-master/js/room$domain=douyu.com
+||leetcode.cn/timestamp
+||logs.leetcode-cn.com^$xhr,domain=leetcode.cn
+||logs.leetcode.cn^$xhr,1p
+||ff-proxy.leetcode.cn^$1p
+||analysis.leetcode.cn^$1p
 
-! https://www.douyin.com
-! 登录弹窗
-www.douyin.com##body:style(overflow: auto !important;)
-! 登录弹窗
-www.douyin.com##.screen-mask
-! 热门推荐
-www.douyin.com###hotItem
-! 搜索栏精简
-douyin.com##div[data-e2e=search-history-container] + div
-douyin.com##div[data-e2e=search-guess-container]
-douyin.com##div[data-e2e=search-guess-container] + div
-douyin.com##div[data-e2e=search-hot-container]
-! 顶部导航
-douyin.com###douyin-header-menuCt pace-island > div > :has-text(/充钻石|客户端|快捷访问|壁纸|投稿/)
-! 左侧类目
-douyin.com##div[data-e2e=douyin-navigation] :is(.prlW7G_5, .rgiBNcU6):has-text(/我的|放映厅|短剧|美食/)
-! 左侧类目
-douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
-! 搜索栏猜你喜欢
-||douyin.com/aweme/v1/web/api/suggest_words
-! 跟踪参数
-||www.iesdouyin.com/share/video/$document,1p,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/
-||douyin.com^$document,1p,removeparam=/^(aid|aweme_id|enter_from|gid|source|from_tab_name)=/
-! 反屏蔽？
-||bytednsdoc.com^$domain=douyin.com
-! search default 等
-||bytetcc.com^$domain=douyin.com
-! abtest
-||www.douyin.com/service/2/abtest_config^$1p
+! https://www.miguvideo.com
+www.miguvideo.com##.com-comment
+! 底部信息
+www.miguvideo.com##.footer-inner
+! app 下载引导
+www.miguvideo.com##.user-guide-app
 ! 其他
-||/get_domains^$domain=douyin.com
-||mssdk.bytedance.com^$domain=douyin.com
-||bytegecko.com^$domain=douyin.com
-||lf-security.bytegoofy.com^$domain=douyin.com
-||frontier-im.douyin.com^$1p
-||frontier-pc.douyin.com^$1p
-||imapi.douyin.com^$1p
-||api.feelgood.cn^$domain=douyin.com
-||new.gracebot.cn^$domain=douyin.com
-||ibytedapm.com^$domain=douyin.com
-||vegslb.com^$domain=douyin.com
-||volcsirius.com^$domain=douyin.com
-||zijieapi.com^$domain=douyin.com
-||mcs.zijieapi.com^$domain=douyin.com
-||mon.zijieapi.com^$domain=douyin.com
-
-! https://live.douyin.com
-!! 直播首页
-! 首页直播间
-live.douyin.com###player_div:upward(1)
-! 推荐直播
-live.douyin.com##h1:upward(1)
-! 底部
-live.douyin.com###_douyin_live_scroll_container_ > footer
-!! 直播间
-! 人气、礼物橱窗等
-live.douyin.com##.EEnUp5fM > :not(.chat_room_fold)
-! 礼物赠送弹窗
-live.douyin.com##.GiftTrayPlugin
-! 福袋
-live.douyin.com##.ShortTouchBigCard
-! 福袋
-live.douyin.com##.ShortTouchContainer
-! 礼物栏
-live.douyin.com##.aqK_4_5U
-! 礼物栏
-live.douyin.com##.metro.gitBarOptimizeEnabled:upward(1)
-! 播放器按钮 tips
-live.douyin.com##.KICzgjaE
-!! 右侧弹幕区
-! 观众榜单
-live.douyin.com##.Qsns7NdQ.kz8VfOyK
-! 观众排名变动
-live.douyin.com##.webcast-chatroom__room-message
-! 进入房间消息
-live.douyin.com##.webcast-chatroom___bottom-message
-! 礼物赠送消息-侧栏
-live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
-! 礼物赠送消息-滚动
-live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
-! 服务异常的提醒，屏蔽部分脚本导致
-live.douyin.com###toastContainer
-! 去除跟踪参数
-||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
-! 进入直播间
-||live.douyin.com^$removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
-! 弹幕表情
-||douyinpic.com/img/webcast/$image,domain=douyin.com
-||douyinpic.com/obj/tos-cn$image,domain=douyin.com
-||douyinstatic.com/obj/webcast$image,domain=douyin.com
-! 非必要请求
-||live.douyin.com/aweme/$xhr,domain=live.douyin.com
-||live.douyin.com/aweme/v1/web/im/user/active/update/$xhr,domain=live.douyin.com
-||live.douyin.com/cloudpush/update_sender/$xhr,domain=live.douyin.com
-||live.douyin.com/webcast/luckybox/$xhr,domain=live.douyin.com
-||live.douyin.com/webcast/lottery/$xhr,domain=live.douyin.com
-||live.douyin.com/webcast/ranklist/$xhr,domain=live.douyin.com
-||live.douyin.com/webcast/gift/$xhr,domain=live.douyin.com
-
-! https://www.xiaohongshu.com/
-||xiaohongshu.com^$document,1p,removeparam=/^(app_platform|ignoreEngage|app_version|share_from_user_hidden|xsec_source|type|author_share|xhsshare|share_id|apptime)=/
-
-! https://blog.csdn.net
-! 左侧广告
-blog.csdn.net###asideWriteGuide
-! 左侧评价
-blog.csdn.net###asideNewNps
-! 博客成就
-blog.csdn.net##.aside-box-footer
-! 博客数据
-blog.csdn.net##div.item-tiling.d-flex.data-info
-! 右侧工具栏
-blog.csdn.net##.csdn-side-toolbar
-! 底部浮动栏
-blog.csdn.net##.left-toolbox
-
-! https://ascii2d.net
-||ascii2d.net/images/*$image,1p
-ascii2d.net##div.p-t-1
-
-! https://bbs.hupu.com
-bbs.hupu.com##div:has(> #game-center-entrance-container)
-bbs.hupu.com##.image-wrapper
-||hoopchina.com.cn^$image,domain=bbs.hupu.com
+||uem.migu.cn
+||jadeite.miguvideo.com
+||m.miguvideo.com
+||program-sc.miguvideo.com
 
 ! https://bbs.nga.cn
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.headline
@@ -934,28 +775,7 @@ bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.innerbg > div:nth-of-type(2) > div.
 ||img4.nga.178.com/ngabbs/post/smile/ac17.png$image
 bbs.nga.cn###postcontent0 > .smile_ac
 
-! https://www.miguvideo.com
-www.miguvideo.com##.com-comment
-! 底部信息
-www.miguvideo.com##.footer-inner
-! app 下载引导
-www.miguvideo.com##.user-guide-app
-! 其他
-||uem.migu.cn
-||jadeite.miguvideo.com
-||m.miguvideo.com
-||program-sc.miguvideo.com
-
-! https://olympics.com
-! 广告
-olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row-type^=day-schedule-]))
-
-! track
-||api.growingio.com^
-||addthis.com^
-
-||knet.cn
-
+! https://qq.com
 ||dp3.qq.com
 ||mazu.3g.qq.com
 ||pingjs.qq.com
@@ -964,13 +784,138 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||galileotelemetry.tencent.com
 ||tpstelemetry.tencent.com
 
-! https://mail.qq.com
-||mail.qq.com^$document,domain=mail.qq.com,removeparam=/^(t|lang|res|speedcheck|url|r)=/
-
 ! https://docs.qq.com
 ||at.idqqimg.com^$domain=qq.com
 ||report.idqqimg.com^$domain=qq.com
 ||docs.qq.com^$xhr,removeparam=/^(groupUin|ADUIN|ADSESSION|ADTAG|ADPUBNO|_t)=/,domain=docs.qq.com
+
+! https://mail.qq.com
+||mail.qq.com^$document,domain=mail.qq.com,removeparam=/^(t|lang|res|speedcheck|url|r)=/
+
+! https://weibo.com
+! vip 标志
+weibo.com##.woo-icon-wrap
+! 发表设备
+weibo.com##.head-info_source_2zcEX.head-info_cut_1tPQI
+! 用户推荐
+weibo.com##div:nth-of-type(2) > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
+! 用户推荐
+weibo.com##.SideIndex_sideMain_3jrwf.wbpro-side-main > div > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
+! 用户推荐
+||weibo.com/ajax/side/cards/sideInterested$xhr,1p
+! 主页发表微博
+weibo.com###homeWrap > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
+! 主页右侧栏
+||weibo.com/ajax/side/cards$xhr,1p
+! 未读消息？
+||weibo.com/ajax/message/unreadHint$xhr,1p
+! 微博页评论微博
+weibo.com##.Detail_mar2_2Q6IG.woo-box-flex
+! 微博页分享按钮
+weibo.com##.toolbar_cursor_34j5V.toolbar_share_39C6P
+! 用户页右侧栏：赞赏、粉丝群、关注推荐等
+||weibo.com/ajax/profile/sidedetail$xhr,1p
+! 热搜榜单
+||weibo.com/ajax/side/hotSearch$xhr,1p
+! 热门榜单美化
+weibo.com##.wbpro-side-panel .icon
+weibo.com##.wbpro-side-panel .clb.f13
+weibo.com##.woo-box-alignCenter.woo-box-flex.con:style(padding-right: 0 !important;)
+weibo.com##.wbpro-side-panel .wbpro-textcut:style(margin-right: 0 !important;)
+! 顶部游戏入口
+weibo.com##.Links_box_17T3k.woo-box-alignCenter.woo-box-flex
+! 推广
+weibo.com##.wbpro-scroller-item:has(.head-info_tag_3iMJw.wbpro-tag-c2.wbpro-tag):upward(1)
+! 底部版权信息
+weibo.com##.wbpro-side-copy
+||weibo.com/ajax/common/getCopyright$xhr,1p
+! 赞赏
+weibo.com##.Reward_box_27GVq.wrap
+! 隐藏右侧栏加载动画
+weibo.com###__sidebar
+! 创作者中心
+weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
+||weibo.com/ajax/side/cards/sideBusiness$xhr,1p
+! track
+||weibo.com/ajax/log$xhr,1p
+||weibo.com/$document,1p,removeparam=pagetype
+! 其他
+||rm.api.weibo.com/2/remind/push_count.json^$script,1p
+||reward.media.weibo.com^$1p
+
+! https://www.xiaohongshu.com/
+||xiaohongshu.com^$document,1p,removeparam=/^(app_platform|ignoreEngage|app_version|share_from_user_hidden|xsec_source|type|author_share|xhsshare|share_id|apptime)=/
+
+! https://www.zhihu.com
+! 导航栏活动
+www.zhihu.com##.AppHeader-Tabs.Tabs
+! 主页顶部横幅
+www.zhihu.com##.Topstory > div:nth-of-type(1)
+! 推荐页视频筛选
+www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
+! 视频分区
+www.zhihu.com##a.Topstory-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
+! 视频分区-固定导航栏
+www.zhihu.com##.TopstoryPageHeader-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
+!! 主页右侧栏
+! 主页右侧栏
+www.zhihu.com##.Topstory-mainColumn ~ div
+! 创作者中心
+www.zhihu.com##.CreatorEntrance:upward(1)
+! 分类入口
+www.zhihu.com##.GlobalSideBar-category
+! 底部版权信息
+www.zhihu.com##footer
+! 主页侧栏创作者相关请求
+||www.zhihu.com/api/v4/creators/extra_card$xhr,1p
+! 主页侧栏用户推荐
+||www.zhihu.com/api/v4/moments/recommend_follow_people$xhr,1p
+!! 问题页
+! 邀请用户
+www.zhihu.com##.QuestionInvitation.Card
+! 问题侧栏
+!www.zhihu.com##.Question-sideColumn
+! 相似问题
+!||www.zhihu.com/api/v4/questions/*/similar-questions$xhr,1p
+! 搜索词、话题识别
+||www.zhihu.com/api/v3/entity_word$xhr,1p
+! 邀请回答
+||www.zhihu.com/api/v4/questions/*/recommendation_invitees$xhr,1p
+||www.zhihu.com/api/v4/questions/*/auto_invite$xhr,1p
+||www.zhihu.com/api/v4/questions/*/inviters$xhr,1p
+!! 回答和回答页
+! 点赞用户
+||www.zhihu.com/api/v4/answers/*/relationship$xhr,1p
+! 赞赏
+www.zhihu.com##.Reward
+! 回答作者
+www.zhihu.com##.AnswerAuthor.Card
+! 回答相关收藏夹
+||www.zhihu.com/api/v4/answers/*/favlists$xhr,1p
+! 自建 dns
+||/resolv$domain=zhihu.com
+! track??
+||mqtt-web.zhihu.com^$1p
+||apm.zhihu.com^$1p
+! 支付
+||pay.zhihu.com^$1p
+! 不明
+||api.zhihu.com^$1p
+
+! https://zhuanlan.zhihu.com
+! 顶部浮动导航
+zhuanlan.zhihu.com##.is-fixed.ColumnPageHeader:style(opacity: 0;)
+! 专栏赞赏
+zhuanlan.zhihu.com##.Reward
+! 底部浮动评论栏
+zhuanlan.zhihu.com##.is-bottom.is-fixed.RichContent-actions.Sticky
+
+! https://ascii2d.net
+||ascii2d.net/images/*$image,1p
+ascii2d.net##div.p-t-1
+
+! https://atcoder.jp
+||static.addtoany.com^$domain=atcoder.jp
 
 ! https://www.google.com
 ||googletagmanager.com^
@@ -978,24 +923,80 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 ||www.google-analytics.com^
 ||static.doubleclick.net^
 
-! https://leetcode.cn
-! 等宽框内自动换行
-leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
-! 其他
-||leetcode.cn/timestamp
-||logs.leetcode-cn.com^$xhr,domain=leetcode.cn
-||logs.leetcode.cn^$xhr,1p
-||ff-proxy.leetcode.cn^$1p
-||analysis.leetcode.cn^$1p
+! https://olympics.com
+! 广告
+olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row-type^=day-schedule-]))
 
-! https://gitee.com
-gitee.com##.pendan-widget.gitee-stars-main-widget
+! https://www.pixiv.net
+!! 作品页
+! 右侧广告占位
+www.pixiv.net##iframe[name="responsive"]:upward(2)
+! 右侧广告占位
+www.pixiv.net##iframe[name="rectangle"]:upward(2)
+! 作品点赞按钮
+www.pixiv.net##.eqsIB.sc-181ts2x-5
+! 评论
+www.pixiv.net##:has(> .dmnOnu)
+www.pixiv.net##.emsveB.sc-1yvhotl-5
+! 收藏后广告
+www.pixiv.net##iframe[name="500x500"]:upward(1)
+! 底部广告
+www.pixiv.net##iframe[name="footer"]:upward(1)
+!! 书签页
+! 隐藏书签页过多候选 tag
+www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
+! track
+||www.pixiv.net/OneSignalSDKWorker.js$script
+||errortrace.dev^$xhr,domain=www.pixiv.net
+||cdn.onesignal.com/sdks
+||cdn.onesignal.com^
+||googletagmanager.com^$script
+! 广告和会员
+||a.pixiv.org^$domain=pixiv.net
+||pixon.ads-pixiv.net
+||api.booth.pm^$domain=pixiv.net
+||api.booth.pm/pixiv/shops/show.json$xhr,domain=pixiv.net
+||api.booth.pm/pixiv/items$xhr,domain=pixiv.net
+||imp.pixiv.net^$1p
+||imp.pixiv.net/premium_lp$subdocument,1p
+! 其他
+||www.pixiv.net/rpc/notify_count.php$xhr,1p
+||www.pixiv.net/ajax/message/can_send/*$xhr,1p
+||www.pixiv.net/rpc/index.php$xhr,1p
 
 ! https://www.reddit.com
 ||w3-reporting-nel.reddit.com^$1p
 
-! https://atcoder.jp
-||static.addtoany.com^$domain=atcoder.jp
+! https://twitter.com
+! 左侧开通会员提醒
+x.com##[data-testid=inlinePrompt]:upward(4)
+! 左侧无用标签
+x.com##header nav a:matches-attr(href=//(grok|jobs|communities|premium_sign_up|verified-orgs-signup)$/)
+! 左侧发帖按钮
+x.com##a[data-testid=SideNav_NewTweet_Button]:upward(1)
+! 调整 media 页多图标志的位置
+twitter.com,x.com##li[role=listitem] a[role=link] > svg:style(bottom: none !important; top: 8px !important;)
+! 增加 media 页多图标志的描边
+twitter.com,x.com##li[role=listitem] a[role=link] > svg g:style(stroke: black; stroke-width: 1px;)
+! 左侧开通会员提醒
+x.com##aside[role=complementary]:has(> a[href$=premium_sign_up]):upward(2)
+! 右侧趋势，需要配合 xhr 规则使用
+x.com##[data-testid=sidebarColumn] div.r-rs99b7.r-1phboty.r-jxzhtn:not(:has(ul))
+! 右侧栏趋势
+||x.com/i/api/graphql/*/ExploreSidebar
+! 右侧栏页脚
+twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
+! 未知请求
+||ton.local.twitter.com
+||twitter.com/i/api/2/guide.json^$domain=x.com
+||ads-api.x.com^$1p
+||x.com/i/api/2/guide.json^$1p
+
+! track
+||api.growingio.com^
+||addthis.com^
+
+||knet.cn
 
 ! 疑似 RTC
 ||xdrtc.com^
