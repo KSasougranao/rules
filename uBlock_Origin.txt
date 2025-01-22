@@ -288,6 +288,11 @@ live.bilibili.com##.bili-danmaku-x-dm.bili-danmaku-x-show:style(color: white !im
 ||tracker.chat.bilibili.com^$websocket,1p
 /-tracker-.*\.chat\.bilibili\.com\//$websocket,1p
 /-p2p-.*\.chat\.bilibili\.com\//$websocket,1p
+! 直播非必要请求
+||api.bilibili.com/x/web-frontend/ab/$xhr,1p
+||api.live.bilibili.com/xlive/e-commerce-interface/$xhr,1p
+||api.live.bilibili.com/xlive/game-pc/$xhr,1p
+||api.live.bilibili.com/xlive/web-room/v1/index/getIpInfo^$xhr,1p
 
 ! https://t.bilibili.com/
 ! 简化顶部导航
@@ -558,6 +563,7 @@ tieba.baidu.com##.lzl_more
 ! 自动展开楼中楼-底部
 tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ! track
+||dmpstatic.cdn.bcebos.com/weirwood-sdk/$script,domain=baidu.com
 ||gsp0.baidu.com/*/track.gif^$1p
 ||gsp0.baidu.com^$1p
 ||hm.baidu.com^
@@ -821,6 +827,7 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||/get_domains^$domain=douyin.com
 ||mssdk.bytedance.com^$domain=douyin.com
 ||bytegecko.com^$domain=douyin.com
+||lf-security.bytegoofy.com^$domain=douyin.com
 ||frontier-im.douyin.com^$1p
 ||frontier-pc.douyin.com^$1p
 ||imapi.douyin.com^$1p
@@ -867,8 +874,24 @@ live.douyin.com##.webcast-chatroom___bottom-message
 live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
 ! 礼物赠送消息-滚动
 live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
+! 服务异常的提醒，屏蔽部分脚本导致
+live.douyin.com###toastContainer
 ! 去除跟踪参数
 ||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
+! 进入直播间
+||live.douyin.com^$removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
+! 弹幕表情
+||douyinpic.com/img/webcast/$image,domain=douyin.com
+||douyinpic.com/obj/tos-cn$image,domain=douyin.com
+||douyinstatic.com/obj/webcast$image,domain=douyin.com
+! 非必要请求
+||live.douyin.com/aweme/$xhr,domain=live.douyin.com
+||live.douyin.com/aweme/v1/web/im/user/active/update/$xhr,domain=live.douyin.com
+||live.douyin.com/cloudpush/update_sender/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/luckybox/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/lottery/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/ranklist/$xhr,domain=live.douyin.com
+||live.douyin.com/webcast/gift/$xhr,domain=live.douyin.com
 
 ! https://www.xiaohongshu.com/
 ||xiaohongshu.com^$document,1p,removeparam=/^(app_platform|ignoreEngage|app_version|share_from_user_hidden|xsec_source|type|author_share|xhsshare|share_id|apptime)=/
