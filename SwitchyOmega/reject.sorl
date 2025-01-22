@@ -32,11 +32,10 @@ tb3.bdstatic.com
 tb4.bdstatic.com
 tb5.bdstatic.com
 push.dui1dui.com
-R: -p2p-.*.chat.bilibili.com$
-R: -tracker-.*.chat.bilibili.com$
 **.mcdn.bilivideo.cn
 dataflow.biliapi.com
-app.bilibili.com
+R: -p2p-.*\.chat\.bilibili\.com$
+R: -tracker-.*\.chat\.bilibili\.com$
 broadcast.chat.bilibili.com
 broadcastlv.chat.bilibili.com
 tracker.chat.bilibili.com
@@ -99,6 +98,7 @@ www.googleadservices.com
 static.doubleclick.net
 api.huya.com
 bee-wpm.huya.com
+**.cdn.huya.com
 fileserver.cdn.huya.com
 csp.huya.com
 df.huya.com

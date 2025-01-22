@@ -8,6 +8,7 @@ www.baidu.com
 baike.baidu.com
 tieba.baidu.com
 gss0.bdstatic.com
+R: ^t\d+\.baidu\.com$
 tb1.bdstatic.com
 tb2.bdstatic.com
 tiebapic.baidu.com
@@ -15,7 +16,6 @@ www.bilibili.com
 t.bilibili.com
 space.bilibili.com
 live.bilibili.com
-message.bilibili.com
 search.bilibili.com
 b23.tv
 api.bilibili.com
@@ -46,7 +46,6 @@ v3-web-prime.douyinvod.com
 www.douyu.com
 www.huya.com
 live.huya.com
-hd2.huya.com
 al-game.flv.huya.com
 al.flv.huya.com
 aldirect.flv.huya.com
@@ -60,17 +59,12 @@ cdnws.api.huya.com
 anchorpost.msstatic.com
 live-cover.msstatic.com
 tx-live-cover.msstatic.com
-l.huya.com
-udblgn.huya.com
-fw.huya.com
 live.kuaishou.com
 www.kuaishou.com
 nga.178.com
 bbs.nga.cn
 img.nga.178.com
 img4.nga.178.com
-y.qq.com
-qpic.y.qq.com
 weibo.com
 m.weibo.cn
 **.sinaimg.cn
@@ -81,10 +75,6 @@ docs.gtimg.com
 R: ^docimg\d+\.docs\.qq\.com$
 thirdqq.qlogo.cn
 thirdwx.qlogo.cn
-mp.weixin.qq.com
-mmbiz.qlogo.cn
-mmbiz.qpic.cn
-res.wx.qq.com
 www.xiaohongshu.com
 fe-static.xhscdn.com
 fe-video-qc.xhscdn.com
@@ -115,12 +105,12 @@ vdn6.vzuu.com
 **.bytefcdnrd.com
 leetcode.cn
 assets.leetcode.cn
-pic.leetcode.cn
-static.leetcode.cn
-video.leetcode.cn
 assets.leetcode-cn.com
+pic.leetcode.cn
 pic.leetcode-cn.com
+static.leetcode.cn
 static.leetcode-cn.com
+video.leetcode.cn
 video.leetcode-cn.com
 gitee.com
 api.accounts.firefox.com
