@@ -163,6 +163,9 @@ www.bilibili.com##.pop-live-small-mode
 ||hdslb.com/bfs/static/nc/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/reporter-pb/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/$script,redirect=noopjs,domain=bilibili.com
+! 只保留 navbar
+||activity.hdslb.com/blackboard/static/20*/*/*.js$script,domain=live.bilibili.com
+||activity.hdslb.com/blackboard/static/*/footer-v2.min.js$script,domain=live.bilibili.com
 
 ! https://live.bilibili.com
 ! 导航栏
@@ -388,6 +391,8 @@ www.zhihu.com##.AnswerAuthor.Card
 ||apm.zhihu.com^$1p
 ! 支付
 ||pay.zhihu.com^$1p
+! 不明
+||api.zhihu.com^$1p
 
 ! https://zhuanlan.zhihu.com
 ! 顶部浮动导航
@@ -473,6 +478,25 @@ www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
 ||miaowu.baidu.com/sdk/heicha/
 ||tb3.bdstatic.com/api/acs/paris-v2.min.js
 ||push.dui1dui.com
+! 图片
+||tb4.bdstatic.com^$domain=baidu.com
+||tb5.bdstatic.com^$domain=baidu.com
+||tb.himg.baidu.com^$1p
+||tiebac.baidu.com^$1p
+||gimg0.baidu.com^$1p
+||gimg2.baidu.com^$1p
+||gimg3.baidu.com^$1p
+||gimg4.baidu.com^$1p
+||img0.baidu.com^$1p
+||img1.baidu.com^$1p
+||img2.baidu.com^$1p
+||pics0.baidu.com^$1p
+||pics1.baidu.com^$1p
+||pics2.baidu.com^$1p
+||pics4.baidu.com^$1p
+||pics5.baidu.com^$1p
+||pics6.baidu.com^$1p
+||pics7.baidu.com^$1p
 
 ! https://tieba.baidu.com
 ! 登录弹窗
@@ -632,6 +656,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||api.huya.com^$1p
 @@||cdnws.api.huya.com^$websocket,1p
 ||bee-wpm.huya.com^$1p
+||cdn.huya.com^$1p
 ||fileserver.cdn.huya.com^$1p
 ||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
 ||csp.huya.com^$1p
@@ -656,16 +681,17 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||ylog.huya.com^$1p
 ||zt.huya.com^$1p
 ||a.msstatic.com/huya/h5player/room/*/pcore.js^$domain=huya.com
-||a.msstatic.com/huya/hd/cdn_libs/performance_report-min.js$script,domain=huya.com
-||a.msstatic.com/huya/hd/h5/header/components/RichVideo$script,domain=huya.com
-||a.msstatic.com/huya/main3/assets$script,domain=huya.com
-||a.msstatic.com/huya/main3/components$script,domain=huya.com
-||a.msstatic.com/huya/main3/node_modules$script,domain=huya.com
-||a.msstatic.com/huya/main3/static$script,domain=huya.com
-||a.msstatic.com/huya/main3/widget$script,domain=huya.com
+||a.msstatic.com/huya/hd/cdn_libs/performance_report-min.js^$domain=huya.com
+||a.msstatic.com/huya/hd/h5/header/components/RichVideo/$domain=huya.com
+||a.msstatic.com/huya/main3/assets/$domain=huya.com
+||a.msstatic.com/huya/main3/components/$domain=huya.com
+||a.msstatic.com/huya/main3/node_modules/$domain=huya.com
+||a.msstatic.com/huya/main3/static/$domain=huya.com
+||a.msstatic.com/huya/main3/widget/$domain=huya.com
 ||business.msstatic.com^$domain=huya.com
 ||diy-assets.msstatic.com^$image,domain=huya.com
 ||fedlib.msstatic.com^$domain=huya.com
+||gr.msstatic.com^$domain=huya.com
 ||huyaimg.msstatic.com/cdnimage/*$image,domain=huya.com
 ||livewebbs2.msstatic.com^$domain=huya.com
 ||s1-static.msstatic.com^$script,domain=huya.com
@@ -700,7 +726,6 @@ live.kuaishou.com##.kcoin
 live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 ! 其他
 ||kgw.com^$domain=kuaishou.com
-||id.kuaishou.com/pass/kuaishou/getCdns$1p
 ! 支付？
 ||www.kuaishoupay.com^$domain=kuaishou.com
 
@@ -842,8 +867,6 @@ live.douyin.com##.webcast-chatroom___bottom-message
 live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
 ! 礼物赠送消息-滚动
 live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
-! 弹幕兜底
-||live.douyin.com/webcast/im/fetch/$1p
 ! 去除跟踪参数
 ||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
 
