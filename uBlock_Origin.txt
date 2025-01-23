@@ -221,9 +221,12 @@ www.bilibili.com##.pop-live-small-mode
 ||hdslb.com/bfs/static/nc/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/reporter-pb/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/$script,redirect=noopjs,domain=bilibili.com
-! 只保留 navbar
-||activity.hdslb.com/blackboard/static/20*/*/*.js$script,domain=live.bilibili.com
-||activity.hdslb.com/blackboard/static/*/footer-v2.min.js$script,domain=live.bilibili.com
+! 直播间皮肤
+||activity.hdslb.com/blackboard/static/*/skin$script,domain=live.bilibili.com
+! 会影响弹幕
+! ||activity.hdslb.com/blackboard/static/20*/*/*.js$script,domain=live.bilibili.com
+! footer
+! ||activity.hdslb.com/blackboard/static/*/footer-v2.min.js$script,domain=live.bilibili.com
 
 ! https://live.bilibili.com
 ! 导航栏
@@ -258,8 +261,6 @@ live.bilibili.com##.blive-avatar-pendant
 live.bilibili.com##.blive-avatar-icons
 ! 直播列表百舰标志、活动标志
 live.bilibili.com###card .img-bright-filter[style^=background-image]
-! 主播
-live.bilibili.com###card:matches-attr(href=/\/(10545|11588230|12235923|13576775|14893|15536|17961|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22262300|22288644|22333522|22347054|22389319|22470208|22603245|22622535|22696653|22746343|22816111|22824550|22924075|22976643|23199319|23652569|23770996|23771189|23969425|24393|25290861|25512501|2603963|26276187|3415150|4316215|4726132|5275|56237|594461|6374209|7038458|725364|7688602|80397|870004|876396|92450|938957)\?/):upward(1)
 !! 直播间
 ! 舰队指挥官
 live.bilibili.com##.pilot
@@ -500,7 +501,7 @@ live.douyin.com###toastContainer
 ! 去除跟踪参数
 ||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
 ! 进入直播间
-||live.douyin.com^$removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
+||live.douyin.com^$document,xhr,domain=live.douyin.com,removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
 ! 弹幕表情
 ||douyinpic.com/img/webcast/$image,domain=douyin.com
 ||douyinpic.com/obj/tos-cn$image,domain=douyin.com
@@ -585,12 +586,15 @@ bbs.hupu.com##.image-wrapper
 !! 全站
 ! 跟踪参数
 ||www.huya.com^$document,1p,removeparam=/^(curpage|curlocation)=/
-! 导航栏开播
+!! 导航栏
+! 开播
 www.huya.com##.NavKaiBo--3_pcnDZbeaycODmpgNFBtt.NavItem--1jr9x80QTPbnrDwqn834hF
-! 导航栏下载
+! 下载
 www.huya.com##.NavDownload--14eln2LYTFMgF_MZOue4Gu.NavItem--1jr9x80QTPbnrDwqn834hF
-! 导航栏任务
-www.huya.com##div.NavItem--1jr9x80QTPbnrDwqn834hF:nth-of-type(5)
+! IG
+www.huya.com##.NavIg--Kxh7PjtVzZA95RizAlvh1.NavItem--1jr9x80QTPbnrDwqn834hF
+! 任务
+www.huya.com##div.NavItem--1jr9x80QTPbnrDwqn834hF:nth-last-of-type(1)
 !! 直播分区
 ! 分区顶部橱窗
 www.huya.com###J_listAdx
