@@ -24,14 +24,13 @@ jobs:
         run: |
           echo -n > reject-lines.txt
           curl -sSL ${Loyalsoldier_reject} -o Loyalsoldier_reject.yaml
-          curl -sSL ${neodevhost_reject} -o neodevhost_reject.yaml
           curl -sSL ${antiad_reject} -o antiad_reject.yaml
           curl -sSL ${antiad_pcdn} -o antiad_pcdn.txt
           curl -sSL ${antiad_dns} -o antiad_dns.txt
       - name: Collect reject 2
         uses: mikefarah/yq@master
         with:
-          cmd: yq '. as $item ireduce ({}; . *+ $item) | .payload | .[]' Loyalsoldier_reject.yaml neodevhost_reject.yaml antiad_reject.yaml >> reject-lines.txt
+          cmd: yq '. as $item ireduce ({}; . *+ $item) | .payload | .[]' Loyalsoldier_reject.yaml antiad_reject.yaml >> reject-lines.txt
       - name: Generate reject.txt
         run: |
           wc reject-lines.txt
