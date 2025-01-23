@@ -10,6 +10,7 @@ jobs:
       - name: Set variables
         run: |
           echo "Loyalsoldier_reject=https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/reject.txt" >>$GITHUB_ENV
+          echo "neodevhost_reject=https://raw.githubusercontent.com/neodevpro/neodevhost/master/clash" >>$GITHUB_ENV
           echo "antiad_reject=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml" >>$GITHUB_ENV
           echo "antiad_pcdn=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/pcdn.txt" >>$GITHUB_ENV
           echo "antiad_dns=https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/discretion/dns.txt" >>$GITHUB_ENV
@@ -23,13 +24,14 @@ jobs:
         run: |
           echo -n > reject-lines.txt
           curl -sSL ${Loyalsoldier_reject} -o Loyalsoldier_reject.yaml
+          curl -sSL ${neodevhost_reject} -o neodevhost_reject.yaml
           curl -sSL ${antiad_reject} -o antiad_reject.yaml
           curl -sSL ${antiad_pcdn} -o antiad_pcdn.txt
           curl -sSL ${antiad_dns} -o antiad_dns.txt
       - name: Collect reject 2
         uses: mikefarah/yq@master
         with:
-          cmd: yq '. as $item ireduce ({}; . *+ $item) | .payload | .[]' Loyalsoldier_reject.yaml antiad_reject.yaml >> reject-lines.txt
+          cmd: yq '. as $item ireduce ({}; . *+ $item) | .payload | .[]' Loyalsoldier_reject.yaml neodevhost_reject.yaml antiad_reject.yaml >> reject-lines.txt
       - name: Generate reject.txt
         run: |
           wc reject-lines.txt
@@ -39,7 +41,7 @@ jobs:
           wc dns-lines.txt
 
           echo -n > reject.txt
-          cat reject-lines.txt pcdn-lines.txt | sort | uniq >> reject.txt
+          cat reject-lines.txt pcdn-lines.txt dns-lines.txt | sort | uniq >> reject.txt
           wc reject.txt
           echo -n > pcdn.txt
           cat pcdn-lines.txt | sort | uniq >> pcdn.txt
