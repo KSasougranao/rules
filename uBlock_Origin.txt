@@ -669,8 +669,10 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||liveapi.huya.com/livelist/getUserLikeList$1p
 ||liveapi.huya.com/livelist/canWatchTogether^$1p
 ||metric.huya.com^$1p
+||natchecker.huya.com^$1p
 ||p2p.huya.com^$1p
 ||pcdngw.huya.com^$1p
+||qvodlive-va.huya.com^$1p
 ||statwup.huya.com^$1p
 ||udbdf.huya.com^$1p
 ||upevent.huya.com^$1p
@@ -918,6 +920,9 @@ ascii2d.net##div.p-t-1
 
 ! https://atcoder.jp
 ||static.addtoany.com^$domain=atcoder.jp
+
+! https://github.com/
+||alive.github.com^$1p
 
 ! https://www.google.com
 ||googletagmanager.com^
