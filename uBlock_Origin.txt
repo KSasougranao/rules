@@ -195,19 +195,17 @@ www.bilibili.com##.pop-live-small-mode
 ||dataflow.biliapi.com^$domain=bilibili.com
 ||data.bilibili.com^$1p
 ! 跟踪参数
-||www.bilibili.com/read/$document,1p,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/
-||www.bilibili.com/video/$document,1p,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/
-||www.bilibili.com/list/$document,1p,removeparam=/^(spm_id_from)=/
-||live.bilibili.com^$document,1p,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/
-||space.bilibili.com^$document,1p,removeparam=/^(spm_id_from)=/
-||search.bilibili.com^$document,1p,removeparam=/^(vt|search_source)=/
+||www.bilibili.com/read/$document,domain=www.bilibili.com,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/
+||www.bilibili.com/video/$document,domain=www.bilibili.com,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/
+||www.bilibili.com/list/$document,domain=www.bilibili.com,removeparam=/^(spm_id_from)=/
+||live.bilibili.com^$document,xhr,domain=live.bilibili.com,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/
+||space.bilibili.com^$document,domain=space.bilibili.com,removeparam=/^(spm_id_from)=/
+||search.bilibili.com^$document,domain=search.bilibili.com,removeparam=/^(vt|search_source)=/
 !! web_location 重要参数
 !! w_rid,wts 影响权限
 ||bilibili.com^$1p,removeparam=/^(isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|x-bili-device-req-json|x-bili-web-req-json)=/
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
-! 似乎是广告图片
-||archive.biliimg.com^$domain=bilibili.com
 ! 疑似 PCDN
 ||mcdn.bilivideo.cn^$domain=bilibili.com
 ! 其他
@@ -234,7 +232,7 @@ live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|�
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
 !! 直播站首页
 ! 首页直播间
-||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,1p
+||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,live.bilibili.com
 ||hdslb.com/bfs/blive-engineer/live-web-player/home-player.prod.min.js$script,redirect=noopjs,domain=live.bilibili.com
 live.bilibili.com##.t-center.p-relative.border-box.player-area-ctnr
 live.bilibili.com##.player-ctnr #live-video
