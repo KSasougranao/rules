@@ -1,4 +1,5 @@
 [SwitchyOmega Conditions]
+at.alicdn.com
 gimg0.baidu.com
 gimg2.baidu.com
 gimg3.baidu.com
@@ -48,7 +49,6 @@ manga.bilibili.com
 bilicomic.com
 bilicomics.com
 **.biligame.com
-archive.biliimg.com
 **.node.ppio.cloud
 **.cloudvdn.com
 **.nexusedgeio.com
@@ -62,6 +62,10 @@ mssdk.bytedance.com
 frontier-im.douyin.com
 frontier-pc.douyin.com
 imapi.douyin.com
+lf3-webcastcdn-tos.douyinstatic.com
+lf5-hl-hw-webcastcdn-tos.douyinstatic.com
+lf5-webcastcdn-tos.douyinstatic.com
+lf6-cdn-tos.douyinstatic.com
 **.ibytedapm.com
 **.vegslb.com
 **.volcsirius.com
@@ -90,6 +94,7 @@ g.wan.douyu.com
 yuba.douyu.com
 fedci.dz11.com
 adu.g-fox.cn
+alive.github.com
 ogads-pa.clients6.google.com
 mtalk.google.com
 www.google-analytics.com
@@ -99,6 +104,7 @@ static.doubleclick.net
 api.huya.com
 bee-wpm.huya.com
 **.cdn.huya.com
+diy-front.cdn.huya.com
 fileserver.cdn.huya.com
 csp.huya.com
 df.huya.com
@@ -107,8 +113,10 @@ ffilelogapp.huya.com
 hd.huya.com
 liveapi.huya.com
 metric.huya.com
+natchecker.huya.com
 **.p2p.huya.com
 pcdngw.huya.com
+qvodlive-va.huya.com
 statwup.huya.com
 udbdf.huya.com
 upevent.huya.com
@@ -131,15 +139,16 @@ zt.msstatic.com
 electric-shop.yaoguo.com
 log-sdk.ksapisrv.com
 www.kuaishoupay.com
-**.knet.cn
 analysis.leetcode.cn
+collaboration-ws.leetcode.cn
 ff-proxy.leetcode.cn
 logs.leetcode.cn
+logs.leetcode-cn.com
+**.knet.cn
 **.tagtic.cn
 ossgw.alicdn.com
 www.huuua.com
 **.kgw.com
-logs.leetcode-cn.com
 cdn.onesignal.com
 applog.snssdk.com
 errortrace.dev
