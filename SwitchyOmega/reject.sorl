@@ -22,6 +22,8 @@ ug.baidu.com
 xiangce.baidu.com
 xlab.baidu.com
 drug-platform.cdn.bcebos.com
+gamedelivery.cdn.bcebos.com
+gameplus-platform.cdn.bcebos.com
 haokanupdate.cdn.bcebos.com
 mediago-static.cdn.bcebos.com
 ns-strategy.cdn.bcebos.com
@@ -46,6 +48,9 @@ manga.bilibili.com
 bilicomic.com
 bilicomics.com
 **.biligame.com
+bimp.hdslb.com
+boss.hdslb.com
+static.hdslb.com
 **.node.ppio.cloud
 **.cloudvdn.com
 **.nexusedgeio.com
@@ -55,6 +60,7 @@ new.gracebot.cn
 mssdk.bytedance.com
 **.bytednsdoc.com
 **.bytegecko.com
+lf-security.bytegoofy.com
 **.bytetcc.com
 frontier-im.douyin.com
 frontier-pc.douyin.com
@@ -164,9 +170,12 @@ mazu.3g.qq.com
 yybadaccess.3g.qq.com
 dp3.qq.com
 pingjs.qq.com
+localhost.ptlogin2.qq.com
 rmonitor.qq.com
+localhost.sec.qq.com
 galileotelemetry.tencent.com
 tpstelemetry.tencent.com
+localhost.ptlogin2.weiyun.com
 music-file.y.gtimg.cn
 qpic.y.gtimg.cn
 stat6.y.qq.com

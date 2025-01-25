@@ -8,6 +8,8 @@
 www.baidu.com##.result-op[tpl=game-page-profession]
 ! 视频推荐
 www.baidu.com##.result-op[tpl=short_video]
+! 笔记推荐
+www.baidu.com##.result-op[tpl=note_lead]
 ! 新闻
 www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
 ! 跟踪参数
@@ -426,7 +428,7 @@ douyin.com##div[data-e2e=search-guess-container]
 douyin.com##div[data-e2e=search-guess-container] + div
 douyin.com##div[data-e2e=search-hot-container]
 ! 顶部导航
-douyin.com###douyin-header-menuCt pace-island > div > :has-text(/充钻石|客户端|快捷访问|壁纸|投稿/)
+douyin.com###douyin-header-menuCt pace-island > div > :has-text(/^(充钻石|客户端|快捷访问|壁纸|投稿)$/)
 ! 左侧类目
 douyin.com##div[data-e2e=douyin-navigation] :is(.prlW7G_5, .rgiBNcU6):has-text(/我的|放映厅|短剧|美食/)
 ! 左侧类目
@@ -468,6 +470,8 @@ live.douyin.com##h1:upward(1)
 ! 底部
 live.douyin.com###_douyin_live_scroll_container_ > footer
 !! 直播间
+! 服务异常的提醒，屏蔽部分脚本导致
+live.douyin.com###toastContainer
 ! 人气、礼物橱窗等
 live.douyin.com##.EEnUp5fM > :not(.chat_room_fold)
 ! 礼物赠送弹窗
@@ -489,12 +493,12 @@ live.douyin.com##.Qsns7NdQ.kz8VfOyK
 live.douyin.com##.webcast-chatroom__room-message
 ! 进入房间消息
 live.douyin.com##.webcast-chatroom___bottom-message
+! 粉丝团等
+live.douyin.com##.webcast-chatroom___item span:has(img)
 ! 礼物赠送消息-侧栏
 live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
 ! 礼物赠送消息-滚动
 live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
-! 服务异常的提醒，屏蔽部分脚本导致
-live.douyin.com###toastContainer
 ! 去除跟踪参数
 ||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
 ! 进入直播间
