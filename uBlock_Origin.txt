@@ -37,9 +37,6 @@ www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
 ||gimg2.baidu.com^$1p
 ||gimg3.baidu.com^$1p
 ||gimg4.baidu.com^$1p
-||img0.baidu.com^$1p
-||img1.baidu.com^$1p
-||img2.baidu.com^$1p
 ||pics0.baidu.com^$1p
 ||pics1.baidu.com^$1p
 ||pics2.baidu.com^$1p
@@ -203,7 +200,7 @@ www.bilibili.com##.pop-live-small-mode
 ||search.bilibili.com^$document,domain=search.bilibili.com,removeparam=/^(vt|search_source)=/
 !! web_location 重要参数
 !! w_rid,wts 影响权限
-||bilibili.com^$1p,removeparam=/^(isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|x-bili-device-req-json|x-bili-web-req-json)=/
+||bilibili.com^$1p,removeparam=/^(|isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|x-bili-device-req-json|x-bili-web-req-json)=/
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
 ! 疑似 PCDN
@@ -235,7 +232,7 @@ live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|�
 live.bilibili.com##.dp-table-cell > a:is(.live, .all, .聊天室, .生活, .帮我玩, .互动玩法, .购物)
 !! 直播站首页
 ! 首页直播间
-||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,live.bilibili.com
+||api.live.bilibili.com/xlive/web-ucenter/v1/room/GetHomePageConfig$xhr,domain=live.bilibili.com
 ||hdslb.com/bfs/blive-engineer/live-web-player/home-player.prod.min.js$script,redirect=noopjs,domain=live.bilibili.com
 live.bilibili.com##.t-center.p-relative.border-box.player-area-ctnr
 live.bilibili.com##.player-ctnr #live-video

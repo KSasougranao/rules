@@ -9,6 +9,9 @@ baike.baidu.com
 tieba.baidu.com
 gss0.bdstatic.com
 R: ^t\d+\.baidu\.com$
+img0.baidu.com
+img1.baidu.com
+img2.baidu.com
 tb1.bdstatic.com
 tb2.bdstatic.com
 tiebapic.baidu.com
@@ -76,6 +79,7 @@ R: ^docimg\d+\.docs\.qq\.com$
 thirdqq.qlogo.cn
 thirdwx.qlogo.cn
 wx.qlogo.cn
+dldir1v6.qq.com
 www.xiaohongshu.com
 fe-static.xhscdn.com
 fe-video-qc.xhscdn.com
