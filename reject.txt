@@ -337,6 +337,7 @@
 +.114so.cn
 +.11599jgj.com
 +.116b.com
++.1170050225.rsc.cdn77.org
 +.11778562.xyz
 +.1178.shucong.com
 +.1187531871.rsc.cdn77.org
@@ -509,6 +510,7 @@
 +.180searchassistant.com
 +.181m2fscr.de
 +.184c4i95p.de
++.1852210865.rsc.cdn77.org
 +.186078.com
 +.18788fdb24.com
 +.188affiliates.com
@@ -1320,6 +1322,7 @@
 +.3dns.adobe.com
 +.3dstats.com
 +.3dwwwgame.com
++.3e0605983a.com
 +.3e1898dbbe.com
 +.3e6072834f.com
 +.3ead4fd497.com
@@ -7172,7 +7175,6 @@
 +.adnetwork.net
 +.adnetwork.nextgen.net
 +.adnetwork.rovicorp.com
-+.adnetwork.vn
 +.adnetworkperformance.com
 +.adnety.com
 +.adnew.wifi8.com
@@ -9934,6 +9936,7 @@
 +.affectdeveloper.com
 +.affectincentiveyelp.com
 +.affectionatelypart.com
++.affectionatereply.pro
 +.affectionavenue.site
 +.affelseaeinera.org
 +.affex.org
@@ -10609,7 +10612,6 @@
 +.aj2208.online
 +.aj2218.online
 +.aj2345.online
-+.aj2393.online
 +.aj2396.online
 +.aj2397.online
 +.aj2517.bid
@@ -10996,6 +10998,7 @@
 +.allureoutlayterrific.com
 +.alluringbucket.com
 +.allusionfussintervention.com
++.alluviopurreic.com
 +.allvideometrika.com
 +.allworkovergot.com
 +.allxing.net
@@ -13002,6 +13005,7 @@
 +.api.sprig.com
 +.api.ssp.adoceans.com
 +.api.ssp.zxrtb.com
++.api.statsig.com
 +.api.subiz.com.vn
 +.api.subiz.net
 +.api.subiz.xyz
@@ -13091,6 +13095,7 @@
 +.apnttuttej.com
 +.apoll.m.taobao.com
 +.apollo.caixin.com
++.apollo.miniclip.com
 +.apollo.plein.nl
 +.apollofind.com
 +.apolloprogram.io
@@ -16918,6 +16923,7 @@
 +.bcprm.com
 +.bcsjcj.nasdaq.com
 +.bctabsogebtmoutsgs.duckdns.org
++.bctuapia.icu
 +.bcuh.tinwong.cn
 +.bcvc.mobi
 +.bcvideod.com
@@ -17711,6 +17717,7 @@
 +.beyond.bluewolf.com
 +.beyondcompare.cc
 +.beyondsecurity.com
++.beyondwickedmapping.org
 +.beyourxfriend.com
 +.bf-ad.net
 +.bf-tools.net
@@ -21436,6 +21443,7 @@
 +.cdhoc.piyaji.cn
 +.cdickef.top
 +.cdilm.cn
++.cdinmaf.top
 +.cdipsumf.top
 +.cdj-dap.s3-ap-northeast-1.amazonaws.com
 +.cdjhcf.hometogo.es
@@ -22208,7 +22216,6 @@
 +.chch.fr
 +.chd-daolujiance.com
 +.cheap-adipex.hut1.ru
-+.cheap-ads.net
 +.cheap-celebration.pro
 +.cheap-web-hosting-here.blogspot.com
 +.cheap-xanax-here.blogspot.com
@@ -23962,7 +23969,6 @@
 +.coderexception.com
 +.coderformylife.info
 +.codes.royalad.pl
-+.codes.wai.it
 +.codesbro.com
 +.codesour.com
 +.codetips.wang
@@ -26070,6 +26076,7 @@
 +.crawlcoxed.com
 +.crawledlikely.com
 +.crawlerjamie.shop
++.crawlinglandnameless.com
 +.craydark.pw
 +.crayon.meishichina.com
 +.crayoncompetition.com
@@ -27220,6 +27227,7 @@
 +.d16fk4ms6rqz1v.cloudfront.net
 +.d16saj1xvba76n.cloudfront.net
 +.d16sobzswqonxq.cloudfront.net
++.d170971757.com
 +.d1733r3id7jrw5.cloudfront.net
 +.d175dtblugd1dn.cloudfront.net
 +.d17757b88bjr2y.cloudfront.net
@@ -28228,6 +28236,7 @@
 +.d9.sina.com.cn
 +.d90z5o386dhs7.cloudfront.net
 +.d91i6bsb0ef59.cloudfront.net
++.d95bda138b.com
 +.d95d1c685a.6c142df43a.com
 +.d980ed.xyz
 +.d985a9d2clzq5.cloudfront.net
@@ -30307,6 +30316,7 @@
 +.dhcpserver.net
 +.dhdaa.duke.edu
 +.dheirzeh.com
++.dhemixu.com
 +.dhenr54m.com
 +.dhgdp.cn
 +.dhgywazgeek0d.cloudfront.net
@@ -31949,6 +31959,7 @@
 +.downeconomywp.advancedtech.com
 +.downgradeproduct.com
 +.downlaod.xiaocen.com
++.download-adblock-bear.com
 +.download-adblock-zen.com
 +.download-alert.com
 +.download-privacybear.com
@@ -37588,6 +37599,7 @@
 +.feature-flag-edge.live.clickbus.net
 +.feature-publish.net
 +.feature.fm
++.featureassets.org
 +.featured.bradyid.com
 +.featured.perfectionholic.com
 +.featuregates.org
@@ -40113,7 +40125,6 @@
 +.gamingfun.me
 +.gamingonline.top
 +.gammachug.com
-+.gammadsp.com
 +.gammamaximum.com
 +.gammamkt.com
 +.gammaplatform.com
@@ -40349,6 +40360,7 @@
 +.gbwzrcymfmvym.bid
 +.gbztputcfgp.com
 +.gc.keefung-zs.com
++.gc.newsweek.com
 +.gc.titans.com.au
 +.gc.zgo.at
 +.gcads.osdn.com
@@ -48947,6 +48959,7 @@
 +.initiallycoffee.com
 +.initiallycompetitionunderwear.com
 +.initiateadvancedhighlyinfo-program.info
++.initiategunpowder.com
 +.iniutui.com
 +.injcxwircl.com
 +.injectreunionshorter.com
@@ -49063,6 +49076,7 @@
 +.inscribereclaim.com
 +.inscriptiontinkledecrepit.com
 +.insectearly.com
++.insecure-motor.pro
 +.insecurepaint.pro
 +.insecurepainting.pro
 +.insecuritydisproveballoon.com
@@ -50234,6 +50248,7 @@
 +.iwpneu.eneba.com
 +.iwqzrm.com
 +.iwrcoct.info
++.iwrxsrjl.com
 +.iwstat.tudou.com
 +.iwstats.com
 +.iwtserve.com
@@ -51546,6 +51561,7 @@
 +.jsadsdisplay.cn-beijing.log.aliyuncs.com
 +.jsapi.html5.qq.com
 +.jsb.qianzhan.com
++.jsbergrle.com
 +.jscdn.99pps.com
 +.jscdn.online
 +.jscdndel.com
@@ -51788,6 +51804,7 @@
 +.jvs.price.ru
 +.jvzlya.benesse.ne.jp
 +.jwalf.com
++.jwalkin.com
 +.jwamnd.com
 +.jwatera.top
 +.jwcnjv.xlmoto.eu
@@ -53022,6 +53039,7 @@
 +.krikului.com
 +.krinkred.com
 +.kriptoparahaber.care
++.krirkroins.com
 +.krisydark.com
 +.kritgu.xyz
 +.krivo.buzz
@@ -56483,7 +56501,6 @@
 +.log.vnfinance.vn
 +.log.voicecloud.cn
 +.log.vov.vn
-+.log.vovplus.vn
 +.log.vovworld.vn
 +.log.wat.tv
 +.log.web.kugou.com
@@ -56547,6 +56564,7 @@
 +.logevt.pubfinity.com
 +.logfr.vietnamplus.vn
 +.logg4u.cnnd.vn
++.logg9r.io
 +.logger.applovefrom.com
 +.logger.baofeng.com
 +.logger.bzu.kr
@@ -61023,7 +61041,6 @@
 +.mautic-learn.teky.edu.vn
 +.mautic.200lab.io
 +.mautic.com
-+.mautic.hubs.vn
 +.mautic.teky.edu.vn
 +.mavic852.com
 +.mavietnam.xyz
@@ -61225,7 +61242,6 @@
 +.mcredit.vaynhanh-bankcredits.com
 +.mcrertpgdjbvj.com
 +.mcs-ie.tiktokw.eu
-+.mcs-sg.tiktok.com
 +.mcs-va-useast2a.tiktokv.com
 +.mcs-va.tiktok.com
 +.mcs-va.tiktokv.com
@@ -61607,7 +61623,6 @@
 +.mediacpc.com
 +.mediacpm.com
 +.mediacpm.pl
-+.mediad.asia
 +.mediad.co.jp
 +.mediad2.jp
 +.mediadar.ru
@@ -61785,6 +61800,7 @@
 +.mega-ad.de
 +.mega-stats.com
 +.mega.folkbladet.nu
++.mega.mydealz.de
 +.mega.promodescuentos.com
 +.mega.vk.se
 +.megaad.nz
@@ -65492,9 +65508,9 @@
 +.msrvt.net
 +.mssdk-bu.bytedance.com
 +.mssdk-sg.byteoversea.com
-+.mssdk-sg.tiktok.com
 +.mssdk-va.byteoversea.com
 +.mssdk.bytedance.com
++.mssdk.tiktokw.us
 +.mssdk.volces.com
 +.mssdk.zijieapi.com
 +.mssheng.com
@@ -65651,6 +65667,7 @@
 +.muddyquote.pro
 +.mudfall.com
 +.mudmonster.org
++.mudrouraung.net
 +.muendakutyfore.info
 +.muer.cdn-baidu.fs-sywh.com
 +.mufflercypress.com
@@ -67904,6 +67921,7 @@
 +.nognoongut.com
 +.nogxjk.dackonline.se
 +.nohaxn.damattween.com
++.nohcutlips.com
 +.nohezu.xyz
 +.nohowsankhya.com
 +.noibu.com
@@ -70483,6 +70501,7 @@
 +.oqr4.destinia.in
 +.oqsttfy.com
 +.oquftwsabsep.xyz
++.oqxogfazdz.com
 +.oqyictvedqfhhd.com
 +.or.5.p2l.info
 +.oracle-netsuite-com-796203850.p04.elqsandbox.com
@@ -73035,7 +73054,6 @@
 +.pi81.shop
 +.pi920.com
 +.piaads.com
-+.piads.vn
 +.piaigyyigyghjmi.xyz
 +.pianis.shop
 +.piano.io
@@ -79506,6 +79524,7 @@
 +.rewardsaffiliates.com
 +.rewardsflow.com
 +.rewardtv.com
++.rewarmsmorella.com
 +.rewdinghes.com
 +.rewearoutwale.shop
 +.rewindgills.com
@@ -79827,6 +79846,7 @@
 +.rkapghq.com
 +.rkatamonju.info
 +.rkazse.infirmiere.co.jp
++.rkbqtnqfudt.com
 +.rkdms.com
 +.rkdpzcdehop.fun
 +.rkft2sdl8b.ru
@@ -80741,6 +80761,7 @@
 +.rztrkr.com
 +.rzuokcobzru.com
 +.rzviy.com
++.rzxosmhvruyye.com
 +.rzyosrlajku.com
 +.rzzhrbbnghoue.com
 +.rzzlhfx.com
@@ -83672,7 +83693,6 @@
 +.servicing.unitedautocredit.net
 +.serving-ad.tv24.vn
 +.serving-sys.com
-+.serving-system.com
 +.servingcdn.net
 +.servingserved.com
 +.servingshade.com
@@ -83756,7 +83776,6 @@
 +.sexemulator.tube-sexs.com
 +.sexfg.com
 +.sexflirtbook.com
-+.sexgoesmobile.com
 +.sexiba.com
 +.sexintheuk.com
 +.sexlist.com
@@ -85738,7 +85757,6 @@
 +.smart4ads.com
 +.smartad.10010.com
 +.smartad.ee
-+.smartadnetwork.net
 +.smartads.statsperform.com
 +.smartadserver.com
 +.smartadtags.com
@@ -85752,7 +85770,6 @@
 +.smartclip.com
 +.smartclip.net
 +.smartcontext.pl
-+.smartconvert.co
 +.smartcookies.it
 +.smartcpatrack.com
 +.smartctr.com
@@ -89993,7 +90010,6 @@
 +.spark.thelyst.com
 +.spark123.shop
 +.sparkads.ws
-+.sparkassen-partner.de
 +.sparkgoal.com
 +.sparkle-industries-i-205.site
 +.sparklesleet.com
@@ -90258,7 +90274,6 @@
 +.sportstoday.pro
 +.sportstreams.xyz
 +.sportsyndicator.com
-+.sporttv.today
 +.sportupdates.info
 +.sportydesktops.com
 +.sportzflix.xyz
@@ -95075,7 +95090,6 @@
 +.t.service.thetimes.co.uk
 +.t.sfajacks.com
 +.t.sharethis.com
-+.t.sieu-viet.com
 +.t.signalayer.com
 +.t.signaletre.com
 +.t.signauxdeux.com
@@ -96244,6 +96258,7 @@
 +.tearbelt.com
 +.tearfulglass.com
 +.tearingsinnerprinciples.com
++.tearoomzebus.top
 +.tearsskin.cfd
 +.teaser-goods.ru
 +.teaser-mobile.com
@@ -102654,6 +102669,7 @@
 +.trustseal.e-rasaneh.ir
 +.trusturl.top
 +.trustutn.org
++.trustvarietywee.com
 +.trustworthyturnstileboyfriend.com
 +.trustx.org
 +.trusty-research.com
@@ -102837,6 +102853,7 @@
 +.tuanbansub.ml
 +.tuanlevang.vn
 +.tuanlocvang123.com
++.tuavzlpzhxs.com
 +.tubberlo.com
 +.tubbyconversation.pro
 +.tube.ac
@@ -104791,6 +104808,7 @@
 +.utiq.24auto.de
 +.utiq.24hamburg.de
 +.utiq.24rhein.de
++.utiq.actu.fr
 +.utiq.buzzfeed.de
 +.utiq.come-on.de
 +.utiq.einfach-tasty.de
@@ -105866,6 +105884,7 @@
 +.vhducnso.com
 +.vhec.jhjhyn.cn
 +.vheoggjiqaz.com
++.vhevbyox.com
 +.vhkgzudn.com
 +.vhmengine.com
 +.vhmewg.edreams.fr
@@ -105909,7 +105928,6 @@
 +.viagra.4.p2l.info
 +.viagraviagra.3xforum.ro
 +.viaklera.com
-+.viam.com.vn
 +.viamariller.com
 +.vianadserver.com
 +.viandryochavo.com
@@ -106503,7 +106521,6 @@
 +.vipyou.bulkpowders.es
 +.vir70n.news
 +.vira.ru
-+.viraads.com
 +.viral-cdn.ru
 +.viral481.com
 +.viral4buzz.net
@@ -106921,7 +106938,6 @@
 +.vnmcrd2s.online
 +.vnmopn.brax.com
 +.vnn-tracking.vnncdn.net
-+.vnnayngaytin.vn
 +.vnpanda.shop
 +.vnpay-quetthetindung.com
 +.vnpay-ruttientindung.com
@@ -111156,7 +111172,6 @@
 +.xad.com
 +.xad.dnoticias.pt
 +.xadcentral.com
-+.xaded.de
 +.xads.joboko.com
 +.xads.top
 +.xadsmart.com
@@ -111873,6 +111888,7 @@
 +.xushenghb.com
 +.xutolr.mainichikirei.jp
 +.xutolr.mantan-web.jp
++.xutvbt.icu
 +.xuugnuits.com
 +.xuxwvh.xyz
 +.xuymgm.hostgator.mx
@@ -112267,6 +112283,7 @@
 +.yellowish-yesterday.pro
 +.yellowishmixture.pro
 +.yellowjm.com
++.yellowprotection.com
 +.yellsurpass.com
 +.yeloads.com
 +.yemnn.cn
@@ -112596,6 +112613,7 @@
 +.ynfhnbjsl.xyz
 +.ynfzxh.com
 +.yngnwe.8division.com
++.yngqqqrrghms.com
 +.ynhmwyt.com
 +.ynklendr.online
 +.ynlfpyeifc.com
