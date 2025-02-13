@@ -65,10 +65,13 @@ lf-security.bytegoofy.com
 frontier-im.douyin.com
 frontier-pc.douyin.com
 imapi.douyin.com
+lf-douyin-pc-web.douyinstatic.com
 lf3-webcastcdn-tos.douyinstatic.com
 lf5-hl-hw-webcastcdn-tos.douyinstatic.com
 lf5-webcastcdn-tos.douyinstatic.com
 lf6-cdn-tos.douyinstatic.com
+lf6-webcastcdn-tos.douyinstatic.com
+sf1-cdn-tos.douyinstatic.com
 **.ibytedapm.com
 **.vegslb.com
 **.volcsirius.com
@@ -120,6 +123,7 @@ natchecker.huya.com
 **.p2p.huya.com
 pcdngw.huya.com
 qvodlive-va.huya.com
+qvodlive-va.huya.com
 statwup.huya.com
 udbdf.huya.com
 upevent.huya.com
@@ -130,6 +134,10 @@ wsapi.huya.com
 wup.huya.com
 ylog.huya.com
 zt.huya.com
+al-p2p.massx.com
+hs-p2p.massx.com
+hw-p2p.massx.com
+tx-p2p.massx.com
 business.msstatic.com
 diy-assets.msstatic.com
 fedlib.msstatic.com
@@ -151,10 +159,13 @@ logs.leetcode-cn.com
 **.tagtic.cn
 ossgw.alicdn.com
 www.huuua.com
+trackingprd.hwwt8.com
+**.immersivetranslate.com
 **.kgw.com
 cdn.onesignal.com
 applog.snssdk.com
 errortrace.dev
+static.doubleclick.net
 mobile.events.data.microsoft.com
 uem.migu.cn
 jadeite.miguvideo.com
@@ -180,8 +191,10 @@ music-file.y.gtimg.cn
 qpic.y.gtimg.cn
 stat6.y.qq.com
 **.xdrtc.com
+analytics.twitter.com
 ton.local.twitter.com
 ads-api.x.com
 reward.media.weibo.com
+mqtt.zhihu.com
 mqtt-web.zhihu.com
 pay.zhihu.com

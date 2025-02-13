@@ -52,10 +52,14 @@ live.huya.com
 al-game.flv.huya.com
 al.flv.huya.com
 aldirect.flv.huya.com
-hw.flv.huya.com
+hs.flv.huya.com
 hw.flv.huya.com
 tx.flv.huya.com
 txdirect.flv.huya.com
+al-flv.massx.com
+hs-flv.massx.com
+hw-flv.massx.com
+tx-flv.massx.com
 a.msstatic.com
 huyaimg.msstatic.com
 cdnws.api.huya.com
@@ -108,6 +112,7 @@ vdn6.vzuu.com
 **.h2.smtcdns.net
 **.v.smtcdns.net
 **.bytefcdnrd.com
+**.ksyungslb.com
 leetcode.cn
 assets.leetcode.cn
 assets.leetcode-cn.com

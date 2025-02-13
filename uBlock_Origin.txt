@@ -112,7 +112,7 @@ tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ||gsp0.baidu.com^$1p
 ||hm.baidu.com^
 ! 跟踪参数
-||tieba.baidu.com^$document,domain=tieba.baidu.com,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp|ie)=|see_lz=0/
+||tieba.baidu.com^$document,domain=tieba.baidu.com,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp)=|see_lz=0/
 ! 无用请求
 ||tieba.baidu.com/game/duoku/getHotGames$1p
 ! 监控
@@ -452,6 +452,7 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||frontier-im.douyin.com^$1p
 ||frontier-pc.douyin.com^$1p
 ||imapi.douyin.com^$1p
+||lf-douyin-pc-web.douyinstatic.com^$domain=douyin.com
 ||api.feelgood.cn^$domain=douyin.com
 ||new.gracebot.cn^$domain=douyin.com
 ||ibytedapm.com^$domain=douyin.com
@@ -503,12 +504,13 @@ live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
 ||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
 ! 进入直播间
 ||live.douyin.com^$document,xhr,domain=live.douyin.com,removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
-! 弹幕表情
+! 粉丝团等级等
 ||douyinpic.com/img/webcast/$image,domain=douyin.com
-||douyinpic.com/obj/tos-cn$image,domain=douyin.com
-||douyinstatic.com/obj/webcast$image,domain=douyin.com
-! 非必要请求
+! 表情包
+!||douyinpic.com/obj/tos-cn$image,domain=douyin.com
 ||live.douyin.com/aweme/$xhr,domain=live.douyin.com
+! 非必要请求
+||douyinstatic.com/obj/webcast$image,domain=douyin.com
 ||live.douyin.com/aweme/v1/web/im/user/active/update/$xhr,domain=live.douyin.com
 ||live.douyin.com/cloudpush/update_sender/$xhr,domain=live.douyin.com
 ||live.douyin.com/webcast/luckybox/$xhr,domain=live.douyin.com
@@ -684,6 +686,10 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||wup.huya.com^$1p
 ||ylog.huya.com^$1p
 ||zt.huya.com^$1p
+||al-p2p.massx.com^$domain=huya.com
+||hs-p2p.massx.com^$domain=huya.com
+||hw-p2p.massx.com^$domain=huya.com
+||tx-p2p.massx.com^$domain=huya.com
 ||a.msstatic.com/huya/h5player/room/*/pcore.js^$domain=huya.com
 ||a.msstatic.com/huya/hd/cdn_libs/performance_report-min.js^$domain=huya.com
 ||a.msstatic.com/huya/hd/h5/header/components/RichVideo/$domain=huya.com
@@ -930,6 +936,7 @@ ascii2d.net##div.p-t-1
 ||www.googleadservices.com^
 ||www.google-analytics.com^
 ||static.doubleclick.net^
+||ogads-pa.clients6.google.com^
 
 ! https://olympics.com
 ! 广告
