@@ -226,6 +226,7 @@ www.bilibili.com##.pop-live-small-mode
 ! ||activity.hdslb.com/blackboard/static/20*/*/*.js$script,domain=live.bilibili.com
 ! footer
 ! ||activity.hdslb.com/blackboard/static/*/footer-v2.min.js$script,domain=live.bilibili.com
+||hdslb.com/bfs/seed/laputa-footer/bili-footer.umd.js$script,domain=bilibili.com
 
 ! https://live.bilibili.com
 ! 导航栏
@@ -261,6 +262,8 @@ live.bilibili.com##.blive-avatar-icons
 ! 直播列表百舰标志、活动标志
 live.bilibili.com###card .img-bright-filter[style^=background-image]
 !! 直播间
+! 有 skin 时弹幕控制按钮会变成白色，去掉 skin 后难以辨识
+live.bilibili.com##.icon-left-part path:style(fill: #C9CCD0 !important;)
 ! 舰队指挥官
 live.bilibili.com##.pilot
 ! 展开贡献值/舰长排名
@@ -299,6 +302,8 @@ live.bilibili.com##.privacy-dialog
 live.bilibili.com##.border-box.chat-item.convention-msg
 ! 礼物气泡
 live.bilibili.com###chat-gift-bubble-vm
+! 礼物动画
+live.bilibili.com###gift-screen-animation-vm
 ! 陪玩
 live.bilibili.com##.play-card-box
 ! PK 开始提醒
@@ -317,8 +322,10 @@ live.bilibili.com##.chat-item.gift-item
 live.bilibili.com###brush-prompt
 ! 侧栏底部弹幕连击
 live.bilibili.com###combo-card
-! brush-prompt 出现时会修改弹幕栏的 class，使其高度缩短 30px
-live.bilibili.com###chat-history-list:style(height: 100% !important;)
+! brush-prompt 出现时会修改弹幕栏的 class，使其高度缩短 30px; 移除弹幕区域底部 5px 的 padding
+live.bilibili.com###chat-history-list:style(height: 100% !important; padding-bottom: 0px !important;)
+! 禁止在有进场、礼物投喂时缩小弹幕区域
+live.bilibili.com##.chat-history-panel:style(padding-bottom: 0px !important;)
 ! 礼物愿望单
 live.bilibili.com##.gift-wish-card-root
 ! 投喂提醒等
@@ -647,6 +654,8 @@ www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
 www.huya.com##.player-play-big
 ! 暂停浮窗
 www.huya.com##.player-app-qrcode
+! 砸金蛋
+www.huya.com##.player-danmu-egg-banner
 ! 分享、画中画
 www.huya.com##.player-top-right-btn
 ! 播放器内主播订阅提醒
