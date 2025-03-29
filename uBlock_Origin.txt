@@ -10,6 +10,8 @@ www.baidu.com##.result-op[tpl=game-page-profession]
 www.baidu.com##.result-op[tpl=short_video]
 ! 笔记推荐
 www.baidu.com##.result-op[tpl=note_lead]
+! 百度健康
+www.baidu.com##.result-op[tpl=med_mall_recommend_san]
 ! 新闻
 www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
 ! 跟踪参数
@@ -155,6 +157,11 @@ bilibili.com##.search-panel .trending
 ||api.bilibili.com//x/web-interface/search/default$xhr,1p
 ! 搜索结果-直播
 search.bilibili.com##.bili-video-card:has(.bili-video-card__info--living):upward(1)
+! 搜索结果-广告
+search.bilibili.com##.ad-feedback-entry:upward(5)
+search.bilibili.com##.bili-video-card:has(.bili-video-card__info--ad-creative):upward(1)
+! 搜索结果-级联
+search.bilibili.com##.bili-video-card__wrap:matches-css(display: none):upward(2)
 ! 游戏活动
 search.bilibili.com##.activity-game-list
 !! 视频页
@@ -255,6 +262,11 @@ live.bilibili.com##.hover-panel-wrap .area-banner
 ! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
 live.bilibili.com##.index_wrapper_fta1j
+! 直播分区页顶部
+live.bilibili.com###area-tags header > h2
+live.bilibili.com###area-tags header > h2:style(margin: 0px !important;)
+live.bilibili.com###area-tags header > h2 ~ section:style(padding-bottom: 0px !important;)
+live.bilibili.com###area-tag-list:style(margin-top: 0px !important;)
 ! 直播列表头像框
 live.bilibili.com##.blive-avatar-pendant
 ! 黄色闪电标志
@@ -358,6 +370,8 @@ live.bilibili.com##.bili-danmaku-x-dm.bili-danmaku-x-show:style(color: white !im
 ||api.live.bilibili.com/xlive/e-commerce-interface/$xhr,1p
 ||api.live.bilibili.com/xlive/game-pc/$xhr,1p
 ||api.live.bilibili.com/xlive/web-room/v1/index/getIpInfo^$xhr,1p
+! 分区直播间列表
+||api.live.bilibili.com/xlive/web-interface/v1/second/getList$xhr,domain=bilibili.com,removeparam=/^(w_rid|web_location|wts|sort_type|vajra_business_key)=/
 
 ! https://t.bilibili.com/
 ! 简化顶部导航
@@ -385,8 +399,10 @@ t.bilibili.com##.bili-dyn-publishing
 !! 动态
 ! 头像缩放到标准大小
 t.bilibili.com,space.bilibili.com##.b-avatar__layer.center:style(width: 48px !important; height: 48px !important;)
+www.bilibili.com##.b-avatar__layer:style(height: 48px !important; width: 48px !important;)
 ! 头像框和黄色闪电标志
 t.bilibili.com,space.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
+www.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
 ! 头像框和黄色闪电标志。不知为何有两种分层方式
 t.bilibili.com,space.bilibili.com##.b-avatar__layers:nth-of-type(n + 2)
 ! 会员名称变色
@@ -515,7 +531,9 @@ live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
 ||douyinpic.com/img/webcast/$image,domain=douyin.com
 ! 表情包
 !||douyinpic.com/obj/tos-cn$image,domain=douyin.com
-||live.douyin.com/aweme/$xhr,domain=live.douyin.com
+!||live.douyin.com/aweme/$xhr,domain=live.douyin.com
+||p3-pc-sign.douyinpic.com/obj/tos-cn-i-tsj2vxp0zn/$image
+||douyinpic.com/img//webcast/*.image$image
 ! 非必要请求
 ||douyinstatic.com/obj/webcast$image,domain=douyin.com
 ||live.douyin.com/aweme/v1/web/im/user/active/update/$xhr,domain=live.douyin.com
@@ -709,6 +727,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||a.msstatic.com/huya/main3/widget/$domain=huya.com
 ||business.msstatic.com^$domain=huya.com
 ||diy-assets.msstatic.com^$image,domain=huya.com
+@@||diy-assets.msstatic.com/huya-main/icon^$image,domain=huya.com
 ||fedlib.msstatic.com^$domain=huya.com
 ||gr.msstatic.com^$domain=huya.com
 ||huyaimg.msstatic.com/cdnimage/*$image,domain=huya.com
@@ -759,6 +778,12 @@ live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 ||www.kuaishoupay.com^$domain=kuaishou.com
 
 ! https://leetcode.cn
+! 竞赛页多余信息
+leetcode.cn##h3:has-text(/^力扣 LeetCode$/):upward(3)
+leetcode.cn##h4:has-text(/重要提示/)
+leetcode.cn##h4:has-text(/重要提示/) ~ *
+leetcode.cn##.contest-information ~ *
+leetcode.cn##h3:has-text(竞赛奖励):upward(1)
 ! 等宽框内自动换行
 leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
 ! 其他
@@ -921,6 +946,8 @@ www.zhihu.com##.AnswerAuthor.Card
 ||pay.zhihu.com^$1p
 ! 不明
 ||api.zhihu.com^$1p
+||www.zhihu.com/sc-profiler
+||www.zhihu.com/api/v4/unlimited/vip_rights/popup
 
 ! https://zhuanlan.zhihu.com
 ! 顶部浮动导航
