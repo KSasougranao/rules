@@ -778,12 +778,21 @@ live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 ||www.kuaishoupay.com^$domain=kuaishou.com
 
 ! https://leetcode.cn
-! 竞赛页多余信息
-leetcode.cn##h3:has-text(/^力扣 LeetCode$/):upward(3)
-leetcode.cn##h4:has-text(/重要提示/)
-leetcode.cn##h4:has-text(/重要提示/) ~ *
+leetcode.cn##body > .content-wrapper:style(padding-bottom: 10px !important)
+! 比赛已经结束
+leetcode.cn##.contest-detail-base .callout-default.callout
+leetcode.cn##.contest-information:upward(1):style(margin: 10px 0px !important;)
+leetcode.cn##.contest-information h3.text-300:has-text(/欢迎来到第.*周赛/)
+leetcode.cn##.contest-information h3.text-300:has-text(/欢迎来到第.*周赛/) + br
+! 奖励图片
+leetcode.cn##.contest-information img.inner-banner
+leetcode.cn##.contest-information h4:has-text(/重要提示/)
+leetcode.cn##.contest-information h4:has-text(/重要提示/) ~ *
+leetcode.cn##.contest-information h3:has-text(竞赛奖励):upward(1)
+! 赞助
 leetcode.cn##.contest-information ~ *
-leetcode.cn##h3:has-text(竞赛奖励):upward(1)
+leetcode.cn##.contest-detail-base > div:nth-last-of-type(1)
+leetcode.cn##.chinese.site-footer
 ! 等宽框内自动换行
 leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
 ! 其他
