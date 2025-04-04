@@ -195,6 +195,8 @@ www.bilibili.com##.video-page-operator-card-small
 www.bilibili.com##.pop-live-small-mode
 ! 视频推荐底部直播推荐
 ||api.live.bilibili.com/xlive/web-interface/v1/webMain/getVideoRecList$xhr,domain=bilibili.com
+! 直播推荐
+||api.live.bilibili.com/xlive/web-interface/v1/index/WebGetUnLoginRecList$xhr,domain=bilibili.com
 ! track
 ||api.bilibili.com/x/web-show/res/locs$xhr,1p
 ||api.bilibili.com/x/web-show/wbi/res/locs$xhr,1p
@@ -227,6 +229,8 @@ www.bilibili.com##.pop-live-small-mode
 ||hdslb.com/bfs/static/nc/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/reporter-pb/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/$script,redirect=noopjs,domain=bilibili.com
+! 上报
+||hdslb.com/bfs/polaris_web_conf/polaris/webcnf/event.cnf$xhr,domain=bilibili.com
 ! 直播间皮肤
 ||activity.hdslb.com/blackboard/static/*/skin$script,domain=live.bilibili.com
 ! 会影响弹幕
@@ -370,8 +374,8 @@ live.bilibili.com##.bili-danmaku-x-dm.bili-danmaku-x-show:style(color: white !im
 ||api.live.bilibili.com/xlive/e-commerce-interface/$xhr,1p
 ||api.live.bilibili.com/xlive/game-pc/$xhr,1p
 ||api.live.bilibili.com/xlive/web-room/v1/index/getIpInfo^$xhr,1p
-! 分区直播间列表
-||api.live.bilibili.com/xlive/web-interface/v1/second/getList$xhr,domain=bilibili.com,removeparam=/^(w_rid|web_location|wts|sort_type|vajra_business_key)=/
+! 分区直播间列表。频繁弹出检测
+! ||api.live.bilibili.com/xlive/web-interface/v1/second/getList$xhr,domain=bilibili.com,removeparam=/^(w_rid|web_location|wts|sort_type|vajra_business_key)=/
 
 ! https://t.bilibili.com/
 ! 简化顶部导航
@@ -779,6 +783,7 @@ live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 
 ! https://leetcode.cn
 leetcode.cn##body > .content-wrapper:style(padding-bottom: 10px !important)
+!! 比赛页
 ! 比赛已经结束
 leetcode.cn##.contest-detail-base .callout-default.callout
 leetcode.cn##.contest-information:upward(1):style(margin: 10px 0px !important;)
@@ -792,7 +797,10 @@ leetcode.cn##.contest-information h3:has-text(竞赛奖励):upward(1)
 ! 赞助
 leetcode.cn##.contest-information ~ *
 leetcode.cn##.contest-detail-base > div:nth-last-of-type(1)
+! 底部
 leetcode.cn##.chinese.site-footer
+leetcode.cn##footer
+!! 经典题目页
 ! 等宽框内自动换行
 leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
 ! 其他
@@ -827,6 +835,7 @@ bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.innerbg > div:nth-of-type(2) > div.
 ! 弱智表情包
 ||img4.nga.178.com/ngabbs/post/smile/ac15.png$image
 ||img4.nga.178.com/ngabbs/post/smile/ac17.png$image
+||img4.nga.178.com/ngabbs/post/smile/ng$image
 bbs.nga.cn###postcontent0 > .smile_ac
 
 ! https://qq.com
