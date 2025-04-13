@@ -14,6 +14,8 @@ www.baidu.com##.result-op[tpl=note_lead]
 www.baidu.com##.result-op[tpl=med_mall_recommend_san]
 ! 新闻
 www.baidu.com##div.toplist1-tr_1MWDu:nth-of-type(1)
+! ?
+www.baidu.com##.c-text-business:upward(2)
 ! 跟踪参数
 ||www.baidu.com^$document,domain=www.baidu.com,removeparam=/^(rqlang|ie|tn|f|rsv_bp|oq|rsv_pq|rsv_t|rsv_dl|rsv_denter|rsv_btype|inputT|rsv_sug3|rsv_sug1|rsv_sug7|rsv_sug2|rsv_sug4|rsv_enter)=/
 ! 似乎是和搜索有关的请求
@@ -240,6 +242,8 @@ www.bilibili.com##.pop-live-small-mode
 ||hdslb.com/bfs/seed/laputa-footer/bili-footer.umd.js$script,domain=bilibili.com
 
 ! https://live.bilibili.com
+! 首页广告
+||api.live.bilibili.com/activity/v1/Common/webBanner
 ! 导航栏
 live.bilibili.com##.waterfall-item:has(span:has-text(/直播|全部|聊天室|生活|帮我玩|互动玩法|购物/))
 ! 导航栏
@@ -267,16 +271,19 @@ live.bilibili.com##.hover-panel-wrap .area-banner
 live.bilibili.com##.banner-ctn
 live.bilibili.com##.index_wrapper_fta1j
 ! 直播分区页顶部
+live.bilibili.com###area-tags header:style(margin: 0px !important;)
 live.bilibili.com###area-tags header > h2
 live.bilibili.com###area-tags header > h2:style(margin: 0px !important;)
 live.bilibili.com###area-tags header > h2 ~ section:style(padding-bottom: 0px !important;)
-live.bilibili.com###area-tag-list:style(margin-top: 0px !important;)
+!live.bilibili.com###area-tag-list:style(margin-top: 0px !important;)
 ! 直播列表头像框
 live.bilibili.com##.blive-avatar-pendant
 ! 黄色闪电标志
 live.bilibili.com##.blive-avatar-icons
 ! 直播列表百舰标志、活动标志
 live.bilibili.com###card .img-bright-filter[style^=background-image]
+! 看过人数标志
+live.bilibili.com##img[class^=Item_watched_]
 !! 直播间
 ! 有 skin 时弹幕控制按钮会变成白色，去掉 skin 后难以辨识
 live.bilibili.com##.icon-left-part path:style(fill: #C9CCD0 !important;)
@@ -529,6 +536,7 @@ live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
 live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
 ! 去除跟踪参数
 ||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
+||live.douyin.com$1p,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id)=/
 ! 进入直播间
 ||live.douyin.com^$document,xhr,domain=live.douyin.com,removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
 ! 粉丝团等级等
@@ -830,11 +838,22 @@ bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.hld__docker
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.cpinfo
 ! 顶部 tab
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.innerbg > div:nth-of-type(2) > div.td
+! 版面背景图
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###custombg
+! 移除背景图后的偏移
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###mainmenu:style(margin-bottom: 0px !important;)
+! 自定义版头
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###toptopics
+! 自定义版头
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###bbs_ads9_add
+! 子版面
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###sub_forums_c
 ! 广告图片？
 ||cimg.178.com
 ! 弱智表情包
 ||img4.nga.178.com/ngabbs/post/smile/ac15.png$image
 ||img4.nga.178.com/ngabbs/post/smile/ac17.png$image
+||img4.nga.178.com/ngabbs/post/smile/ac39.png$image
 ||img4.nga.178.com/ngabbs/post/smile/ng$image
 bbs.nga.cn###postcontent0 > .smile_ac
 
@@ -981,6 +1000,9 @@ ascii2d.net##div.p-t-1
 
 ! https://atcoder.jp
 ||static.addtoany.com^$domain=atcoder.jp
+
+! https://bing.com
+||bing.com$1p,removeparam=/^(toWww|redig|wlexpsignin|rwgbopen|form)=/
 
 ! https://github.com/
 ||alive.github.com^$1p
