@@ -1022,21 +1022,19 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 
 ! https://www.pixiv.net
 !! 作品页
-! 未知广告
-www.pixiv.net###adsdk--r0:upward(2)
+! 广告
+www.pixiv.net##[id^=adsdk--r]:upward(1)
 ! 顶部广告
-www.pixiv.net###adsdk--r2:upward(1)
+!www.pixiv.net###adsdk--r2:upward(1)
 ! 右侧广告
-www.pixiv.net###adsdk--r3:upward(2)
-www.pixiv.net###adsdk--r4:upward(1)
+www.pixiv.net##aside > section ~ div > div [id^=adsdk--r]:upward(2)
+www.pixiv.net##aside > section > [id^=adsdk--r]:upward(1)
 !www.pixiv.net##iframe[name="responsive"]:upward(2)
 !www.pixiv.net##iframe[name="rectangle"]:upward(2)
 ! 下方广告
 !www.pixiv.net##iframe[name="500x500"]:upward(1)
-www.pixiv.net###adsdk--r5:upward(2)
 ! 底部广告
 !www.pixiv.net##iframe[name="footer"]:upward(1)
-www.pixiv.net###adsdk--r1:upward(2)
 ! 作品点赞按钮
 www.pixiv.net##.lazKws.sc-a74b10e0-5
 ! 评论
