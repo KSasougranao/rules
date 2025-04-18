@@ -157,6 +157,8 @@ bilibili.com##.search-panel .trending
 ! 搜索栏默认值
 ||api.bilibili.com/x/web-interface/wbi/search/default$xhr,1p
 ||api.bilibili.com//x/web-interface/search/default$xhr,1p
+! 搜索结果-顶部推广
+search.bilibili.com##.search-all-list.brand-ad-list
 ! 搜索结果-直播
 search.bilibili.com##.bili-video-card:has(.bili-video-card__info--living):upward(1)
 ! 搜索结果-广告
@@ -1020,19 +1022,25 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 
 ! https://www.pixiv.net
 !! 作品页
-! 右侧广告占位
-www.pixiv.net##iframe[name="responsive"]:upward(2)
-! 右侧广告占位
-www.pixiv.net##iframe[name="rectangle"]:upward(2)
-! 作品点赞按钮
-www.pixiv.net##.eqsIB.sc-181ts2x-5
-! 评论
-www.pixiv.net##:has(> .dmnOnu)
-www.pixiv.net##.emsveB.sc-1yvhotl-5
-! 收藏后广告
-www.pixiv.net##iframe[name="500x500"]:upward(1)
+! 未知广告
+www.pixiv.net###adsdk--r0:upward(2)
+! 顶部广告
+www.pixiv.net###adsdk--r2:upward(1)
+! 右侧广告
+www.pixiv.net###adsdk--r3:upward(2)
+www.pixiv.net###adsdk--r4:upward(1)
+!www.pixiv.net##iframe[name="responsive"]:upward(2)
+!www.pixiv.net##iframe[name="rectangle"]:upward(2)
+! 下方广告
+!www.pixiv.net##iframe[name="500x500"]:upward(1)
+www.pixiv.net###adsdk--r5:upward(2)
 ! 底部广告
-www.pixiv.net##iframe[name="footer"]:upward(1)
+!www.pixiv.net##iframe[name="footer"]:upward(1)
+www.pixiv.net###adsdk--r1:upward(2)
+! 作品点赞按钮
+www.pixiv.net##.lazKws.sc-a74b10e0-5
+! 评论
+www.pixiv.net##h2 ~ div[class^=CommentInput_container__]:upward(4)
 !! 书签页
 ! 隐藏书签页过多候选 tag
 www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
