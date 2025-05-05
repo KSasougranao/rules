@@ -536,9 +536,10 @@ live.douyin.com##.webcast-chatroom___item span:has(img)
 live.douyin.com##.webcast-chatroom___item:has(.lEfJhurR)
 ! 礼物赠送消息-滚动
 live.douyin.com##xg-danmu.xgplayer-danmu img.content-with-gift_danmaku:upward(2)
-! 去除跟踪参数
+! 去除跟踪参数，room_id 被其他请求依赖，必须细化地址
+/live.douyin.com\/\d+/$1p,removeparam=/^(room_id|)=/
 ||live.douyin.com^$document,domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|aid)=/
-||live.douyin.com$1p,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id)=/
+||live.douyin.com$1p,removeparam=/^(column_type|is_aweme_tied|search_id|search_result_id|from_search)=/
 ! 进入直播间
 ||live.douyin.com^$document,xhr,domain=live.douyin.com,removeparam=/^(cover_type|enter_from_merge|enter_method|game_name|is_recommend|live_type|more_detail|request_id|stream_type|title_type|web_live_page|web_live_tab)=/
 ! 粉丝团等级等
@@ -978,6 +979,8 @@ www.zhihu.com##.AnswerAuthor.Card
 ||www.zhihu.com/api/v4/answers/*/favlists$xhr,1p
 ! 自建 dns
 ||/resolv$domain=zhihu.com
+! 跟踪参数
+||zhihu.com^$document,1p,removeparam=/^(share_code|utm_psn)=/
 ! track??
 ||mqtt-web.zhihu.com^$1p
 ||apm.zhihu.com^$1p
@@ -1026,6 +1029,8 @@ olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row
 www.pixiv.net##[id^=adsdk--r]:upward(1)
 ! 顶部广告
 !www.pixiv.net###adsdk--r2:upward(1)
+! 图片顶部圆角
+www.pixiv.net##div[role=presentation]:style(border-radius: 0px !important;)
 ! 右侧广告
 www.pixiv.net##aside > section ~ div > div [id^=adsdk--r]:upward(2)
 www.pixiv.net##aside > section > [id^=adsdk--r]:upward(1)
