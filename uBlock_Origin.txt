@@ -1015,8 +1015,8 @@ ascii2d.net##div.p-t-1
 ! https://www.google.com
 ||googletagmanager.com^
 ||www.googleadservices.com^
-||www.google-analytics.com^
-||static.doubleclick.net^
+||google-analytics.com^
+||doubleclick.net^
 ||ogads-pa.clients6.google.com^
 
 ! https://olympics.com
