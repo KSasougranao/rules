@@ -32,7 +32,7 @@ www.baidu.com##.c-text-business:upward(2)
 ||dmpstatic.cdn.bcebos.com/weirwood-sdk/
 ||dlswbr.baidu.com/heicha/
 ||miaowu.baidu.com/sdk/heicha/
-||tb3.bdstatic.com/api/acs/paris-v2.min.js
+!||tb3.bdstatic.com/api/acs/paris-v2.min.js
 ||push.dui1dui.com
 ! 图片
 ||tb4.bdstatic.com^$domain=baidu.com
@@ -116,7 +116,7 @@ tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ||gsp0.baidu.com^$1p
 ||hm.baidu.com^
 ! 跟踪参数
-||tieba.baidu.com^$document,domain=tieba.baidu.com,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp)=|see_lz=0/
+||tieba.baidu.com^$document,domain=tieba.baidu.com,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp|tpl|dyTabStr|p_tk|p_timestamp|p_sign|p_signature|__pc2ps_ab)=|see_lz=0/
 ! 无用请求
 ||tieba.baidu.com/game/duoku/getHotGames$1p
 ! 监控
@@ -213,6 +213,7 @@ www.bilibili.com##.pop-live-small-mode
 ||live.bilibili.com^$document,xhr,1p,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/
 ||space.bilibili.com^$document,1p,removeparam=/^(spm_id_from)=/
 ||search.bilibili.com^$document,1p,removeparam=/^(vt|search_source)=/
+bilibili.com$1p,removeparam=/^(vd_source|share_source)=/
 !! web_location 重要参数
 !! w_rid,wts 影响权限
 ||bilibili.com^$1p,removeparam=/^(|isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|x-bili-device-req-json|x-bili-web-req-json)=/
@@ -235,6 +236,7 @@ www.bilibili.com##.pop-live-small-mode
 ||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/$script,redirect=noopjs,domain=bilibili.com
 ! 上报
 ||hdslb.com/bfs/polaris_web_conf/polaris/webcnf/event.cnf$xhr,domain=bilibili.com
+/log/report/*$script,from=bilibili.com
 ! 直播间皮肤
 ||activity.hdslb.com/blackboard/static/*/skin$script,domain=live.bilibili.com
 ! 会影响弹幕
@@ -743,7 +745,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||business.msstatic.com^$domain=huya.com
 ||diy-assets.msstatic.com^$image,domain=huya.com
 @@||diy-assets.msstatic.com/huya-main/icon^$image,domain=huya.com
-||fedlib.msstatic.com^$domain=huya.com
+!||fedlib.msstatic.com^$domain=huya.com
 ||gr.msstatic.com^$domain=huya.com
 ||huyaimg.msstatic.com/cdnimage/*$image,domain=huya.com
 ||livewebbs2.msstatic.com^$domain=huya.com
@@ -981,6 +983,7 @@ www.zhihu.com##.AnswerAuthor.Card
 ||/resolv$domain=zhihu.com
 ! 跟踪参数
 ||zhihu.com^$document,1p,removeparam=/^(share_code|utm_psn)=/
+||www.zhihu.com/search^$1p,removeparam=/^(search_source)=/
 ! track??
 ||mqtt-web.zhihu.com^$1p
 ||apm.zhihu.com^$1p
@@ -1018,6 +1021,7 @@ ascii2d.net##div.p-t-1
 ||google-analytics.com^
 ||doubleclick.net^
 ||ogads-pa.clients6.google.com^
+||www.google.com/search^$1p,removeparam=/^(dpr|safe|btnG)=/
 
 ! https://olympics.com
 ! 广告
