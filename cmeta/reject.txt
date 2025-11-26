@@ -113,6 +113,7 @@ payload:
 - fedci.dz11.com
 - adu.g-fox.cn
 - xelements.cn
+- zconfig.alibabausercontent.com
 - mpush-api.aliyun.com
 - appv.com
 - sofire.baidu.com
@@ -126,7 +127,6 @@ payload:
 - kgb-ifs.tanx.com
 - eco.taobao.com
 - cloud-log.yy.com
-- zconfig.alibabausercontent.comm
 - v.meituan.net
 - master.wap.dphub.sandai.net
 - etl-xlmc-ssl.sandai.net
@@ -282,9 +282,10 @@ payload:
 - ads-api.x.com
 - reward.media.weibo.com
 - idm.iot.mi.com
+- connect.rom.miui.com
 - flash.sec.miui.com
 - game.sec.miui.com
-- xlmc.sec.miui.com
+- +.xlmc.sec.miui.com
 - jupiter.sys.miui.com
 - miwifi.com
 - a0.app.xiaomi.com
