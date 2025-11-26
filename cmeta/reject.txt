@@ -137,7 +137,6 @@ payload:
 - www.google-analytics.com
 - www.googleadservices.com
 - .googletagmanager.com
-- dns.google
 - static.doubleclick.net
 - api.huya.com
 - bee-wpm.huya.com
