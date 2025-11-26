@@ -134,7 +134,6 @@ payload:
 - apd-vodp2plogin.teg.tencent-cloud.net
 - alive.github.com
 - ogads-pa.clients6.google.com
-- mtalk.google.com
 - www.google-analytics.com
 - www.googleadservices.com
 - .googletagmanager.com
