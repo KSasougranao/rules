@@ -10,7 +10,6 @@ payload:
 - hectorstatic.baidu.com
 - tb.himg.baidu.com
 - hm.baidu.com
-- imgsrc.baidu.com
 - common.lcs.baidu.com
 - .map.baidu.com
 - mbd.baidu.com
@@ -26,7 +25,6 @@ payload:
 - pim.baidu.com
 - pn.baidu.com
 - t10.baidu.com
-- tiebac.baidu.com
 - ug.baidu.com
 - update.baidu.com
 - xiangce.baidu.com
