@@ -340,3 +340,13 @@ payload:
 - p-passport-sign.bytedance.net
 - mon.toutiaocloud.net
 - ads.cup.com.cn
+- awaken.amap.com
+- center.amap.com
+- info.amap.com
+- m5.amap.com
+- m5-x.amap.com
+- m5-zb.amap.com
+- render.amap.com
+- render-prod-backup-tile.amap.com
+- render-prod-tile.amap.com
+- store.is.autonavi.com
