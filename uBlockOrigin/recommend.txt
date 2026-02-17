@@ -61,7 +61,11 @@ tieba.baidu.com##.lzl_p_p.j_user_card
 ! 楼中楼内容偏移
 tieba.baidu.com##.lzl_cnt:style(margin-left: 0 !important;)
 ! 楼中楼回复按钮
-tieba.baidu.com##.pull-right.btn-small.btn-sub:upward(1)
+tieba.baidu.com##a.pull-right.btn-small.btn-sub.j_lzl_p:has(i.icon-reply)
+! 隐藏楼中楼占位，如果有内容会有一个 loading 图片元素
+tieba.baidu.com##.hideLzl.core_reply_wrapper.j_lzl_container:not(:has(*))
+! 没有分页的楼中楼底部
+tieba.baidu.com##.lzl_li_pager_s.j_lzl_l_p.lzl_li_pager:not(:has(.j_pager.l_pager:has(span)))
 ! 隐藏仅表情的楼中楼
 tieba.baidu.com##li.lzl_single_post:has(span.lzl_content_main:has-text(/^$/))
 tieba.baidu.com##li.lzl_single_post:has(span.lzl_content_main:has-text(/^(|回复 [^ ]+ :)(|(@[^ ]+ +)*(@[^ ]+))$/))
