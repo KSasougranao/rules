@@ -13,6 +13,7 @@
 +.dns.weixin.qq.com.cn
 +.doh.dns.apple.com
 +.doh.iqiyi.com
++.doh.jd.com
 +.doh.ptqy.gitv.tv
 +.dotserver.douyucdn.cn
 +.hdns.ksyun.com
