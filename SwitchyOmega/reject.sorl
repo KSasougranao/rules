@@ -105,7 +105,6 @@ www.googleadservices.com
 static.doubleclick.net
 api.huya.com
 bee-wpm.huya.com
-**.cdn.huya.com
 diy-front.cdn.huya.com
 fileserver.cdn.huya.com
 csp.huya.com
@@ -140,7 +139,6 @@ livewebbs2.msstatic.com
 s1-static.msstatic.com
 sdkconf.msstatic.com
 static-jw.msstatic.com
-v-huya-img2.msstatic.com
 zt.msstatic.com
 electric-shop.yaoguo.com
 log-sdk.ksapisrv.com
@@ -153,12 +151,14 @@ logs.leetcode-cn.com
 **.knet.cn
 **.tagtic.cn
 ossgw.alicdn.com
+**.appsflyersdk.com
 www.huuua.com
 trackingprd.hwwt8.com
 **.immersivetranslate.com
 **.kgw.com
 cdn.onesignal.com
 applog.snssdk.com
+nel.teo-rum.com
 errortrace.dev
 static.doubleclick.net
 mobile.events.data.microsoft.com
