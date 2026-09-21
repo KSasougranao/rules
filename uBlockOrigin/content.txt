@@ -1,0 +1,187 @@
+! Version:
+! Title: Content uBlock Filters
+! Expires: 7 days
+! Homepage: https://gitee.com/KSasougranao/UNK/raw/master/uBlockOrigin/content.txt
+
+!!!!!!!!!! https://tieba.baidu.com
+! 水贴
+tieba.baidu.com##.l_post:has(.d_post_content:has-text(/^ *(1|2|\+?3+|\+?6+|up|氵|签到|经验加3|晚安)$/))
+! 楼中楼水贴
+tieba.baidu.com##.lzl_single_post:has(.lzl_content_main:has-text(/^(3|6)$/))
+! 帖子-用户
+tieba.baidu.com##.j_thread_list.thread_item_box:has(.tb_icon_author:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|3319218657|2721434781|1340623953|5211225454|4489755876)\b/))
+! 帖内发言-用户
+tieba.baidu.com##.l_post:has(.d_name:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|6641001452)\b/))
+! 楼中楼-用户
+tieba.baidu.com##.lzl_single_post:has(a.j_user_card:matches-attr(username=/(孤独的胖次00)/))
+
+!!!!!!!!!! https://www.bilibili.com
+! 推荐视频
+www.bilibili.com##.video-page-card-small:has(.info > a:matches-attr(href=/BV1Qq4y1R7Sg/))
+! 推荐视频-作者
+www.bilibili.com##.video-page-card-small:has(.upname > a:matches-attr(href=/\/(396657882|291667186)\//))
+! 推荐视频-标题
+www.bilibili.com##.video-page-card-small:has(.title:matches-attr(title=/张大仙|磊哥|鸡爪|原神|崩铁|星穹铁道|崩坏|鸣潮|明日方舟|燕云|苏丹的游戏|老飞宇|阿梓/))
+! JLRS-jayfm 视频列表
+www.bilibili.com##.video-episode-card:has(.video-episode-card__info-title:has-text(/.*(原神|明日方舟|崩坏|第五人格|绝区零|少女前线).*/))
+! 搜索结果-标题
+bilibili.com##.bili-video-card:has(.bili-video-card__info--tit:matches-attr(title=/扇宝|星瞳|阿梓|奶绿|舒三妈|顾子韵|莞儿|思诺|呜米|星汐|向晚|日本萝莉|张大仙|磊哥|鸡爪|神单|人机|狂魔|蛙吹|克苟|老飞宇|林树|杨齐家|内德维德|阿米娅|原神|崩铁|星穹铁道|崩坏|鸣潮|明日方舟|刷花|刷球|刷异色|洛克贝/))
+! 搜索结果-作者
+bilibili.com##.bili-video-card:has(.bili-video-card__info--author:has-text(/张大仙|撸sir兰陵君/))
+! 屏蔽带来的空 wrap
+search.bilibili.com##.bili-video-card:matches-css(display: none):upward(1)
+
+!!!!!!!!!! https://live.bilibili.com
+! 导航栏分区推荐
+live.bilibili.com##ul.area-list li:has-text(/原神|鸣潮|崩坏|绝区零|明日方舟|碧蓝航线|第五人格|永劫无间/):upward(1)
+! 分区推荐 popup 子分区
+live.bilibili.com##.sec-area-item:has(.sec-area-name:matches-attr(title=/原神|鸣潮|崩坏|绝区零|明日方舟|第五人格|永劫无间/))
+! 分区页直播分区选择
+live.bilibili.com###area-tags h2:has-text(/^网游直播$/) + section button:has(> span:not(:has-text(/洛克王国/)))
+! 分区页直播分区选择
+live.bilibili.com###area-tags h2:has-text(/^手游直播$/) + section button:has(> span:not(:has-text(/王者荣耀|洛克王国|火影忍者/)))
+! 主播
+live.bilibili.com###card:matches-attr(href=/\/(1731714819|30597971|1724772412|5148|47377|27252426|23556784|22605289|32587725|4048563|34157|1888545733|9804856|726074|23197314|321352|1785945372|23098187|295099243|6539159|32425221|26752884|27554961|24597482|32319171|142495|10094495|21654925|21677969|1731714274|1859170452|24359271|24957887|24797892|32460374|10920814|24797892|26731909|31969921|13308358|32460374|24797892|13355|32200051|2741272|30334542|904823|24533652|1828273637|21577034|5424|407824|83264|5488199|8432038|5085|440006|27463930|4006440|22747736|25977291|24431404|1790370688|278778|5275|23762706|10545|27765317|14893|15536|2663334|21292831|23259710|22344968|17961|24065|24393|24533652|1759873362|1919219893|23771139|26941523|1921715783|22881514|47867|56237|66688|80397|92450|100504|299964|311280|544786|594461|1455691|594461|725364|870004|1750977596|21402740|30334542|965358|22628523|13715772|876396|938957|1126630|1722213|2603963|2862058|3349914|2823979|3415150|3428783|4055852|4316215|4726132|4975410|4975410|5298167|5513659|5663636|5895809|6254934|6374209|6431492|6535302|7038458|7688602|8792912|11588230|12235923|13576775|26044264|14709735|21013446|21129632|21302477|21402309|21412734|21420932|21421141|21452505|21463219|21545232|42062|21312558|21669084|21672023|21696950|21713184|21756924|21879412|21919321|22174141|22262300|22288644|22333522|903562|22347054|22389206|22389319|22470208|22587430|22603245|22612061|22622535|22625027|22633569|22696653|22717400|22746343|22816111|22824550|22924075|22976643|23143738|23199319|23318045|23438368|23652569|23770996|23771189|23969425|24480379|24840124|25034104|25166222|25290861|25512501|25819309|25933773|26276187|26297216|26562045|30877247|31084953|32552270|32607684|1700892685|1749932743|1804464760|1826341282|1947270324|1970811483|853957|12035556|1991474128|21414905|23121424|22547649|12962|363889|26545331|22709591|23415815|22778610|1710489422|22913442|11790589|289876|241035|175412|1856392520|1833992401|1867580491|804456|24309198|407824|83264|5488199|2442394|24468345|32626736|31415069|23459804|23459804|5194110|23679394|944585|9000080|617523|1944820|31318137|929340|23052050|1726451793|702794|1839144077|345721|27627498|21741508|11574776|6524090|1919211247|6289804|21530339|21737386|1857890846|25512443|21348897|400730|12618696|1884457556|25496452|26591281|1788396225|82178|18060|1962875430|1233664|11203737|23954453|23380621|545068|25220961|32706521|23718393|5096|1942952|22383283|22014760|25780530|225994|1574677|24692760|3391126|1896165591|414706|335790|856077)\b/):upward(1)
+! 主播-标题
+live.bilibili.com###card:has(> div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1):has-text(/脚|酸/))
+! 主播-热度
+live.bilibili.com###card:has(span:has-text(/^(\d{1,2}|[1-1]\d{2})$/)):upward(1)
+!!live.bilibili.com###card:has(span:has-text(/^(\d{1,2}|[1-4]\d{2})$/)):upward(1)
+!!live.bilibili.com###room-card-list > div:nth-of-type(-n + 50):has(span:has-text(/^(\d{1,3})$/))
+! 主播-分区
+live.bilibili.com###card:has(> div:nth-of-type(2) > div > div:has-text(/^(英雄联盟|永劫无间|DOTA2|剑网3|原神|崩坏：星穹铁道|绝区零|鸣潮|明日方舟|第五人格|无限暖暖|阴阳师|决战！平安京|百闻牌|狼人杀|蔚蓝档案|卡拉彼丘)$/)):upward(1)
+! 弹幕-侧栏
+live.bilibili.com##.chat-item:has(> .danmaku-item-right:has-text(/紧|一诺|徐必成/))
+! 弹幕-滚动
+live.bilibili.com##.bili-danmaku-x-dm.bili-danmaku-x-show:has-text(/紧|一诺|徐必成/)
+! 弹幕
+||hdslb.com/bfs/garb/item/ea42e2cdfb5a7d5aa67c8d02564213ba020b14a0.png$image
+live.bilibili.com##div.bulge-emoticon.chat-emoticon.danmaku-item.chat-item:has-text(/Mygo/)
+live.bilibili.com##div.bulge-emoticon.chat-emoticon.danmaku-item.chat-item span.open-menu:has-text(Mygo表情包)
+
+!!!!!!!!!! https://t.bilibili.com
+! 顶部导航分区
+t.bilibili.com##.channel-panel__item:has(.name:has-text(/^(电影|电视剧|综艺|影视|小剧场|汽车|时尚美妆|动物|vlog|家装房产|户外潮流|旅游出行|三农|亲子|生活兴趣|生活经验|公益|活动|课堂|社区中心|新歌热榜)$/))
+! 原创/转发动态-用户名
+t.bilibili.com##.bili-dyn-item__main:has(:is(.bili-dyn-title__text, .dyn-orig-author__name):has-text(/^\n *(蓝色星原旅谣|鸦居|崩坏星穹铁道|剑海蝗|绝区零)\n *$/))
+! 动态文字内容/转发内容/评论互动-用户名
+t.bilibili.com,space.bilibili.com##.bili-dyn-item__main:has(.bili-dyn-title__text:has-text(/飯桶君rice/)) :is(.dyn-card-opus__summary, .bili-dyn-content__forw__desc, .bili-dyn-item__interaction)
+! 动态商品-用户名
+t.bilibili.com,space.bilibili.com##.bili-dyn-item__main:has(.bili-dyn-title__text:has-text(/飯桶君rice/)):has(.bili-dyn-card-goods__mark)
+! 直播动态
+t.bilibili.com##.bili-dyn-item__main:has(.bili-dyn-card-video__badge:has-text(/^直播回放$/))
+t.bilibili.com##.bili-dyn-item__main:has(.bili-dyn-time:has-text(直播了))
+
+!!!!!!!!!! https://live.douyin.com
+! 主播
+live.douyin.com##li.Q_uOVQ1u:has(a:matches-attr(href=/live\.douyin\.com/(2676443709|7909262826|24610879671|43920111907|504448096643|66186758468|66186758468|78267390504|126980302263|131967822463|188142360607|204248289525|211769943319|236245923842|243584563831|294762946834|325269979269|489347072218|490274312701|499079334781|507939628780|513883934450|554903526392|556282140530|566474838627|577695187652|619713724216|671239239167|704935955549|756262196418|812013092081|858408884422|863099238745|869670951770|886357496018|901668835122|949780283106|954679777822|336290517190|2755019528|601094412998|34019938734|4923598928|698749747396|141601416352|74122592780|32063570834|839628841327|139077266813|411980697220|28114670458|124709723050|699666002335|40795652329|699666002335|448813199164|808199384836)$/))
+! 主播-名称
+live.douyin.com##object > a[data-e2e="livecard-metatext"]:has-text(/梦幻|原神|逆水寒|养猪|第五人格|金铲铲/):upward(4)
+! 主播-直播间名称
+live.douyin.com##ul[data-e2e=scroll-list] > li:has(p[data-e2e=livecard-title]:matches-attr(title=/带粉|帮.*考验|极品/))
+! 弹幕-侧栏
+live.douyin.com##.webcast-chatroom___item:has(.webcast-chatroom___content-with-emoji-text:has-text(/原神|关注|福袋|灯牌|钻石|弃坑|退游|不想玩|诚心|出售|点赞|月卡|奥义图|吹|^\d{14,}$/))
+! 弹幕-滚动
+live.douyin.com##xg-danmu.xgplayer-danmu .webcast-chatroom___content-with-emoji-text:has-text(/原神|关注|福袋|灯牌|钻石|弃坑|退游|不想玩|不玩|买一个|诚心|出售|点赞|月卡|奥义图|吹|^\d{14,}$/):upward(2)
+! 特定表情-滚动
+live.douyin.com##.webcast-chatroom___content-with-emoji-emoji:has(img[alt="[捂脸]"])
+! 屏蔽分区
+live.douyin.com##a[href^="/categorynew/"]:matches-attr(title=/(永劫无间|魔兽争霸3|第五人格|原神|梦幻西游|燕云十六声|大话西游|逆水寒|鸣潮|剑网|光遇|诛仙|绝区零|明日之后|崩坏|我的世界|蛋仔|金铲铲|云顶之弈|英雄联盟)/)
+
+!!!!!!!!!! https://www.douyu.com
+! 主播
+www.douyu.com##.layout-Cover-item:has(.DyCardBottom-cardTitle:matches-attr(href=/\/(2205764)$/))
+
+!!!!!!!!!! https://www.huya.com
+! 主播
+www.huya.com##.game-live-item:has(> a:matches-attr(data-url=/2F(2618|8826|12250|52033|52333|77356|81220|129856|134673|134685|138967|143541|143725|146215|243547|320907|339124|362522|503708|513087|517174|520411|547824|583791|651353|919191|10314308|10529595|13448725|23076377|29031152|29578378|29798079|29892864|29921095|29983964|30138312|30158350|30256303|30314514|beisheng1117|148631|guying|huatangcm3344|ye4655|148364|148129|651402|330435|30417258|139183)\b/))
+! 主播-标题
+www.huya.com##.game-live-item:has(> .title:matches-attr(title=/接单|\d带\d|车队|上.?车|跟车|车位|带粉|国服车?|万战|\d+.?(王者|荣耀|百星|金标|小国|)|荣耀\d+|荣耀.*星|上\d+星|战力|2w|胜率|有位|\d+包|工作室|便宜|号|守护|荣耀书|魔法书|【.{2,}】|宝宝|温柔|声优|女射|少御|甜御|妹|女人|女大|哥哥|老板|视频|你的|与你|感谢|谢谢|亲密|美女|德华/))
+! 主播-名称
+www.huya.com##.game-live-item:has(.nick:matches-attr(title=/北京WB|魔创|有痕/))
+! 主播-热度
+www.huya.com##.game-live-item:has(.js-num:not(:has-text(/(\d\d+|[3-9])\d\.\d+万/)))
+! 弹幕-滚动
+www.huya.com##.danmu-item:has(> span:has-text(/^(这就是边路之怪|YGking|安天帝|好啦，你满意啦！|一个真正的man！|刀不锋利马太瘦，你拿什么跟我斗|开始摸鱼|开始收杆|(送.* x \d+))$|(我给满分|主播已经被回复\d+|已经完成\d+次连击了|小铃铛|福袋|宝宝|大气|刘伟|鸭|领取|抽奖|正在参与|刚刚下单了|成功开奖|恭喜|下单|畜生|畜牲|哈哈哈哈)/))
+
+!!!!!!!!!! https://live.kuaishou.com
+! 主播
+live.kuaishou.com##.live-card-main:has(.live-card > a:matches-attr(href=/\/u\/(w5556666|aqiu395902971|XiaoSheng|ADYYDS777|xzx11234)$/))
+! 弹幕-侧栏
+!live.kuaishou.com##.chat-history .item 
+live.kuaishou.com##.username + .comment:has-text(/这就是边路之怪|YGking|安天帝|好啦，你满意啦！|一个真正的man！|刀不锋利马太瘦，你拿什么跟我斗|小铃铛|好好好|别急沉淀一下|黑子嗦话！|出征杯冲冲冲！！/)
+! 弹幕-滚动
+live.kuaishou.com##.danmaku > .item:has-text(/这就是边路之怪|YGking|安天帝|好啦，你满意啦！|一个真正的man！|刀不锋利马太瘦，你拿什么跟我斗|小铃铛|好好好|别急沉淀一下|黑子嗦话！|出征杯冲冲冲！！|skr|^这就是|加油加油/)
+
+!!!!!!!!!! https://bbs.nga.cn
+! 用户-负声望
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.forumbox.postbox:has(.numericl.userval:has-text(/^-\d{3,}\(/))
+! 弱智图片
+||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-eo04Z1wT3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
+||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-8cy4Z1xT3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
+||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-50drZ1hT3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
+||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-kuwsZ1mT3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
+||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-3sx1Z11T3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
+||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-8v8hZtT3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
+! 版头
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##iframe[src^="/misc/forum_news/428.html"]
+! 主页版面类目
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.catetitle
+! 版面列表尾部填充
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.contentBlock > .clear
+! 主页版面
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockother .catenew:nth-of-type(3) .contentBlock:nth-of-type(1) > :nth-of-type(n + 24)
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockother .catenew:nth-of-type(3) .contentBlock a:has-text(/^(麻将|晴风村|寂寞的车|大时代|漩涡书院|生命之杯|模型手办|小窗视界|娱乐吃瓜区|萌萌宠物|我们的骑迹|发烧友|程序员职业交流|二手交易|篮球|家居装修|历史研究)$/):upward(3)
+!bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockother .catenew:nth-of-type(3) .contentBlock > :not(:has(a:has-text(/^(国际新闻|运动与奥运|Cosplay)$/)))
+!! 二次元综合
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockother .catenew:nth-of-type(3) .contentBlock:nth-of-type(3)
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockbliz
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockwow
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockclub
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockriot
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockvalve
+!! 游戏
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockgames .catenew:nth-of-type(3) .contentBlock:nth-of-type(1)
+!! 网络游戏
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockgames .catenew:nth-of-type(3) .contentBlock:nth-of-type(2) a:not(:has-text(/^(三角洲行动)$/)):upward(3)
+!! 手机游戏
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockgames .catenew:nth-of-type(5) .contentBlock:nth-of-type(1) a:not(:has-text(/^()$/)):upward(3)
+!! 其他游戏
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###indexBlockgames .catenew:nth-of-type(5) .contentBlock:nth-of-type(2)
+! 主页版面边框
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.catenew:style(margin: 0 !important; border: 0 !important; padding: 0 !important;)
+! 子版面合集标题
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.topicrow.set_topic
+! 未登录子版面
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##tbody:has(> tr > td > a.topic > span:has-text(/^未登录$/))
+! 子版面
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###mc:has(.nav_link:has-text(/^游戏综合讨论$/)) .titleadd2:upward(3)
+bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##tbody:has(.titleadd2 > .silver:has-text(/\[(王者荣耀国际服|招募/战队管理|场外杂谈|解说杯赛事合集|版面镜像|雷索纳斯|蓝色星原：旅谣|忘却前夜|学园偶像大师|棕色尘埃2|归龙潮合集|冒险岛|赛车俱乐部|游戏主播与UP主杂谈|PS游戏综合讨论|怪物猎人\(Capcom\)|刺客信条系列|塞尔达传说系列|Nintendo游戏综合讨论|炼金工房系列|龙之信条2|赛博朋克2077|艾尔登法环|真·三国无双 起源|Battlefield系列|绝地潜兵2|XBOX游戏综合讨论|XBOX讨论区HOME组队合集|英雄公馆\(招募/交友\)|最终幻想单机系列|天国：拯救2|开拓者系列|Paradox游戏综合讨论|彩虹六号|褪色者互助营地|EAFC系列|使命召唤系列|极限竞速:地平线系列|双影奇境|最后纪元|新手问答/晒护石去专楼|最后生还者 第二部|老头杯赛事合集|光与影：33号远征队|幻兽帕鲁|圣兽之王|剑星/Stellar Blade|死亡搁浅|Steam Deck|VCT赛事讨论|无畏契约|LOL云顶之弈|视频直播讨论|英雄联盟策略卡牌|金铲铲之战)\]/))
+
+!!!!!!!!!! https://www.zhihu.com
+! 热门问题-标题
+www.zhihu.com##.HotItem:has(.HotItem-title:has-text(/全职猎人|渲染|宿命之环|蔡浩宇|米哈游|米家.*游戏|楚子航|崩坏 3|崩坏3|崩坏三|崩坏|崩坏学园|原神|星穹铁道|星铁|崩铁|白厄|开拓者|翁法罗斯|绝区零|明日方舟|终末地|鸣潮|散爆|少女前线|一人之下|NBA|LPL|MSI|LCK|英雄联盟|LOL|季中冠军赛|BLG|围棋|凡人修仙传/))
+! 推荐页问题-赞同数<50
+www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.VoteButton--up:has-text(/(赞同| (\d|[1-4]\d))$/))
+! 关注页回答
+www.zhihu.com##.TopstoryItem-isFollow.TopstoryItem.Card:has(.UserLink-link:matches-attr(href=/hui-du-12-96|random-id-77|lu-cha-biao-38/))
+! 问题-标题
+www.zhihu.com##.TopstoryItem.Card:has(.ContentItem-title a:has-text(/全职猎人|渲染|宿命之环|蔡浩宇|米哈游|楚子航|崩坏学园|崩坏|原神|星穹铁道|星铁|崩铁|绝区零|明日方舟|鸣潮|一人之下|NBA/))
+! 回答-内容
+www.zhihu.com##.QuestionAnswers-answers .List-item:has(.RichContent:has-text(/老米|米游|反米|蔡喵|绝区零|楚子航|公路车|马拉松|电影|满文|女装|药屋少女的呢喃|科幻|原神|Mujica|遐蝶|鸣潮/))
+! 回答-作者
+www.zhihu.com###QuestionAnswers-answers .List-item:has(.UserLink-link:matches-attr(href=/\b(liulangdehama|YInTIanCLANG|jerrysheng|yao326yao|zhao-ce-33|liulangdehama|YInTIanCLANG|yao326yao|zhao-ce-33|hua-ye-cai-20-31)$/))
+! 评论
+www.zhihu.com##.CommentContent:has-text(/老米|米游|反米|蔡喵|原神|米哈游/):upward(3)
+
+!!!!!!!!!! https://www.miguvideo.com
+! 弹幕-侧栏
+www.miguvideo.com##li:has(> .list_item > .item_right > .text:has-text(/奥运|奥林匹克|巴黎|塞纳河|冲刺|奇迹|喝彩|w未来加油|开放|专注瞄准，一击即中|稳如泰山，射中靶心|10环/))
+! 右侧弹幕
+www.miguvideo.com##.chat-room .list-wrapper li:has(span.text:has-text(/莎|钦|昱/))
+! 滚动弹幕
+www.miguvideo.com##.bullet-item:has(.bullet-text-content:has-text(/莎|钦|昱/))
+
+!!!!!!!!!! https://olympics.com
+! 项目
+olympics.com##div:has(> div[data-row-type^=day-schedule] span.discipline-title:has-text(/足球|篮球|排球|手球|曲棍球|水球|冲浪|皮划艇|摔跤|跆拳道|拳击|帆船|攀岩|马术|高尔夫|现代五项|霹雳舞|场地自行车/))
