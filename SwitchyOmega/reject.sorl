@@ -1,7 +1,6 @@
 [SwitchyOmega Conditions]
 gimg0.baidu.com
 gimg2.baidu.com
-gimg3.baidu.com
 gimg4.baidu.com
 gsp0.baidu.com
 hectorstatic.baidu.com
@@ -89,8 +88,6 @@ sta-op.douyucdn.cn
 sta-op-test.douyucdn.cn
 streamdot.douyucdn.cn
 uact.douyucdn.cn
-wconf.douyucdn.cn
-webconf.douyucdn.cn
 static.addtoany.com
 msg.douyu.com
 g.wan.douyu.com
@@ -135,7 +132,6 @@ hs-p2p.massx.com
 hw-p2p.massx.com
 tx-p2p.massx.com
 business.msstatic.com
-livewebbs2.msstatic.com
 s1-static.msstatic.com
 sdkconf.msstatic.com
 static-jw.msstatic.com
@@ -160,7 +156,6 @@ cdn.onesignal.com
 applog.snssdk.com
 nel.teo-rum.com
 errortrace.dev
-static.doubleclick.net
 mobile.events.data.microsoft.com
 uem.migu.cn
 jadeite.miguvideo.com
@@ -177,15 +172,11 @@ mazu.3g.qq.com
 yybadaccess.3g.qq.com
 dp3.qq.com
 pingjs.qq.com
-localhost.ptlogin2.qq.com
 rmonitor.qq.com
-localhost.sec.qq.com
 galileotelemetry.tencent.com
 tpstelemetry.tencent.com
-localhost.ptlogin2.weiyun.com
 music-file.y.gtimg.cn
 qpic.y.gtimg.cn
-stat6.y.qq.com
 **.xdrtc.com
 analytics.twitter.com
 ton.local.twitter.com
