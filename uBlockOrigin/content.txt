@@ -6,8 +6,7 @@
 !!!!!!!!!! https://tieba.baidu.com
 !! 贴吧首页
 ! 旧版贴吧热门筛选
-tieba.baidu.com##.forum_name:has-text(/bangdream|mihoyo|原神|崩坏|明日方舟|鸣潮|异环|第五人格|剑网|棕色尘埃|咒术回战|梦幻西游|fate|燕云十六声|乒乓球|内鬼|lol|抗压背锅|艾欧尼亚|奥比|vct赛
-事|cs赛事|王者淋耀|^2ch$|孙笑川|asoul|^v$|网球|家军|一起逆袭|陪玩|在爱的原点|2ch|vct赛事|bilibili|火影忍者|虎牙直播|vr信|海贼王|上海申花|曼联|ac米兰|国际米兰|利物浦/):upward(3)
+tieba.baidu.com##.forum_name:has-text(/bangdream|mihoyo|原神|崩坏|明日方舟|鸣潮|异环|第五人格|剑网|棕色尘埃|咒术回战|梦幻西游|fate|燕云十六声|乒乓球|内鬼|lol|抗压背锅|艾欧尼亚|奥比|vct赛事|cs赛事|王者淋耀|^2ch$|孙笑川|asoul|^v$|网球|家军|一起逆袭|陪玩|在爱的原点|2ch|vct赛事|bilibili|火影忍者|虎牙直播|vr信|海贼王|上海申花|曼联|ac米兰|国际米兰|利物浦/):upward(3)
 !! 帖子页
 ! 贴吧评论数筛选
 tieba.baidu.com##li.thread_item_box:has(span.threadlist_rep_num:has-text(/^[0-4]$/))
