@@ -48,7 +48,7 @@ www.baidu.com##.c-text-business:upward(2)
 ||tiebac.baidu.com^$1p
 ||gimg0.baidu.com^$1p
 ||gimg2.baidu.com^$1p
-||gimg3.baidu.com^$1p
+!||gimg3.baidu.com^$1p
 ||gimg4.baidu.com^$1p
 ||pics0.baidu.com^$1p
 ||pics1.baidu.com^$1p
@@ -72,6 +72,8 @@ tieba.baidu.com##.u_member
 tieba.baidu.com##.hot-forum-wrapper
 ! 底部版权
 tieba.baidu.com##.copy-right-wrapper
+! 广告
+tieba.baidu.com##.head_ad_pop
 !! 贴吧页
 ! 顶部大图
 tieba.baidu.com###plat_recom_carousel
@@ -101,6 +103,12 @@ tieba.baidu.com###tieba-notice
 tieba.baidu.com##.topic_list_box:upward(1)
 ! 右侧浮动栏
 tieba.baidu.com##.tbui_aside_float_bar
+! 吧头
+tieba.baidu.com##.head_banner
+! 右侧栏
+tieba.baidu.com##.j_encourage_entry.my_app.aside_region
+! 搜索栏 logo
+tieba.baidu.com###search_logo_large
 !! 用户展示
 ! 用户会员标志
 tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
@@ -108,42 +116,22 @@ tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
 tieba.baidu.com##.d_icons
 ! 用户身份标志
 tieba.baidu.com##.frs_bright_icons.icon_wrap_theme1.icon_wrap
-! 隐藏等级名称
-tieba.baidu.com##.d_badge_title
-! 隐藏等级标识外围部分
-tieba.baidu.com##.user_badge:style(border: unset !important; height: auto !important;)
 !! 帖子页
+tieba.baidu.com##.tb_rich_poster_container
+! 禁用浮动标题栏
+tieba.baidu.com###j_core_title_wrap.core_title_absolute_bright.tbui_follow_fixed.clearfix.core_title_wrap_bright
 ! 帖子楼层背景
 tieba.baidu.com##.save_face_bg_2.save_face_bg
 ! 选词搜索
 tieba.baidu.com###selectsearch-icon
-! 自动展开图片
-tieba.baidu.com##.replace_div:has(img):style(height: auto !important;)
-! 自动展开图片-隐藏展开按钮
-tieba.baidu.com##.replace_tip
-! 自动展开楼中楼
-tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
-! 自动展开楼中楼-隐藏展开按钮
-tieba.baidu.com##.lzl_more
-! 自动展开楼中楼-底部
-tieba.baidu.com##.lzl_pager:style(display: block !important;)
 ! 举报按钮
 tieba.baidu.com##.lzl_jb
-! 楼中楼顶部空白
-tieba.baidu.com##.lzl_single_post:style(padding-top: 4px !important;)
-! 楼中楼区域顶部空白
-tieba.baidu.com##.core_reply_content:style(padding-top: 10px !important;)
-! 楼中楼区域圆角
-tieba.baidu.com##.core_reply_content:style(border-radius: 10px !important;
-! 作者区域周围空白
-!tieba.baidu.com##.d_author:style(padding: 0px !important;)
-! 楼主标识偏移
-!tieba.baidu.com##.j_louzhubiaoshi.louzhubiaoshi:style(top: 0px !important;)
 ! track
 ||dmpstatic.cdn.bcebos.com/weirwood-sdk/$script,domain=baidu.com
 ||gsp0.baidu.com/*/track.gif^$1p
 ||gsp0.baidu.com^$1p
-||hm.baidu.com^
+||hm.baidu.com^com
+||passport.baidu.com/channel/unicast$script,domain=tieba.baidu.com
 ! 跟踪参数
 ||tieba.baidu.com^$document,domain=tieba.baidu.com,removeparam=/^(u|fr|share|share_from|sfc|client_type|client_version|st|is_video|unique|tp|tpl|dyTabStr|p_tk|p_timestamp|p_sign|p_signature|__pc2ps_ab)=|see_lz=0/
 ! 无用请求
@@ -156,6 +144,12 @@ tieba.baidu.com##.core_reply_content:style(border-radius: 10px !important;
 ||tieba.baidu.com/present/getForumRank$xhr,domain=tieba.baidu.com
 ||tb5.bdstatic.com/api/wza/config.json$xhr,domain=tieba.baidu.com
 ||tb5.bdstatic.com/api/wza/aria.js$script,domain=tieba.baidu.com
+||ppui-static-pc.cdn.bcebos.com/passApi
+||tb1.bdstatic.com/tb/cms/common/tbskin/skins
+||join_vip_dialog
+||tieba-ares.cdn.bcebos.com/mis$media
+! 跟踪参数，和安全检查有关
+!||tieba.baidu.com^$removeparam=/^(svcp_stk)=/
 
 ! https://www.bilibili.com
 !! 首页
@@ -198,14 +192,6 @@ search.bilibili.com##.bili-video-card__wrap:matches-css(display: none):upward(2)
 ! 游戏活动
 search.bilibili.com##.activity-game-list
 !! 视频页
-! 展开视频合集列表
-www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
-! 展开视频合集列表
-www.bilibili.com##.video-pod__body:style(max-height: 480px !important;)
-! 展开视频分 P 选集列表
-www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
-! 增大视频列表标题宽度
-www.bilibili.com##.video-episode-card__info-title:style(width: auto !important;)
 ! 视频弹窗
 www.bilibili.com##.bpx-player-toast-wrap
 ! 视频弹窗-投票、三连等
@@ -264,11 +250,17 @@ bilibili.com$1p,removeparam=/^(vd_source|share_source)=/
 ||hdslb.com/bfs/static/nc/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/reporter-pb/$script,redirect=noopjs,domain=bilibili.com
 ||hdslb.com/bfs/seed/jinkela/short/user-fingerprint/$script,redirect=noopjs,domain=bilibili.com
+@@||s1.hdslb.com/bfs/seed/jinkela/short/b-mirror/bilimirror.umd.mini.js
+@@||bilibili.com^$xhr,removeparam=source_id
 ! 上报
 ||hdslb.com/bfs/polaris_web_conf/polaris/webcnf/event.cnf$xhr,domain=bilibili.com
 /log/report/*$script,from=bilibili.com
+! adguard cn 中不知为何特地放行了
+/log/report/*$script,from=bilibili.com,important
 ! 直播间皮肤
 ||activity.hdslb.com/blackboard/static/*/skin$script,domain=live.bilibili.com
+! 陪玩
+||api.live.bilibili.com/xlive/app-ucenter/v2/playTogether
 ! 会影响弹幕
 ! ||activity.hdslb.com/blackboard/static/20*/*/*.js$script,domain=live.bilibili.com
 ! footer
@@ -319,6 +311,13 @@ live.bilibili.com###card .img-bright-filter[style^=background-image]
 ! 看过人数标志
 live.bilibili.com##img[class^=Item_watched_]
 !! 直播间
+live.bilibili.com##.web-player-ending-panel-recommendList
+! 直播间离线推荐
+! api.live.bilibili.com/xlive/web-room/v1/index/getOffLiveList
+! 隐藏进房
+!||api.live.bilibili.com/xlive/web-room/v1/index/getInfoByUser?*not_mock_enter_effect=0$domain=live.bilibili.com
+! 直播间用户入场提醒
+live.bilibili.com##.brush-prompt
 ! 有 skin 时弹幕控制按钮会变成白色，去掉 skin 后难以辨识
 live.bilibili.com##.icon-left-part path:style(fill: #C9CCD0 !important;)
 ! 舰队指挥官
@@ -331,6 +330,7 @@ live.bilibili.com##.tab-content-pilot.tab-content
 live.bilibili.com##:is(#rank-list-vm, #rank-list-ctnr-box):style(height: 33px !important;)
 ! 礼物栏
 live.bilibili.com###gift-control-vm
+live.bilibili.com##.gift-control-panel
 ! 网页全屏礼物栏
 live.bilibili.com###web-player__bottom-bar__container
 ! 右上角活动
@@ -484,6 +484,7 @@ blog.csdn.net##.csdn-side-toolbar
 blog.csdn.net##.left-toolbox
 
 ! https://www.douyin.com
+live.douyin.com##.ToolbarPlugin
 ! 登录弹窗
 www.douyin.com##body:style(overflow: auto !important;)
 ! 登录弹窗
@@ -506,6 +507,7 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ! 跟踪参数
 ||www.iesdouyin.com/share/video/$document,1p,removeparam=/^(region|mid|u_code|did|iid|with_sec_did|titleType|share_sign|share_version|ts|from_aid|from_ssr|utm_source|utm_campaign|utm_medium|app)=/
 ||douyin.com^$document,1p,removeparam=/^(aid|aweme_id|enter_from|gid|source|from_tab_name)=/
+||live.douyin.com^$domain=live.douyin.com,removeparam=/^(column_type|is_aweme_tied|anchor_id|follow_status|is_vs|vs_ep_group_id|vs_episode_id|vs_episode_stage|vs_season_id|web_live_tab_2|web_live_tab_3)=/
 ! 反屏蔽？
 ||bytednsdoc.com^$domain=douyin.com
 ! search default 等
@@ -621,8 +623,11 @@ www.douyu.com##.Barrage-content:style(color: black !important;)
 www.douyu.com##.Barrage-nickName:upward(1):style(padding: 0px 10px !important;)
 ! 隐藏会员标志
 www.douyu.com##.Barrage-icon
+www.douyu.com##.FansMedalWrap
+www.douyu.com##.TeamFansWrapper
 ! 播放器
 www.douyu.com##.PlayerToolbar
+www.douyu.com###js-player-toolbar:upward(1)
 ! 跟踪参数
 ||www.douyu.com^$document,1p,removeparam=/^(dyshid|dyshci)=/
 ! 其他
@@ -737,6 +742,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ! 直播脚本
 ||api.huya.com^$1p
 @@||cdnws.api.huya.com^$websocket,1p
+@@||cdnws.api.huya.com^$xhr,domain=www.huya.com
 ||bee-wpm.huya.com^$1p
 !||cdn.huya.com^$1p
 ||fileserver.cdn.huya.com^$1p
@@ -761,6 +767,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||va.huya.com^$1p
 ||v-huya-pic.huya.com^$1p
 ||wsapi.huya.com^$1p
+@@||wsapi.huya.com^$websocket,domain=www.huya.com
 ||wup.huya.com^$1p
 ||ylog.huya.com^$1p
 ||zt.huya.com^$1p
@@ -834,6 +841,13 @@ live.kuaishou.com##.top.tooltip-content:has-text(正常模式)
 ! https://leetcode.cn
 leetcode.cn##body > .content-wrapper:style(padding-bottom: 10px !important)
 !! 比赛页
+! 比赛说明
+leetcode.cn#@#.contest-information h3.text-300:has-text(/欢迎来到第.*周赛/) + br
+leetcode.cn#@#.contest-information h3.text-300:has-text(/欢迎来到第.*周赛/)
+leetcode.cn#@#.contest-information h4:has-text(/重要提示/) ~ *
+leetcode.cn#@#.contest-information:upward(1):style(margin: 10px 0px !important;)
+leetcode.cn#@#.contest-information h4:has-text(/重要提示/)
+leetcode.cn#@#.contest-information h3:has-text(竞赛奖励):upward(1)
 ! 比赛已经结束
 leetcode.cn##.contest-detail-base .callout-default.callout
 leetcode.cn##.contest-information:upward(1):style(margin: 10px 0px !important;)
@@ -862,6 +876,7 @@ leetcode.cn##.result-panel pre:style(text-wrap-mode: wrap !important;)
 
 ! https://www.miguvideo.com
 www.miguvideo.com##.com-comment
+www.miguvideo.com##.has-height.header-container-new
 ! 底部信息
 www.miguvideo.com##.footer-inner
 ! app 下载引导
@@ -890,6 +905,8 @@ bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###toptopics
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###bbs_ads9_add
 ! 子版面
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###sub_forums_c
+! 底部子版面列表
+bbs.nga.cn###more_sub_forums_c
 ! 广告图片？
 ||cimg.178.com
 !! 帖子页
@@ -915,8 +932,8 @@ bbs.nga.cn###postcontent0 > .smile_ac
 ! https://docs.qq.com
 ||at.idqqimg.com^$domain=qq.com
 ||report.idqqimg.com^$domain=qq.com
-||docs.qq.com^$xhr,removeparam=/^(groupUin|ADUIN|ADSESSION|ADTAG|ADPUBNO|_t)=/,domain=docs.qq.com
-
+! 跟踪参数
+||docs.qq.com$removeparam=/^(right_flag|groupUin|ADUIN|ADSESSION|ADTAG|ADPUBNO|_t|jumpuin|nlc)=/
 ! https://mail.qq.com
 ||mail.qq.com^$document,domain=mail.qq.com,removeparam=/^(t|lang|res|speedcheck|url|r)=/
 
@@ -967,6 +984,7 @@ weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-
 ! track
 ||weibo.com/ajax/log$xhr,1p
 ||weibo.com/$document,1p,removeparam=pagetype
+||weibo.com$removeparam=/^(pagetype)=/
 ! 其他
 ||rm.api.weibo.com/2/remind/push_count.json^$script,1p
 ||reward.media.weibo.com^$1p
@@ -990,9 +1008,17 @@ www.wst.tv##.footer-v2.footer
 ! https://www.xiaohongshu.com/
 ||xiaohongshu.com^$document,1p,removeparam=/^(app_platform|ignoreEngage|app_version|share_from_user_hidden|xsec_source|type|author_share|xhsshare|share_id|apptime)=/
 
+! https://www.yangshipin.cn
+! 视频推荐和评论
+www.yangshipin.cn##.video-home-more
+! 页脚
+www.yangshipin.cn##.max-footer
+
 ! https://www.zhihu.com
 ! 导航栏活动
 www.zhihu.com##.AppHeader-Tabs.Tabs
+! 屏蔽导航栏元素
+www.zhihu.com##a.css-1xvhq7k:nth-of-type(n + 5)
 ! 主页顶部横幅
 www.zhihu.com##.Topstory > div:nth-of-type(1)
 ! 推荐页视频筛选
@@ -1001,6 +1027,8 @@ www.zhihu.com##.TopstoryItem-isRecommend.TopstoryItem.Card:has(.ZVideoItem)
 www.zhihu.com##a.Topstory-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
 ! 视频分区-固定导航栏
 www.zhihu.com##.TopstoryPageHeader-tabsLink.TopstoryTabs-link[aria-controls=Topstory-zvideo]
+! 创作者侧栏
+www.zhihu.com##.Card.WriteArea
 !! 主页右侧栏
 ! 主页右侧栏
 www.zhihu.com##.Topstory-mainColumn ~ div
@@ -1089,18 +1117,24 @@ ascii2d.net##div.p-t-1
 olympics.com##div[data-test-id=virtuoso-item-list] > div:not(:has(> div[data-row-type^=day-schedule-]))
 
 ! https://www.pixiv.net
+! 加入会员
+www.pixiv.net##.text-premium:upward(2)
 !! 作品页
 ! 广告
 www.pixiv.net##[id^=adsdk--r]:upward(1)
 ! 顶部广告
 !www.pixiv.net###adsdk--r2:upward(1)
+! 约稿
+www.pixiv.net##a[href$=request]
+! 作者页 tag，加速加载
+||www.pixiv.net/ajax/user/*/illusts/bookmark/tags$xhr,1p
 ! 图片顶部圆角
 www.pixiv.net##div[role=presentation]:style(border-radius: 0px !important;)
 ! 右侧广告
 www.pixiv.net##aside > section ~ div > div [id^=adsdk--r]:upward(2)
 www.pixiv.net##aside > section > [id^=adsdk--r]:upward(1)
-!www.pixiv.net##iframe[name="responsive"]:upward(2)
-!www.pixiv.net##iframe[name="rectangle"]:upward(2)
+www.pixiv.net##aside > div > div > div > iframe[data-uid^=_r_]:upward(3)
+www.pixiv.net##aside > section > div > iframe[data-uid^=_r_]:upward(2)
 ! 下方广告
 !www.pixiv.net##iframe[name="500x500"]:upward(1)
 ! 底部广告
@@ -1113,13 +1147,16 @@ www.pixiv.net##h2 ~ div[class^=CommentInput_container__]:upward(4)
 !! 书签页
 ! 隐藏书签页过多候选 tag
 www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
+! 隐藏加载图
+www.pixiv.net##.loading-indicator.tag-cloud.list-items
 ! track
 ||www.pixiv.net/OneSignalSDKWorker.js$script
 ||errortrace.dev^$xhr,domain=www.pixiv.net
 ||cdn.onesignal.com/sdks
 ||cdn.onesignal.com^
 ||googletagmanager.com^$script
-! 广告和会员
+!! track
+!! 广告和会员
 ||a.pixiv.org^$domain=pixiv.net
 ||pixon.ads-pixiv.net
 ||api.booth.pm^$domain=pixiv.net
@@ -1134,6 +1171,10 @@ www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.li
 
 ! https://www.reddit.com
 ||w3-reporting-nel.reddit.com^$1p
+
+! https://store.steampowered.com/
+! 跟踪参数
+steampowered.com$removeparam=/^(mark_id)=/
 
 ! https://twitter.com
 ! 左侧开通会员提醒
@@ -1163,6 +1204,8 @@ twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ! https://xn--mes358aby2apfg.com
 ! pqjc
 ||xn--mes358aby2apfg.com/document/background/$image,1p
+! nanocloud
+||g.gtimg.cn/music/photo_new/$image,domain=360buyimg.men
 
 ! track
 ||api.growingio.com^

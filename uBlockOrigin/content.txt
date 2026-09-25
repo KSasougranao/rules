@@ -4,18 +4,18 @@
 ! Homepage: https://gitee.com/KSasougranao/UNK/raw/master/uBlockOrigin/content.txt
 
 !!!!!!!!!! https://tieba.baidu.com
-!! 贴吧首页
-! 旧版贴吧热门筛选
-tieba.baidu.com##.forum_name:has-text(/bangdream|mihoyo|原神|崩坏|明日方舟|鸣潮|异环|第五人格|剑网|棕色尘埃|咒术回战|梦幻西游|fate|燕云十六声|乒乓球|内鬼|lol|抗压背锅|艾欧尼亚|奥比|vct赛事|cs赛事|王者淋耀|^2ch$|孙笑川|asoul|^v$|网球|家军|一起逆袭|陪玩|在爱的原点|2ch|vct赛事|bilibili|火影忍者|虎牙直播|vr信|海贼王|上海申花|曼联|ac米兰|国际米兰|利物浦/):upward(3)
-!! 帖子页
+! 贴吧评论数筛选
+tieba.baidu.com##li.thread_item_box:has(span.threadlist_rep_num:has-text(/^[0-4]$/))
 ! 水贴
 tieba.baidu.com##.l_post:has(.d_post_content:has-text(/^ *(1|2|\+?3+|\+?6+|up|氵|签到|经验加3|晚安)$/))
-! 帖内发言-用户
-tieba.baidu.com##.l_post:has(.d_name:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|6641001452)\b/))
-! 帖子-用户
-tieba.baidu.com##.j_thread_list.thread_item_box:has(.tb_icon_author:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|3319218657|2721434781|1340623953|5211225454|4489755876)\b/))
+! 按标题屏蔽帖子
+tieba.baidu.com###thread_list .j_th_tit:has-text(/水经验|水帖|水楼|屎掏客/):upward(4)
 ! 楼中楼水贴
 tieba.baidu.com##.lzl_single_post:has(.lzl_content_main:has-text(/^(3|6)$/))
+! 帖子-用户
+tieba.baidu.com##.j_thread_list.thread_item_box:has(.tb_icon_author:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|3319218657|2721434781|1340623953|5211225454|4489755876)\b/))
+! 帖内发言-用户
+tieba.baidu.com##.l_post:has(.d_name:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|6641001452)\b/))
 ! 楼中楼-用户
 tieba.baidu.com##.lzl_single_post:has(a.j_user_card:matches-attr(username=/(孤独的胖次00)/))
 
@@ -119,6 +119,8 @@ live.kuaishou.com##.danmaku > .item:has-text(/这就是边路之怪|YGking|安�
 !!!!!!!!!! https://bbs.nga.cn
 ! 用户-负声望
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##.forumbox.postbox:has(.numericl.userval:has-text(/^-\d{3,}\(/))
+! 原生表情
+||img4.nga.178.com/ngabbs/face/$image
 ! 弱智图片
 ||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-eo04Z1wT3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
 ||img.nga.178.com/attachments/mon_202403/16/-10vfu6Q2t-8cy4Z1xT3cS140-6y.png$image,domain=bbs.nga.cn|ngabbs.com|nga.178.com|g.nga.cn
@@ -161,6 +163,11 @@ bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##tbody:has(> tr > td > a.topic > span
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###mc:has(.nav_link:has-text(/^游戏综合讨论$/)) .titleadd2:upward(3)
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##tbody:has(.titleadd2 > .silver:has-text(/\[(王者荣耀国际服|招募/战队管理|场外杂谈|解说杯赛事合集|版面镜像|雷索纳斯|蓝色星原：旅谣|忘却前夜|学园偶像大师|棕色尘埃2|归龙潮合集|冒险岛|赛车俱乐部|游戏主播与UP主杂谈|PS游戏综合讨论|怪物猎人\(Capcom\)|刺客信条系列|塞尔达传说系列|Nintendo游戏综合讨论|炼金工房系列|龙之信条2|赛博朋克2077|艾尔登法环|真·三国无双 起源|Battlefield系列|绝地潜兵2|XBOX游戏综合讨论|XBOX讨论区HOME组队合集|英雄公馆\(招募/交友\)|最终幻想单机系列|天国：拯救2|开拓者系列|Paradox游戏综合讨论|彩虹六号|褪色者互助营地|EAFC系列|使命召唤系列|极限竞速:地平线系列|双影奇境|最后纪元|新手问答/晒护石去专楼|最后生还者 第二部|老头杯赛事合集|光与影：33号远征队|幻兽帕鲁|圣兽之王|剑星/Stellar Blade|死亡搁浅|Steam Deck|VCT赛事讨论|无畏契约|LOL云顶之弈|视频直播讨论|英雄联盟策略卡牌|金铲铲之战)\]/))
 
+!!!!!!!!!! https://weibo.com
+! 按关键字屏蔽微博
+weibo.com##[class^=detail_wbtext]:has-text(/卷啾|卷揪|卷花|卷🌸/):style(opacity: 0% !important;)
+weibo.com##.woo-box-item-flex .woo-box-flex:has-text(/^来自/)
+
 !!!!!!!!!! https://www.zhihu.com
 ! 热门问题-标题
 www.zhihu.com##.HotItem:has(.HotItem-title:has-text(/全职猎人|米哈游|米家.*游戏|崩坏 3|崩坏3|崩坏三|崩坏|崩坏学园|原神|星穹铁道|星铁|崩铁|白厄|开拓者|翁法罗斯|绝区零|蔡浩宇|明日方舟|终末地|鸣潮|散爆|少女前线|一人之下|楚子航|NBA|英雄联盟|LOL|LPL|LCK|MSI|季中冠军赛|BLG|围棋|宿命之环|凡人修仙传|韩立|渲染/))
@@ -176,6 +183,8 @@ www.zhihu.com##.QuestionAnswers-answers .List-item:has(.RichContent:has-text(/�
 www.zhihu.com###QuestionAnswers-answers .List-item:has(.UserLink-link:matches-attr(href=/\b(liulangdehama|YInTIanCLANG|jerrysheng|yao326yao|zhao-ce-33|liulangdehama|YInTIanCLANG|yao326yao|zhao-ce-33|hua-ye-cai-20-31)$/))
 ! 评论
 www.zhihu.com##.CommentContent:has-text(/老米|米游|反米|蔡喵|原神|米哈游/):upward(3)
+! 按用户主页屏蔽卡片
+www.zhihu.com##.TopstoryItem.Card .UserLink-link:matches-attr(href=/\/(xuuyee)$/):upward(7)
 
 !!!!!!!!!! https://www.miguvideo.com
 ! 弹幕-侧栏
@@ -184,6 +193,10 @@ www.miguvideo.com##li:has(> .list_item > .item_right > .text:has-text(/奥运|�
 www.miguvideo.com##.chat-room .list-wrapper li:has(span.text:has-text(/莎|钦|昱/))
 ! 滚动弹幕
 www.miguvideo.com##.bullet-item:has(.bullet-text-content:has-text(/莎|钦|昱/))
+
+!!!!!!!!!! https://ascii2d.net
+! 隐藏过多的匹配图片
+ascii2d.net##div.item-box.row:nth-of-type(n+12)
 
 !!!!!!!!!! https://olympics.com
 ! 项目
