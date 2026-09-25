@@ -1161,7 +1161,7 @@ twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ||x.com/i/api/2/guide.json^$1p
 
 ! https://xn--mes358aby2apfg.com
-! 赔钱机场
+! pqjc
 ||xn--mes358aby2apfg.com/document/background/$image,1p
 
 ! track
