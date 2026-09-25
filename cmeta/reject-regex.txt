@@ -1,0 +1,2 @@
+DOMAIN-REGEX,-p2p-.*\.chat\.bilibili\.com$
+DOMAIN-REGEX,-tracker-.*\.chat\.bilibili\.com$

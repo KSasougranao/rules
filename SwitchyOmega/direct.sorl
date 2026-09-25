@@ -6,6 +6,8 @@ anti-ad.net
 devdocs.io
 linux.do
 at.alicdn.com
+chat.qwen.ai
+chat.qwenlm.ai
 www.baidu.com
 baike.baidu.com
 tieba.baidu.com
@@ -38,6 +40,8 @@ album.biliimg.com
 **.chat.bilibili.com
 www.douyin.com
 live.douyin.com
+lf-douyin-pc-web.douyinstatic.com
+lf-douyin-pc-search.douyinstatic.com
 lf3-cdn-tos.bytegoofy.com
 lf6-cdn-tos.bytegoofy.com
 R: ^webcast\d+-ws-web-[a-z]+\.douyin\.com$
@@ -161,8 +165,9 @@ video.leetcode-cn.com
 cn.bing.com
 gitee.com
 .tsinghua.edu.cn
-chat.qwen.ai
-chat.qwenlm.ai
+eastmoney.com
+.kiko-play-niptan.one
+api.asmr-200.com
 api.accounts.firefox.com
 profile.accounts.firefox.com
 detectportal.firefox.com
@@ -193,6 +198,8 @@ static-cdn.jtvnw.net
 **.hls.ttvnw.net
 **.abs.hls.ttvnw.net
 **.no-abs.hls.ttvnw.net
+.wst.tv
+.wstservices.co.uk
 i.hamreus.com
 eu.hamreus.com
 eu1.hamreus.com

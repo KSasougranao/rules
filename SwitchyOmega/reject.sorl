@@ -61,7 +61,6 @@ lf-security.bytegoofy.com
 frontier-im.douyin.com
 frontier-pc.douyin.com
 imapi.douyin.com
-lf-douyin-pc-web.douyinstatic.com
 lf3-webcastcdn-tos.douyinstatic.com
 lf5-hl-hw-webcastcdn-tos.douyinstatic.com
 lf5-webcastcdn-tos.douyinstatic.com
@@ -182,6 +181,8 @@ analytics.twitter.com
 ton.local.twitter.com
 ads-api.x.com
 reward.media.weibo.com
+news.cms.web.gc.wstservices.co.uk
+streamline.web.gc.wstservices.co.uk
 mqtt.zhihu.com
 mqtt-web.zhihu.com
 pay.zhihu.com
