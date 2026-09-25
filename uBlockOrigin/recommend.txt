@@ -98,6 +98,8 @@ tieba.baidu.com##.core_reply_content:style(border-radius: 10px !important;
 tieba.baidu.com##.ylh-ad-wrap
 
 ! https://bilibili.com
+! 无需点赞信息
+api.bilibili.com/x/polymer/web-dynamic/v1/detail/reaction
 !! 视频页
 ! 展开视频合集列表
 www.bilibili.com##.video-sections-content-list:style(height: 480px !important; max-height: 480px !important;)
@@ -107,3 +109,14 @@ www.bilibili.com##.video-pod__body:style(max-height: 480px !important;)
 www.bilibili.com###multi_page .cur-list:style(height: 480px !important; max-height: 480px !important;)
 ! 增大视频列表标题宽度
 www.bilibili.com##.video-episode-card__info-title:style(width: auto !important;)
+
+! https://weibo.com
+weibo.com##.woo-like-count:style(font-family: system-ui !important;)
+
+! https://www.codeforces.com
+! 增大题目描述字号
+codeforces.com##.problem-statement:style(font-size: 1.6rem !important;)
+
+! https://www.pixiv.net
+! 禁止处理添加书签页的标签词云
+||s.pximg.net/www/js/build/bookmark-tag.*.js$script,domain=www.pixiv.net

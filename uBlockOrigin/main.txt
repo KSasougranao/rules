@@ -293,6 +293,7 @@ live.bilibili.com##.link-footer-ctnr
 ! 分区推荐 popup header
 live.bilibili.com##.hover-panel-wrap .area-banner
 !! 直播分区
+live.bilibili.com##span.selectedQnBadge
 ! 直播分区页顶部 banner
 live.bilibili.com##.banner-ctn
 live.bilibili.com##.index_wrapper_fta1j
@@ -448,6 +449,7 @@ www.bilibili.com##.b-avatar__layer:style(height: 48px !important; width: 48px !i
 ! 头像框和黄色闪电标志
 t.bilibili.com,space.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
 www.bilibili.com##.b-avatar__layer:nth-of-type(n + 2)
+www.bilibili.com##.b-avatar__layers:nth-of-type(n + 2)
 ! 头像框和黄色闪电标志。不知为何有两种分层方式
 t.bilibili.com,space.bilibili.com##.b-avatar__layers:nth-of-type(n + 2)
 ! 会员名称变色
@@ -678,6 +680,7 @@ www.huya.com##.NavIg--Kxh7PjtVzZA95RizAlvh1.NavItem--1jr9x80QTPbnrDwqn834hF
 ! 任务
 www.huya.com##div.NavItem--1jr9x80QTPbnrDwqn834hF:nth-last-of-type(1)
 !! 直播分区
+www.huya.com##.mod-index-main
 ! 分区顶部橱窗
 www.huya.com###J_listAdx
 ! 调整分区名称
@@ -940,24 +943,14 @@ bbs.nga.cn###postcontent0 > .smile_ac
 ! https://weibo.com
 ! vip 标志
 weibo.com##.woo-icon-wrap
-! 发表设备
-weibo.com##.head-info_source_2zcEX.head-info_cut_1tPQI
-! 用户推荐
-weibo.com##div:nth-of-type(2) > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
-! 用户推荐
-weibo.com##.SideIndex_sideMain_3jrwf.wbpro-side-main > div > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main.wbpro-side
 ! 用户推荐
 ||weibo.com/ajax/side/cards/sideInterested$xhr,1p
 ! 主页发表微博
-weibo.com###homeWrap > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-left.woo-panel-bottom.woo-panel-right.woo-panel-top.woo-panel-main
+weibo.com##[class*=_publishCard_]
 ! 主页右侧栏
 ||weibo.com/ajax/side/cards$xhr,1p
 ! 未读消息？
 ||weibo.com/ajax/message/unreadHint$xhr,1p
-! 微博页评论微博
-weibo.com##.Detail_mar2_2Q6IG.woo-box-flex
-! 微博页分享按钮
-weibo.com##.toolbar_cursor_34j5V.toolbar_share_39C6P
 ! 用户页右侧栏：赞赏、粉丝群、关注推荐等
 ||weibo.com/ajax/profile/sidedetail$xhr,1p
 ! 热搜榜单
@@ -1015,6 +1008,7 @@ www.yangshipin.cn##.video-home-more
 www.yangshipin.cn##.max-footer
 
 ! https://www.zhihu.com
+www.zhihu.com##.Pc-word-new
 ! 导航栏活动
 www.zhihu.com##.AppHeader-Tabs.Tabs
 ! 屏蔽导航栏元素
