@@ -1008,7 +1008,6 @@ www.yangshipin.cn##.video-home-more
 www.yangshipin.cn##.max-footer
 
 ! https://www.zhihu.com
-www.zhihu.com##.Pc-word-new
 ! 导航栏活动
 www.zhihu.com##.AppHeader-Tabs.Tabs
 ! 屏蔽导航栏元素
