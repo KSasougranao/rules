@@ -4,18 +4,24 @@
 ! Homepage: https://gitee.com/KSasougranao/UNK/raw/master/uBlockOrigin/content.txt
 
 !!!!!!!!!! https://tieba.baidu.com
+!! 贴吧首页
+! 旧版贴吧热门筛选
+tieba.baidu.com##.forum_name:has-text(/bangdream|mihoyo|原神|崩坏|明日方舟|鸣潮|异环|第五人格|剑网|棕色尘埃|咒术回战|梦幻西游|fate|燕云十六声|乒乓球|内鬼|lol|抗压背锅|艾欧尼亚|奥比|vct赛
+事|cs赛事|王者淋耀|^2ch$|孙笑川|asoul|^v$|网球|家军|一起逆袭|陪玩|在爱的原点|2ch|vct赛事|bilibili|火影忍者|虎牙直播|vr信|海贼王|上海申花|曼联|ac米兰|国际米兰|利物浦/):upward(3)
+!! 帖子页
 ! 贴吧评论数筛选
 tieba.baidu.com##li.thread_item_box:has(span.threadlist_rep_num:has-text(/^[0-4]$/))
 ! 水贴
 tieba.baidu.com##.l_post:has(.d_post_content:has-text(/^ *(1|2|\+?3+|\+?6+|up|氵|签到|经验加3|晚安)$/))
+! 帖内发言-用户
+tieba.baidu.com##.l_post:has(.d_name:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|6641001452)\b/))
+! 帖子-用户
+tieba.baidu.com##.j_thread_list.thread_item_box:has(.tb_icon_author:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|3319218657|2721434781|1340623953|5211225454|4489755876)\b/))
 ! 按标题屏蔽帖子
 tieba.baidu.com###thread_list .j_th_tit:has-text(/水经验|水帖|水楼|屎掏客/):upward(4)
 ! 楼中楼水贴
 tieba.baidu.com##.lzl_single_post:has(.lzl_content_main:has-text(/^(3|6)$/))
-! 帖子-用户
-tieba.baidu.com##.j_thread_list.thread_item_box:has(.tb_icon_author:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|3319218657|2721434781|1340623953|5211225454|4489755876)\b/))
-! 帖内发言-用户
-tieba.baidu.com##.l_post:has(.d_name:matches-attr(data-field=/\b(839123330|1329771936|2744871618|6486088004|6641001452)\b/))
+
 ! 楼中楼-用户
 tieba.baidu.com##.lzl_single_post:has(a.j_user_card:matches-attr(username=/(孤独的胖次00)/))
 
