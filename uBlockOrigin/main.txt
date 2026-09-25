@@ -3,6 +3,13 @@
 ! Expires: 1 days
 ! Homepage: https://gitee.com/KSasougranao/UNK/raw/master/uBlockOrigin/main.txt
 
+!暂时移除
+! :单行注释
+! 连续块注释
+! --- 页
+! === 网站
+! ### 
+
 ! https://www.baidu.com
 ! 游戏推荐
 www.baidu.com##.result-op[tpl=game-page-profession]
@@ -54,18 +61,24 @@ www.baidu.com##.c-text-business:upward(2)
 ! https://tieba.baidu.com
 ! 登录弹窗
 tieba.baidu.com###tiebaCustomPassLogin
-!! 贴吧页
+!! 贴吧主页
 ! 导航栏
 tieba.baidu.com##.j_search_nav.search_nav > a:has-text(/^(资讯|视频|采购)$/)
 ! 导航栏-官方号
 tieba.baidu.com##.u_official
 ! 导航栏-会员
 tieba.baidu.com##.u_member
-!! 贴吧内容
+! 热门贴吧
+tieba.baidu.com##.hot-forum-wrapper
+! 底部版权
+tieba.baidu.com##.copy-right-wrapper
+!! 贴吧页
 ! 顶部大图
 tieba.baidu.com###plat_recom_carousel
 ! 顶部大图
 tieba.baidu.com##.card_banner
+! 置顶空白条
+tieba.baidu.com##.thread_item_box.clearfix.thread_top.j_thread_list:nth-of-type(1)
 ! 固定搜索栏
 tieba.baidu.com##.search_main_fixed
 ! 右上角签到
@@ -95,6 +108,10 @@ tieba.baidu.com##.pre_icon_wrap_theme1.pre_icon_wrap
 tieba.baidu.com##.d_icons
 ! 用户身份标志
 tieba.baidu.com##.frs_bright_icons.icon_wrap_theme1.icon_wrap
+! 隐藏等级名称
+tieba.baidu.com##.d_badge_title
+! 隐藏等级标识外围部分
+tieba.baidu.com##.user_badge:style(border: unset !important; height: auto !important;)
 !! 帖子页
 ! 帖子楼层背景
 tieba.baidu.com##.save_face_bg_2.save_face_bg
@@ -110,6 +127,18 @@ tieba.baidu.com##.lzl_post_hidden:style(display: block !important;)
 tieba.baidu.com##.lzl_more
 ! 自动展开楼中楼-底部
 tieba.baidu.com##.lzl_pager:style(display: block !important;)
+! 举报按钮
+tieba.baidu.com##.lzl_jb
+! 楼中楼顶部空白
+tieba.baidu.com##.lzl_single_post:style(padding-top: 4px !important;)
+! 楼中楼区域顶部空白
+tieba.baidu.com##.core_reply_content:style(padding-top: 10px !important;)
+! 楼中楼区域圆角
+tieba.baidu.com##.core_reply_content:style(border-radius: 10px !important;
+! 作者区域周围空白
+!tieba.baidu.com##.d_author:style(padding: 0px !important;)
+! 楼主标识偏移
+!tieba.baidu.com##.j_louzhubiaoshi.louzhubiaoshi:style(top: 0px !important;)
 ! track
 ||dmpstatic.cdn.bcebos.com/weirwood-sdk/$script,domain=baidu.com
 ||gsp0.baidu.com/*/track.gif^$1p
@@ -185,6 +214,7 @@ www.bilibili.com##.bpx-player-cmd-dm-wrap
 www.bilibili.com##.bili-cmd-shrink
 ! 视频下投稿活动
 www.bilibili.com###activity_vote
+www.bilibili.com##.video-resource-list
 ! 视频下广告
 bilibili.com###notice
 ! 视频下直播推荐
@@ -192,8 +222,8 @@ www.bilibili.com###live_recommand_report
 ! 视频右下广告
 www.bilibili.com###right-bottom-banner
 ! 视频侧栏推荐
+www.bilibili.com##.video-card-ad-small
 www.bilibili.com##.video-page-special-card-small
-! 视频侧栏推荐
 www.bilibili.com##.video-page-operator-card-small
 ! 视频推荐底部直播推荐
 www.bilibili.com##.pop-live-small-mode
@@ -214,9 +244,9 @@ www.bilibili.com##.pop-live-small-mode
 ||space.bilibili.com^$document,1p,removeparam=/^(spm_id_from)=/
 ||search.bilibili.com^$document,1p,removeparam=/^(vt|search_source)=/
 bilibili.com$1p,removeparam=/^(vd_source|share_source)=/
-!! web_location 重要参数
-!! w_rid,wts 影响权限
+! web_location 重要参数；w_rid,wts 影响权限；xhr 收紧了，必须保留全部参数
 ||bilibili.com^$1p,removeparam=/^(|isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|x-bili-device-req-json|x-bili-web-req-json)=/
+@@||bilibili.com^$xhr,1p,removeparam=/^(|isGaiaAvoided|need_operation_card|web_rm_repeat|need_elec|out_referer|gaia_source|from_spmid|spmid|from_trackid|x-bili-device-req-json|x-bili-web-req-json)=/
 ! 一个设置 serverdate 的简单脚本
 ||interface.bilibili.com^$1p
 ! 疑似 PCDN
@@ -392,7 +422,7 @@ live.bilibili.com##.bili-danmaku-x-dm.bili-danmaku-x-show:style(color: white !im
 ! 简化顶部导航
 bilibili.com##.left-entry .v-popover-wrap:has(> a > span:has-text(/^(番剧|游戏中心|漫画|下载客户端)$/))
 ! 简化顶部导航
-bilibili.com##.right-entry > :is(div, li):has(span:has-text(/^(大会员)$/))
+bilibili.com##.right-entry__item.vip-entry
 !! 时间线
 ! 增大动态流左侧栏宽度
 t.bilibili.com##aside.left:style(min-width: 264px !important;)
@@ -490,7 +520,7 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||frontier-im.douyin.com^$1p
 ||frontier-pc.douyin.com^$1p
 ||imapi.douyin.com^$1p
-||lf-douyin-pc-web.douyinstatic.com^$domain=douyin.com
+!||lf-douyin-pc-web.douyinstatic.com^$domain=douyin.com
 ||api.feelgood.cn^$domain=douyin.com
 ||new.gracebot.cn^$domain=douyin.com
 ||ibytedapm.com^$domain=douyin.com
@@ -591,6 +621,8 @@ www.douyu.com##.Barrage-content:style(color: black !important;)
 www.douyu.com##.Barrage-nickName:upward(1):style(padding: 0px 10px !important;)
 ! 隐藏会员标志
 www.douyu.com##.Barrage-icon
+! 播放器
+www.douyu.com##.PlayerToolbar
 ! 跟踪参数
 ||www.douyu.com^$document,1p,removeparam=/^(dyshid|dyshci)=/
 ! 其他
@@ -687,6 +719,8 @@ www.huya.com##.msg-normal-decorationPrefix:has(> img[src*=aizhushou]):upward(2)
 !! 直播间播放器
 ! 大号播放按钮
 www.huya.com##.player-play-big
+! 推荐
+www.huya.com##.player-recommend
 ! 暂停浮窗
 www.huya.com##.player-app-qrcode
 ! 砸金蛋
@@ -704,7 +738,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||api.huya.com^$1p
 @@||cdnws.api.huya.com^$websocket,1p
 ||bee-wpm.huya.com^$1p
-||cdn.huya.com^$1p
+!||cdn.huya.com^$1p
 ||fileserver.cdn.huya.com^$1p
 ||live.cdn.huya.com/liveHttpUI/getNavCloudGame$1p
 ||csp.huya.com^$1p
@@ -734,6 +768,9 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||hs-p2p.massx.com^$domain=huya.com
 ||hw-p2p.massx.com^$domain=huya.com
 ||tx-p2p.massx.com^$domain=huya.com
+! 2:首页播放器
+||a.msstatic.com/huya/h5player/home/*/vplayer.js$script,domain=www.huya.com
+||a.msstatic.com/huya/h5player/home/*/vplayer.css$stylesheet,domain=www.huya.com
 ||a.msstatic.com/huya/h5player/room/*/pcore.js^$domain=huya.com
 ||a.msstatic.com/huya/hd/cdn_libs/performance_report-min.js^$domain=huya.com
 ||a.msstatic.com/huya/hd/h5/header/components/RichVideo/$domain=huya.com
@@ -752,7 +789,7 @@ www.huya.com###player-ctrl-wrap[style*="bottom: 16px;"]:style(opacity: 0; transi
 ||s1-static.msstatic.com^$script,domain=huya.com
 ||sdkconf.msstatic.com^$domain=huya.com
 ||static-jw.msstatic.com^$domain=huya.com
-||v-huya-img2.msstatic.com^$domain=huya.com
+!||v-huya-img2.msstatic.com^$domain=huya.com
 ||zt.msstatic.com^$image,domain=huya.com
 ||electric-shop.yaoguo.com^$domain=huya.com
 
@@ -855,6 +892,10 @@ bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###bbs_ads9_add
 bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn###sub_forums_c
 ! 广告图片？
 ||cimg.178.com
+!! 帖子页
+! 用户信息
+bbs.nga.cn##.stat > div div > nobr:has-text(/^(级别|威望|财富):/):upward(2)
+bbs.nga.cn##.stat > .clickextend
 ! 弱智表情包
 ||img4.nga.178.com/ngabbs/post/smile/ac15.png$image
 ||img4.nga.178.com/ngabbs/post/smile/ac17.png$image
@@ -930,6 +971,22 @@ weibo.com##a.ALink_none_1w6rm > .Card_bottomGap_2Xjqi.Card_wrap_2ibWe.woo-panel-
 ||rm.api.weibo.com/2/remind/push_count.json^$script,1p
 ||reward.media.weibo.com^$1p
 
+! https://www.wst.tv
+www.wst.tv##.overlay-promo
+! Cookie
+www.wst.tv##.popup-wrapper
+!! 对局页
+! 新闻
+www.wst.tv##.loader-container > .lds-ring:upward(4)
+! 横幅广告
+www.wst.tv##.h-auto.w-full.advertising-slot:upward(1)
+! 底部
+www.wst.tv##.footer-v2.footer
+! 下方直播流
+||streamline.web.gc.wstservices.co.uk^$xhr,domain=www.wst.tv
+! 下方新闻
+||news.cms.web.gc.wstservices.co.uk^$xhr,domain=www.wst.tv
+
 ! https://www.xiaohongshu.com/
 ||xiaohongshu.com^$document,1p,removeparam=/^(app_platform|ignoreEngage|app_version|share_from_user_hidden|xsec_source|type|author_share|xhsshare|share_id|apptime)=/
 
@@ -949,6 +1006,8 @@ www.zhihu.com##.TopstoryPageHeader-tabsLink.TopstoryTabs-link[aria-controls=Tops
 www.zhihu.com##.Topstory-mainColumn ~ div
 ! 创作者中心
 www.zhihu.com##.CreatorEntrance:upward(1)
+! 大家都在搜
+www.zhihu.com##.HotSearchCard
 ! 分类入口
 www.zhihu.com##.GlobalSideBar-category
 ! 底部版权信息
@@ -1001,6 +1060,8 @@ zhuanlan.zhihu.com##.is-fixed.ColumnPageHeader:style(opacity: 0;)
 zhuanlan.zhihu.com##.Reward
 ! 底部浮动评论栏
 zhuanlan.zhihu.com##.is-bottom.is-fixed.RichContent-actions.Sticky
+! 大家都在搜
+zhuanlan.zhihu.com##.HotSearchCard
 
 ! https://ascii2d.net
 ||ascii2d.net/images/*$image,1p
@@ -1010,7 +1071,7 @@ ascii2d.net##div.p-t-1
 ||static.addtoany.com^$domain=atcoder.jp
 
 ! https://bing.com
-||bing.com$1p,removeparam=/^(toWww|redig|wlexpsignin|rwgbopen|form)=/
+||bing.com$1p,removeparam=/^(toWww|redig|wlexpsignin|rwgbopen|form|riscu|riseg|FORM)=/
 
 ! https://github.com/
 ||alive.github.com^$1p
@@ -1048,6 +1109,7 @@ www.pixiv.net##aside > section > [id^=adsdk--r]:upward(1)
 www.pixiv.net##.lazKws.sc-a74b10e0-5
 ! 评论
 www.pixiv.net##h2 ~ div[class^=CommentInput_container__]:upward(4)
+||www.pixiv.net/ajax/illusts/comments/roots$xhr,domain=www.pixiv.net
 !! 书签页
 ! 隐藏书签页过多候选 tag
 www.pixiv.net##.tag-cloud-container.tag-container.list-container > .tag-cloud.list-items > li:nth-child(n + 101)
@@ -1097,6 +1159,10 @@ twitter.com,x.com##div[data-testid=sidebarColumn] nav[role=navigation]
 ||twitter.com/i/api/2/guide.json^$domain=x.com
 ||ads-api.x.com^$1p
 ||x.com/i/api/2/guide.json^$1p
+
+! https://xn--mes358aby2apfg.com
+! 赔钱机场
+||xn--mes358aby2apfg.com/document/background/$image,1p
 
 ! track
 ||api.growingio.com^
