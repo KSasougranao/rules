@@ -35,6 +35,7 @@ www.baidu.com##.c-text-business:upward(2)
 ||haokanupdate.cdn.bcebos.com^
 ||mediago-static.cdn.bcebos.com^
 ||ns-strategy.cdn.bcebos.com^
+||gamedelivery.cdn.bcebos.com^
 ! 百度异常上报
 ||dmpstatic.cdn.bcebos.com/weirwood-sdk/
 ||dlswbr.baidu.com/heicha/
@@ -226,7 +227,7 @@ www.bilibili.com##.pop-live-small-mode
 ||www.bilibili.com/read/$document,removeparam=/^(plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|from|spm_id_from)=/
 ||www.bilibili.com/video/$document,removeparam=/^(buvid|from_spmid|is_story_h5|mid|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|spmid|timestamp|unique_k|up_id|spm_id_from|-Arouter|vd_source)=/
 ||www.bilibili.com/list/$document,removeparam=/^(spm_id_from)=/
-||live.bilibili.com^$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from)=/
+||live.bilibili.com^$document,xhr,removeparam=/^(broadcast_type|is_room_feed|plat_id|share_from|share_medium|share_plat|share_session_id|share_source|share_tag|timestamp|unique_k|hotRank|session_id|live_from|spm_id_from|launch_id|extra_jump_from|trackid)=/
 ||space.bilibili.com^$document,removeparam=/^(spm_id_from)=/
 ||search.bilibili.com^$document,removeparam=/^(vt|search_source)=/
 bilibili.com$removeparam=/^(vd_source|share_source)=/
@@ -471,6 +472,16 @@ t.bilibili.com,space.bilibili.com##.bili-rich-text__action
 ! 评论可用表情包
 ||api.bilibili.com/x/emote/user/panel/web$xhr
 
+! https://sports.cctv.com
+! vip 广告
+sports.cctv.com##.img:has(> [href="https://vip.sports.cctv.com/"])
+! 页脚
+cctv.com###page_bottom
+
+! https://tv.cctv.com
+! vip 广告
+tv.cctv.com##div.column_wrapper:has([href^="https://vip.sports.cctv.com/"])
+
 ! https://blog.csdn.net
 ! 左侧广告
 blog.csdn.net###asideWriteGuide
@@ -665,6 +676,8 @@ gitee.com##.pendan-widget.gitee-stars-main-widget
 bbs.hupu.com##div:has(> #game-center-entrance-container)
 bbs.hupu.com##.image-wrapper
 ||hoopchina.com.cn^$image,domain=bbs.hupu.com
+! 反复重试
+||hoopchina.com.cn/games/images/def_man.png*$image,redirect=1x1.gif
 
 ! https://www.huya.com
 !! 全站
@@ -987,8 +1000,8 @@ www.wst.tv##.overlay-promo
 ! Cookie
 www.wst.tv##.popup-wrapper
 !! 对局页
-! 新闻
-www.wst.tv##.loader-container > .lds-ring:upward(4)
+! 新闻，会导致 matches 无法加载
+!www.wst.tv##.loader-container > .lds-ring:upward(4)
 ! 横幅广告
 www.wst.tv##.h-auto.w-full.advertising-slot:upward(1)
 ! 底部
@@ -1069,6 +1082,8 @@ www.zhihu.com##.AnswerAuthor.Card
 ||apm.zhihu.com^$1p
 ! 支付
 ||pay.zhihu.com^$1p
+! 搜索
+||www.zhihu.com/api/v*/search/hot_search$xhr,domain=www.zhihu.com
 ! 不明
 ||api.zhihu.com^$1p
 ||www.zhihu.com/sc-profiler

@@ -171,7 +171,9 @@ bbs.nga.cn,ngabbs.com,nga.178.com,g.nga.cn##tbody:has(.titleadd2 > .silver:has-t
 !!!!!!!!!! https://weibo.com
 ! 按关键字屏蔽微博
 weibo.com##[class^=detail_wbtext]:has-text(/卷啾|卷揪|卷花|卷🌸/):style(opacity: 0% !important;)
+! 发送设备
 weibo.com##.woo-box-item-flex .woo-box-flex:has-text(/^来自/)
+weibo.com##.woo-box-item-flex > .woo-box-flex > div[title^=来自]:upward(1)
 
 !!!!!!!!!! https://www.zhihu.com
 ! 热门问题-标题

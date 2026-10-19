@@ -113,6 +113,18 @@ www.bilibili.com##.video-episode-card__info-title:style(width: auto !important;)
 ! https://weibo.com
 weibo.com##.woo-like-count:style(font-family: system-ui !important;)
 
+! https://yangshipin.cn
+! 隐藏头像
+yangshipin.cn##div.p-live-comment-live-item div.img:has(.avatar)
+! 评论区间距
+yangshipin.cn##div.p-live-comment-live-item:style(margin-top: 10px !important;)
+yangshipin.cn##div.p-live-comment-live-item:style(margin-left: 0px !important;)
+! 评论区字号
+yangshipin.cn##.p-live-comment-live-item-context span:style(font-size: 16px !important)
+! 发送评论
+yangshipin.cn##.v-live-send-comment-user
+yangshipin.cn##.p-live-comment-title
+
 ! https://www.codeforces.com
 ! 增大题目描述字号
 codeforces.com##.problem-statement:style(font-size: 1.6rem !important;)
@@ -120,3 +132,5 @@ codeforces.com##.problem-statement:style(font-size: 1.6rem !important;)
 ! https://www.pixiv.net
 ! 禁止处理添加书签页的标签词云
 ||s.pximg.net/www/js/build/bookmark-tag.*.js$script,domain=www.pixiv.net
+! 隐藏请求失败的浮动通知
+www.pixiv.net##div[role=region].charcoal-notification-region
