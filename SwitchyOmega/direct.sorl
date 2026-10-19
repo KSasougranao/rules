@@ -42,6 +42,12 @@ www.douyin.com
 live.douyin.com
 lf-douyin-pc-web.douyinstatic.com
 lf-douyin-pc-search.douyinstatic.com
+sf6-cdn-tos.douyinstatic.com
+sf11-cdn-tos.douyinstatic.com
+sf9-sign.douyinstatic.com
+sf26-sign.douyinstatic.com
+lf9-music-east.douyinstatic.com
+lf26-music-east.douyinstatic.com
 lf3-cdn-tos.bytegoofy.com
 lf6-cdn-tos.bytegoofy.com
 R: ^webcast\d+-ws-web-[a-z]+\.douyin\.com$

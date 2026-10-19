@@ -518,11 +518,11 @@ douyin.com##div:is(.n0rJzjLU.rsgoNBIr, .utTm7ZHu.kgh1KTPO):nth-of-type(2)
 ||www.douyin.com/service/2/abtest_config^$1p
 ! 其他
 ||/get_domains^$domain=douyin.com
-||mssdk.bytedance.com^$domain=douyin.com
+!||mssdk.bytedance.com^$domain=douyin.com
 ||bytegecko.com^$domain=douyin.com
-||lf-security.bytegoofy.com^$domain=douyin.com
+!||lf-security.bytegoofy.com^$domain=douyin.com
 ||frontier-im.douyin.com^$1p
-||frontier-pc.douyin.com^$1p
+!||frontier-pc.douyin.com^$1p
 ||imapi.douyin.com^$1p
 !||lf-douyin-pc-web.douyinstatic.com^$domain=douyin.com
 ||api.feelgood.cn^$domain=douyin.com
